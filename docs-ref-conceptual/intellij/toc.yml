@@ -1,0 +1,30 @@
+- name: Kit de herramientas de Azure para IntelliJ
+  href: azure-toolkit-for-intellij.md
+  items:
+    - name: Instalación
+      href: azure-toolkit-for-intellij-installation.md
+    - name: Introducción
+      href: /azure/app-service-web/app-service-web-intellij-create-hello-world-web-app
+      maintainContext: true
+    - name: Tutoriales
+      items:
+        - name: Implementación de una aplicación web Hola mundo en un contenedor Linux
+          href: azure-toolkit-for-intellij-hello-world-web-app-linux.md
+        - name: Implementación de contenedores en máquinas virtuales de Azure
+          href: azure-toolkit-for-intellij-publish-as-docker-container.md
+        - name: Implementación de una aplicación web en Azure App Service
+          href: azure-toolkit-for-intellij-publish-spring-boot-docker-app.md
+    - name: Procedimiento
+      items:
+        - name: Configuración de la autenticación
+          href: azure-toolkit-for-intellij-sign-in-instructions.md
+        - name: Administración de recursos de Azure
+          items:
+            - name: Máquinas virtuales
+              href: azure-toolkit-for-intellij-managing-virtual-machines-using-azure-explorer.md
+            - name: Cuentas de almacenamiento
+              href: azure-toolkit-for-intellij-managing-storage-accounts-using-azure-explorer.md
+            - name: Azure Redis Cache
+              href: azure-toolkit-for-intellij-managing-redis-caches-using-azure-explorer.md
+    - name: Notas de la versión
+      href: azure-toolkit-for-intellij-whats-new.md
