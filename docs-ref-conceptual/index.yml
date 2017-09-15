@@ -40,7 +40,7 @@ sections:
             html: <p>Herramientas para desarrolladores</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
-            title: SDK y herramientas
+            title: Herramientas &amp; para complementos de IDE
           - href: java-sdk-azure-install.md
             html: <p>Bibliotecas de Azure para Java</p>
             image:
