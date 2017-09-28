@@ -115,7 +115,7 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 
 [Introducción a Microsoft Azure Storage]: /azure/storage/storage-introduction
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
-[Replicación de almacenamiento de Azure]: /azure/storage/storage-redundancy
+[replicación de Azure Storage]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
 [Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
 
