@@ -96,16 +96,16 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 6. Seleccione una de las siguientes opciones:
 
-      * **Import credentials from Azure Key Vault ** (Importar credenciales de Azure Key Vault): especifique un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure.
+      * **Import credentials from Azure Key Vault** (Importar credenciales de Azure Key Vault): especifique un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure.
 
           > [!NOTE]
           > Una instancia de Azure Key Vault que se crea con una cuenta o entidad de servicio específica no es accesible automáticamente para otra cuenta o entidad de servicio que comparta la suscripción. Para permitir que otra cuenta o entidad de servicio use la instancia de Key Vault, debe usar Azure Portal para agregar la cuenta o entidad de servicio.
 
       * **New log in credentials** (Nuevas credenciales de inicio de sesión): cree un conjunto de credenciales de inicio de sesión. Si selecciona esta opción, haga lo siguiente:
 
-        a. En la pestaña **VM Credentials** (Credenciales de la máquina virtual), proporcione la siguiente información para las credenciales de inicio de sesión de máquina virtual del host de Docker: ***Username** (Nombre de usuario): escriba el nombre de usuario para las credenciales de inicio de sesión de máquina virtual.
+        a. En la pestaña **VM Credentials** (Credenciales de la máquina virtual), proporcione la siguiente información para las credenciales de inicio de sesión de máquina virtual del host de Docker: * **Username** (Nombre de usuario): escriba el nombre de usuario para las credenciales de inicio de sesión de máquina virtual.
              * **Password** (Contraseña) y **Confirm** (Confirmar): escriba la contraseña para las credenciales del inicio de sesión de la máquina virtual.
-             * **SSH**: especifique la configuración de Secure Shell (SSH) para el host de Docker. Puede seleccionar una de las siguientes opciones: ***None** (Ninguna): especifica que la máquina virtual no permite conexiones SSH.
+             * **SSH**: especifique la configuración de Secure Shell (SSH) para el host de Docker. Puede seleccionar una de las siguientes opciones: * **None** (Ninguna): especifica que la máquina virtual no permite conexiones SSH.
                 * **Auto-generate** (Generar automáticamente): crea automáticamente la configuración necesaria para la conexión mediante SSH.
                 * **Import from directory** (Importar desde directorio): permite especificar un directorio que contiene un conjunto de configuraciones de SSH previamente guardadas. El directorio debe contener los dos archivos siguientes:
                 
@@ -188,7 +188,7 @@ Para más recursos de Docker, consulte el [sitio web de Docker] oficial.
 
 <!-- URL List -->
 
-[Sitio web de Docker]: https://www.docker.com/
+[sitio web de Docker]: https://www.docker.com/
 [Configuring Artifacts]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html (Configuración de artefactos)
 
 <!-- IMG List -->

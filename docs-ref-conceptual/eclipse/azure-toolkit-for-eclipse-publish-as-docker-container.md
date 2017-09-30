@@ -89,7 +89,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 1. En la ventana **Configure log in credentials and port settings** (Configurar credenciales de inicio de sesión y configuración de puerto), seleccione una de las siguientes opciones:
 
-   * **Import credentials from Azure Key Vault ** (Importar credenciales de Azure Key Vault): especifique un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure. 
+   * **Import credentials from Azure Key Vault** (Importar credenciales de Azure Key Vault): especifique un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure. 
 
    >[!NOTE]
    >Una instancia de Azure Key Vault que se crea con una cuenta o entidad de servicio específica no es accesible automáticamente para otra cuenta o entidad de servicio que comparta la suscripción. Para permitir que otra cuenta o entidad de servicio use la instancia de Key Vault, debe usar Azure Portal para agregar la cuenta o entidad de servicio.
@@ -163,7 +163,7 @@ Para más recursos de Docker, consulte el [sitio web de Docker] oficial.
 
 <!-- URL List -->
 
-[Sitio web de Docker]: https://www.docker.com/
+[sitio web de Docker]: https://www.docker.com/
 
 <!-- IMG List -->
 

@@ -57,7 +57,7 @@ Los siguientes pasos lo guiarán por el proceso de creación de un archivo de cr
 
    ![Cuadro de diálogo Service Principal Creation Status (Estado de creación de entidades de servicio)][A05]
 
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure **, haga clic en **Iniciar sesión**.
+1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, haga clic en **Iniciar sesión**.
 
    ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
 
@@ -73,7 +73,7 @@ Después de haber configurado los pasos en la sección anterior, el kit de herra
 
    ![Menú de Eclipse para cerrar sesión en Azure][L01]
 
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure **, haga clic en **Sí**.
+1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure**, haga clic en **Sí**.
 
    ![Cuadro de diálogo Cerrar sesión][L03]
 
@@ -95,7 +95,7 @@ Si cierra la sesión de Azure al utilizar Eclipse, debe volver a configurar el k
 
    ![Cuadro de diálogo Iniciar sesión][A08]
 
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure **, haga clic en **Iniciar sesión**.
+1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, haga clic en **Iniciar sesión**.
 
    ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
 
@@ -133,7 +133,7 @@ Después de haber configurado los pasos en la sección anterior, se cerrará aut
 
    ![Menú de Eclipse para cerrar sesión en Azure][L01]
 
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure **, haga clic en **Sí**.
+1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure**, haga clic en **Sí**.
 
    ![Cuadro de diálogo Cerrar sesión][L02]
 
