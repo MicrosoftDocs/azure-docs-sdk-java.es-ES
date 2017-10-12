@@ -10,11 +10,11 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 02500ff538402b39a74d032584ac4c0898f60cda
-ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
+ms.openlocfilehash: 28cefcfa6c86e233e15a780ec819e61bf91e0a72
+ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-libraries-for-java"></a>Bibliotecas de Azure para Java
 
@@ -22,8 +22,8 @@ Las bibliotecas de Azure le ayudarán a utilizar los servicios de Azure en aplic
 
 | | | | |
 |:-------------:|:----------:|:----:|:---:|
-| [Azure Storage](#azure-storage) | [SQL Database](#sql-database)  | [Redis Cache](#redis-cache)   | [DocumentDB](#documentdb) |
-| [Bus de servicio](#servicebus)  | [Azure Active Directory](#azuread) | [Key Vault](#keyvault)  | [Event Hubs](#eventhub)
+| [Azure Storage](#azure-storage) | [Base de datos SQL](#sql-database)  | [Redis Cache](#redis-cache)   | [DocumentDB](#documentdb) |
+| [Bus de servicio](#servicebus)  | [Azure Active Directory](#azuread) | [Almacén de claves](#keyvault)  | [Event Hubs](#eventhub)
 | [Servicio IoT](#iotservice) | [Dispositivo de IoT](#iotdevice) | [Data Lake](#datalake)  | [AppInsights](#appinsights) | 
 | [Batch](#batch) | [Administración de recursos de Azure](#management) |
 
@@ -37,7 +37,7 @@ Por ejemplo, para incluir la versión más reciente de las [bibliotecas de admin
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
@@ -65,7 +65,7 @@ Almacenamiento de datos y mensajería para las aplicaciones.
 
 <a name="sql-database"></a>
 
-### <a name="sql-databaseazuresql-databasesql-database-technical-overview"></a>[SQL Database](/azure/sql-database/sql-database-technical-overview)
+### <a name="sql-databaseazuresql-databasesql-database-technical-overview"></a>[Base de datos SQL](/azure/sql-database/sql-database-technical-overview)
 
 Controlador JDBC para Azure SQL Database.
 
@@ -147,7 +147,7 @@ Administración de identidades e inicio de sesión seguro para sus aplicaciones.
  
 <a name="keyvault"></a>
 
-### <a name="key-vaultazurekey-vault"></a>[Key Vault](/azure/key-vault) 
+### <a name="key-vaultazurekey-vault"></a>[Almacén de claves](/azure/key-vault) 
 
 Acceso seguro a claves y secretos desde las aplicaciones. 
 
@@ -267,7 +267,7 @@ Cree, actualice y elimine recursos de Azure desde el código de aplicación.
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
