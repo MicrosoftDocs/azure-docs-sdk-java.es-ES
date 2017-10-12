@@ -11,25 +11,25 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: batch
-ms.openlocfilehash: ebf86e358ff541632e2d1f9503ebae593bdbdb3c
-ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
+ms.openlocfilehash: 2c9fab2834ea6d9c906d9483aed839a0411aaa40
+ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/09/2017
 ---
-# <a name="azure-batch-libraries-for-java"></a><span data-ttu-id="7194f-104">Bibliotecas de Azure Batch para Java</span><span class="sxs-lookup"><span data-stu-id="7194f-104">Azure Batch libraries for Java</span></span>
+# <a name="azure-batch-libraries-for-java"></a><span data-ttu-id="43d9c-104">Bibliotecas de Azure Batch para Java</span><span class="sxs-lookup"><span data-stu-id="43d9c-104">Azure Batch libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="7194f-105">Información general</span><span class="sxs-lookup"><span data-stu-id="7194f-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="43d9c-105">Información general</span><span class="sxs-lookup"><span data-stu-id="43d9c-105">Overview</span></span>
 
-<span data-ttu-id="7194f-106">[Azure Batch](/azure/batch/batch-technical-overview) permite ejecutar aplicaciones en paralelo a gran escala y de informática de alto rendimiento de manera eficaz en la nube.</span><span class="sxs-lookup"><span data-stu-id="7194f-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>   
+<span data-ttu-id="43d9c-106">[Azure Batch](/azure/batch/batch-technical-overview) permite ejecutar aplicaciones en paralelo a gran escala y de informática de alto rendimiento de manera eficaz en la nube.</span><span class="sxs-lookup"><span data-stu-id="43d9c-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>   
 
-<span data-ttu-id="7194f-107">Para empezar a trabajar con Azure Batch, consulte [Creación de una cuenta de Batch con Azure Portal](/azure/batch/batch-account-create-portal).</span><span class="sxs-lookup"><span data-stu-id="7194f-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
+<span data-ttu-id="43d9c-107">Para empezar a trabajar con Azure Batch, consulte [Creación de una cuenta de Batch con Azure Portal](/azure/batch/batch-account-create-portal).</span><span class="sxs-lookup"><span data-stu-id="43d9c-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="7194f-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="7194f-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="43d9c-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="43d9c-108">Client library</span></span>
 
-<span data-ttu-id="7194f-109">Las bibliotecas de cliente de Azure Batch le permiten configurar nodos de cálculo y grupos, definir tareas y configurarlos para ejecutar trabajos y configurar un administrador de trabajos para controlar y supervisar la ejecución de trabajos.</span><span class="sxs-lookup"><span data-stu-id="7194f-109">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="7194f-110">[Obtenga más información](/azure/batch/batch-api-basics) sobre el uso de estos objetos para ejecutar soluciones de proceso en paralelo a gran escala.</span><span class="sxs-lookup"><span data-stu-id="7194f-110">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
+<span data-ttu-id="43d9c-109">Las bibliotecas de cliente de Azure Batch le permiten configurar nodos de cálculo y grupos, definir tareas y configurarlos para ejecutar trabajos y configurar un administrador de trabajos para controlar y supervisar la ejecución de trabajos.</span><span class="sxs-lookup"><span data-stu-id="43d9c-109">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="43d9c-110">[Obtenga más información](/azure/batch/batch-api-basics) sobre el uso de estos objetos para ejecutar soluciones de proceso en paralelo a gran escala.</span><span class="sxs-lookup"><span data-stu-id="43d9c-110">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
 
-<span data-ttu-id="7194f-111">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="7194f-111">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
+<span data-ttu-id="43d9c-111">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="43d9c-111">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
 
 ```XML
 <dependency>
@@ -39,9 +39,9 @@ ms.lasthandoff: 09/09/2017
 </dependency>
 ```   
 
-### <a name="example"></a><span data-ttu-id="7194f-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7194f-112">Example</span></span>
+### <a name="example"></a><span data-ttu-id="43d9c-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="43d9c-112">Example</span></span>
 
-<span data-ttu-id="7194f-113">Configure un grupo de nodos de proceso de Linux en una cuenta de Batch:</span><span class="sxs-lookup"><span data-stu-id="7194f-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
+<span data-ttu-id="43d9c-113">Configure un grupo de nodos de proceso de Linux en una cuenta de Batch:</span><span class="sxs-lookup"><span data-stu-id="43d9c-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
 
 ```java
 // create the batch client for an account using its URI and keys
@@ -54,26 +54,26 @@ client.poolOperations().createPool(poolId, poolVMSize, configuration, poolVMCoun
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="7194f-114">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="7194f-114">Explore the Client APIs</span></span>](/java/api/overview/azure/batch/clientlibrary)
+> [<span data-ttu-id="43d9c-114">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="43d9c-114">Explore the Client APIs</span></span>](/java/api/overview/azure/batch/clientlibrary)
 
 
-## <a name="management-api"></a><span data-ttu-id="7194f-115">API de administración</span><span class="sxs-lookup"><span data-stu-id="7194f-115">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="43d9c-115">API de administración</span><span class="sxs-lookup"><span data-stu-id="43d9c-115">Management API</span></span>
 
-<span data-ttu-id="7194f-116">Use las bibliotecas de administración de Azure Batch para crear y eliminar cuentas de Batch, leer y volver a generar las claves de cuenta de Batch y administrar la cuenta de almacenamiento de Batch.</span><span class="sxs-lookup"><span data-stu-id="7194f-116">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
+<span data-ttu-id="43d9c-116">Use las bibliotecas de administración de Azure Batch para crear y eliminar cuentas de Batch, leer y volver a generar las claves de cuenta de Batch y administrar la cuenta de almacenamiento de Batch.</span><span class="sxs-lookup"><span data-stu-id="43d9c-116">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
 
-<span data-ttu-id="7194f-117">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="7194f-117">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
+<span data-ttu-id="43d9c-117">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="43d9c-117">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
 
 ```XML
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-mgmt-batch</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
-### <a name="example"></a><span data-ttu-id="7194f-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7194f-118">Example</span></span>
+### <a name="example"></a><span data-ttu-id="43d9c-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="43d9c-118">Example</span></span>
 
-<span data-ttu-id="7194f-119">Cree una cuenta de Azure Batch y configure una nueva aplicación y una cuenta de Azure Storage para ella.</span><span class="sxs-lookup"><span data-stu-id="7194f-119">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
+<span data-ttu-id="43d9c-119">Cree una cuenta de Azure Batch y configure una nueva aplicación y una cuenta de Azure Storage para ella.</span><span class="sxs-lookup"><span data-stu-id="43d9c-119">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
 
 ```java
 BatchAccount batchAccount = azure.batchAccounts().define("newBatchAcct")
@@ -89,13 +89,13 @@ BatchAccount batchAccount = azure.batchAccounts().define("newBatchAcct")
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="7194f-120">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="7194f-120">Explore the Management APIs</span></span>](/java/api/overview/azure/batch/managementapi)
+> [<span data-ttu-id="43d9c-120">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="43d9c-120">Explore the Management APIs</span></span>](/java/api/overview/azure/batch/managementapi)
 
 
-## <a name="samples"></a><span data-ttu-id="7194f-121">Muestras</span><span class="sxs-lookup"><span data-stu-id="7194f-121">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="43d9c-121">Muestras</span><span class="sxs-lookup"><span data-stu-id="43d9c-121">Samples</span></span>
 
-<span data-ttu-id="7194f-122">[Administración de cuentas de Batch][1]</span><span class="sxs-lookup"><span data-stu-id="7194f-122">[Manage Batch accounts][1]</span></span>   
+<span data-ttu-id="43d9c-122">[Administración de cuentas de Batch][1]</span><span class="sxs-lookup"><span data-stu-id="43d9c-122">[Manage Batch accounts][1]</span></span>   
 
-<span data-ttu-id="7194f-123">Ver más [código de Java de ejemplo para Azure Batch](https://azure.microsoft.com/resources/samples/?platform=java&term=batch) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="7194f-123">Explore more [sample Java code for Azure Batch](https://azure.microsoft.com/resources/samples/?platform=java&term=batch) you can use in your apps.</span></span>
+<span data-ttu-id="43d9c-123">Ver más [código de Java de ejemplo para Azure Batch](https://azure.microsoft.com/resources/samples/?platform=java&term=batch) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="43d9c-123">Explore more [sample Java code for Azure Batch](https://azure.microsoft.com/resources/samples/?platform=java&term=batch) you can use in your apps.</span></span>
 
 [1]: https://github.com/Azure-Samples/batch-java-manage-batch-accounts
