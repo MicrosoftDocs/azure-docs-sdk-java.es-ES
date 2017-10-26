@@ -12,17 +12,17 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 10/19/2017
 ms.author: robmcm
-ms.openlocfilehash: b6b8db6c7713157a35b6a113d7ec69b4419386d4
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: c3c6339bb5a8415854253701d0ac340d42587509
+ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="run-a-hello-world-web-app-in-a-linux-container-by-using-the-azure-toolkit-for-intellij"></a>Ejecución de una aplicación web Hola mundo como contenedor de Linux con el kit de herramientas de Azure para IntelliJ
 
-Los contenedores de [Docker] son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El kit de herramientas de Azure para IntelliJ simplifica este proceso para los desarrolladores de Java, ya que agrega características para implementar contenedores en Microsoft Azure.
+Los contenedores de [cliente de Docker] son un método muy utilizado para implementar aplicaciones web. Usando contenedores de Docker, los desarrolladores pueden consolidar todos sus archivos de proyecto y dependencias en un único paquete para implementarlo en un servidor. El kit de herramientas de Azure para IntelliJ simplifica este proceso para los desarrolladores de Java, ya que agrega características para implementar contenedores en Microsoft Azure.
 
 En este artículo se muestran los pasos necesarios para crear una aplicación web de Hola mundo básica y publicar la aplicación web en un contenedor de Linux en Azure mediante el kit de herramientas de Azure para IntelliJ.
 
@@ -31,7 +31,7 @@ En este artículo se muestran los pasos necesarios para crear una aplicación we
 
 > [!NOTE]
 >
-> Para completar los pasos de este tutorial, debe configurar [Docker] para que exponga el demonio en el puerto 2375 sin TLS. Puede configurar esta opción al instalar Docker o mediante el menú de configuración de Docker.
+> Para completar los pasos de este tutorial, debe configurar [cliente de Docker] para que exponga el demonio en el puerto 2375 sin TLS. Puede configurar esta opción al instalar Docker o mediante el menú de configuración de Docker.
 >
 > ![Menú de configuración de Docker][docker-settings-menu]
 >
@@ -133,19 +133,19 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver más recursos de Docker, vaya al [sitio web oficial de Docker][Docker].
+Para ver más recursos de Docker, vaya al [sitio web oficial de Docker][cliente de Docker].
 
 [!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
 
 <!-- URL List -->
 
-[Portal de Azure]: https://portal.azure.com/
-[Creación de un registro de contenedor privado de Docker con Azure Portal]: /azure/container-registry/container-registry-get-started-portal
+[Azure Portal]: https://portal.azure.com/
+[Creación de un registro de contenedor privado de Docker con la CLI de Azure]: /azure/container-registry/container-registry-get-started-portal
 [Azure Java Developer Center]: https://azure.microsoft.com/develop/java/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Create Docker Registry using Azure CLI]: /azure/container-registry/container-registry-get-started-azure-cli
 
-[Docker]: https://www.docker.com/
+[cliente de Docker]: https://www.docker.com/
 [Configuring artifacts]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html
 
 <!-- IMG List -->
