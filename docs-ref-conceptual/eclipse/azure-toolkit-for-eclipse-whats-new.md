@@ -14,16 +14,21 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 09/11/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: 31af7e6494f978f341e1f99a30117c57ef30a05b
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: ed21f4308b2f6e45f022608a2ba32fe7db6922d3
+ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a>Novedades del kit de herramientas de Azure para Eclipse
 
 ## <a name="azure-toolkit-for-eclipse-releases"></a>Kit de herramientas de Azure para versiones de Eclipse
 Este artículo contiene información sobre las diversas versiones y actualizaciones más recientes para el kit de herramientas de Azure para Eclipse.
+
+> [!NOTE]
+> Consulte la siguiente página web para ver la información más reciente:
+> 
+> <https://github.com/Microsoft/azure-tools-for-java/releases>
 
 > [!NOTE]
 > También hay un Kit de herramientas de Azure para el IDE de IntelliJ. Para más información, consulte [Kit de herramientas de Azure para IntelliJ].
@@ -89,7 +94,7 @@ El kit de herramientas de Azure para Eclipse, versión de septiembre de 2015, in
 * **Distribuciones actualizadas de Tomcat y Jetty**. Se han actualizado las distribuciones de Jetty y Tomcat que están disponibles en Microsoft Azure para su uso con el kit de herramientas de Azure para Eclipse. Estas distribuciones permiten a los desarrolladores crear proyectos de desarrollo rápido y de prueba con el kit de herramientas de Azure para Eclipse.
 * **Compatibilidad con las referencias automáticamente actualizadas de Tomcat y Jetty**. Además de las versiones específicas de Tomcat y Jetty que están disponibles en Azure, los desarrolladores ahora pueden hacer referencia a una distribución conocida como la "más reciente (autoactualizada)", que actualizará automáticamente a la distribución más reciente de cada versión principal de Jetty o Tomcat la próxima vez que las instancias de rol se reciclen. El reciclaje se produce automáticamente, pero los desarrolladores pueden desencadenar manualmente un reciclaje a través de Azure Portal. Esta nueva característica significa que los desarrolladores no tienen que volver a implementar su aplicación para poder tener el software de servidor actualizado. (
 * Actualmente, esta funcionalidad está pensada solo para aplicaciones con fines de desarrollo y prueba o con aplicaciones no críticas y no es recomendable para la producción.
-* **Vista del explorador de Azure para blobs, colas y tablas de Azure Storage**. Esto permite a los desarrolladores realizar un conjunto de tareas comunes con los artefactos de almacenamiento directamente desde el IDE de Eclipse. Por ejemplo: eliminar, cargar o descargar blobs.
+* **Vista del explorador de Azure para blobs, colas y tablas de almacenamiento de Azure**. Esto permite a los desarrolladores realizar un conjunto de tareas comunes con los artefactos de almacenamiento directamente desde el IDE de Eclipse. Por ejemplo: eliminar, cargar o descargar blobs.
 
 ### <a name="august-1-2015"></a>1 de agosto de 2015
 El kit de herramientas de Azure para Eclipse, versión de agosto de 2015, incluye las siguientes mejoras:
@@ -228,7 +233,7 @@ Se ha publicado el complemento de Azure para Eclipse, versión preliminar de jul
 ### <a name="may-1-2013"></a>1 de mayo de 2013
 Se ha publicado el complemento de Azure para Eclipse, versión preliminar de mayo de 2013. Se trata de una actualización principal que acompaña a la versión 2.0 del SDK de Azure, que es un requisito previo y se descargará automáticamente al instalar el complemento. Esta versión incluye nuevas características, correcciones de errores y algunas mejoras de facilidad de uso basadas en comentarios que se han producido desde la versión preliminar de febrero de 2013:
 
-* **Carga automática del JDK y del servidor de aplicaciones en Azure Storage, e implementación desde allí.** Una nueva opción que automáticamente cargará el JDK y el servidor de aplicaciones seleccionados, cuando sea necesario, en una cuenta de Azure Storage especificada e implementará estos componentes desde allí, en lugar de insertar en el paquete de implementación o hacer que el usuario los cargue manualmente. Esta característica habitualmente solicitada puede mejorar considerablemente la facilidad de implementación de los componentes de servidor y del JDK, especialmente para los usuarios inexpertos. Para ver un tutorial que use estas opciones, consulte [Creación de una aplicación Hola a todos para Azure en Eclipse].
+* **Carga automática del JDK y del servidor de aplicaciones en el almacenamiento de Azure, e implementación desde allí.** Una nueva opción que automáticamente cargará el JDK y el servidor de aplicaciones seleccionados, cuando sea necesario, en una cuenta de Azure Storage especificada e implementará estos componentes desde allí, en lugar de insertar en el paquete de implementación o hacer que el usuario los cargue manualmente. Esta característica habitualmente solicitada puede mejorar considerablemente la facilidad de implementación de los componentes de servidor y del JDK, especialmente para los usuarios inexpertos. Para ver un tutorial que use estas opciones, consulte [Creación de una aplicación Hola a todos para Azure en Eclipse].
 * **Seguimiento centralizado de la cuenta de almacenamiento y capacidad para hacer referencia a cuentas de almacenamiento más fácilmente (a través de un control desplegable).** Esto se aplica a varias características que dependen del almacenamiento, como el JDK y la implementación de componentes de servidor y el almacenamiento en caché. Para más información, consulte [Lista de cuentas de Azure Storage].
 * **Configuración simplificada de acceso remoto en el asistente Publicar en la nube.** Todo lo que necesita hacer es escribir un nombre de usuario y una contraseña para habilitar el acceso remoto, o dejarlos en blanco para mantener el acceso remoto deshabilitado.
 * **Una actualización para el paquete de las bibliotecas de Azure para la biblioteca de Java.** Esta se basa en la versión 0.4.2 de la [API de cliente de Microsoft Azure].
@@ -278,18 +283,18 @@ Se ha publicado el complemento de Azure para Eclipse, CTP de junio de 2012. Las 
 
 * **Nuevo asistente para proyecto de implementación de Azure:** le permite seleccionar el JDK, el servidor de aplicaciones Java y las aplicaciones de Java directamente en la interfaz de usuario mejorada del asistente. Incluidas en la lista de configuraciones del servidor listas para usar, puede elegir Tomcat 6, Tomcat 7, GlassFish OSE 3, Jetty 7, Jetty 8, JBoss 6 y JBoss 7 (independiente). Además, puede personalizar la lista de configuraciones del servidor. Esta mejora de la interfaz de usuario es una alternativa a arrastrar y colocar archivos comprimidos y copiarlos a través de scripts de inicio, que antes era el método principal. Ese método todavía funciona bien, pero es probable que se use solo para escenarios más avanzados.
 * **Página de propiedades de rol de la configuración del servidor:** le permite cambiar fácilmente los JDK, los servidores de aplicaciones de Java y las aplicaciones asociadas con la implementación después de haber creado el proyecto. Para más información, consulte [Propiedades de configuración del servidor].
-* **&quot;Asistente Publicar en la nube&quot;:** proporciona una manera fácil de implementar el proyecto en Azure directamente desde Eclipse, automatizando el pesado proceso manual anterior de obtención de credenciales, inicio de sesión en el portal de administración de Azure, carga de un paquete, etc. Para obtener un ejemplo de cómo implementar el proyecto directamente en Azure, consulte [Creación de una aplicación Hola a todos para Azure en Eclipse]
+* **&quot;Asistente &quot;Publicar en la nube** : proporciona una manera fácil de implementar el proyecto en Azure directamente desde Eclipse, automatizando el pesado proceso manual anterior de obtención de credenciales, inicio de sesión en el portal de administración de Azure, carga de un paquete, etc. Para obtener un ejemplo de cómo implementar el proyecto directamente en Azure, consulte [Creación de una aplicación Hola a todos para Azure en Eclipse]
 * **Barra de herramientas de Azure:** una barra de herramientas de Azure que está ahora disponible en Eclipse contiene botones que invocan las siguientes características:
-  * ![][ic710879] **Ejecutar en emulador de Azure**: ejecuta el proyecto en el emulador.
-  * ![][ic710880] **Restablecer emulador de Azure**: restablece el emulador.
-  * ![][ic710881] **Crear paquete en la nube para Azure**: compila el paquete para la implementación.
-  * ![][ic710876] **Nuevo proyecto de implementación de Azure**: crea un nuevo proyecto de implementación de Azure.
-  * ![][ic710882] **Publicar en la nube de Azure**: publica el proyecto en Azure.
-  * ![][ic710883] **Cancelar la publicación**: elimina la implementación.
+  * ![][ic710879]**Ejecutar en emulador de Azure**: ejecuta el proyecto en el emulador.
+  * ![][ic710880]**Restablecer emulador de Azure**: restablece el emulador.
+  * ![][ic710881]**Crear paquete en la nube para Azure**: compila el paquete para la implementación.
+  * ![][ic710876]**Nuevo proyecto de implementación de Azure**: crea un nuevo proyecto de implementación de Azure.
+  * ![][ic710882]**Publicar en la nube de Azure**: publica el proyecto en Azure.
+  * ![][ic710883]**Cancelar la publicación**: elimina la implementación.
   * Muchos de estos botones de la barra de herramientas de Azure se usan en [Creación de una aplicación Hola a todos para Azure en Eclipse].
 * **Bibliotecas de Azure para Java:** ahora disponibles como parte del paquete único de bibliotecas de Azure para la biblioteca de Java en Eclipse, que acompaña a la instalación del complemento y que contiene también todas las dependencias necesarias. Simplemente agregue una referencia a la biblioteca en el proyecto de Java y no necesitará descargar nada por separado. Para más información, consulte [Instalación del kit de herramientas de Azure para Eclipse].
 * **Microsoft JDBC Driver 4.0 para SQL Server está disponible durante la instalación del complemento:** durante la instalación del complemento nuevo, se puede instalar la versión más reciente de Microsoft JDBC Driver para SQL Server.
-* **Filtro de Azure Access Control Service disponible durante la instalación del complemento:** este componente nuevo, incluido como una biblioteca de Eclipse en el kit de herramientas, habilita a la aplicación web de Java para aprovecharse sin problemas de la autenticación de Azure Access Control Service (ACS) mediante varios proveedores de identidades, como Google, Live.com y Yahoo!. No necesitará escribir la lógica de autenticación personalmente, solo tiene que configurar algunas opciones y dejar que el filtro haga el trabajo pesado de habilitar a los usuarios para iniciar sesión mediante ACS. Así puede centrarse solo en escribir el código que proporciona a los usuarios acceso a los recursos basándose en su identidad, tal como lo devuelve el filtro del objeto de solicitud a la aplicación. Para obtener un tutorial sobre cómo usar el filtro de ACS, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
+* **Filtro de servicio de control de acceso de Azure disponible durante la instalación del complemento:** este componente nuevo, incluido como una biblioteca de Eclipse en el kit de herramientas, habilita a la aplicación web de Java para aprovecharse sin problemas de la autenticación de servicio de control de acceso (ACS) de Azure mediante varios proveedores de identidades, como Google, Live.com y Yahoo!. No necesitará escribir la lógica de autenticación personalmente, solo tiene que configurar algunas opciones y dejar que el filtro haga el trabajo pesado de habilitar a los usuarios para iniciar sesión mediante ACS. Así puede centrarse solo en escribir el código que proporciona a los usuarios acceso a los recursos basándose en su identidad, tal como lo devuelve el filtro del objeto de solicitud a la aplicación. Para obtener un tutorial sobre cómo usar el filtro de ACS, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
 * **Detección automática de los requisitos previos de la versión 1.7 del SDK de Azure:** al crear un nuevo proyecto de implementación de Azure, esta versión se descargará automáticamente si no está ya instalada.
 * **Puntos de conexión de instancia:** permite el acceso directo del punto de conexión del puerto para la comunicación con instancias de rol de carga equilibrada. Se pueden agregar los puntos de conexión de instancia a través de la interfaz de usuario de los puntos de conexión, disponible en la página [Propiedades de puntos de conexión] . Esto ayuda a habilitar la depuración remota y el diagnóstico de JMX para instancias de proceso específicas que se ejecutan en la nube en escenarios con implementaciones de varias instancias. 
 * **Interfaz de usuario para componentes:** facilita a los usuarios avanzados la configuración de las dependencias del proyecto entre los roles individuales de Azure en el proyecto y otros recursos externos como los proyectos de aplicación de Java; también facilita la descripción de su lógica de implementación. Para más información, consulte [Propiedades de componentes].
@@ -316,7 +321,7 @@ Se ha publicado el complemento de Azure para Eclipse, CTP de diciembre de 2011. 
 <!-- URL List -->
 
 [Kit de herramientas de Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
-[Instalación del Kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse-installation.md
+[Instalación del kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse-installation.md
 
 [Instrucciones de inicio de sesión de Azure del kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse-sign-in-instructions.md
 [Cómo publicar una aplicación web como un contenedor de Docker mediante el kit de herramientas de Azure para Eclipse]: ./azure-toolkit-for-eclipse-publish-as-docker-container.md

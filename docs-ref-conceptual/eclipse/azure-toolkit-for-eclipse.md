@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 10/19/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: cb504c28b1090d1948cc02344ec619bfb32f1d14
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: d3f91a7b501adfd9496991e955024298b637b90d
+ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de herramientas de Azure para Eclipse
 El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de Eclipse. Es un proyecto de código abierto, cuyo código fuente está disponible con la [licencia MIT desde el sitio del proyecto](https://github.com/microsoft/azure-tools-for-java).
@@ -30,8 +30,6 @@ El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que p
 
 ## <a name="get-started-with-the-azure-toolkit-for-eclipse"></a>Introducción al kit de herramientas de Azure para Eclipse
 Los artículos siguientes lo ayudarán a empezar a usar el kit de herramientas de Azure para Eclipse:
-
-* [Novedades del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-whats-new.md)
 
 * [Instalación del Kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
 
@@ -60,6 +58,12 @@ En los artículos siguientes se muestra cómo usar el kit de herramientas de Azu
 * [Administración de máquinas virtuales con Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
+
+Para más información sobre el Kit de herramientas de Azure para Eclipse, consulte las siguientes páginas:
+
+* [Notas de la versión de Kit de herramientas de Azure](https://github.com/Microsoft/azure-tools-for-java/releases)
+
+* [Kit de herramientas de Azure para Eclipse en Eclipse Marketplace](http://marketplace.eclipse.org/content/azure-toolkit-eclipse)
 
 Para más información sobre el uso de Java con Azure, visite el [Centro para desarrolladores de Java de Azure](https://azure.microsoft.com/develop/java/) y consulte las [herramientas de Java para Visual Studio Team Services](https://java.visualstudio.com/).
 
