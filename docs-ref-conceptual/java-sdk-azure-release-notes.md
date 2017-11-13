@@ -10,17 +10,17 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 015cb0615c28711ebb8feb5cea584a8a3779fa54
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 924ccf9bdaad4bc635f133adbcfcc8f797d06644
+ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="release-notes"></a>Notas de la versión 
 
 ## <a name="october-5-2017---130"></a>5 de octubre de 2017: 1.3.0 
 
-La versión 1.3.0 es compatible con versiones anteriores de servicios y usos destacados que alcanzaron la etapa de disponibilidad general (estable) en versiones anteriores.
+La versión 1.3.0 es compatible con versiones anteriores de servicios y características que alcanzaron la etapa de disponibilidad general (estable) en versiones anteriores.
 
 Los principales cambios con respecto a las versiones preliminares de esos servicios están marcados con la anotación @Beta.
 
