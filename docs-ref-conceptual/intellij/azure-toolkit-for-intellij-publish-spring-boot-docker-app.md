@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 10/19/2017
+ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 19621d0b780cf0607171fd8c6d46aaf17d57cc49
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 65fbdc32824c2b6312929f4888844d1673101ac8
+ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ
 
@@ -32,7 +32,7 @@ Este tutorial le guía por los pasos necesarios para implementar una aplicación
 
 ## <a name="clone-the-default-spring-boot-docker-repo"></a>Clonar el repositorio de Docker predeterminado de Spring Boot
 
-Los siguientes pasos le guían por la clonación del repositorio de Docker de Spring Boot mediante IntelliJ. Si quiere usar una línea de comandos, vea [Implementación de una aplicación de Spring Boot en Linux en Azure Container Service][Deploy Spring Boot on Linux in ACS].
+Los siguientes pasos le guían por la clonación del repositorio de Docker de Spring Boot mediante IntelliJ. Si quiere usar una línea de comandos, vea [Implementación de una aplicación de Spring Boot en Linux en Azure Container Service][Deploy Spring Boot on Linux in AKS].
 
 1. Abra IntelliJ.
 
@@ -218,14 +218,14 @@ IntelliJ debe mostrar el artefacto completado para la aplicación Spring Boot en
 
 Para obtener información sobre métodos adicionales para crear aplicaciones Spring Boot con IntelliJ, vea [Creating Spring Boot Projects](https://www.jetbrains.com/help/idea/creating-spring-boot-projects.html) (Creación de proyectos Spring Boot) en el sitio web de JetBrains.
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 
 [Azure Management Portal]: http://go.microsoft.com/fwlink/?LinkID=512959
 [Azure Sign In for IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Configuring Artifacts]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html (Configuración de artefactos)
-[Deploy Spring Boot on Linux in ACS]: /azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-linux
+[Deploy Spring Boot on Linux in AKS]: /azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-linux
 [Docker]: https://www.docker.com/
 [Publish Container with Azure Toolkit]: ./azure-toolkit-for-intellij-publish-as-docker-container.md
 [Spring Boot]: http://projects.spring.io/spring-boot/

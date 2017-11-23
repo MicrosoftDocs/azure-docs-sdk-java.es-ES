@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 6c10d3e11dd75679fca0736e02d15de1d782dcec
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: ee87b73841013eafb47d00e0cf5028d6b3ff932c
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse
 
@@ -57,7 +57,7 @@ Los siguientes pasos lo guiarán por el proceso de creación de un archivo de cr
 
    ![Cuadro de diálogo Service Principal Creation Status (Estado de creación de entidades de servicio)][A05]
 
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, haga clic en **Iniciar sesión**.
+1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure** , haga clic en **Iniciar sesión**.
 
    ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
 
@@ -73,7 +73,7 @@ Después de haber configurado los pasos en la sección anterior, el kit de herra
 
    ![Menú de Eclipse para cerrar sesión en Azure][L01]
 
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure**, haga clic en **Sí**.
+1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure** , haga clic en **Sí**.
 
    ![Cuadro de diálogo Cerrar sesión][L03]
 
@@ -95,7 +95,7 @@ Si cierra la sesión de Azure al utilizar Eclipse, debe volver a configurar el k
 
    ![Cuadro de diálogo Iniciar sesión][A08]
 
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, haga clic en **Iniciar sesión**.
+1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure** , haga clic en **Iniciar sesión**.
 
    ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
 
@@ -133,13 +133,13 @@ Después de haber configurado los pasos en la sección anterior, se cerrará aut
 
    ![Menú de Eclipse para cerrar sesión en Azure][L01]
 
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure**, haga clic en **Sí**.
+1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure** , haga clic en **Sí**.
 
    ![Cuadro de diálogo Cerrar sesión][L02]
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
 <!-- URL List -->
 

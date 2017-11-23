@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 10/19/2017
+ms.date: 11/01/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: 3e3d22cc5720346e31a096adfd935b2712aac4e9
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 40d93306b840736bd7eb860933cdbfe03c82691c
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-intellij"></a>Novedades del kit de herramientas de Azure para IntelliJ
 
@@ -63,7 +63,7 @@ El kit de herramientas de Azure para IntelliJ, versión de junio de 2016, incluy
 * **Compatibilidad con la versión 2.9.1 del SDK de Azure**. La versión más reciente del SDK de Azure ahora es el requisito previo mínimo para el kit de herramientas de Azure para IntelliJ.
 * **Ejemplos integrados**. El Kit de herramientas de Azure para IntelliJ ahora cuenta con varias aplicaciones de ejemplo para ayudar a los desarrolladores a empezar a trabajar.
 * **Integración de herramientas de HDInsight**. Las herramientas de Azure HDInsight ahora están incluidas en el Kit de herramientas de Azure para IntelliJ. Para más información, consulte [Complemento Herramientas de HDInsight para IntelliJ].
-* **Depuración remota de Java Web Apps**. El Kit de herramientas de Azure para IntelliJ ahora admite la depuración remota de aplicaciones web de Java en Azure App Service.
+* **Depuración remota de Web Apps de Java**. El Kit de herramientas de Azure para IntelliJ ahora admite la depuración remota de aplicaciones web de Java en Azure App Service.
 
 ### <a name="april-12-2016"></a>12 de abril de 2016
 El kit de herramientas de Azure para IntelliJ, versión de abril de 2016, incluye las siguientes mejoras:
@@ -74,7 +74,7 @@ El kit de herramientas de Azure para IntelliJ, versión de abril de 2016, incluy
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 

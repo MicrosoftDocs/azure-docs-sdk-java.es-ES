@@ -13,13 +13,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 10/11/2017
+ms.date: 11/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: 5a0f13e1883c1de1adb72c450c55dcb38b1520b9
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 7a4234aefd4eb33f80c1978fb84721f2dbcb2e4f
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="deploy-a-spring-boot-application-to-the-azure-app-service"></a>Implementación de una aplicación de Spring Boot en Azure App Service
 
@@ -110,7 +110,7 @@ Los siguientes pasos le guiarán por las diferentes fases de creación de una ap
 
 1. Una vez creada la aplicación web, haga clic en el icono de menú de **App Services** y, a continuación, haga clic en la aplicación web recién creada:
 
-   ![Lista de aplicaciones web][AZ06]
+   ![Lista de Web Apps][AZ06]
 
 1. Cuando aparezca la aplicación web, especifique la versión de Java. Para ello, siga los siguientes pasos:
 

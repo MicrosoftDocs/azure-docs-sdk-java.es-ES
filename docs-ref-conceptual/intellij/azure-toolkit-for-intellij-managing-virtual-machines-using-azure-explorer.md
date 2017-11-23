@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 10/19/2017
+ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 792e80fc5812430a02ba4b208c003365e400304b
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: d0fe2a90fd12d2badf277659c7ce4ee768f6943c
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Administración de máquinas virtuales mediante Azure Explorer para IntelliJ
 
@@ -89,7 +89,7 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
       ![El cuadro de diálogo Crear cuenta de almacenamiento][CR05]
 
-   * **Red virtual** y **subred**: especifica la red virtual y subred que se conectará la máquina virtual. Puede usar una red y subred existentes, o puede crear una nueva red y subred. Si selecciona **Crear nuevo**, se mostrará el cuadro de diálogo siguiente:
+   * **Red virtual** y **Subred**: especifica la red virtual y subred que se conectará la máquina virtual. Puede usar una red y subred existentes, o puede crear una nueva red y subred. Si selecciona **Crear nuevo**, se mostrará el cuadro de diálogo siguiente:
 
       ![Cuadro de diálogo Crear red virtual][CR06]
 
@@ -151,7 +151,7 @@ Para obtener más información sobre los tamaños y los precios de máquinas vir
   * [Precios de máquinas virtuales Windows]
   * [Precios de máquinas virtuales Linux]
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 

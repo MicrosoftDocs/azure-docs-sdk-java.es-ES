@@ -12,13 +12,13 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 11/01/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: ed21f4308b2f6e45f022608a2ba32fe7db6922d3
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 128995cfd9122bbd6e32f2a31c35f206b5108ad6
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a>Novedades del kit de herramientas de Azure para Eclipse
 
@@ -63,7 +63,7 @@ El kit de herramientas de Azure para Eclipse, versión de junio de 2016, incluye
 * **Compatibilidad con la versión 2.9.1 del SDK de Azure**. La versión más reciente del SDK de Azure ahora es el requisito previo mínimo para el kit de herramientas de Azure para Eclipse.
 * **Ejemplos integrados**. El Kit de herramientas de Azure para Eclipse ahora cuenta con varias aplicaciones de ejemplo para ayudar a los desarrolladores a empezar a trabajar.
 * **Integración de herramientas de HDInsight**. Las herramientas de Azure HDInsight ahora están incluidas en el Kit de herramientas de Azure para Eclipse. Para más información, consulte [Complemento Herramientas de HDInsight para Eclipse].
-* **Depuración remota de Java Web Apps**. El Kit de herramientas de Azure para Eclipse ahora admite la depuración remota de aplicaciones web de Java en Azure App Service.
+* **Depuración remota de Web Apps de Java**. El Kit de herramientas de Azure para Eclipse ahora admite la depuración remota de aplicaciones web de Java en Azure App Service.
 * **Compatibilidad con la versión Kepler de Luna.** La nueva versión mínima necesaria del IDE de Eclipse es Luna.
 
 ### <a name="april-12-2016"></a>12 de abril de 2016
@@ -270,7 +270,7 @@ Se ha publicado el complemento de Azure para Eclipse, versión preliminar de ago
 
 * En el cuadro de diálogo Filtro de Azure Access Control Service:
   * **Opción para insertar el certificado de firma** en el archivo WAR de la aplicación, para simplificar la implementación en la nube.
-  * **Opción para crear un certificado autofirmado** dentro de la interfaz de usuario del filtro ACS. Para obtener información adicional sobre el filtro de Azure Access Control Service, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
+  * **Opción para crear un certificado autofirmado** dentro de la interfaz de usuario del filtro ACS. Para obtener información adicional sobre el filtro de Access Control Service de Azure, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
 * En el asistente para proyectos de implementación de Azure (también se aplica a la página de propiedades de configuración del servidor del rol):
   * **Detección automática de la ubicación del JDK** en el equipo (que puede reemplazar si lo desea).
   * **Detección automática del tipo de servidor** al seleccionar el directorio de instalación del servidor de aplicaciones.
@@ -294,7 +294,7 @@ Se ha publicado el complemento de Azure para Eclipse, CTP de junio de 2012. Las 
   * Muchos de estos botones de la barra de herramientas de Azure se usan en [Creación de una aplicación Hola a todos para Azure en Eclipse].
 * **Bibliotecas de Azure para Java:** ahora disponibles como parte del paquete único de bibliotecas de Azure para la biblioteca de Java en Eclipse, que acompaña a la instalación del complemento y que contiene también todas las dependencias necesarias. Simplemente agregue una referencia a la biblioteca en el proyecto de Java y no necesitará descargar nada por separado. Para más información, consulte [Instalación del kit de herramientas de Azure para Eclipse].
 * **Microsoft JDBC Driver 4.0 para SQL Server está disponible durante la instalación del complemento:** durante la instalación del complemento nuevo, se puede instalar la versión más reciente de Microsoft JDBC Driver para SQL Server.
-* **Filtro de servicio de control de acceso de Azure disponible durante la instalación del complemento:** este componente nuevo, incluido como una biblioteca de Eclipse en el kit de herramientas, habilita a la aplicación web de Java para aprovecharse sin problemas de la autenticación de servicio de control de acceso (ACS) de Azure mediante varios proveedores de identidades, como Google, Live.com y Yahoo!. No necesitará escribir la lógica de autenticación personalmente, solo tiene que configurar algunas opciones y dejar que el filtro haga el trabajo pesado de habilitar a los usuarios para iniciar sesión mediante ACS. Así puede centrarse solo en escribir el código que proporciona a los usuarios acceso a los recursos basándose en su identidad, tal como lo devuelve el filtro del objeto de solicitud a la aplicación. Para obtener un tutorial sobre cómo usar el filtro de ACS, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
+* **Filtro de Azure Access Control Service disponible durante la instalación del complemento:** este componente nuevo, incluido como una biblioteca de Eclipse en el kit de herramientas, habilita a la aplicación web de Java para aprovecharse sin problemas de la autenticación de servicio de control de acceso (ACS) de Azure mediante varios proveedores de identidades, como Google, Live.com y Yahoo!. No necesitará escribir la lógica de autenticación personalmente, solo tiene que configurar algunas opciones y dejar que el filtro haga el trabajo pesado de habilitar a los usuarios para iniciar sesión mediante ACS. Así puede centrarse solo en escribir el código que proporciona a los usuarios acceso a los recursos basándose en su identidad, tal como lo devuelve el filtro del objeto de solicitud a la aplicación. Para obtener un tutorial sobre cómo usar el filtro de ACS, consulte [Autenticación de usuarios web con Azure Access Control Service mediante Eclipse].
 * **Detección automática de los requisitos previos de la versión 1.7 del SDK de Azure:** al crear un nuevo proyecto de implementación de Azure, esta versión se descargará automáticamente si no está ya instalada.
 * **Puntos de conexión de instancia:** permite el acceso directo del punto de conexión del puerto para la comunicación con instancias de rol de carga equilibrada. Se pueden agregar los puntos de conexión de instancia a través de la interfaz de usuario de los puntos de conexión, disponible en la página [Propiedades de puntos de conexión] . Esto ayuda a habilitar la depuración remota y el diagnóstico de JMX para instancias de proceso específicas que se ejecutan en la nube en escenarios con implementaciones de varias instancias. 
 * **Interfaz de usuario para componentes:** facilita a los usuarios avanzados la configuración de las dependencias del proyecto entre los roles individuales de Azure en el proyecto y otros recursos externos como los proyectos de aplicación de Java; también facilita la descripción de su lógica de implementación. Para más información, consulte [Propiedades de componentes].
@@ -316,7 +316,7 @@ Se ha publicado el complemento de Azure para Eclipse, CTP de diciembre de 2011. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
 <!-- URL List -->
 
