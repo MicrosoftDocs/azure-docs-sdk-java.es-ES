@@ -12,146 +12,146 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: f7526a49e8ba6432d6bf6af54a725a285a61fc07
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: 41bb9b8009c0cbae01fec42c56d6a74d84cc166b
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 11/18/2017
 ---
-# <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a><span data-ttu-id="ffc3c-103">Administración de máquinas virtuales con Azure Explorer para Eclipse</span><span class="sxs-lookup"><span data-stu-id="ffc3c-103">Manage virtual machines by using the Azure Explorer for Eclipse</span></span>
+# <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a><span data-ttu-id="18347-103">Administración de máquinas virtuales con Azure Explorer para Eclipse</span><span class="sxs-lookup"><span data-stu-id="18347-103">Manage virtual machines by using the Azure Explorer for Eclipse</span></span>
 
-<span data-ttu-id="ffc3c-104">Azure Explorer, que forma parte del kit de herramientas de Azure para Eclipse, proporciona a los desarrolladores de Java una solución fácil de usar para la administración de máquinas virtuales en su cuenta de Azure desde el entorno de desarrollo integrado de Eclipse (IDE).</span><span class="sxs-lookup"><span data-stu-id="ffc3c-104">The Azure Explorer, which is part of the Azure Toolkit for Eclipse, provides Java developers with an easy-to-use solution for managing virtual machines in their Azure account from inside the Eclipse integrated development environment (IDE).</span></span>
+<span data-ttu-id="18347-104">Azure Explorer, que forma parte del kit de herramientas de Azure para Eclipse, proporciona a los desarrolladores de Java una solución fácil de usar para la administración de máquinas virtuales en su cuenta de Azure desde el entorno de desarrollo integrado de Eclipse (IDE).</span><span class="sxs-lookup"><span data-stu-id="18347-104">The Azure Explorer, which is part of the Azure Toolkit for Eclipse, provides Java developers with an easy-to-use solution for managing virtual machines in their Azure account from inside the Eclipse integrated development environment (IDE).</span></span>
 
 [!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
 
 [!INCLUDE [azure-toolkit-for-eclipse-show-azure-explorer](../includes/azure-toolkit-for-eclipse-show-azure-explorer.md)]
 
-## <a name="create-a-virtual-machine-in-eclipse"></a><span data-ttu-id="ffc3c-105">Creación de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="ffc3c-105">Create a virtual machine in Eclipse</span></span>
+## <a name="create-a-virtual-machine-in-eclipse"></a><span data-ttu-id="18347-105">Creación de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="18347-105">Create a virtual machine in Eclipse</span></span>
 
-<span data-ttu-id="ffc3c-106">Para crear una máquina virtual con Azure Explorer, haga lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-106">To create a virtual machine by using the Azure Explorer, do the following:</span></span>
+<span data-ttu-id="18347-106">Para crear una máquina virtual con Azure Explorer, haga lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="18347-106">To create a virtual machine by using the Azure Explorer, do the following:</span></span>
 
-1. <span data-ttu-id="ffc3c-107">Inicie sesión en su cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="ffc3c-107">Sign in to your Azure account by using the [Sign-in instructions for the Azure Toolkit for Eclipse].</span></span>
+1. <span data-ttu-id="18347-107">Inicie sesión en su cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="18347-107">Sign in to your Azure account by using the [Sign-in instructions for the Azure Toolkit for Eclipse].</span></span>
 
-1. <span data-ttu-id="ffc3c-108">En la vista **Azure Explorer**, expanda el nodo **Azure**, haga clic con el botón derecho en **Virtual Machines** y, luego, en **Crear máquina virtual**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-108">In the **Azure Explorer** view, expand the **Azure** node, right-click **Virtual Machines**, and then click **Create VM**.</span></span>
+1. <span data-ttu-id="18347-108">En la vista **Azure Explorer**, expanda el nodo **Azure**, haga clic con el botón derecho en **Virtual Machines** y, luego, en **Crear máquina virtual**.</span><span class="sxs-lookup"><span data-stu-id="18347-108">In the **Azure Explorer** view, expand the **Azure** node, right-click **Virtual Machines**, and then click **Create VM**.</span></span>
 
    ![Comando Crear máquina virtual][CR01]  
 
-   <span data-ttu-id="ffc3c-110">El Asistente **para crear nueva máquina virtual** se abrirá.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-110">The **Create new Virtual Machine** wizard opens.</span></span>
+   <span data-ttu-id="18347-110">El Asistente **para crear nueva máquina virtual** se abrirá.</span><span class="sxs-lookup"><span data-stu-id="18347-110">The **Create new Virtual Machine** wizard opens.</span></span>
 
-1. <span data-ttu-id="ffc3c-111">En la ventana **Elegir una suscripción**, seleccione su suscripción y, luego, haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-111">In the **Choose a Subscription** window, select your subscription, and then click **Next**.</span></span>
+1. <span data-ttu-id="18347-111">En la ventana **Elegir una suscripción**, seleccione su suscripción y, luego, haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="18347-111">In the **Choose a Subscription** window, select your subscription, and then click **Next**.</span></span>
 
    ![Ventana Elegir una suscripción][CR02]
 
-1. <span data-ttu-id="ffc3c-113">En la ventana **Seleccionar una imagen de máquina virtual**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-113">In the **Select a Virtual Machine Image** window, enter the following information:</span></span>
+1. <span data-ttu-id="18347-113">En la ventana **Seleccionar una imagen de máquina virtual**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="18347-113">In the **Select a Virtual Machine Image** window, enter the following information:</span></span>
 
-   * <span data-ttu-id="ffc3c-114">**Ubicación**: especifica la ubicación donde se creará la máquina virtual (por ejemplo, *oeste de EE. UU.*).</span><span class="sxs-lookup"><span data-stu-id="ffc3c-114">**Location**: Specifies where your virtual machine will be created (for example, *West US*).</span></span>
+   * <span data-ttu-id="18347-114">**Ubicación**: especifica la ubicación donde se creará la máquina virtual (por ejemplo, *oeste de EE. UU.*).</span><span class="sxs-lookup"><span data-stu-id="18347-114">**Location**: Specifies where your virtual machine will be created (for example, *West US*).</span></span>
 
-   * <span data-ttu-id="ffc3c-115">**Publicador**: especifica el publicador que creó la imagen que se usará para crear la máquina virtual (por ejemplo, *Microsoft*).</span><span class="sxs-lookup"><span data-stu-id="ffc3c-115">**Publisher**: Specifies the publisher that created the image you'll use to create your virtual machine (for example, *Microsoft*).</span></span>
+   * <span data-ttu-id="18347-115">**Publicador**: especifica el publicador que creó la imagen que se usará para crear la máquina virtual (por ejemplo, *Microsoft*).</span><span class="sxs-lookup"><span data-stu-id="18347-115">**Publisher**: Specifies the publisher that created the image you'll use to create your virtual machine (for example, *Microsoft*).</span></span>
 
-   * <span data-ttu-id="ffc3c-116">**Oferta**: especifica la oferta de máquina virtual que quiere usar del publicador seleccionado (por ejemplo, *JDK*).</span><span class="sxs-lookup"><span data-stu-id="ffc3c-116">**Offer**: Specifies the virtual machine offering to use from the selected publisher (for example, *JDK*).</span></span>
+   * <span data-ttu-id="18347-116">**Oferta**: especifica la oferta de máquina virtual que quiere usar del publicador seleccionado (por ejemplo, *JDK*).</span><span class="sxs-lookup"><span data-stu-id="18347-116">**Offer**: Specifies the virtual machine offering to use from the selected publisher (for example, *JDK*).</span></span>
 
-   * <span data-ttu-id="ffc3c-117">**SKU**: especifica la referencia de almacén (SKU) que quiere usar de la oferta seleccionada (por ejemplo, *JDK_8*).</span><span class="sxs-lookup"><span data-stu-id="ffc3c-117">**Sku**: Specifies the stockkeeping unit (SKU) to use from the selected offering (for example, *JDK_8*).</span></span>
+   * <span data-ttu-id="18347-117">**SKU**: especifica la referencia de almacén (SKU) que quiere usar de la oferta seleccionada (por ejemplo, *JDK_8*).</span><span class="sxs-lookup"><span data-stu-id="18347-117">**Sku**: Specifies the stockkeeping unit (SKU) to use from the selected offering (for example, *JDK_8*).</span></span>
 
-   * <span data-ttu-id="ffc3c-118">**N.º de versión**: especifica la versión que quiere usar de la SKU seleccionada.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-118">**Version #**: Specifies which version of the selected SKU to use.</span></span>
+   * <span data-ttu-id="18347-118">**N.º de versión**: especifica la versión que quiere usar de la SKU seleccionada.</span><span class="sxs-lookup"><span data-stu-id="18347-118">**Version #**: Specifies which version of the selected SKU to use.</span></span>
 
    ![La ventana Seleccionar una imagen de máquina virtual][CR03]
 
-1. <span data-ttu-id="ffc3c-120">Haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-120">Click **Next**.</span></span>
+1. <span data-ttu-id="18347-120">Haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="18347-120">Click **Next**.</span></span>
 
-1. <span data-ttu-id="ffc3c-121">En la pantalla **Configuración básica de máquina virtual**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-121">In the **Virtual Machine Basic Settings** window, enter the following information:</span></span>
+1. <span data-ttu-id="18347-121">En la pantalla **Configuración básica de máquina virtual**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="18347-121">In the **Virtual Machine Basic Settings** window, enter the following information:</span></span>
 
-   * <span data-ttu-id="ffc3c-122">**Nombre de máquina virtual**: especifica el nombre de la nueva máquina virtual, que debe comenzar con una letra y contener solo letras, números y guiones.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-122">**Virtual Machine Name**: Specifies the name for your new virtual machine, which must start with a letter and contain only letters, numbers, and hyphens.</span></span>
+   * <span data-ttu-id="18347-122">**Nombre de máquina virtual**: especifica el nombre de la nueva máquina virtual, que debe comenzar con una letra y contener solo letras, números y guiones.</span><span class="sxs-lookup"><span data-stu-id="18347-122">**Virtual Machine Name**: Specifies the name for your new virtual machine, which must start with a letter and contain only letters, numbers, and hyphens.</span></span>
 
-   * <span data-ttu-id="ffc3c-123">**Tamaño**: especifica el número de núcleos y la memoria que se asignará para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-123">**Size**: Specifies the number of cores and memory to allocate for your virtual machine.</span></span>
+   * <span data-ttu-id="18347-123">**Tamaño**: especifica el número de núcleos y la memoria que se asignará para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-123">**Size**: Specifies the number of cores and memory to allocate for your virtual machine.</span></span>
 
-   * <span data-ttu-id="ffc3c-124">**Nombre de usuario**: especifica la cuenta de administrador que se creará para administrar la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-124">**User name**: Specifies the administrator account to create for managing your virtual machine.</span></span>
+   * <span data-ttu-id="18347-124">**Nombre de usuario**: especifica la cuenta de administrador que se creará para administrar la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-124">**User name**: Specifies the administrator account to create for managing your virtual machine.</span></span>
 
-   * <span data-ttu-id="ffc3c-125">**Contraseña** y **Confirmar**: especifica la contraseña de la cuenta de administrador.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-125">**Password** and **Confirm**: Specifies the password for your administrator account.</span></span>
+   * <span data-ttu-id="18347-125">**Contraseña** y **Confirmar**: especifica la contraseña de la cuenta de administrador.</span><span class="sxs-lookup"><span data-stu-id="18347-125">**Password** and **Confirm**: Specifies the password for your administrator account.</span></span>
 
    ![La ventana Configuración básica de máquina virtual][CR04]
 
-1. <span data-ttu-id="ffc3c-127">Haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-127">Click **Next**.</span></span>
+1. <span data-ttu-id="18347-127">Haga clic en **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="18347-127">Click **Next**.</span></span>
 
-1. <span data-ttu-id="ffc3c-128">En la ventana **Crear una nueva cuenta de almacenamiento**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-128">In the **Create New Storage Account** window, enter the following information:</span></span>
+1. <span data-ttu-id="18347-128">En la ventana **Crear una nueva cuenta de almacenamiento**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="18347-128">In the **Create New Storage Account** window, enter the following information:</span></span>
 
-   * <span data-ttu-id="ffc3c-129">**Grupo de recursos**: especifica el grupo de recursos para su máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-129">**Resource Group**: Specifies the resource group for your virtual machine.</span></span> <span data-ttu-id="ffc3c-130">Seleccione una de las siguientes opciones:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-130">Select one of the following options:</span></span>
-      * <span data-ttu-id="ffc3c-131">**Crear nuevo**: especifica que quiere crear un nuevo grupo de recursos.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-131">**Create new**: Specifies that you want to create a new resource group.</span></span>
-      * <span data-ttu-id="ffc3c-132">**Usar existente**: especifica que desea seleccionar un grupo de recursos que ya está asociado a la cuenta de Azure.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-132">**Use existing**: Specifies that you want to select a resource group that is already associated with your Azure account.</span></span>
+   * <span data-ttu-id="18347-129">**Grupo de recursos**: especifica el grupo de recursos para su máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-129">**Resource Group**: Specifies the resource group for your virtual machine.</span></span> <span data-ttu-id="18347-130">Seleccione una de las siguientes opciones:</span><span class="sxs-lookup"><span data-stu-id="18347-130">Select one of the following options:</span></span>
+      * <span data-ttu-id="18347-131">**Crear nuevo**: especifica que quiere crear un nuevo grupo de recursos.</span><span class="sxs-lookup"><span data-stu-id="18347-131">**Create new**: Specifies that you want to create a new resource group.</span></span>
+      * <span data-ttu-id="18347-132">**Usar existente**: especifica que desea seleccionar un grupo de recursos que ya está asociado a la cuenta de Azure.</span><span class="sxs-lookup"><span data-stu-id="18347-132">**Use existing**: Specifies that you want to select a resource group that is already associated with your Azure account.</span></span>
 
       ![Cuadro de diálogo Crear una nueva cuenta de almacenamiento][CR05]
 
-   * <span data-ttu-id="ffc3c-134">**Cuenta de almacenamiento**: especifica la cuenta de almacenamiento que se usará para almacenar la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-134">**Storage account**: Specifies the storage account to use for storing your virtual machine.</span></span> <span data-ttu-id="ffc3c-135">Puede usar una cuenta de almacenamiento existente o crear una nueva.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-135">You can use an existing storage account or create a new account.</span></span>
+   * <span data-ttu-id="18347-134">**Cuenta de almacenamiento**: especifica la cuenta de almacenamiento que se usará para almacenar la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-134">**Storage account**: Specifies the storage account to use for storing your virtual machine.</span></span> <span data-ttu-id="18347-135">Puede usar una cuenta de almacenamiento existente o crear una nueva.</span><span class="sxs-lookup"><span data-stu-id="18347-135">You can use an existing storage account or create a new account.</span></span>
 
-   * <span data-ttu-id="ffc3c-136">**Red virtual** y **subred**: especifica la red virtual y subred que se conectará la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-136">**Virtual Network** and **Subnet**: Specifies the virtual network and subnet that your virtual machine will connect to.</span></span> <span data-ttu-id="ffc3c-137">Puede usar una red y subred existentes, o puede crear una nueva red y subred.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-137">You can use an existing network and subnet, or you can create a new network and subnet.</span></span> <span data-ttu-id="ffc3c-138">Si selecciona **Crear nuevo**, se mostrará el cuadro de diálogo siguiente:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-138">If you select **Create new**, the following dialog box is displayed:</span></span>
+   * <span data-ttu-id="18347-136">**Red virtual** y **Subred**: especifica la red virtual y subred que se conectará la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-136">**Virtual Network** and **Subnet**: Specifies the virtual network and subnet that your virtual machine will connect to.</span></span> <span data-ttu-id="18347-137">Puede usar una red y subred existentes, o puede crear una nueva red y subred.</span><span class="sxs-lookup"><span data-stu-id="18347-137">You can use an existing network and subnet, or you can create a new network and subnet.</span></span> <span data-ttu-id="18347-138">Si selecciona **Crear nuevo**, se mostrará el cuadro de diálogo siguiente:</span><span class="sxs-lookup"><span data-stu-id="18347-138">If you select **Create new**, the following dialog box is displayed:</span></span>
 
       ![Cuadro de diálogo Crear una red virtual nueva][CR06]
 
-1. <span data-ttu-id="ffc3c-140">En la ventana **Recursos asociados**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-140">In the **Associated Resources** window, enter the following information:</span></span>
+1. <span data-ttu-id="18347-140">En la ventana **Recursos asociados**, escriba la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="18347-140">In the **Associated Resources** window, enter the following information:</span></span>
 
-   * <span data-ttu-id="ffc3c-141">**Dirección IP pública**: especifica una dirección IP externa para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-141">**Public IP address**: Specifies an external-facing IP address for your virtual machine.</span></span> <span data-ttu-id="ffc3c-142">Puede crear una dirección IP o, si la máquina virtual no tiene una dirección IP pública, puede seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-142">You can choose to create a new IP address or, if your virtual machine will not have a public IP address, you can select **(None)**.</span></span>
+   * <span data-ttu-id="18347-141">**Dirección IP pública**: especifica una dirección IP externa para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-141">**Public IP address**: Specifies an external-facing IP address for your virtual machine.</span></span> <span data-ttu-id="18347-142">Puede crear una dirección IP o, si la máquina virtual no tiene una dirección IP pública, puede seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="18347-142">You can choose to create a new IP address or, if your virtual machine will not have a public IP address, you can select **(None)**.</span></span>
 
-   * <span data-ttu-id="ffc3c-143">**Grupo de seguridad de red**: especifica un firewall de red opcional para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-143">**Network security group**: Specifies an optional networking firewall for your virtual machine.</span></span> <span data-ttu-id="ffc3c-144">Puede seleccionar un firewall o, si la máquina virtual no utiliza un firewall, puede seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-144">You can select an existing firewall or, if your virtual machine will not use a network firewall, you can select **(None)**.</span></span>
+   * <span data-ttu-id="18347-143">**Grupo de seguridad de red**: especifica un firewall de red opcional para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-143">**Network security group**: Specifies an optional networking firewall for your virtual machine.</span></span> <span data-ttu-id="18347-144">Puede seleccionar un firewall o, si la máquina virtual no utiliza un firewall, puede seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="18347-144">You can select an existing firewall or, if your virtual machine will not use a network firewall, you can select **(None)**.</span></span>
 
-   * <span data-ttu-id="ffc3c-145">**Conjunto de disponibilidad**: especifica un conjunto de disponibilidad opcional al que puede pertenecer su máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-145">**Availability set**: Specifies an optional availability set that your virtual machine can belong to.</span></span> <span data-ttu-id="ffc3c-146">Puede seleccionar un conjunto de disponibilidad, crear uno o, si la máquina virtual no pertenece a un conjunto de disponibilidad, seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-146">You can select an existing availability set or create a new availability set or, if your virtual machine will not belong to an availability set, you can select **(None)**.</span></span>
+   * <span data-ttu-id="18347-145">**Conjunto de disponibilidad**: especifica un conjunto de disponibilidad opcional al que puede pertenecer su máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="18347-145">**Availability set**: Specifies an optional availability set that your virtual machine can belong to.</span></span> <span data-ttu-id="18347-146">Puede seleccionar un conjunto de disponibilidad, crear uno o, si la máquina virtual no pertenece a un conjunto de disponibilidad, seleccionar **(Ninguno)**.</span><span class="sxs-lookup"><span data-stu-id="18347-146">You can select an existing availability set or create a new availability set or, if your virtual machine will not belong to an availability set, you can select **(None)**.</span></span>
 
    ![La ventana Recursos asociados][CR07]
 
-1. <span data-ttu-id="ffc3c-148">Haga clic en **Finalizar**</span><span class="sxs-lookup"><span data-stu-id="ffc3c-148">Click **Finish**.</span></span>  
+1. <span data-ttu-id="18347-148">Haga clic en **Finalizar**</span><span class="sxs-lookup"><span data-stu-id="18347-148">Click **Finish**.</span></span>  
 
-   <span data-ttu-id="ffc3c-149">La nueva máquina virtual aparece en la ventana de la herramienta Azure Explorer.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-149">Your new virtual machine is displayed in the Azure Explorer tool window.</span></span>
+   <span data-ttu-id="18347-149">La nueva máquina virtual aparece en la ventana de la herramienta Azure Explorer.</span><span class="sxs-lookup"><span data-stu-id="18347-149">Your new virtual machine is displayed in the Azure Explorer tool window.</span></span>
 
    ![Nueva máquina virtual][CR08]
 
-## <a name="restart-a-virtual-machine-in-eclipse"></a><span data-ttu-id="ffc3c-151">Reinicio de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="ffc3c-151">Restart a virtual machine in Eclipse</span></span>
+## <a name="restart-a-virtual-machine-in-eclipse"></a><span data-ttu-id="18347-151">Reinicio de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="18347-151">Restart a virtual machine in Eclipse</span></span>
 
-<span data-ttu-id="ffc3c-152">Para reiniciar una máquina virtual mediante Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-152">To restart a virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
+<span data-ttu-id="18347-152">Para reiniciar una máquina virtual mediante Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="18347-152">To restart a virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
 
-1. <span data-ttu-id="ffc3c-153">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Reiniciar**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-153">In the **Azure Explorer** view, right-click the virtual machine, and then select **Restart**.</span></span>
+1. <span data-ttu-id="18347-153">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Reiniciar**.</span><span class="sxs-lookup"><span data-stu-id="18347-153">In the **Azure Explorer** view, right-click the virtual machine, and then select **Restart**.</span></span>
 
    ![El comando de reinicio de máquina virtual][RE01]
 
-1. <span data-ttu-id="ffc3c-155">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-155">In the confirmation window, click **Yes**.</span></span>
+1. <span data-ttu-id="18347-155">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="18347-155">In the confirmation window, click **Yes**.</span></span>
 
    ![Ventana de confirmación de Reiniciar][RE02]
 
-## <a name="shut-down-a-virtual-machine-in-eclipse"></a><span data-ttu-id="ffc3c-157">Apagado de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="ffc3c-157">Shut down a virtual machine in Eclipse</span></span>
+## <a name="shut-down-a-virtual-machine-in-eclipse"></a><span data-ttu-id="18347-157">Apagado de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="18347-157">Shut down a virtual machine in Eclipse</span></span>
 
-<span data-ttu-id="ffc3c-158">Para apagar una máquina virtual en funcionamiento con Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-158">To shut down a running virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
+<span data-ttu-id="18347-158">Para apagar una máquina virtual en funcionamiento con Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="18347-158">To shut down a running virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
 
-1. <span data-ttu-id="ffc3c-159">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Apagar**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-159">In the **Azure Explorer** view, right-click the virtual machine, and then select **Shutdown**.</span></span>
+1. <span data-ttu-id="18347-159">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Apagar**.</span><span class="sxs-lookup"><span data-stu-id="18347-159">In the **Azure Explorer** view, right-click the virtual machine, and then select **Shutdown**.</span></span>
 
    ![El comando de apagado de máquina virtual][SH01]
 
-1. <span data-ttu-id="ffc3c-161">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-161">In the confirmation window, click **Yes**.</span></span>
+1. <span data-ttu-id="18347-161">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="18347-161">In the confirmation window, click **Yes**.</span></span>
 
    ![Ventana de confirmación de apagado de máquina virtual][SH02]
 
-## <a name="delete-a-virtual-machine-in-eclipse"></a><span data-ttu-id="ffc3c-163">Eliminación de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="ffc3c-163">Delete a virtual machine in Eclipse</span></span>
+## <a name="delete-a-virtual-machine-in-eclipse"></a><span data-ttu-id="18347-163">Eliminación de una máquina virtual en Eclipse</span><span class="sxs-lookup"><span data-stu-id="18347-163">Delete a virtual machine in Eclipse</span></span>
 
-<span data-ttu-id="ffc3c-164">Para eliminar una máquina virtual mediante Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-164">To delete a virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
+<span data-ttu-id="18347-164">Para eliminar una máquina virtual mediante Azure Explorer en Eclipse, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="18347-164">To delete a virtual machine by using the Azure Explorer in Eclipse, do the following:</span></span>
 
-1. <span data-ttu-id="ffc3c-165">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Eliminar**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-165">In the **Azure Explorer** view, right-click the virtual machine, and then select **Delete**.</span></span>
+1. <span data-ttu-id="18347-165">En la vista **Azure Explorer**, haga clic con el botón derecho en la máquina virtual y elija **Eliminar**.</span><span class="sxs-lookup"><span data-stu-id="18347-165">In the **Azure Explorer** view, right-click the virtual machine, and then select **Delete**.</span></span>
 
    ![El comando de eliminación de máquina virtual][DE01]
 
-1. <span data-ttu-id="ffc3c-167">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="ffc3c-167">In the confirmation window, click **Yes**.</span></span>
+1. <span data-ttu-id="18347-167">En la ventana confirmación, haga clic en **Sí**.</span><span class="sxs-lookup"><span data-stu-id="18347-167">In the confirmation window, click **Yes**.</span></span>
 
    ![Ventana de confirmación de eliminación de máquina virtual][DE02]
 
-## <a name="next-steps"></a><span data-ttu-id="ffc3c-169">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="ffc3c-169">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="18347-169">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="18347-169">Next steps</span></span>
 
-<span data-ttu-id="ffc3c-170">Para obtener más información sobre los tamaños y los precios de máquinas virtuales de Azure, consulte los siguientes vínculos:</span><span class="sxs-lookup"><span data-stu-id="ffc3c-170">For more information about Azure virtual-machine sizes and pricing, see the following resources:</span></span>
+<span data-ttu-id="18347-170">Para obtener más información sobre los tamaños y los precios de máquinas virtuales de Azure, consulte los siguientes vínculos:</span><span class="sxs-lookup"><span data-stu-id="18347-170">For more information about Azure virtual-machine sizes and pricing, see the following resources:</span></span>
 
-* <span data-ttu-id="ffc3c-171">Tamaños de máquinas virtuales de Azure</span><span class="sxs-lookup"><span data-stu-id="ffc3c-171">Azure virtual-machine sizes</span></span>
-  * <span data-ttu-id="ffc3c-172">[Tamaños de las máquinas virtuales Windows en Azure]</span><span class="sxs-lookup"><span data-stu-id="ffc3c-172">[Sizes for Windows virtual machines in Azure]</span></span>
-  * <span data-ttu-id="ffc3c-173">[Tamaños de las máquinas virtuales Linux en Azure]</span><span class="sxs-lookup"><span data-stu-id="ffc3c-173">[Sizes for Linux virtual machines in Azure]</span></span>
-* <span data-ttu-id="ffc3c-174">Precios de máquinas virtuales de Azure</span><span class="sxs-lookup"><span data-stu-id="ffc3c-174">Azure virtual-machine pricing</span></span>
-  * <span data-ttu-id="ffc3c-175">[Precios de máquinas virtuales Windows]</span><span class="sxs-lookup"><span data-stu-id="ffc3c-175">[Windows virtual-machine pricing]</span></span>
-  * <span data-ttu-id="ffc3c-176">[Precios de máquinas virtuales Linux]</span><span class="sxs-lookup"><span data-stu-id="ffc3c-176">[Linux virtual-machine pricing]</span></span>
+* <span data-ttu-id="18347-171">Tamaños de máquinas virtuales de Azure</span><span class="sxs-lookup"><span data-stu-id="18347-171">Azure virtual-machine sizes</span></span>
+  * <span data-ttu-id="18347-172">[Tamaños de las máquinas virtuales Windows en Azure]</span><span class="sxs-lookup"><span data-stu-id="18347-172">[Sizes for Windows virtual machines in Azure]</span></span>
+  * <span data-ttu-id="18347-173">[Tamaños de las máquinas virtuales Linux en Azure]</span><span class="sxs-lookup"><span data-stu-id="18347-173">[Sizes for Linux virtual machines in Azure]</span></span>
+* <span data-ttu-id="18347-174">Precios de máquinas virtuales de Azure</span><span class="sxs-lookup"><span data-stu-id="18347-174">Azure virtual-machine pricing</span></span>
+  * <span data-ttu-id="18347-175">[Precios de máquinas virtuales Windows]</span><span class="sxs-lookup"><span data-stu-id="18347-175">[Windows virtual-machine pricing]</span></span>
+  * <span data-ttu-id="18347-176">[Precios de máquinas virtuales Linux]</span><span class="sxs-lookup"><span data-stu-id="18347-176">[Linux virtual-machine pricing]</span></span>
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
 <!-- URL List -->
 
