@@ -18,49 +18,29 @@ metadata:
 sections:
   - items:
       - type: markdown
-        text: |
-          [Spring Framework](http://spring.io/) es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot](https://projects.spring.io/spring-boot/), que proporciona un enfoque simplificado para crear aplicaciones de Java independientes. Los programadores pueden combinar estas tecnologías con Microsoft Azure para crear aplicaciones eficaces basadas en la nube.
-          Para ayudar a los desarrolladores a empezar con Spring Boot, puede encontrar varios paquetes de ejemplo de Spring Boot en <https://github.com/spring-guides/>. Además de elegir de la lista de proyectos básicos de Spring Boot, **[Spring Initializr]** ayuda a los desarrolladores en los primeros pasos para crear aplicaciones de Spring Boot personalizadas.
+        text: '[Spring Framework](http://spring.io/) es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones a nivel empresarial. Uno de los proyectos más populares basados en esta plataforma es [Spring Boot](https://projects.spring.io/spring-boot/), que ofrece un método simplificado para crear aplicaciones Java independientes. Con la información de este sitio web, los programadores pueden combinar estas tecnologías con Microsoft Azure para crear aplicaciones eficaces basadas en la nube.'
   - title: Introducción
     items:
-      - type: paragraph
+      - type: markdown
         text: Introducción al desarrollo de aplicaciones con Spring Framework y Microsoft Azure mediante el uso de los siguientes recursos.
       - type: list
-        style: cards
-        className: cardsM
-        columns: 2
+        style: unordered
         items:
-          - href: deploy-spring-boot-java-web-app-on-azure.md
-            html: <p>Implementación de una aplicación de Spring Boot en Azure App Service</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-            title: Implementación de una aplicación de Spring Boot en Azure App Service
-          - href: 'https://spring.io/'
-            html: <p>Spring Framework</p>
-            image:
-              src: 'https://docs.microsoft.com/java/azure/spring-framework/media/index/i_spring_logo.png'
-            title: Spring Framework
+          - html: <a href="/java/azure/spring-framework/deploy-spring-boot-java-web-app-on-azure">Implementación de una aplicación de Spring Boot en Azure App Service</a>
+          - html: <a href="/java/azure/spring-framework/deploy-spring-boot-java-app-with-maven-plugin">Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en Azure</a>
   - title: Documentación oficial de Spring
     items:
       - type: list
-        style: cards
-        className: cardsM
-        columns: 2
+        style: unordered
         items:
-          - href: 'https://spring.io/docs'
-            html: <p>Aprender Spring</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_reference.svg'
-            title: Aprender Spring
-          - href: 'https://spring.io/docs/reference'
-            html: <p>Documentación de referencia</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
-            title: Documentación de referencia
+          - html: '<a href="https://spring.io/">Spring Framework</a>'
+          - html: '<a href="https://spring.io/docs">Aprender Spring</a>'
+          - html: '<a href="https://spring.io/docs/reference">Documentación de referencia</a>'
   - title: Muestras
     items:
       - type: list
         style: unordered
         items:
+          - html: '<a href="https://start.spring.io/">Spring Initializr</a>'
           - html: '<a href="https://github.com/spring-guides/">Guías de Spring</a>'
           - html: '<a href="https://github.com/Microsoft/azure-spring-boot/">Iniciadores de Spring Boot para Azure</a>'

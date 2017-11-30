@@ -17,9 +17,9 @@
           href: deploy-spring-boot-java-app-using-fabric8-maven-plugin.md
     - name: Procedimiento
       items:
-        - name: Configuración de una aplicación Spring Boot Initializer para usar Redis Cache
+        - name: Configuración de una app de Spring Boot Initializer con Redis Cache
           href: configure-spring-boot-initializer-java-app-with-redis-cache.md
-        - name: Uso de Spring Boot Starter con una API de DocumentDB para Azure Cosmos DB
+        - name: Uso de la utilidad Spring Boot Starter con Azure Cosmos DB
           href: configure-spring-boot-starter-java-app-with-cosmos-db.md
         - name: Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en contenedor en Azure
           href: deploy-containerized-spring-boot-java-app-with-maven-plugin.md
