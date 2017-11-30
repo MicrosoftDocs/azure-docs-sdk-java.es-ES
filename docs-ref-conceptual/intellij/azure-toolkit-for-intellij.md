@@ -12,20 +12,20 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 10/19/2017
+ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: dc93b0b490eb61baa2b7cf86c7df7ac13925305f
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 630bb80190b8821778d1855d5edf5f943b14d6d1
+ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="azure-toolkit-for-intellij"></a>Kit de herramientas de Azure para IntelliJ
-El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de IntelliJ. Es un proyecto de código abierto, cuyo código fuente está disponible con la [licencia MIT desde el sitio del proyecto](https://github.com/microsoft/azure-tools-for-java).
+El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de IntelliJ.
 
 > [!NOTE]
-> También hay un kit de herramientas de Azure para el IDE de Eclipse. Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse.md).
 > 
+> También hay un kit de herramientas de Azure para el IDE de Eclipse. Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse.md).
 > 
 
 ## <a name="get-started-with-the-azure-toolkit-for-intellij"></a>Introducción al kit de herramientas de Azure para IntelliJ
@@ -67,7 +67,12 @@ Para más información sobre el Kit de herramientas de Azure para IntelliJ, cons
 
 Para más información sobre el uso de Java con Azure, visite el [Centro para desarrolladores de Java de Azure](https://azure.microsoft.com/develop/java/) y consulte las [herramientas de Java para Visual Studio Team Services](https://java.visualstudio.com/).
 
-<!-- [!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)] -->
+> [!NOTE]
+> 
+> El Kit de herramientas de Azure para IntelliJ es un proyecto de código abierto, cuyo código fuente está disponible con la [licencia MIT del sitio del proyecto en GitHub](https://github.com/microsoft/azure-tools-for-java).
+> 
+
+<!-- [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)] -->
 
 <!-- URL List -->
 

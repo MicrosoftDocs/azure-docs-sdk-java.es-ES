@@ -13,22 +13,22 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 10/11/2017
+ms.date: 11/01/2017
 ms.author: asirveda;robmcm
 ms.custom: mvc
-ms.openlocfilehash: 44c20e9084d53fa366137fc191726aaa4be177f2
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 7f72a0eaeb932b400cd12a3ccc43706e890aebf6
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service
 
-**[Spring Framework]** es un popular marco de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de API, móviles y web. Este tutorial utiliza una aplicación de ejemplo creada mediante [Spring arranque], un enfoque basado en la convención para usar Spring para empezar a trabajar rápidamente.
+**[Spring Framework]** es un popular marco de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de API, móviles y web. Este tutorial utiliza una aplicación de ejemplo creada mediante [Spring Boot], un enfoque basado en la convención para usar Spring para empezar a trabajar rápidamente.
 
 **[Kubernetes]** y **[cliente de Docker]** son soluciones de código abierto que ayudan a los desarrolladores a automatizar la implementación, el escalado y la administración de sus aplicaciones que se ejecutan en contenedores.
 
-Este tutorial le guía en la combinación de estas dos populares tecnologías de código abierto para desarrollar e implementar una aplicación Spring Boot en Microsoft Azure. Más en concreto, *[Spring arranque]* se usa para el desarrollo de aplicaciones, *[Kubernetes]* para la implementación de contenedores y [Azure Container Service (ACS)] para hospedar su aplicación.
+Este tutorial le guía en la combinación de estas dos populares tecnologías de código abierto para desarrollar e implementar una aplicación Spring Boot en Microsoft Azure. Concretamente, *[Spring Boot]* se usa para el desarrollo de aplicaciones, *[Kubernetes]* para la implementación de contenedores y [Azure Container Service (AKS)] para hospedar la aplicación.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -189,7 +189,7 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
 >
 > `docker push wingtiptoysregistry.azurecr.io/gs-spring-boot-docker`
 
-## <a name="create-a-kubernetes-cluster-on-acs-using-the-azure-cli"></a>Creación de un clúster de Kubernetes en ACS mediante la CLI de Azure
+## <a name="create-a-kubernetes-cluster-on-aks-using-the-azure-cli"></a>Creación de un clúster de Kubernetes en AKS mediante la CLI de Azure
 
 1. Cree un clúster de Kubernetes en Azure Container Service. El siguiente comando crea un clúster de *Kubernetes* en el grupo de recursos *wingtiptoys-kubernetes*, con *wingtiptoys-objeto containerservice* como nombre de clúster y *wingtiptoys-kubernetes* como prefijo de DNS:
    ```azurecli
@@ -326,7 +326,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 <!-- URL List -->
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
-[Azure Container Service (ACS)]: https://azure.microsoft.com/services/container-service/
+[Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
 [Centro para desarrolladores de Java de Azure]: https://azure.microsoft.com/develop/java/
 [Azure portal]: https://portal.azure.com/
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal
@@ -340,7 +340,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Kubernetes Command-Line Interface (kubectl)]: https://kubernetes.io/docs/user-guide/kubectl-overview/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
-[Spring arranque]: http://projects.spring.io/spring-boot/
+[Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Boot on Docker Getting Started]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
 [Configure Service Accounts for Pods]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/ (Configurar cuentas de servicio para pods)

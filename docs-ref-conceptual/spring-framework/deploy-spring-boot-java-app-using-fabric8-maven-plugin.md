@@ -13,20 +13,20 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 10/11/2017
+ms.date: 11/01/2017
 ms.author: yuwzho;robmcm
 ms.custom: 
-ms.openlocfilehash: 4a1ed7f4bfe7f3fe9483e5822912035eded72887
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: 6c0e0e233b44b2b54e869b443edf3a255e7fbfb4
+ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven
 
 **[Fabric8]** es una solución de código abierto basada en **[Kubernetes]** que permite que los desarrolladores creen aplicaciones en los contenedores Linux.
 
-En este tutorial se explica cómo usar el complemento Fabric8 para Maven para desarrollar e implementar una aplicación en un host Linux en [Azure Container Service (ACS)].
+En este tutorial se explica cómo usar el complemento Fabric8 para Maven para desarrollar e implementar una aplicación en un host Linux en [Azure Container Service (AKS)].
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -524,7 +524,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 <!-- URL List -->
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
-[Azure Container Service (ACS)]: https://azure.microsoft.com/services/container-service/
+[Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
 [Centro para desarrolladores de Java de Azure]: https://azure.microsoft.com/develop/java/
 [Azure portal]: https://portal.azure.com/
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal

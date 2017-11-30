@@ -12,17 +12,24 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 09/11/2017
+ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 59a8bfb6ab4db8ea8c6c9025ca3ced8a13192628
-ms.sourcegitcommit: 256044d7cbce16dcb8dc4e195d0f63c10cb44d4e
+ms.openlocfilehash: 1f06b02a4c0b23d98ecd394d42f41f7148b6c8e8
+ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="installing-the-azure-toolkit-for-eclipse"></a>Instalación del Kit de herramientas de Azure para Eclipse
 
-El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones de Azure fácilmente con el entorno de desarrollo de Eclipse. El kit de herramientas de Azure para Eclipse es un proyecto de código abierto. El código fuente está disponible bajo la licencia MIT en <https://github.com/microsoft/azure-tools-for-java>.
+El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones de Azure fácilmente con el entorno de desarrollo de Eclipse.
+
+> [!NOTE] 
+> 
+> El kit de herramientas de Azure para Eclipse es un proyecto de código abierto, cuyo código fuente está disponible con la licencia MIT del sitio del proyecto en GitHub en la siguiente dirección URL: 
+> 
+> <https://github.com/microsoft/azure-tools-for-java> 
+> 
 
 En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azure para Eclipse.
 
@@ -42,17 +49,17 @@ En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azur
    
    ![Instalación del Kit de herramientas de Azure para Eclipse][02]
 
-1. Si expande el **kit de herramientas de Azure para Eclipse**, verá una lista de elementos como la del siguiente ejemplo:
-   
-   * **Complemento de Application Insights para Java**: este componente permite usar los servicios de análisis y registro de telemetría de Azure para sus aplicaciones e instancias de servidor.
-   * **Filtro de Azure Access Control Service**: este componente proporciona compatibilidad para autenticar a los usuarios de aplicaciones con ACS de Azure, lo que permite poner en práctica escenarios de inicio de sesión único y externalizar la lógica de identidades de la aplicación.
-   * **Complemento común de Azure**: este componente proporciona la funcionalidad habitual necesaria para otros componentes del kit de herramientas.
-   * **Explorador de Azure para Eclipse**: este componente proporciona la funcionalidad habitual necesaria para otros componentes del kit de herramientas.
-   * **Complemento de Azure para Eclipse con Java**: este componente respalda el desarrollo de proyectos que lo ayudan a crear, probar e implementar aplicaciones de Java para la nube de Microsoft Azure en Eclipse y mediante la línea de comandos.
-   * **Complemento de Azure Web Apps con Java**: este componente permite implementar aplicaciones web de Java en los contenedores de aplicaciones web de Microsoft Azure.
-   * **Microsoft JDBC Driver 4.2 para SQL Server**: este componente proporciona la API de JDBC API para SQL Server y Microsoft Azure SQL Database para Java Platform Enterprise Edition 8.
-   * **Paquete para bibliotecas de cliente Apache Qpid de JMS**: este componente ofrece el componente de cliente JMS del proyecto de Apache Qpid para habilitar su aplicación para que use la mensajería de AMQP en Microsoft Azure.
-   * **Paquete para bibliotecas de Microsoft Azure para Java**: este componente proporciona las API para acceder a los servicios de Microsoft Azure, como almacenamiento, service bus, runtime de servicio, etc.
+1. Si expande **Azure Toolkit for Eclipse**, verá una lista de los componentes que se instalarán; por ejemplo:
+
+   | Característica | Descripción | 
+   |---|---| 
+   | **Complemento de Application Insights para Java** | Permite usar los servicios de análisis y registro de telemetría de Azure para sus aplicaciones e instancias de servidor. | 
+   | **Complemento común de Azure** | Proporciona la funcionalidad habitual necesaria para otros componentes del kit de herramientas. | 
+   | **Herramientas de Azure Container para Eclipse** | Permite crear e implementar un artefacto .WAR como un contenedor de Docker en una máquina de Docker. | 
+   | **Azure Containers for Eclipse** | Permite implementar un artefacto .WAR o .JAR como un contenedor Docker en una máquina virtual de Azure. | 
+   | **Explorador de Azure para Eclipse** | Proporciona una interfaz de tipo explorador para administrar los recursos de Azure. | 
+   | **Microsoft JDBC Driver 6.1 para SQL Server** | Proporciona JDBC API para SQL Server y Microsoft Azure SQL Database para Java Platform Enterprise Edition 8. | 
+   | **Paquete para bibliotecas de Microsoft Azure para Java** | Proporciona las API para acceder a los servicios de Microsoft Azure, como Storage, Service Bus, Service Runtime, etc. | 
 
 1. Haga clic en **Siguiente**. (Si se producen retrasos inusuales al instalar el kit de herramientas, asegúrese de que la opción **Ponerse en contacto con todos los sitios de actualización durante la instalación para encontrar el software necesario** está desactivada.)
 
@@ -74,7 +81,7 @@ En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azur
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
+[!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
 <!-- URL List -->
 
