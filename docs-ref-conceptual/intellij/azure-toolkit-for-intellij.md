@@ -14,11 +14,11 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: 630bb80190b8821778d1855d5edf5f943b14d6d1
-ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
+ms.openlocfilehash: 4b24b5c776cb951a093515de9c11c30ea97f3a50
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="azure-toolkit-for-intellij"></a>Kit de herramientas de Azure para IntelliJ
 El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de IntelliJ.
@@ -65,7 +65,7 @@ Para más información sobre el Kit de herramientas de Azure para IntelliJ, cons
 
 * [Kit de herramientas de Azure para IntelliJ en el repositorio de complementos de JetBrains](https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij)
 
-Para más información sobre el uso de Java con Azure, visite el [Centro para desarrolladores de Java de Azure](https://azure.microsoft.com/develop/java/) y consulte las [herramientas de Java para Visual Studio Team Services](https://java.visualstudio.com/).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java](https://docs.microsoft.com/java/azure/) y [Java Tools for Visual Studio Team Services](https://java.visualstudio.com/) (Herramientas de Java para Visual Studio Team Services).
 
 > [!NOTE]
 > 
@@ -76,7 +76,7 @@ Para más información sobre el uso de Java con Azure, visite el [Centro para de
 
 <!-- URL List -->
 
-[Azure Java Developer Center]: https://azure.microsoft.com/develop/java/
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 
 <!-- Temporarily Deprecated URLs -->

@@ -6,26 +6,23 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework
 ms.assetid: 
 ms.service: multiple
 ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: 7a4234aefd4eb33f80c1978fb84721f2dbcb2e4f
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: b520cc80360f8162c929bb2cc88c24311a7e20f8
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="deploy-a-spring-boot-application-to-the-azure-app-service"></a>Implementación de una aplicación de Spring Boot en Azure App Service
 
-**[Spring Framework]** es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones a nivel empresarial. Uno de los proyectos más populares basados en esta plataforma es [Spring Boot], que ofrece un método simplificado para crear aplicaciones Java independientes.
-
-Este tutorial le guiará a través de la creación de una aplicación web inicial de Spring Boot y su implementación en [Azure App Service].
+Este tutorial le ayudará a crear una aplicación web de ejemplo de [Spring Boot] y a implementarla en [Azure App Service].
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -199,7 +196,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para obtener más información sobre el uso de Azure con Java, vea el [Centro para desarrolladores de Java de Azure] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
 Para obtener más información sobre la implementación de aplicaciones web en Azure mediante FTP, consulte [Implementación de la aplicación en Azure App Service mediante FTP/S].
 
@@ -213,7 +210,7 @@ Para obtener más información sobre configuración de valores adicionales para 
 
 [Azure App Service]: https://azure.microsoft.com/services/app-service/
 [Azure Container Service]: https://azure.microsoft.com/services/container-service/
-[Centro para desarrolladores de Java de Azure]: https://azure.microsoft.com/develop/java/
+[Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [Azure Portal]: https://portal.azure.com/
 [Configuración de aplicaciones web en Azure App Service]: /azure/app-service/web-sites-configure
 [Implementación de la aplicación en Azure App Service mediante FTP/S]: https://docs.microsoft.com/azure/app-service/app-service-deploy-ftp

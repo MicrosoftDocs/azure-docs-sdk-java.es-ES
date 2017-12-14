@@ -6,29 +6,24 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework
 ms.assetid: 
 ms.service: container-service
 ms.workload: web
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: asirveda;robmcm
 ms.custom: mvc
-ms.openlocfilehash: 8f7b2cbf66c9ceda6f723a9c9d423d94586fc777
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: 65e127e43c457b0ff92478f002065bb9d928f270
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en Linux en Azure Container Service
 
-**[Spring Framework]** es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes.
-
-**[cliente de Docker]** es una solución de código abierto que ayuda a los desarrolladores a automatizar la implementación, el escalado y la administración de sus aplicaciones que se ejecutan en contenedores.
-
-En este tutorial se explica cómo usar Docker para desarrollar e implementar una aplicación de Spring Boot en un host de Linux en [Azure Container Service (AKS)].
+En este tutorial se explica cómo usar [cliente de Docker] para desarrollar e implementar una aplicación de [Spring Boot] en un host Linux en [Azure Container Service (AKS)].
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -272,7 +267,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 * [Implementación de una aplicación de Spring Boot en Azure App Service](deploy-spring-boot-java-web-app-on-azure.md)
 * [Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para obtener más información sobre el uso de Azure con Java, vea el [Centro para desarrolladores de Java de Azure] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
 Para obtener más información sobre el proyecto de ejemplo Spring Boot en Docker, vea [inicial de Spring Boot en Docker] (Introducción a Spring Boot en Docker).
 
@@ -286,7 +281,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
-[Centro para desarrolladores de Java de Azure]: https://azure.microsoft.com/develop/java/
+[Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [Azure Portal]: https://portal.azure.com/
 [Creación de un registro de contenedor privado de Docker con la CLI de Azure]: /azure/container-registry/container-registry-get-started-portal
 [Uso de una imagen personalizada de Docker para Web App on Linux de Azure]: /azure/app-service-web/app-service-linux-using-custom-docker-image

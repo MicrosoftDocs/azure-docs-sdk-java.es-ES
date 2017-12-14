@@ -6,38 +6,58 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework, Spring Starter, Redis Cache
 ms.assetid: 
 ms.service: cache
 ms.workload: na
 ms.tgt_pltfrm: cache-redis
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: robmcm;zhijzhao;yidon
-ms.openlocfilehash: c5e9a9214762e014e463dd3277671fc56237d4a0
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: e46a90413321845cb94d72fff893e42aa2353491
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="how-to-configure-a-spring-boot-initializer-app-to-use-redis-cache"></a>Configuración de una aplicación Spring Boot Initializer para usar Redis Cache
 
 ## <a name="overview"></a>Información general
 
-**[Spring Framework]** es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes. Para ayudar a los desarrolladores a empezar con Spring Boot, puede encontrar varios paquetes de ejemplo de Spring Boot en <https://github.com/spring-guides/>. Además de elegir de la lista de proyectos básicos de Spring Boot, el **[Spring Initializr]** ayuda a los desarrolladores en los primeros pasos para crear aplicaciones de Spring Boot personalizadas.
-
-Este artículo le ayuda a crear una memoria caché en Redis mediante Azure Portal, después a utilizar **Spring Initializr** para crear una aplicación personalizada y, por último, a crear una aplicación web de Java que almacena y recupera datos mediante la memoria caché de Redis.
+Este artículo le ayuda a crear una memoria caché en Redis mediante Azure Portal, después a utilizar **[Spring Initializr]** para crear una aplicación personalizada y, por último, a crear una aplicación web de Java que almacena y recupera datos mediante la memoria caché de Redis.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
-
 * Un [kit de desarrollo de Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/), versión 1.7 o posterior.
-
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
+
+## <a name="create-a-custom-application-using-the-spring-initializr"></a>Creación de una aplicación personalizada mediante Spring Initializr
+
+1. Vaya a <https://start.spring.io/>.
+
+1. Especifique que quiere generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación y luego haga clic en el vínculo **Switch to the full version** (Cambiar a la versión completa) de Spring Initializr.
+
+   ![Opciones básicas de Spring Initializr][SI01]
+
+   > [!NOTE]
+   >
+   > Spring Initializr usará los nombres de **Group** (Grupo) y **Artifact** (Artefacto) para crear el nombre del paquete, por ejemplo: *com.contoso.myazuredemo*.
+   >
+
+1. Desplácese hacia abajo hasta la sección **Web** y active la casilla **Web**, luego desplácese hacia abajo hasta la sección **NoSQL** y active la casilla **Redis**, después desplácese hasta la parte inferior de la página y haga clic en el botón **Generate Project** (Generar proyecto).
+
+   ![Opciones completas de Spring Initializr][SI02]
+
+1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
+
+   ![Descarga del proyecto personalizado de Spring Boot][SI03]
+
+1. Después de extraer los archivos en el sistema local, la aplicación personalizada de Spring Boot estará lista para editarla.
+
+   ![Archivos de proyecto personalizados de Spring Boot][SI04]
 
 ## <a name="create-a-redis-cache-on-azure"></a>Crear una caché de Redis en Azure
 
@@ -71,31 +91,6 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. Cuando se muestre la página que contiene la lista de propiedades de la memoria caché, haga clic en **Claves de acceso** y copie las claves de acceso de la memoria caché.
 
    ![Azure Portal][AZ05]
-
-## <a name="create-a-custom-application-using-the-spring-initializr"></a>Creación de una aplicación personalizada mediante Spring Initializr
-
-1. Vaya a <https://start.spring.io/>.
-
-1. Especifique que quiere generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación y luego haga clic en el vínculo **Switch to the full version** (Cambiar a la versión completa) de Spring Initializr.
-
-   ![Opciones básicas de Spring Initializr][SI01]
-
-   > [!NOTE]
-   >
-   > Spring Initializr usará los nombres de **Group** (Grupo) y **Artifact** (Artefacto) para crear el nombre del paquete, por ejemplo: *com.contoso.myazuredemo*.
-   >
-
-1. Desplácese hacia abajo hasta la sección **Web** y active la casilla **Web**, luego desplácese hacia abajo hasta la sección **NoSQL** y active la casilla **Redis**, después desplácese hasta la parte inferior de la página y haga clic en el botón **Generate Project** (Generar proyecto).
-
-   ![Opciones completas de Spring Initializr][SI02]
-
-1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
-
-   ![Descarga del proyecto personalizado de Spring Boot][SI03]
-
-1. Después de extraer los archivos en el sistema local, la aplicación personalizada de Spring Boot estará lista para editarla.
-
-   ![Archivos de proyecto personalizados de Spring Boot][SI04]
 
 ## <a name="configure-your-custom-spring-boot-to-use-your-redis-cache"></a>Configuración de su Spring Boot personalizada para usar Redis Cache
 
@@ -206,13 +201,15 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para obtener más información sobre el uso de Azure con Java, vea el [Centro para desarrolladores de Java de Azure] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
 Para más información sobre la introducción al uso de Redis Cache con Java en Azure, consulte [Uso de Azure Redis Cache con Java][Redis Cache with Java].
 
+**[Spring Framework]** es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes. Para ayudar a los desarrolladores a empezar con Spring Boot, puede encontrar varios paquetes de ejemplo de Spring Boot en <https://github.com/spring-guides/>. Además de elegir de la lista de proyectos básicos de Spring Boot, el **[Spring Initializr]** ayuda a los desarrolladores en los primeros pasos para crear aplicaciones de Spring Boot personalizadas.
+
 <!-- URL List -->
 
-[Centro para desarrolladores de Java de Azure]: https://azure.microsoft.com/develop/java/
+[Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/

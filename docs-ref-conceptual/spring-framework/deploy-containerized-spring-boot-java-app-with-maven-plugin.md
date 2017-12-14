@@ -6,31 +6,30 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework, Maven
 ms.assetid: 
 ms.service: app-service
 ms.workload: web
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: robmcm;kevinzha
-ms.openlocfilehash: 5bc0eb96586cac2be54065a2c1d8edefe2a21f57
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: 1ab19a4805884773239c4d99090b9e117b3859cd
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-containerized-spring-boot-app-to-azure"></a>Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en contenedor en Azure
 
-El [complemento Maven para Azure Web Apps](https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin) de [Apache Maven](http://maven.apache.org/) proporciona una perfecta integración de Azure App Service en proyectos de Maven y simplifica el proceso para que los desarrolladores implementen aplicaciones web en Azure App Service.
-
-Este artículo muestra cómo utilizar el complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot de ejemplo en un contenedor de Docker en Azure App Services.
+En este artículo se muestra cómo usar el [complemento Maven para Azure Web Apps](https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin) para implementar una aplicación de Spring Boot de ejemplo en un contenedor de Docker en Azure App Services.
 
 > [!NOTE]
->
+> 
+> El complemento Maven para Azure Web Apps de [Apache Maven](http://maven.apache.org/) proporciona una perfecta integración de Azure App Service en proyectos de Maven y simplifica el proceso para que los desarrolladores implementen aplicaciones web en Azure App Service.
+> 
 > El complemento Maven de Azure Web Apps está disponible actualmente como versión preliminar. Por ahora, solo se admite la publicación FTP, aunque se van a agregar características adicionales en el futuro.
->
+> 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -319,7 +318,7 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 <!-- URL List -->
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
-[Azure Java Developer Center]: https://azure.microsoft.com/develop/java/
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Azure Portal]: https://portal.azure.com/
 [cliente de Docker]: https://www.docker.com/
 [complemento de Docker para Maven]: https://github.com/spotify/docker-maven-plugin

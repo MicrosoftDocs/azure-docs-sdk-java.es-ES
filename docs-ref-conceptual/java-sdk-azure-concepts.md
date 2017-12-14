@@ -1,6 +1,6 @@
 ---
-title: "Conceptos de uso y patrones de las bibliotecas de administración de Azure para Java"
-description: 
+title: "Guía para desarrolladores: bibliotecas de administración de Azure para Java"
+description: "Patrones y conceptos para el uso de bibliotecas de administración de Java para administrar los recursos de nube en Azure."
 keywords: "Azure, Java, SDK, API, Maven, Gradle, autenticación, active directory, entidad de servicio"
 author: rloutlaw
 ms.author: routlaw
@@ -12,13 +12,15 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: f452468b-7aae-4944-abad-0b1aaf19170d
-ms.openlocfilehash: 052c4de1e8f9ff0ece5f36d1c3514bad8c04cfec
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: 8b52981ddfaadb7227cea4c7df014011196339cb
+ms.sourcegitcommit: 1f6a80e067a8bdbbb4b2da2e2145fda73d5fe65a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 12/05/2017
 ---
-# <a name="azure-management-library-concepts"></a>Conceptos de la biblioteca de administración de Azure
+# <a name="patterns-and-best-practices-for-development-with-the-azure-libraries-for-java"></a>Patrones y procedimientos recomendados para desarrollar con las bibliotecas de Azure para Java 
+
+En este artículo, se enumeran los patrones y los procedimientos recomendados para usar las bibliotecas de Azure para Java en sus proyectos. Cuando desarrolle, siga estos patrones y directrices para reducir la cantidad de código que tendrá que mantener y facilitar la adición o configuración de recursos adicionales en futuras actualizaciones de las bibliotecas de mantenimiento.
 
 ## <a name="build-resources-through-a-fluent-interface"></a>Creación de recursos a través de una interfaz fluida
 
@@ -56,7 +58,7 @@ Cada colección de recursos tiene un método `list()` que devuelve todas las ins
 
 Use el método `listByResourceGroup(String groupname)` para establecer el ámbito de la lista devuelta en un determinado [grupo de recursos de Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups).  
 
-Puede buscar y recorrer en iteración la colección devuelta `PagedList<T>` simplemente como lo haría con una `List<T>` normal:
+Puede buscar y recorrer en iteración la colección `PagedList<T>` devuelta simplemente como lo haría con una colección `List<T>` normal:
 
 ```java
 PagedList<VirtualMachine> vms = azure.virtualMachines().list();
@@ -67,7 +69,7 @@ for (VirtualMachine vm : vms) {
 
 ## <a name="collections-returned-from-queries"></a>Colecciones devueltas por las consultas
 
-Las bibliotecas de administración devuelven tipos de colección específicas a partir de consultas basadas en la estructura de los resultados.
+Las bibliotecas de administración devuelven tipos de colección específicos a partir de consultas basadas en la estructura de los resultados.
 
 - `List<T>`: datos sin ordenar que son fáciles de buscar y recorrer en iteración.
 - `Map<T>`: las asignaciones son pares de clave y valor con claves únicas, pero no necesariamente valores únicos. Un ejemplo de asignación sería la configuración de una aplicación para una aplicación web de App Service.
@@ -102,7 +104,7 @@ Estos métodos no siempre tienen versiones asincrónicas y bloquearán la ejecuc
 
 ## <a name="lazy-resource-creation"></a>Creación de recursos diferida
 
-Se produce un problema al crear recursos de Azure cuando un nuevo recurso depende de otro recurso que aún no existe. Un ejemplo de este escenario sería reservar una dirección IP pública y configurar un disco al crear una nueva máquina virtual. No desea comprobar la reserva de la dirección ni la creación del disco, solo desea asegurarse de la máquina virtual tiene los recursos cuando se crea.
+Se produce un problema al crear recursos de Azure cuando un nuevo recurso depende de otro recurso que aún no existe. Un ejemplo de este escenario sería reservar una dirección IP pública y configurar un disco al crear una nueva máquina virtual. No desea comprobar la reserva de la dirección ni la creación del disco, solo desea asegurarse de que la máquina virtual tiene los recursos cuando se crea.
 
 Los objetos `Creatable<T>` le permiten definir recursos de Azure para usar en el código sin tener que esperar a que se creen en su suscripción. Las bibliotecas de administración aplazan la creación de objetos `Creatable<T>` hasta que se necesiten.
 
@@ -114,7 +116,7 @@ Creatable<PublicIPAddress> publicIPAddressCreatable = azure.publicIPAddresses().
     .withNewResourceGroup(rgName);
 ```
 
-El recurso de Azure definido por `Creatable<PublicIPAddress>` de este ejemplo aún no existe en la suscripción cuando se ejecuta este código.  Use el objeto `publicIPAddressCreatable` para crear otros recursos de Azure con esta dirección IP. 
+El recurso de Azure definido por `Creatable<PublicIPAddress>` en este ejemplo aún no existe en la suscripción cuando se ejecuta este código.  Use el objeto `publicIPAddressCreatable` para crear otros recursos de Azure con esta dirección IP. 
 
 ```java
 Creatable<VirtualMachine> vmCreatable = azure.virtualMachines().define("creatableVM")
@@ -127,7 +129,7 @@ Los recursos `Creatable<T>` se generan en la suscripción cuando cualquier recur
 CreatedResources<VirtualMachine> virtualMachine = azure.virtualMachines().create(vmCreatable);
 ```
 
-Al pasar `Creatable<T>` a las llamadas a `create()` se devuelve un objeto `CreatedResources` en lugar de un objeto de recurso único.  El objeto `CreatedResources<T>` le permite tener acceso a todos los recursos creados por la llamada a `create()` y no solo al recurso especificado en la llamada. Para tener acceso a la dirección IP pública creada en Azure para la máquina virtual creada en el ejemplo anterior:
+Al pasar `Creatable<T>` a las llamadas a `create()`, se devuelve un objeto `CreatedResources` en lugar de un objeto de recurso único.  El objeto `CreatedResources<T>` le permite tener acceso a todos los recursos creados por la llamada a `create()` y no solo al recurso especificado en la llamada. Para tener acceso a la dirección IP pública creada en Azure para la máquina virtual creada en el ejemplo anterior:
 
 ```java
 PublicIPAddress pip = (PublicIPAddress) virtualMachine.createdRelatedResource(publicIPAddressCreatable.key());
