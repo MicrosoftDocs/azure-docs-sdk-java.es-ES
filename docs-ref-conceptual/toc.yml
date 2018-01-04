@@ -14,6 +14,8 @@
           href: /azure/postgresql/connect-java
         - name: Cosmos DB
           href: /azure/cosmos-db/create-documentdb-java
+        - name: Blob Storage
+          href: /azure/storage/blobs/storage-quickstart-blobs-java
         - name: Bibliotecas de Azure para Java
           items:
             - name: Maven
