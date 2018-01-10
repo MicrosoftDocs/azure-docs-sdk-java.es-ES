@@ -97,3 +97,4 @@ RoleAssignment roleAssignment2 = authenticated.roleAssignments()
 [<span data-ttu-id="29c82-124">Llamada a la API Graph de Azure AD desde la aplicación web de Java</span><span class="sxs-lookup"><span data-stu-id="29c82-124">Call the Active AD Graph API from your Java web app</span></span>](https://github.com/Azure-Samples/active-directory-java-graphapi-web/)  
 
 <span data-ttu-id="29c82-125">Vea más [código de Java de ejemplo para Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="29c82-125">Explore more [sample Java code for Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) you can use in your apps.</span></span>
+<!--aaa-->
