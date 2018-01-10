@@ -89,15 +89,11 @@
   ],
   "toc_path_need_to_split": "docs-ref-autogen/toc.yml",
   "need_generate_pdf_url_template": true,
-  	"branch_target_mapping": {
-	    "live": [
-	      "Publish",
-	      "Pdf"
-	    ],
-		    "live-sxs": [
-	      "Publish",
-	      "Pdf"
-	    ]
+	  "branch_target_mapping": { 
+    "live": [ 
+      "Publish", 
+      "Pdf" 
+    ] 
   },
   "enable_incremental_build": false
 }
