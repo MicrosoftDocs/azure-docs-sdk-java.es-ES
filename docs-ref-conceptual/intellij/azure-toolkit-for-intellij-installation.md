@@ -1,6 +1,6 @@
 ---
 title: "Instalación del kit de herramientas de Azure para IntelliJ"
-description: "Descubra cómo instalar el kit de herramientas de Azure para IntelliJ IDEA."
+description: "Obtenga información acerca de cómo instalar el complemento del kit de herramientas de Azure para IntelliJ para crear e implementar aplicaciones en la nube en Azure."
 services: 
 documentationcenter: java
 author: rmcmurray
@@ -14,15 +14,15 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: e15a03a7d10d67217565895103e5e58e807a3976
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: 88476142dbd6fbe05d3d59d14cf71c83893e6452
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="installing-the-azure-toolkit-for-intellij"></a>Instalación del kit de herramientas de Azure para IntelliJ
 
-El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones de Azure fácilmente con el entorno de desarrollo IntelliJ IDEA.
+El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones en la nube en Azure fácilmente con el entorno de desarrollo IntelliJ IDEA.
 
 > [!NOTE] 
 > 
@@ -95,7 +95,7 @@ Hay dos métodos para instalar el Kit de herramientas de Azure para IntelliJ: me
    
    ![Restart IntelliJ IDEA][07]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 

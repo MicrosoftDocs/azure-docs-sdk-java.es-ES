@@ -1,6 +1,6 @@
 ---
-title: "Instalación del Kit de herramientas de Azure para Eclipse"
-description: "Descubra cómo instalar el kit de herramientas de Azure para Eclipse."
+title: "Instalación del kit de herramientas de Azure para Eclipse"
+description: "Obtenga información acerca de cómo instalar el complemento del kit de herramientas de Azure para Eclipse para crear e implementar aplicaciones en la nube en Azure."
 services: 
 documentationcenter: java
 author: rmcmurray
@@ -14,15 +14,15 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 1f06b02a4c0b23d98ecd394d42f41f7148b6c8e8
-ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
+ms.openlocfilehash: 54f636f1291832702bfed2b49888b531d358cb73
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="installing-the-azure-toolkit-for-eclipse"></a>Instalación del Kit de herramientas de Azure para Eclipse
+# <a name="install-the-azure-toolkit-for-eclipse"></a>Instalación del kit de herramientas de Azure para Eclipse
 
-El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones de Azure fácilmente con el entorno de desarrollo de Eclipse.
+El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que permiten crear, desarrollar, probar e implementar aplicaciones en la nube en Azure fácilmente desde el entorno de desarrollo Eclipse.
 
 > [!NOTE] 
 > 
@@ -51,7 +51,7 @@ En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azur
 
 1. Si expande **Azure Toolkit for Eclipse**, verá una lista de los componentes que se instalarán; por ejemplo:
 
-   | Característica | Descripción | 
+   | Característica | DESCRIPCIÓN | 
    |---|---| 
    | **Complemento de Application Insights para Java** | Permite usar los servicios de análisis y registro de telemetría de Azure para sus aplicaciones e instancias de servidor. | 
    | **Complemento común de Azure** | Proporciona la funcionalidad habitual necesaria para otros componentes del kit de herramientas. | 
@@ -61,7 +61,7 @@ En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azur
    | **Microsoft JDBC Driver 6.1 para SQL Server** | Proporciona JDBC API para SQL Server y Microsoft Azure SQL Database para Java Platform Enterprise Edition 8. | 
    | **Paquete para bibliotecas de Microsoft Azure para Java** | Proporciona las API para acceder a los servicios de Microsoft Azure, como Storage, Service Bus, Service Runtime, etc. | 
 
-1. Haga clic en **Siguiente**. (Si se producen retrasos inusuales al instalar el kit de herramientas, asegúrese de que la opción **Ponerse en contacto con todos los sitios de actualización durante la instalación para encontrar el software necesario** está desactivada.)
+1. Haga clic en **Next**. (Si se producen retrasos inusuales al instalar el kit de herramientas, asegúrese de que la opción **Ponerse en contacto con todos los sitios de actualización durante la instalación para encontrar el software necesario** está desactivada.)
 
 1. En el cuadro de diálogo **Install Details** (Detalles de instalación), haga clic en **Next** (Siguiente).
    
@@ -79,7 +79,7 @@ En los pasos siguientes se muestra cómo instalar el Kit de herramientas de Azur
    
    ![Reinicio del símbolo del sistema][06]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 

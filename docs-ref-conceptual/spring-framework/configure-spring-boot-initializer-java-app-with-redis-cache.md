@@ -1,6 +1,6 @@
 ---
-title: "Configuración de una aplicación Spring Boot Initializer para usar Redis Cache"
-description: "Aprenda a configurar una aplicación de Spring Boot creada con Spring Initializr para usar Azure Redis Cache."
+title: "Configuración de una aplicación de Spring Boot Initializr para usar Azure Redis Cache"
+description: "Configure una aplicación de Spring Boot creada con Spring Initializr para usar Redis en la nube con Azure Redis Cache."
 services: redis-cache
 documentationcenter: java
 author: rmcmurray
@@ -14,19 +14,17 @@ ms.devlang: java
 ms.topic: article
 ms.date: 12/01/2017
 ms.author: robmcm;zhijzhao;yidon
-ms.openlocfilehash: e46a90413321845cb94d72fff893e42aa2353491
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: c029a1518584a953c96870110f7ab3b79409f8ca
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="how-to-configure-a-spring-boot-initializer-app-to-use-redis-cache"></a>Configuración de una aplicación Spring Boot Initializer para usar Redis Cache
+# <a name="configure-a-spring-boot-initializer-app-to-use-redis-in-the-cloud-with-azure-redis-cache"></a>Configuración de una aplicación de Spring Boot Initializr para usar Redis en la nube con Azure Redis Cache
 
-## <a name="overview"></a>Información general
+Este artículo le ayuda a crear una memoria caché en Redis en la nube mediante Azure Portal, después a utilizar **[Spring Initializr]** para crear una aplicación personalizada y, por último, a crear una aplicación web de Java que almacena y recupera datos mediante la memoria caché en Redis.
 
-Este artículo le ayuda a crear una memoria caché en Redis mediante Azure Portal, después a utilizar **[Spring Initializr]** para crear una aplicación personalizada y, por último, a crear una aplicación web de Java que almacena y recupera datos mediante la memoria caché de Redis.
-
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -63,7 +61,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> y haga clic en el elemento **+Nuevo**.
 
-   ![Portal de Azure][AZ01]
+   ![Azure Portal][AZ01]
 
 1. Haga clic en **Base de datos** y luego en **Redis Cache**.
 
@@ -115,7 +113,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    > [!NOTE] 
    > 
-   > Si utilizaba un cliente de Redis diferente como Jedis, que habilita SSL, debería especificar el puerto 6380 en el archivo *application.properties*. Por ejemplo:
+   > Si utilizaba un cliente de Redis diferente como Jedis, que habilita SSL, debería especificar el puerto 6380 en el archivo *application.properties*. Por ejemplo: 
    > 
    > ```yaml
    > spring.redis.host=myspringbootcache.redis.cache.windows.net
@@ -193,7 +191,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    Debe ver el mensaje "Hola mundo" del controlador de ejemplo mostrado, que se está recuperando dinámicamente de la memoria caché en Redis.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 

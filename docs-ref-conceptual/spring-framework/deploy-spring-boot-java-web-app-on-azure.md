@@ -1,6 +1,6 @@
 ---
-title: "Implementación de una aplicación de Spring Boot en Azure App Service"
-description: "Este tutorial guiará a los desarrolladores a través de los pasos necesarios para implementar una aplicación web inicial de Spring Boot en Azure App Service."
+title: "Implementación de una aplicación de Spring Boot en la nube con Azure App Service"
+description: "Este tutorial guiará a los desarrolladores a través de los pasos necesarios para implementar una aplicación web inicial de Spring Boot en la nube con Azure App Service."
 services: app-service
 documentationcenter: java
 author: rmcmurray
@@ -14,17 +14,17 @@ ms.devlang: java
 ms.topic: article
 ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: b520cc80360f8162c929bb2cc88c24311a7e20f8
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 4dba6a6cbce2c8f6d4956717b3358c4e5b501e71
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="deploy-a-spring-boot-application-to-the-azure-app-service"></a>Implementación de una aplicación de Spring Boot en Azure App Service
+# <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implementación de una aplicación de Spring Boot en la nube con Azure App Service
 
 Este tutorial le ayudará a crear una aplicación web de ejemplo de [Spring Boot] y a implementarla en [Azure App Service].
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>requisitos previos
 
 Para poder realizar los pasos de este tutorial, necesitará tener lo siguiente:
 
@@ -87,7 +87,7 @@ Los siguientes pasos le guiarán por las diferentes fases de creación de una ap
 
 1. Una vez que haya iniciado sesión en la cuenta de Azure Portal, haga clic en el icono de menú de **App Services**:
    
-   ![Portal de Azure][AZ01]
+   ![Azure Portal][AZ01]
 
 1. Cuando aparezca la página **App Services**, haga clic en **+ Agregar** para crear un nuevo elemento de App Service.
 
@@ -119,7 +119,7 @@ Los siguientes pasos le guiarán por las diferentes fases de creación de una ap
 
    d. Seleccione **Newest Tomcat 8.5** como contenedor web. (Este contenedor en realidad no se usará. Azure usará el contenedor de la aplicación de Spring Boot).
 
-   e. Haga clic en **Guardar**.
+   e. Haga clic en **Save**(Guardar).
 
    ![Configuración de la aplicación][AZ07]
 
@@ -129,7 +129,7 @@ Los siguientes pasos le guiarán por las diferentes fases de creación de una ap
 
    b. Especifique el nombre de usuario y la contraseña.
 
-   c. Haga clic en **Guardar**.
+   c. Haga clic en **Save**(Guardar).
 
    ![Especificación de credenciales de implementación][AZ08]
 
@@ -160,7 +160,7 @@ Los siguientes pasos le guiarán por las fases necesarias para implementar la ap
    </configuration>
    ```
 
-1. Después de guardar el archivo *web.config* en el sistema, conéctese a la aplicación web a través de FTP con la URL, el nombre de usuario y la contraseña de la sección anterior de este tutorial. Por ejemplo:
+1. Después de guardar el archivo *web.config* en el sistema, conéctese a la aplicación web a través de FTP con la URL, el nombre de usuario y la contraseña de la sección anterior de este tutorial. Por ejemplo: 
    ```
    ftp
    open waws-prod-sn0-000.ftp.azurewebsites.windows.net
@@ -168,7 +168,7 @@ Los siguientes pasos le guiarán por las fases necesarias para implementar la ap
    pass ********
    ```
 
-1. Cambie el directorio remoto a la carpeta raíz de la aplicación web (que se encuentra en */sitio/wwwRaíz*) y, a continuación, copie el archivo JAR de la aplicación de Spring Boot y el archivo *web.config* anterior. Por ejemplo:
+1. Cambie el directorio remoto a la carpeta raíz de la aplicación web (que se encuentra en */sitio/wwwRaíz*) y, a continuación, copie el archivo JAR de la aplicación de Spring Boot y el archivo *web.config* anterior. Por ejemplo: 
    ```
    cd site/wwwroot
    put gs-spring-boot-0.1.0.jar
@@ -188,7 +188,7 @@ Los siguientes pasos le guiarán por las fases necesarias para implementar la ap
 
    ![Buscar aplicación de ejemplo][SB02]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 

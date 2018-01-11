@@ -1,6 +1,6 @@
 ---
 title: Kit de herramientas de Azure para Eclipse
-description: "Obtenga información acerca del Kit de herramientas de Azure para Eclipse."
+description: "Obtenga información acerca de cómo el complemento del kit de herramientas de Azure para Eclipse le ayuda a crear e implementar aplicaciones en la nube en Azure."
 services: 
 documentationcenter: java
 author: rmcmurray
@@ -14,14 +14,15 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: 1cd0430a6649b1c979da5650b4d817bfb35b5f8c
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 21b757f961096970b7560beac9f15f216f072516
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de herramientas de Azure para Eclipse
-El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de Eclipse.
+
+El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones en la nube en Azure desde el entorno de desarrollo integrado (IDE) Eclipse.
 
 > [!NOTE]
 > 
@@ -31,7 +32,7 @@ El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que p
 ## <a name="get-started-with-the-azure-toolkit-for-eclipse"></a>Introducción al kit de herramientas de Azure para Eclipse
 Los artículos siguientes lo ayudarán a empezar a usar el kit de herramientas de Azure para Eclipse:
 
-* [Instalación del Kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
+* [Instalación del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
 
 * [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-sign-in-instructions.md)
 
@@ -57,7 +58,7 @@ En los artículos siguientes se muestra cómo usar el kit de herramientas de Azu
 
 * [Administración de máquinas virtuales con Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información sobre el Kit de herramientas de Azure para Eclipse, consulte las siguientes páginas:
 
