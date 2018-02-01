@@ -14,11 +14,11 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 3db8bf06892ca6c53cf93ee4ce151549044806d1
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: ed63d73e8a0c89af14613b1b1a880f1d40495b8d
+ms.sourcegitcommit: 558d875e9a255deb5b83b3f1646bd1dd9eee0a0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para IntelliJ
 
@@ -89,7 +89,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
       * **New storage account** (Nueva cuenta de almacenamiento): cree una cuenta de almacenamiento para el host.
       * **Existing storage account** (Cuenta de almacenamiento existente): especifique una cuenta de almacenamiento existente desde su cuenta de Azure.
        
-5. Haga clic en **Siguiente**.  
+5. Haga clic en **Next**.  
      Se abre la ventana **Configure log in credentials and port settings** (Configurar credenciales de inicio de sesión y configuración de puerto).
 
       ![Ventana Configure log in credentials and port settings (Configurar credenciales de inicio de sesión y configuración de puerto)][PUB05]
@@ -114,23 +114,23 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
             
         b. En la pestaña **Docker Daemon Access** (Acceso de demonio de Docker), proporcione la siguiente información:
 
-          ![Create Docker Host (Crear host de Docker)][PUB06]
+         ![Create Docker Host (Crear host de Docker)][PUB06]
     
-             * **Docker Daemon port**: Enter the unique TCP port for your Docker host.
-             * **TLS Security**: Enter the Transport Layer Security settings for your Docker host. You can choose from the following options:
-                * **None**: Specifies that your virtual machine does not allow TLS connections.
-                * **Auto-generate**: Automatically creates the requisite settings for connecting via TLS.
-                * **Import from directory**: Specifies a directory that contains a set of previously saved TLS settings. The directory must contain the following six files: 
-                   * *ca.pem* and *ca-key.pem*: Contain the certificate and public key for the TLS Certificate Authority.
-                   * *cert.pem* and *key.pem*: Contain client certificate and public key which will be used for TLS authentication.
-                   * *server.pem* and *server-key.pem*: Contain the client certificate and public key that is used for TLS authentication.
+           * **Docker Daemon port** (Puerto de demonio de Docker): especifica el puerto TCP único de su host de Docker.
+           * **Seguridad de TLS**: especifique la configuración de seguridad de la capa de transporte para el host de Docker. Puede elegir entre las siguientes opciones:
+                * **None** (Ninguna): especifica que su máquina virtual no permite conexiones TLS.
+                * **Auto-generate** (Generar automáticamente): crea automáticamente la configuración necesaria para la conexión mediante TLS.
+                * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de configuraciones de TLS previamente guardadas. El directorio debe contener los seis archivos siguientes: 
+                   * *ca.pem* y *ca-key.pem*: contienen el certificado y la clave pública de la entidad de certificación de TLS.
+                   * *cert.pem* y *key.pem*: contienen el certificado de cliente y la clave pública que se usarán para la autenticación TLS.
+                   * *server.pem* y *server-key.pem*: contienen el certificado de cliente y la clave pública que se usarán para la autenticación TLS.
 
 7. Después de haber escrito la información necesaria, haga clic en **Finish** (Finalizar).  
     Vuelve a aparecer el asistente **Deploy Docker Container on Azure** (Implementar contenedor de Docker en Azure).
 
    ![Asistente Deploy Docker Container on Azure (Implementar contenedor de Docker en Azure)][PUB07]
 
-8. Haga clic en **Siguiente**.  
+8. Haga clic en **Next**.  
     Se abre la ventana **Configure the Docker container to be created** (Configurar el contenedor de Docker que se va a crear).
 
    ![Ventana Configure the Docker container to be created (Configurar el contenedor de Docker que se va a crear)][PUB08]
@@ -180,7 +180,7 @@ Para crear un artefacto preparado para la implementación, haga lo siguiente:
 
 Para más información sobre cómo crear artefactos en IntelliJ, consulte [Configuring Artifacts] (Configuración de artefactos) en el sitio web de JetBrains.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más recursos de Docker, consulte el [sitio web de Docker] oficial.
 
