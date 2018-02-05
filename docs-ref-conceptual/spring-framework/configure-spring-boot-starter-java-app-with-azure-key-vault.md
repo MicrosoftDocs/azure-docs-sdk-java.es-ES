@@ -14,11 +14,11 @@ ms.devlang: java
 ms.topic: article
 ms.date: 11/29/2017
 ms.author: robmcm
-ms.openlocfilehash: 8b35a972a00c995730dfa59b1b6a47fab7716b76
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 165a108147ef5ef7575820bbb6c2ee526888f722
+ms.sourcegitcommit: 558d875e9a255deb5b83b3f1646bd1dd9eee0a0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/06/2017
 
 En este artículo se muestra cómo crear una aplicación con **[Spring Initializr]** que usa el iniciador de Spring Boot para Azure Key Vault para recuperar una cadena de conexión almacenada como un secreto en un almacén de claves.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -48,7 +48,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Desplácese a la parte inferior de la página y haga clic en el botón **Generate Project** (Generar proyecto).
 
-   ![Generar proyecto de Spring Boot][secrets-03]
+   ![Generación del proyecto de Spring Boot][secrets-03]
 
 1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
 
@@ -85,8 +85,9 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
        }
      }
    ]
+   ```
 
-1. Specify the GUID for the account you want to use with Azure; for example:
+1. Especifique el identificador GUID de la cuenta que desea usar con Azure; por ejemplo:
 
    ```azurecli
    az account set -s ssssssss-ssss-ssss-ssss-ssssssssssss
@@ -99,7 +100,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az group create --name wingtiptoysresources --location westus
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el grupo de recursos. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
@@ -123,7 +124,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```shell
    az ad sp create-for-rbac --name "wingtiptoysuser"
    ```
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `id` | Especifica el GUID del registro de la aplicación anterior. |
 
@@ -144,7 +145,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az keyvault create --name wingtiptoyskeyvault --resource-group wingtiptoysresources --location westus --enabled-for-deployment true --enabled-for-disk-encryption true --enabled-for-template-deployment true --sku standard --query properties.vaultUri
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el almacén de claves. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
@@ -165,7 +166,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az keyvault set-policy --name wingtiptoyskeyvault --secret-permission set get list delete --spn "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii"
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre del almacén de claves anterior. |
    | `secret-permission` | Especifica las [directivas de seguridad](https://docs.microsoft.com/en-us/cli/azure/keyvault) para su almacén de claves. |
@@ -194,7 +195,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az keyvault secret set --vault-name "wingtiptoyskeyvault" --name "connectionString" --value "jdbc:sqlserver://SERVER.database.windows.net:1433;database=DATABASE;"
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `vault-name` | Especifica el nombre del almacén de claves anterior. |
    | `name` | Especifica el nombre del secreto. |
@@ -236,7 +237,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    azure.keyvault.client-key=pppppppp-pppp-pppp-pppp-pppppppppppp
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `azure.keyvault.uri` | Especifica el URI obtenido cuando creó el almacén de claves. |
    | `azure.keyvault.client-id` | Especifica el GUID de *appId* obtenido cuando creó la entidad de servicio. |
@@ -287,7 +288,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Estado de compilación de la aplicación de Spring Boot][build-application-01]
 
-1. Ejecute la aplicación de Spring Boot con Maven; la aplicación mostrará la cadena de conexión del almacén de claves. Por ejemplo:
+1. Ejecute la aplicación de Spring Boot con Maven; la aplicación mostrará la cadena de conexión del almacén de claves. Por ejemplo: 
 
    ```bash
    mvn spring-boot:run
@@ -295,7 +296,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Mensaje en tiempo de ejecución de Spring Boot][build-application-02]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información sobre el uso de Azure Key Vault, consulte los siguientes artículos:
 
