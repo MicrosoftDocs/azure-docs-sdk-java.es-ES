@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 115a095d-1b70-41d6-adb4-78f24b2a4451
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: 4b24b5c776cb951a093515de9c11c30ea97f3a50
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: dd76cb3a0355e4e8471b7a32b6b33cb71bd3f16b
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="azure-toolkit-for-intellij"></a>Kit de herramientas de Azure para IntelliJ
 El kit de herramientas de Azure para IntelliJ ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones de Azure con el entorno de desarrollo integrado (IDE) de IntelliJ.
@@ -57,7 +57,7 @@ En los artículos siguientes se muestra cómo usar el kit de herramientas de Azu
 
 * [Administración de máquinas virtuales mediante Azure Explorer para IntelliJ](azure-toolkit-for-intellij-managing-storage-accounts-using-azure-explorer.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información sobre el Kit de herramientas de Azure para IntelliJ, consulte las siguientes páginas:
 

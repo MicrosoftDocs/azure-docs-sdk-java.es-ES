@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: ed63d73e8a0c89af14613b1b1a880f1d40495b8d
-ms.sourcegitcommit: 558d875e9a255deb5b83b3f1646bd1dd9eee0a0d
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: f92040b34b9897d9feea8d2ec5e8748e75fff7f7
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para IntelliJ
 
@@ -114,16 +114,16 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
             
         b. En la pestaña **Docker Daemon Access** (Acceso de demonio de Docker), proporcione la siguiente información:
 
-         ![Create Docker Host (Crear host de Docker)][PUB06]
+          ![Create Docker Host (Crear host de Docker)][PUB06]
     
-           * **Docker Daemon port** (Puerto de demonio de Docker): especifica el puerto TCP único de su host de Docker.
-           * **Seguridad de TLS**: especifique la configuración de seguridad de la capa de transporte para el host de Docker. Puede elegir entre las siguientes opciones:
-                * **None** (Ninguna): especifica que su máquina virtual no permite conexiones TLS.
-                * **Auto-generate** (Generar automáticamente): crea automáticamente la configuración necesaria para la conexión mediante TLS.
-                * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de configuraciones de TLS previamente guardadas. El directorio debe contener los seis archivos siguientes: 
-                   * *ca.pem* y *ca-key.pem*: contienen el certificado y la clave pública de la entidad de certificación de TLS.
-                   * *cert.pem* y *key.pem*: contienen el certificado de cliente y la clave pública que se usarán para la autenticación TLS.
-                   * *server.pem* y *server-key.pem*: contienen el certificado de cliente y la clave pública que se usarán para la autenticación TLS.
+             * **Docker Daemon port**: Enter the unique TCP port for your Docker host.
+             * **TLS Security**: Enter the Transport Layer Security settings for your Docker host. You can choose from the following options:
+                * **None**: Specifies that your virtual machine does not allow TLS connections.
+                * **Auto-generate**: Automatically creates the requisite settings for connecting via TLS.
+                * **Import from directory**: Specifies a directory that contains a set of previously saved TLS settings. The directory must contain the following six files: 
+                   * *ca.pem* and *ca-key.pem*: Contain the certificate and public key for the TLS Certificate Authority.
+                   * *cert.pem* and *key.pem*: Contain client certificate and public key which will be used for TLS authentication.
+                   * *server.pem* and *server-key.pem*: Contain the client certificate and public key that is used for TLS authentication.
 
 7. Después de haber escrito la información necesaria, haga clic en **Finish** (Finalizar).  
     Vuelve a aparecer el asistente **Deploy Docker Container on Azure** (Implementar contenedor de Docker en Azure).

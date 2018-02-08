@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: storage
-ms.workload: storage
-ms.tgt_pltfrm: na
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: yungez;robmcm
-ms.openlocfilehash: 0979c810711a01464c0b2c6e12a582a3f5eefef1
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: storage
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.workload: storage
+ms.openlocfilehash: 50c8475c66250c8e872849007349277fd3fe797b
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Cómo usar el iniciador de Spring Boot para Azure Storage
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/06/2017
 
 En este artículo se describe cómo crear una aplicación personalizada con **Spring Initializr** y, después, cómo usarla para acceder a Azure Storage.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -107,7 +107,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az group create --name wingtiptoysresources --location westus
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el grupo de recursos. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
@@ -132,7 +132,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az storage account create --name wingtiptoysstorage --resource-group wingtiptoysresources --location westus --sku Standard_LRS
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para la cuenta de almacenamiento. |
    | `resource-group` | Especifica el nombre del grupo de recursos que creó en el paso anterior. |
@@ -161,7 +161,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az storage account show-connection-string --name wingtiptoysstorage --resource-group wingtiptoysresources
    ```
    Donde:
-   | Parámetro | Descripción |
+   | . | DESCRIPCIÓN |
    | ---|---|
    | `name` | Especifica el nombre único de la cuenta de almacenamiento que creó en pasos anteriores. |
    | `resource-group` | Especifica el nombre del grupo de recursos que creó en pasos anteriores. |
@@ -310,7 +310,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    > ```
    > 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información acerca de otros iniciadores de Spring Boot disponibles para Microsoft Azure, consulte [Iniciadores de Spring Boot para Azure](spring-boot-starters-for-azure.md).
 

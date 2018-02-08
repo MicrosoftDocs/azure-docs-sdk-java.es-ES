@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: d0fe2a90fd12d2badf277659c7ce4ee768f6943c
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 213efa7fc31705b0ffcba6f2fe40e7186a365fae
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Administración de máquinas virtuales mediante Azure Explorer para IntelliJ
 
@@ -61,7 +61,7 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
    ![La ventana Seleccionar una imagen de máquina virtual][CR03]
 
-5. Haga clic en **Siguiente**. 
+5. Haga clic en **Next**. 
 
 6. En la pantalla **Configuración básica de máquina virtual**, escriba la siguiente información:
 
@@ -75,7 +75,7 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
    ![La ventana Configuración básica de máquina virtual][CR04]
 
-7. Haga clic en **Siguiente**. 
+7. Haga clic en **Next**. 
 
 8. En la ventana **Recursos asociados**, escriba la siguiente información:
 
@@ -140,7 +140,7 @@ Para eliminar una máquina virtual con Azure Explorer en IntelliJ, siga estos pa
 
    ![La ventana de confirmación de eliminación de máquina virtual][DE02]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener más información sobre los tamaños y los precios de máquinas virtuales de Azure, consulte los siguientes vínculos:
 

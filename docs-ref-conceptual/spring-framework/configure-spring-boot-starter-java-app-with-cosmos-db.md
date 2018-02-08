@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: cosmos-db
-ms.workload: data-services
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: robmcm;yungez;kevinzha
-ms.openlocfilehash: 06553920aebb5f27e4d02279e7024d6766e0be94
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: cosmos-db
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: data-services
+ms.openlocfilehash: 8190a7c45443ead9855d5a62194e02d7e9a919ee
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-azure-cosmos-db-documentdb-api"></a>Uso de la utilidad Spring Boot Starter con la API de DocumentDB para Azure Cosmos DB
 
@@ -28,7 +28,7 @@ Azure Cosmos DB es un servicio de base de datos de distribución global que perm
 
 En este artículo se muestra cómo crear una base de datos de Azure Cosmos DB mediante Azure Portal, cómo usar **[Spring Initializr]** para crear una aplicación Java personalizada y, después, cómo agregar la funcionalidad de iniciador de Spring Boot a su aplicación personalizada para almacenar datos en Azure Cosmos DB y recuperarlos mediante la API de DocumentDB.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -40,7 +40,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> y haga clic en **+Nuevo**.
 
-   ![Portal de Azure][AZ01]
+   ![Azure Portal][AZ01]
 
 1. Haga clic en **Bases de datos** y luego haga clic en **Azure Cosmos DB**.
 
@@ -289,7 +289,7 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
 
    ![Uso del Explorador de documentos para ver los datos][JV03]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información sobre el uso de Azure Cosmos DB y Java, consulte los siguientes artículos:
 

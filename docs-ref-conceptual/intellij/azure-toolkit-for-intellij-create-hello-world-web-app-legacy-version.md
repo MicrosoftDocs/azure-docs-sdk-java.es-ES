@@ -7,18 +7,18 @@ author: selvasingh
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: app-service
-ms.workload: web
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 11/15/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: aa0db81ffc9ff3fe44cf3d58a5b77ee447cdb1d1
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: app-service
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: web
+ms.openlocfilehash: ebe98a604b52dc9a4b5a47cbf65a4c68a5c86fe3
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ
 
@@ -141,7 +141,7 @@ Cuando se ha configurado el módulo, puede publicar la aplicación en Azure medi
 
       * En el cuadro de texto **Nombre**, especifique un nombre para el nuevo grupo de recursos.
       * En el menú desplegable **Región**, seleccione la ubicación adecuada del centro de datos de Azure para el grupo de recursos.
-      * Haga clic en **Aceptar**.
+      * Haga clic en **OK**.
 
    g. En el menú desplegable **Plan de App Service** se muestran los planes de App Service que están asociados con el grupo de recursos seleccionado. (Un plan de App Service especifica información como la ubicación de la aplicación web, el plan de tarifa y el tamaño de la instancia de proceso. Un único plan de App Service se puede usar para varias Web Apps, motivo por el cual se mantiene independiente de una implementación específica de Web Apps.)
       
@@ -156,7 +156,7 @@ Cuando se ha configurado el módulo, puede publicar la aplicación en Azure medi
       * En el menú desplegable **Ubicación**, seleccione la ubicación adecuada del centro de datos de Azure para el plan.
       * En el menú desplegable **Plan de tarifa**, seleccione la tarifa adecuada para el plan. Con fines de prueba, puede elegir **Gratis**.
       * En el menú desplegable **Tamaño de instancia**, seleccione el tamaño de instancia adecuado para el plan. Con fines de prueba, puede elegir **Pequeño**.
-      * Haga clic en **Aceptar**.
+      * Haga clic en **OK**.
 
    h. (Opcional) De manera predeterminada, Azure implementará automáticamente una distribución reciente de Java 8 como máquina virtual de Java en el contenedor de la aplicación. Sin embargo, puede seleccionar una versión y una distribución diferentes de la máquina virtual de Java. Para ello, siga estos pasos:
       
@@ -232,7 +232,7 @@ Cuando se muestre la vista **Azure Explorer** (Explorador de Azure), siga estos 
    
    ![Detener aplicación web][18]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 

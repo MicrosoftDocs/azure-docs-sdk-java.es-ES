@@ -7,27 +7,27 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: container-service
-ms.workload: web
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: asirveda;robmcm
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: container-service
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: 65e127e43c457b0ff92478f002065bb9d928f270
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: c3a10a0d6029ba31b13f82907311d9182f98acb6
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en Linux en Azure Container Service
 
 En este tutorial se explica cómo usar [cliente de Docker] para desarrollar e implementar una aplicación de [Spring Boot] en un host Linux en [Azure Container Service (AKS)].
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
-Para poder realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
+Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
@@ -142,7 +142,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
    </properties>
    ```
 
-1. Actualice la colección `<plugins>` del archivo *pom.xml* de modo que `<plugin>` contenga la dirección del servidor de inicio de sesión y el nombre de Registro de Azure Container Registry de la sección anterior de este tutorial. Por ejemplo:
+1. Actualice la colección `<plugins>` del archivo *pom.xml* de modo que `<plugin>` contenga la dirección del servidor de inicio de sesión y el nombre de Registro de Azure Container Registry de la sección anterior de este tutorial. Por ejemplo: 
 
    ```xml
    <plugin>
@@ -218,7 +218,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
    ![Configurar aplicaciones web][LX02]
 
-1. Haga clic en **Crear**.
+1. Haga clic en **Create**(Crear).
 
 > [!NOTE]
 >
@@ -234,7 +234,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 >
 > 5. En la sección **Configuración de la aplicación**, agregue una nueva variable de entorno denominada **PORT** y especifique como valor su número de puerto personalizado. (Vea el elemento n.º 4 de la imagen siguiente).
 >
-> 6. Haga clic en **Guardar**. (Vea el elemento n.º 5 de la imagen siguiente).
+> 6. Haga clic en **Save**(Guardar). (Vea el elemento n.º 5 de la imagen siguiente).
 >
 > ![Guardar un número de puerto personalizado en Azure Portal][LX03]
 >
@@ -260,7 +260,7 @@ The embedded Tomcat server in the sample Spring Boot application is configured t
 1. Save and close the *application.yml* file.
 -->
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 

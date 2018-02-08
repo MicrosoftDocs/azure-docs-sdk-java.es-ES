@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: 4dba6a6cbce2c8f6d4956717b3358c4e5b501e71
-ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: adf779e2ba6ca73ea3a2406613f9622cc9ecbf99
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implementación de una aplicación de Spring Boot en la nube con Azure App Service
 
@@ -177,7 +177,7 @@ Los siguientes pasos le guiarán por las fases necesarias para implementar la ap
 
 1. Una vez implementados los archivos JAR y *web.config* en la aplicación web, debe reiniciar esta con Azure Portal:
 
-   ![][AZ10]
+   ![Reinicio de la aplicación web][AZ10]
 
 1. Compruebe la aplicación web. Para ello, acceda a la URL de la aplicación con un explorador web, o bien utilice una sintaxis como la del siguiente ejemplo si tiene cURL disponible:
    ```

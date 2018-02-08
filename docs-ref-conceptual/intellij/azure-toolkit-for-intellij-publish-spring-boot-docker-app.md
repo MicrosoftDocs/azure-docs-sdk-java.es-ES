@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 65fbdc32824c2b6312929f4888844d1673101ac8
-ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 4228352efa4354bfe4969c1a5ecd3f3b40483f85
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ
 
@@ -150,7 +150,7 @@ Para publicar la aplicación Spring Boot, debe crear un artefacto preparado para
 
       ![Especificar la clase principal][ART04d]
 
-1. Haga clic en **Aceptar**.
+1. Haga clic en **OK**.
 
    ![Cerrar el cuadro de diálogo Estructura del proyecto][ART05]
 
@@ -214,7 +214,7 @@ IntelliJ debe mostrar el artefacto completado para la aplicación Spring Boot en
 
    ![Host de Docker correctamente implementado][PU06]
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener información sobre métodos adicionales para crear aplicaciones Spring Boot con IntelliJ, vea [Creating Spring Boot Projects](https://www.jetbrains.com/help/idea/creating-spring-boot-projects.html) (Creación de proyectos Spring Boot) en el sitio web de JetBrains.
 

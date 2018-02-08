@@ -7,19 +7,19 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: asirveda;robmcm
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
 ms.custom: mvc
-ms.openlocfilehash: ee8d5fecc31df427645c1552e27996592eaf27af
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 9eb37f302835ea40e92b5212d5bbc305d1311bc4
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/06/2017
 
 Este tutorial le guía en la combinación de estas dos populares tecnologías de código abierto para desarrollar e implementar una aplicación Spring Boot en Microsoft Azure. Concretamente, *[Spring Boot]* se usa para el desarrollo de aplicaciones, *[Kubernetes]* para la implementación de contenedores y [Azure Container Service (AKS)] para hospedar la aplicación.
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>requisitos previos
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
@@ -112,8 +112,8 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
 
    ```json
    {
-  "name": "password",
-  "value": "AbCdEfGhIjKlMnOpQrStUvWxYz"
+     "name": "password",
+     "value": "AbCdEfGhIjKlMnOpQrStUvWxYz"
    }
    ```
 
@@ -257,7 +257,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
 1. Abra el símbolo del sistema.
 
-1. Ejecute el contenedor en el clúster de Kubernetes mediante el comando `kubectl run`. Proporcione un nombre de servicio para la aplicación en Kubernetes y el nombre de la imagen completa. Por ejemplo:
+1. Ejecute el contenedor en el clúster de Kubernetes mediante el comando `kubectl run`. Proporcione un nombre de servicio para la aplicación en Kubernetes y el nombre de la imagen completa. Por ejemplo: 
    ```
    kubectl run gs-spring-boot-docker --image=wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest
    ```
@@ -267,7 +267,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
    * El parámetro `--image` especifica la combinación de servidor de inicio de sesión y nombre de imagen como `wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest`
 
-1. Exponga externamente el clúster Kubernetes mediante el comando `kubectl expose`. Especifique el nombre del servicio, el puerto TCP de acceso público utilizado para acceder a la aplicación y el puerto de destino interno en que escucha la aplicación. Por ejemplo:
+1. Exponga externamente el clúster Kubernetes mediante el comando `kubectl expose`. Especifique el nombre del servicio, el puerto TCP de acceso público utilizado para acceder a la aplicación y el puerto de destino interno en que escucha la aplicación. Por ejemplo: 
    ```
    kubectl expose deployment gs-spring-boot-docker --type=LoadBalancer --port=80 --target-port=8080
    ```
@@ -290,7 +290,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
    ![Examen de la aplicación de ejemplo en Azure][SB02]
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información acerca del uso de Spring Boot en Azure, consulte los siguientes artículos:
 
