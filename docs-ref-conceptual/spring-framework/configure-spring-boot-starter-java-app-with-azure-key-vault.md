@@ -7,24 +7,24 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: key-vault
-ms.workload: identity
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 11/29/2017
 ms.author: robmcm
-ms.openlocfilehash: 165a108147ef5ef7575820bbb6c2ee526888f722
-ms.sourcegitcommit: 558d875e9a255deb5b83b3f1646bd1dd9eee0a0d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: key-vault
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: identity
+ms.openlocfilehash: 52e7dc3f84ea96f22d8e478a597452c76ed8bf22
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
 ## <a name="overview"></a>Información general
 
-En este artículo se muestra cómo crear una aplicación con **[Spring Initializr]** que usa el iniciador de Spring Boot para Azure Key Vault para recuperar una cadena de conexión almacenada como un secreto en un almacén de claves.
+En este artículo se muestra cómo crear una aplicación con **[Spring Initializr]** que usa la funcionalidad Spring Boot Starter para Azure Key Vault para recuperar una cadena de conexión almacenada como un secreto en un almacén de claves.
 
 ## <a name="prerequisites"></a>requisitos previos
 
@@ -85,9 +85,8 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
        }
      }
    ]
-   ```
 
-1. Especifique el identificador GUID de la cuenta que desea usar con Azure; por ejemplo:
+1. Specify the GUID for the account you want to use with Azure; for example:
 
    ```azurecli
    az account set -s ssssssss-ssss-ssss-ssss-ssssssssssss
@@ -124,9 +123,10 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```shell
    az ad sp create-for-rbac --name "wingtiptoysuser"
    ```
+   Donde:
    | . | DESCRIPCIÓN |
    |---|---|
-   | `id` | Especifica el GUID del registro de la aplicación anterior. |
+   | `name` | Especifica el nombre de la entidad de servicio de Azure. |
 
    La CLI de Azure devolverá un mensaje de estado de JSON que contiene los valores de *appId* y *password*, que usará más adelante como identificador de cliente y contraseña de cliente; por ejemplo:
 
@@ -170,7 +170,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    |---|---|
    | `name` | Especifica el nombre del almacén de claves anterior. |
    | `secret-permission` | Especifica las [directivas de seguridad](https://docs.microsoft.com/en-us/cli/azure/keyvault) para su almacén de claves. |
-   | `object-id` | Especifica el GUID del registro de la aplicación anterior. |
+   | `spn` | Especifica el GUID del registro de la aplicación anterior. |
 
    La CLI de Azure mostrará los resultados de la creación de la directiva de seguridad, por ejemplo:  
 

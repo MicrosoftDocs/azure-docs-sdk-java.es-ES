@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: active-directory
-ms.workload: identity
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: robmcm
-ms.openlocfilehash: a999e33674ea01e776db10186e8af83ce157ef20
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: active-directory
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: identity
+ms.openlocfilehash: cf1cad0b87626058f7204a6565d09fb8901b7ce4
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-active-directory"></a>Cómo usar el iniciador de Spring Boot para Azure Active Directory
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/06/2017
 
 En este artículo se muestra cómo crear una aplicación con **[Spring Initializr]** que usa la funcionalidad Spring Boot Starter para Azure Active Directory (Azure AD).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -144,11 +144,11 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    azure.activedirectory.activeDirectoryGroups=Users
    ```
    Donde:
-   Parámetro | Descripción
-   ---|---|---
-   `azure.activedirectory.clientId` | Contiene el **Id. de aplicación** obtenido anteriormente.
-   `azure.activedirectory.clientSecret` | Contiene la clave del registro de aplicaciones que completó anteriormente.
-   `azure.activedirectory.activeDirectoryGroups` | Contiene una lista de los grupos de Active Directory que se usarán para la autenticación.
+   | . | DESCRIPCIÓN |
+   |---|---|
+   | `azure.activedirectory.clientId` | Contiene el **Id. de aplicación** obtenido anteriormente. |
+   | `azure.activedirectory.clientSecret` | Contiene la clave del registro de aplicaciones que completó anteriormente. |
+   | `azure.activedirectory.activeDirectoryGroups` | Contiene una lista de los grupos de Active Directory que se usarán para la autenticación. |
 
 
 1. Guarde y cierre el archivo *application.properties*.
@@ -222,7 +222,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    mvn clean package
    ```
 
-   ![][build-application]
+   ![Compilación de la aplicación][build-application]
 
 1. Compile la aplicación de Spring Boot con Maven y ejecútela; por ejemplo:
 
@@ -231,11 +231,9 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    mvn spring-boot:run
    ```
 
-
-
 1. Después de que Maven haya compilado e iniciado la aplicación, abra <http://localhost:8080> en un explorador web.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para más información acerca de cómo usar Azure Active Directory, consulte los siguientes artículos:
 

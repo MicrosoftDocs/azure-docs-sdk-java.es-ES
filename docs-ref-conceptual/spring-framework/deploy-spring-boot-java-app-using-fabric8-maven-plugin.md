@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: yuwzho;robmcm
-ms.openlocfilehash: 6e33c43d3fb4b63cff1f1c7c04cbf9523aa97770
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 396d0ecfb051109924f09ae8b5d9b8074e49c404
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 12/06/2017
 
 En este tutorial se explica cómo usar el complemento Fabric8 para Maven para desarrollar e implementar una aplicación en un host Linux en [Azure Container Service (AKS)].
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
-Para poder realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
+Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
@@ -253,10 +253,12 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
    ```azurecli
    az acr create --admin-enabled --resource-group wingtiptoys-kubernetes --location westeurope --name wingtiptoysregistry --sku Basic
    ```
-   Donde:  
-      * *wingtiptoys-kubernetes* es el nombre del grupo de recursos que se mencionó anteriormente en el artículo  
-      * *wingtiptoysregistry* es un nombre único para el registro privado
-      * *westeurope* es una ubicación geográfica adecuada para la aplicación  
+   Donde:
+   | . | DESCRIPCIÓN |
+   |---|---|
+   | `wingtiptoys-kubernetes` | Especifica el nombre del grupo de recursos que se mencionó anteriormente en este artículo. |
+   | `wingtiptoysregistry` | Especifica un nombre único para el registro privado. |
+   | `westeurope` | Especifica una ubicación geográfica adecuada para la aplicación. |
 
    La CLI de Azure mostrará los resultados de la creación del registro, por ejemplo:  
 
@@ -501,7 +503,7 @@ Cuando ya no se necesita el clúster de Kubernetes, puede usar el comando `az gr
    az group delete --name wingtiptoys-kubernetes --yes --no-wait
    ```
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 

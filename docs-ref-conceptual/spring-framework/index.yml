@@ -9,17 +9,17 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   manager: routlaw
-  ms.date: 12/01/2017
+  ms.date: 02/01/2018
   ms.topic: article
   ms.prod: azure
   ms.technology: azure
   ms.devlang: java
   ms.service: multiple
-  ms.openlocfilehash: 989b1ab0807859407788e9979d6904aea9479c22
-  ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+  ms.openlocfilehash: 60889d150a6ac3c73441aacb053e1f33ccc3fb88
+  ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/06/2017
+  ms.lasthandoff: 02/03/2018
 sections:
 - items:
   - type: markdown
@@ -61,7 +61,7 @@ sections:
     - html: "<a href=\"deploy-spring-boot-java-app-using-fabric8-maven-plugin.md\">Implementación de una aplicación de Spring Boot mediante el complemento Fabric8 para Maven</a>"
     - html: "<a href=\"deploy-containerized-spring-boot-java-app-with-maven-plugin.md\">Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot en contenedor en Azure</a>"
     - html: "<a href=\"deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md\">Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot de Azure Container Registry en Azure App Service</a>"
-- title: Muestras
+- title: Ejemplos
   items:
   - type: list
     style: unordered
