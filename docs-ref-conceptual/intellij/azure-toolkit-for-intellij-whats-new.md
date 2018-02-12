@@ -7,84 +7,80 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 46ed791f-df59-416a-809e-f52345ad973c
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: 14d9b4630546dbcb16506834678b86fa56a69c76
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: dcbd7e8a78470df0ab3bc2d7c87137a97fc4665c
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
-# <a name="whats-new-in-the-azure-toolkit-for-intellij"></a><span data-ttu-id="8eb81-103">Novedades del kit de herramientas de Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="8eb81-103">What's New in the Azure Toolkit for IntelliJ</span></span>
+# <a name="whats-new-in-the-azure-toolkit-for-intellij"></a><span data-ttu-id="07ee6-103">Novedades del kit de herramientas de Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="07ee6-103">What's New in the Azure Toolkit for IntelliJ</span></span>
 
-## <a name="azure-toolkit-for-intellij-releases"></a><span data-ttu-id="8eb81-104">Kit de herramientas de Azure para versiones de IntelliJ</span><span class="sxs-lookup"><span data-stu-id="8eb81-104">Azure Toolkit for IntelliJ Releases</span></span>
-<span data-ttu-id="8eb81-105">Este artículo contiene información sobre las diversas versiones y actualizaciones más recientes para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-105">This article contains information on the various releases and latest updates to the Azure Toolkit for IntelliJ.</span></span>
+<span data-ttu-id="07ee6-104">La siguiente página web contiene información sobre las diversas versiones y actualizaciones más recientes para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="07ee6-104">The following web page contains information on the various releases and latest updates to the Azure Toolkit for IntelliJ.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="8eb81-106">Consulte la siguiente página web para ver la información más reciente:</span><span class="sxs-lookup"><span data-stu-id="8eb81-106">See the following web page for the latest information:</span></span>
-> 
-> <span data-ttu-id="8eb81-107"><https://github.com/Microsoft/azure-tools-for-java/releases></span><span class="sxs-lookup"><span data-stu-id="8eb81-107"><https://github.com/Microsoft/azure-tools-for-java/releases></span></span>
+<span data-ttu-id="07ee6-105"><https://github.com/Microsoft/azure-tools-for-java/releases></span><span class="sxs-lookup"><span data-stu-id="07ee6-105"><https://github.com/Microsoft/azure-tools-for-java/releases></span></span>
 
-> [!NOTE]
-> <span data-ttu-id="8eb81-108">También hay un kit de herramientas de Azure para el IDE de Eclipse.</span><span class="sxs-lookup"><span data-stu-id="8eb81-108">There is also an Azure Toolkit for the Eclipse IDE.</span></span> <span data-ttu-id="8eb81-109">Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="8eb81-109">For more information, see [Azure Toolkit for Eclipse].</span></span>
-> 
+> [!NOTE] 
+> <span data-ttu-id="07ee6-106">También hay un kit de herramientas de Azure para el IDE de Eclipse.</span><span class="sxs-lookup"><span data-stu-id="07ee6-106">There is also an Azure Toolkit for the Eclipse IDE.</span></span> <span data-ttu-id="07ee6-107">Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="07ee6-107">For more information, see [Azure Toolkit for Eclipse].</span></span> 
 > 
 
-### <a name="april-14-2017"></a><span data-ttu-id="8eb81-110">14 de abril de 2017</span><span class="sxs-lookup"><span data-stu-id="8eb81-110">April 14, 2017</span></span>
-<span data-ttu-id="8eb81-111">El kit de herramientas de Azure para IntelliJ, versión de abril de 2017, incluye las siguientes mejoras:</span><span class="sxs-lookup"><span data-stu-id="8eb81-111">The Azure Toolkit for IntelliJ - April 2017 release includes the following enhancements:</span></span>
+<!--
 
-* <span data-ttu-id="8eb81-112">**Experiencia de inicio de sesión mejorada de Azure**: el kit de herramientas de Azure para IntelliJ ahora admite dos métodos para iniciar sesión en la cuenta de Azure: *interactivo* y *automatizado*.</span><span class="sxs-lookup"><span data-stu-id="8eb81-112">**Improved Azure Sign In Experience**: The Azure Toolkit for IntelliJ now supports two methods of logging into your Azure account: *Interactive* and *Automated*.</span></span> <span data-ttu-id="8eb81-113">Para más información, vea [Instrucciones de inicio de sesión de Azure del kit de herramientas de Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="8eb81-113">For more information, see [Azure Sign In Instructions for the Azure Toolkit for IntelliJ].</span></span>
-* <span data-ttu-id="8eb81-114">**Publicación con contenedores de Docker**: ahora puede publicar las aplicaciones web como contenedores de Docker mediante el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-114">**Publishing using Docker Containers**: You can now publish your web applications as Docker Containers using Azure Toolkit for IntelliJ.</span></span> <span data-ttu-id="8eb81-115">Para más información, vea [Cómo publicar una aplicación web como un contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="8eb81-115">For more information, see [How to publish a Web App as a Docker Container using the Azure Toolkit for IntelliJ].</span></span>
-* <span data-ttu-id="8eb81-116">**Administración de cuentas de almacenamiento**: el kit de herramientas de Azure para IntelliJ ahora admite la administración de las cuentas de almacenamiento desde la vista del explorador de Azure.</span><span class="sxs-lookup"><span data-stu-id="8eb81-116">**Storage Account Management**: The Azure Toolkit for IntelliJ now supports managing your storage accounts from the Azure Explorer View.</span></span> <span data-ttu-id="8eb81-117">Para más información, vea [Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="8eb81-117">For more information, see [Managing Storage Accounts using the Azure Explorer for IntelliJ].</span></span>
-* <span data-ttu-id="8eb81-118">**Administración de máquinas virtuales**: el kit de herramientas de Azure para IntelliJ ahora admite la administración de las máquinas virtuales desde la ventana de herramientas del explorador de Azure.</span><span class="sxs-lookup"><span data-stu-id="8eb81-118">**Virtual Machine Management**: The Azure Toolkit for IntelliJ now supports managing your virtual machines from the Azure Explorer Tool Window.</span></span> <span data-ttu-id="8eb81-119">Para más información, vea [Administración de máquinas virtuales mediante Azure Explorer para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="8eb81-119">For more information, see [Managing Virtual Machines using the Azure Explorer for IntelliJ].</span></span>
-* <span data-ttu-id="8eb81-120">**Eliminación de la compatibilidad con la depuración remota**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-120">**Removal of Remote Debugging Support**.</span></span> <span data-ttu-id="8eb81-121">La depuración remota de aplicaciones web de Java en Azure App Service se ha eliminado del kit de herramientas de Azure para IntelliJ; esto ha sido necesario para resolver algunos problemas que los clientes experimentaban al usar el kit de herramientas.</span><span class="sxs-lookup"><span data-stu-id="8eb81-121">Remote debugging of Java web apps on Azure App Service has been removed from the Azure Toolkit for IntelliJ; this was necessary to resolve some problems which customers were experiencing when using the toolkit.</span></span>
+### April 14, 2017
+The Azure Toolkit for IntelliJ - April 2017 release includes the following enhancements:
 
-### <a name="august-26-2016"></a><span data-ttu-id="8eb81-122">26 de agosto de 2016</span><span class="sxs-lookup"><span data-stu-id="8eb81-122">August 26, 2016</span></span>
-<span data-ttu-id="8eb81-123">En la versión de agosto de 2016, el Kit de herramientas de Azure para IntelliJ incluye las siguientes mejoras:</span><span class="sxs-lookup"><span data-stu-id="8eb81-123">The Azure Toolkit for IntelliJ - August 2016 release includes the following enhancements:</span></span>
+* **Improved Azure Sign In Experience**: The Azure Toolkit for IntelliJ now supports two methods of logging into your Azure account: *Interactive* and *Automated*. For more information, see [Azure Sign In Instructions for the Azure Toolkit for IntelliJ].
+* **Publishing using Docker Containers**: You can now publish your web applications as Docker Containers using Azure Toolkit for IntelliJ. For more information, see [How to publish a Web App as a Docker Container using the Azure Toolkit for IntelliJ].
+* **Storage Account Management**: The Azure Toolkit for IntelliJ now supports managing your storage accounts from the Azure Explorer View. For more information, see [Managing Storage Accounts using the Azure Explorer for IntelliJ].
+* **Virtual Machine Management**: The Azure Toolkit for IntelliJ now supports managing your virtual machines from the Azure Explorer Tool Window. For more information, see [Managing Virtual Machines using the Azure Explorer for IntelliJ].
+* **Removal of Remote Debugging Support**. Remote debugging of Java web apps on Azure App Service has been removed from the Azure Toolkit for IntelliJ; this was necessary to resolve some problems which customers were experiencing when using the toolkit.
 
-* <span data-ttu-id="8eb81-124">**Distribuciones de JDK personalizadas**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-124">**Custom JDK Distributions**.</span></span> <span data-ttu-id="8eb81-125">El Kit de herramientas de Azure para IntelliJ ahora admite especificar e implementar una versión de JDK arbitraria en el contenedor de Azure WebApp:</span><span class="sxs-lookup"><span data-stu-id="8eb81-125">The Azure Toolkit for IntelliJ now supports specifying and deploying an arbitrary JDK version to your Azure WebApp container:</span></span>
-  * <span data-ttu-id="8eb81-126">Además de los JDK que proporciona Azure, puede elegir entre una gran variedad de versiones de Zulu OpenJDK que pone a disposición Azul Systems en Azure.</span><span class="sxs-lookup"><span data-stu-id="8eb81-126">In addition to the JDKs provided by Azure, you can also choose from a wide selection of Zulu OpenJDK versions made available on Azure by Azul Systems.</span></span>
-  * <span data-ttu-id="8eb81-127">También puede especificar su propia distribución de JDK si la carga como un archivo ZIP en su cuenta de almacenamiento.</span><span class="sxs-lookup"><span data-stu-id="8eb81-127">You can also specify your own JDK distribution if you upload it as a ZIP file to your storage account.</span></span>
-* <span data-ttu-id="8eb81-128">**Mejoras en la vista del Explorador de Azure**:</span><span class="sxs-lookup"><span data-stu-id="8eb81-128">**Enhancements to the Azure Explorer view**:</span></span>
-  * <span data-ttu-id="8eb81-129">Compatibilidad con la administración de máquinas virtuales mediante el nuevo modelo de Azure Resource Manager: puede crear y eliminar máquinas virtuales basadas en Resource Manager sin salir del IDE, así como incluirlas en listas.</span><span class="sxs-lookup"><span data-stu-id="8eb81-129">Support for Virtual Machine management using Azure's new Resource Manager model: you can list, create and delete resource manager-based virtual machines without leaving the IDE.</span></span>
-  * <span data-ttu-id="8eb81-130">Compatibilidad con la administración de blobs de cuentas de almacenamiento mediante Azure Resource Manager, lo que complementa la funcionalidad existente para administrar las cuentas de almacenamiento clásicas.</span><span class="sxs-lookup"><span data-stu-id="8eb81-130">Support for Storage Account blob management using Azure's Resource Manager, which complements the existing functionality for managing "classic" storage accounts.</span></span>
-* <span data-ttu-id="8eb81-131">**Microsoft JDBC Driver 6.0 para SQL Server**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-131">**Microsoft JDBC Driver 6.0 for SQL Server**.</span></span> <span data-ttu-id="8eb81-132">Esta actualización incluye la versión más reciente de Microsoft JDBC Driver para Microsoft SQL Server (6.0), que ahora se incluye como una biblioteca que se puede agregar fácilmente a los proyectos de Java, con lo que sustituye a la versión anterior.</span><span class="sxs-lookup"><span data-stu-id="8eb81-132">This update includes the latest JDBC driver for Microsoft SQL Server (v6.0), which is now included as a library that you can easily add to your Java projects, thereby replacing the older version.</span></span>
+### August 26, 2016
+The Azure Toolkit for IntelliJ - August 2016 release includes the following enhancements:
 
-### <a name="june-29-2016"></a><span data-ttu-id="8eb81-133">29 de junio de 2016</span><span class="sxs-lookup"><span data-stu-id="8eb81-133">June 29, 2016</span></span>
-<span data-ttu-id="8eb81-134">El kit de herramientas de Azure para IntelliJ, versión de junio de 2016, incluye las siguientes mejoras:</span><span class="sxs-lookup"><span data-stu-id="8eb81-134">The Azure Toolkit for IntelliJ - June 2016 release includes the following enhancements:</span></span>
+* **Custom JDK Distributions**. The Azure Toolkit for IntelliJ now supports specifying and deploying an arbitrary JDK version to your Azure WebApp container:
+  * In addition to the JDKs provided by Azure, you can also choose from a wide selection of Zulu OpenJDK versions made available on Azure by Azul Systems.
+  * You can also specify your own JDK distribution if you upload it as a ZIP file to your storage account.
+* **Enhancements to the Azure Explorer view**:
+  * Support for Virtual Machine management using Azure's new Resource Manager model: you can list, create and delete resource manager-based virtual machines without leaving the IDE.
+  * Support for Storage Account blob management using Azure's Resource Manager, which complements the existing functionality for managing "classic" storage accounts.
+* **Microsoft JDBC Driver 6.0 for SQL Server**. This update includes the latest JDBC driver for Microsoft SQL Server (v6.0), which is now included as a library that you can easily add to your Java projects, thereby replacing the older version.
 
-* <span data-ttu-id="8eb81-135">**Requisito de Java 8**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-135">**Java 8 Requirement**.</span></span> <span data-ttu-id="8eb81-136">El Kit de herramientas de Azure para IntelliJ ahora requiere Java 8, aunque este requisito es solo para el kit de herramientas: las aplicaciones pueden seguir usando todas las versiones de Java compatibles con Azure.</span><span class="sxs-lookup"><span data-stu-id="8eb81-136">The Azure Toolkit for IntelliJ now requires Java 8, although this requirement is only for the toolkit - your applications can continue to use all versions of Java that are supported by Azure.</span></span>
-* <span data-ttu-id="8eb81-137">**Compatibilidad para el JDK más reciente de Java**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-137">**Support for the latest Java JDKs**.</span></span> <span data-ttu-id="8eb81-138">Las versiones más recientes de los JDK de Java ahora admiten el Kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-138">The latest versions of the Java JDKs are now supported by the Azure Toolkit for IntelliJ.</span></span>
-* <span data-ttu-id="8eb81-139">**Compatibilidad con la versión 2.9.1 del SDK de Azure**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-139">**Support for Azure SDK v2.9.1**.</span></span> <span data-ttu-id="8eb81-140">La versión más reciente del SDK de Azure ahora es el requisito previo mínimo para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-140">The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for IntelliJ.</span></span>
-* <span data-ttu-id="8eb81-141">**Ejemplos integrados**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-141">**Integrated Samples**.</span></span> <span data-ttu-id="8eb81-142">El Kit de herramientas de Azure para IntelliJ ahora cuenta con varias aplicaciones de ejemplo para ayudar a los desarrolladores a empezar a trabajar.</span><span class="sxs-lookup"><span data-stu-id="8eb81-142">The Azure Toolkit for IntelliJ now features several sample applications to help developers get started.</span></span>
-* <span data-ttu-id="8eb81-143">**Integración de herramientas de HDInsight**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-143">**HDInsight Tool Integration**.</span></span> <span data-ttu-id="8eb81-144">Las herramientas de Azure HDInsight ahora están incluidas en el Kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-144">Azure's HDInsight Tools are now bundled with the Azure Toolkit for IntelliJ.</span></span> <span data-ttu-id="8eb81-145">Para más información, consulte [Complemento Herramientas de HDInsight para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="8eb81-145">For more information, see [HDInsight Tools Plugin for IntelliJ].</span></span>
-* <span data-ttu-id="8eb81-146">**Depuración remota de Web Apps de Java**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-146">**Remote Debugging of Java Web Apps**.</span></span> <span data-ttu-id="8eb81-147">El Kit de herramientas de Azure para IntelliJ ahora admite la depuración remota de aplicaciones web de Java en Azure App Service.</span><span class="sxs-lookup"><span data-stu-id="8eb81-147">The Azure Toolkit for IntelliJ now supports remote debugging of Java web apps on Azure App Service.</span></span>
+### June 29, 2016
+The Azure Toolkit for IntelliJ - June 2016 release includes the following enhancements:
 
-### <a name="april-12-2016"></a><span data-ttu-id="8eb81-148">12 de abril de 2016</span><span class="sxs-lookup"><span data-stu-id="8eb81-148">April 12, 2016</span></span>
-<span data-ttu-id="8eb81-149">El kit de herramientas de Azure para IntelliJ, versión de abril de 2016, incluye las siguientes mejoras:</span><span class="sxs-lookup"><span data-stu-id="8eb81-149">The Azure Toolkit for IntelliJ - April 2016 release includes the following enhancements:</span></span>
+* **Java 8 Requirement**. The Azure Toolkit for IntelliJ now requires Java 8, although this requirement is only for the toolkit - your applications can continue to use all versions of Java that are supported by Azure.
+* **Support for the latest Java JDKs**. The latest versions of the Java JDKs are now supported by the Azure Toolkit for IntelliJ.
+* **Support for Azure SDK v2.9.1**. The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for IntelliJ.
+* **Integrated Samples**. The Azure Toolkit for IntelliJ now features several sample applications to help developers get started.
+* **HDInsight Tool Integration**. Azure's HDInsight Tools are now bundled with the Azure Toolkit for IntelliJ. For more information, see [HDInsight Tools Plugin for IntelliJ].
+* **Remote Debugging of Java Web Apps**. The Azure Toolkit for IntelliJ now supports remote debugging of Java web apps on Azure App Service.
 
-* <span data-ttu-id="8eb81-150">**Compatibilidad con la versión 2.9.0 del SDK de Azure**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-150">**Support for Azure SDK v2.9.0**.</span></span> <span data-ttu-id="8eb81-151">La versión más reciente del SDK de Azure ahora es el requisito previo mínimo para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-151">The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for IntelliJ.</span></span>
-* <span data-ttu-id="8eb81-152">**Mejoras variadas en la facilidad de uso, la capacidad de respuesta y el rendimiento relacionadas con la compatibilidad de aplicaciones web de Azure**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-152">**Miscellaneous usability, responsiveness and performance improvements related to Azure Web App support**.</span></span> <span data-ttu-id="8eb81-153">Diversas optimizaciones de rendimiento con respecto a la manera en que el kit de herramientas se comunica con Azure generan una IU con mayor capacidad de respuesta.</span><span class="sxs-lookup"><span data-stu-id="8eb81-153">A number of performance optimizations in how the Toolkit communicates with Azure result in a more responsive UI.</span></span>
-* <span data-ttu-id="8eb81-154">**Capacidad de eliminar un contenedor de aplicaciones web en Azure desde IntelliJ**.</span><span class="sxs-lookup"><span data-stu-id="8eb81-154">**Ability to delete an existing Web Application container in Azure from within IntelliJ**.</span></span> <span data-ttu-id="8eb81-155">El kit de herramientas de Azure para IntelliJ ahora le permite eliminar un contenedor web de Azure existente sin salir de IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="8eb81-155">The Azure Toolkit for IntelliJ now allows you to delete an existing Azure Web container without leaving IntelliJ.</span></span>
+### April 12, 2016
+The Azure Toolkit for IntelliJ - April 2016 release includes the following enhancements:
 
-## <a name="next-steps"></a><span data-ttu-id="8eb81-156">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="8eb81-156">Next steps</span></span>
+* **Support for Azure SDK v2.9.0**. The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for IntelliJ.
+* **Miscellaneous usability, responsiveness and performance improvements related to Azure Web App support**. A number of performance optimizations in how the Toolkit communicates with Azure result in a more responsive UI.
+* **Ability to delete an existing Web Application container in Azure from within IntelliJ**. The Azure Toolkit for IntelliJ now allows you to delete an existing Azure Web container without leaving IntelliJ.
+
+-->
+
+## <a name="next-steps"></a><span data-ttu-id="07ee6-108">pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="07ee6-108">Next steps</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 
 [Kit de herramientas de Azure para Eclipse]: ../eclipse/azure-toolkit-for-eclipse.md
-
-[Instrucciones de inicio de sesión de Azure del kit de herramientas de Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
-[Cómo publicar una aplicación web como un contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ]: ./azure-toolkit-for-intellij-publish-as-docker-container.md
-[Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ]: ./azure-toolkit-for-intellij-managing-storage-accounts-using-azure-explorer.md
-[Administración de máquinas virtuales mediante Azure Explorer para IntelliJ]: ./azure-toolkit-for-intellij-managing-virtual-machines-using-azure-explorer.md
-
+[Azure Sign In Instructions for the Azure Toolkit for IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
+[How to publish a Web App as a Docker Container using the Azure Toolkit for IntelliJ]: ./azure-toolkit-for-intellij-publish-as-docker-container.md
+[Managing Storage Accounts using the Azure Explorer for IntelliJ]: ./azure-toolkit-for-intellij-managing-storage-accounts-using-azure-explorer.md
+[Managing Virtual Machines using the Azure Explorer for IntelliJ]: ./azure-toolkit-for-intellij-managing-virtual-machines-using-azure-explorer.md
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure
-
-[Complemento Herramientas de HDInsight para IntelliJ]: /azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin
+[HDInsight Tools Plugin for IntelliJ]: /azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin
