@@ -12,17 +12,17 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
-ms.openlocfilehash: 69c75984f6274b5423614bd51c40957d3d509802
-ms.sourcegitcommit: 1f6a80e067a8bdbbb4b2da2e2145fda73d5fe65a
+ms.openlocfilehash: f069183c96cdc42d590d2e58a5a6a500be5ab69a
+ms.sourcegitcommit: 720c2eaf66532d277015610ec375c71e934d9ee6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="get-started-with-cloud-development-using-the-azure-libraries-for-java"></a>Introducción al desarrollo de soluciones para la nube con las bibliotecas de Azure para Java
 
 Esta guía ayuda a configurar un entorno de desarrollo para desarrollar en Java para Azure. Después, creará algunos recursos de Azure y los conectará para realizar algunas tareas básicas, como cargar un archivo o implementar una aplicación web. Cuando haya terminado, estará listo para comenzar a usar los servicios de Azure en sus propias aplicaciones de Java.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 - Una cuenta de Azure. Si no tiene una, [consiga una evaluación gratuita](https://azure.microsoft.com/free/).
 - [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) o [CLI de Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).
@@ -86,10 +86,10 @@ Establezca una variable de entorno `AZURE_AUTH_LOCATION` con la ruta de acceso c
 export AZURE_AUTH_LOCATION=/Users/raisa/azureauth.properties
 ```
 
-Si trabaja en un entorno Windows, agregue la variable a las propiedades del sistema. Abra PowerShell y, después de reemplazar la segunda variable con la ruta de acceso al archivo, escriba el comando siguiente:
+Si trabaja en un entorno Windows, agregue la variable a las propiedades del sistema. Abra una ventana de PowerShell con privilegios de administrador y, después de reemplazar la segunda variable por la ruta de acceso al archivo, escriba el siguiente comando:
 
 ```powershell
-[Environment]::SetEnvironmentVariable("AZURE_AUTH_LOCATION", "C:\<fullpath>\azureauth.properties", "Machine")
+setx AZURE_AUTH_LOCATION "C:\<fullpath>\azureauth.properties" /m
 ```
 
 ## <a name="create-a-new-maven-project"></a>Creación de un nuevo proyecto de Maven
@@ -135,7 +135,7 @@ Agregue una entrada `build` bajo el elemento de nivel superior `project` para us
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
             <configuration>
-                <mainClass>com.fabrikam.testAzureApp.AzureApp</mainClass>
+                <mainClass>com.fabrikam.AzureApp</mainClass>
             </configuration>
         </plugin>
     </plugins>
@@ -144,10 +144,10 @@ Agregue una entrada `build` bajo el elemento de nivel superior `project` para us
    
 ## <a name="create-a-linux-virtual-machine"></a>Creación de una máquina virtual con Linux
 
-Cree un nuevo archivo denominado `AzureApp.java` en el directorio `src/main/java` del proyecto y pegue el siguiente bloque de código. Actualice las variables `userName` y `sshKey` con los valores reales de la máquina. El código crea una nueva máquina virtual Linux con el nombre `testLinuxVM` en el grupo de recursos `sampleResourceGroup` en la región de Azure Este de EE. UU.
+Cree un nuevo archivo denominado `AzureApp.java` en el directorio `src/main/java/com/fabirkam` del proyecto y pegue el siguiente bloque de código. Actualice las variables `userName` y `sshKey` con los valores reales de la máquina. El código crea una nueva máquina virtual Linux con el nombre `testLinuxVM` en el grupo de recursos `sampleResourceGroup` en la región de Azure Este de EE. UU.
 
 ```java
-package com.fabrikam.AzureApp;
+package com.fabrikam;
 
 import com.microsoft.azure.management.Azure;
 import com.microsoft.azure.management.compute.VirtualMachine;
