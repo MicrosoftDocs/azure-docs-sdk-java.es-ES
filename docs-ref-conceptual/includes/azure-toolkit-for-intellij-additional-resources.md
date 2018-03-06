@@ -1,6 +1,6 @@
 Para más información sobre el Kit de herramientas de Azure para IntelliJ IDEA, consulte los siguientes vínculos: 
 
-* [Kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md) 
+* [kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md) 
 * [Notas de la versión](https://github.com/Microsoft/azure-tools-for-java/releases) 
 * [Instalación del kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij-installation.md) 
 * [Creación de una aplicación web Hello World para Azure en IntelliJ](../intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md) 
