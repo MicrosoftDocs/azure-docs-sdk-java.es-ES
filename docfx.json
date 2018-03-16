@@ -44,7 +44,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -52,10 +53,10 @@
           "**/includes/**"
         ]
       }
-    ],
-    "overwrite": "docs-ref-overwrite/*.md",
+    ],    "overwrite": "docs-ref-overwrite/*.md",
     "externalReference": [],
     "globalMetadata": {
+      "bilingual_type": "hover over"
       "author": "erickson-doug",
       "ms.author": "douge",
       "manager": "douge",
@@ -64,10 +65,15 @@
       "ms.date": "11/16/2016",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "brand": "azure",
-      "bilingual_type": "hover over"
+      "_gitContribute": {
+        "repo": "https://github.com/azure/azure-docs-sdk-java",
+        "branch": "master",
+        "apiSpecFolder": "docs-ref-overwrite"
+      }
     },
     "fileMetadata": {
-      "ms.service": {
+      "ms.service":
+      {
         "docs-ref-autogen/com.microsoft.applicationinsights**.yml": "application-insights",
         "docs-ref-autogen/com.microsoft.azure.batch**.yml": "batch",
         "docs-ref-autogen/com.microsoft.azure.eventhubs**.yml": "event-hubs",
@@ -107,7 +113,7 @@
       "langs": {
         "docs-ref-autogen/**.yml": ["java"]
       },
-      "open_to_public_contributors": {
+       "open_to_public_contributors": {
         "docs-ref-conceptual/**.md": false
       }
     },
