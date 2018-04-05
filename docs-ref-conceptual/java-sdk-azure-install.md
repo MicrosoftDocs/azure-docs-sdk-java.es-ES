@@ -10,11 +10,11 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 570f820e1349e1dfd01a6c7f323b5312c14c40c6
-ms.sourcegitcommit: 4b63ecd2c92a9115dfae018618e4e4046b061b3e
+ms.openlocfilehash: 5c8bb4b81080461285551573eefc0d76b47b2d3d
+ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="azure-libraries-for-java"></a>Bibliotecas de Azure para Java
 
@@ -22,9 +22,9 @@ Las bibliotecas de Azure le ayudarán a utilizar los servicios de Azure en aplic
 
 | | | | |
 |:-------------:|:----------:|:----:|:---:|
-| [Azure Storage](#azure-storage) | [Base de datos SQL](#sql-database)  | [Redis Cache](#redis-cache)   | [DocumentDB](#documentdb) |
-| [Bus de servicio](#servicebus)  | [Azure Active Directory](#azuread) | [Almacén de claves](#keyvault)  | [Event Hubs](#eventhub)
-| [Servicio IoT](#iotservice) | [Dispositivo de IoT](#iotdevice) | [Data Lake](#datalake)  | [AppInsights](#appinsights) | 
+| [Azure Storage](#azure-storage) | [SQL Database](#sql-database)  | [Redis Cache](#redis-cache)   | [Azure Cosmos DB](#cosmos-db) |
+| [Service Bus](#servicebus)  | [Azure Active Directory](#azuread) | [Key Vault](#keyvault)  | [Event Hubs](#eventhub)
+| [Servicio IoT](#iotservice) | [Dispositivo IoT](#iotdevice) | [Data Lake](#datalake)  | [AppInsights](#appinsights) | 
 | [Batch](#batch) | [Administración de recursos de Azure](#management) |
 
 ## <a name="install-with-maven"></a>Instalación con Maven
@@ -65,7 +65,7 @@ Almacenamiento de datos y mensajería para las aplicaciones.
 
 <a name="sql-database"></a>
 
-### <a name="sql-databaseazuresql-databasesql-database-technical-overview"></a>[Base de datos SQL](/azure/sql-database/sql-database-technical-overview)
+### <a name="sql-databaseazuresql-databasesql-database-technical-overview"></a>[SQL Database](/azure/sql-database/sql-database-technical-overview)
 
 Controlador JDBC para Azure SQL Database.
 
@@ -97,9 +97,9 @@ Almacén de pares clave-valor de baja latencia y alto rendimiento.
 
 [Ejemplos](/azure/redis-cache/cache-java-get-started) | [Referencia](http://xetorthio.github.io/jedis)  | [GitHub](https://github.com/xetorthio/jedis)  | [Notas de la versión](https://github.com/xetorthio/jedis/releases)  
 
-<a name="documentdb"></a>
+<a name="cosmos-db"></a>
 
-### <a name="cosmos-dbazuredocumentdbdocumentdb-introduction"></a>[Cosmos DB](/azure/documentdb/documentdb-introduction)
+### <a name="azure-cosmos-dbazurecosmos-dbintroduction"></a>[Azure Cosmos DB](/azure/cosmos-db/introduction)
 
 Base de datos NoSQL escalable con documentos JSON y la sintaxis de consulta SQL o JavaScript.   
 
@@ -111,7 +111,7 @@ Base de datos NoSQL escalable con documentos JSON y la sintaxis de consulta SQL 
 </dependency>
 ```
 
-[Ejemplos](/azure/documentdb/documentdb-java-application) | [Referencia](http://azure.github.io/azure-documentdb-java/) | [GitHub](https://github.com/Azure/azure-documentdb-java)   | [Notas de la versión](https://github.com/Azure/azure-documentdb-java/blob/master/changelog.md)
+[Ejemplos](/azure/cosmos-db/sql-api-java-application) | [Referencia](http://azure.github.io/azure-documentdb-java/) | [GitHub](https://github.com/Azure/azure-documentdb-java)   | [Notas de la versión](https://github.com/Azure/azure-documentdb-java/blob/master/changelog.md)
 
 <a name="servicebus"></a>
  
@@ -147,7 +147,7 @@ Administración de identidades e inicio de sesión seguro para sus aplicaciones.
  
 <a name="keyvault"></a>
 
-### <a name="key-vaultazurekey-vault"></a>[Almacén de claves](/azure/key-vault) 
+### <a name="key-vaultazurekey-vault"></a>[Key Vault](/azure/key-vault) 
 
 Acceso seguro a claves y secretos desde las aplicaciones. 
 
@@ -195,7 +195,7 @@ Administración de identidades, envío de mensajes y obtención de información 
 
 <a name="iotdevice"></a> 
 
-### <a name="iot-deviceazureiot-hubiot-hub-devguide"></a>[Dispositivo de IoT](/azure/iot-hub/iot-hub-devguide)
+### <a name="iot-deviceazureiot-hubiot-hub-devguide"></a>[Dispositivo IoT](/azure/iot-hub/iot-hub-devguide)
 
 Envío de mensajes a un IoT Hub desde el dispositivo.  
 
