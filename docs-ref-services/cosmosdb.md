@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Azure Cosmos DB para Java
-description: "Documentación de referencia para las bibliotecas de cliente de Java para Azure Cosmos DB"
-keywords: Azure, Java, SDK, API, SQL, base de datos, MongoDB, Cosmos DB, NoSQL, DocumentDB
+description: Documentación de referencia para las bibliotecas de cliente de Java para Azure Cosmos DB
+keywords: Azure, Java, SDK, API, SQL, base de datos, MongoDB, Cosmos DB, NoSQL
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,25 +11,25 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: cosmosdb
-ms.openlocfilehash: 393f57df0ea2076c6ee7045b56883ee088716fad
-ms.sourcegitcommit: 93107ca9ed76a29573a5faf8f39737c85e6bbaff
+ms.openlocfilehash: 845106b773de03aba8dd5edb9a18c6b036cf3215
+ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="azure-cosmos-db-libraries-for-java"></a><span data-ttu-id="b6f97-104">Bibliotecas de Azure Cosmos DB para Java</span><span class="sxs-lookup"><span data-stu-id="b6f97-104">Azure Cosmos DB libraries for Java</span></span>
+# <a name="azure-cosmos-db-libraries-for-java"></a><span data-ttu-id="370a1-104">Bibliotecas de Azure Cosmos DB para Java</span><span class="sxs-lookup"><span data-stu-id="370a1-104">Azure Cosmos DB libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="b6f97-105">Información general</span><span class="sxs-lookup"><span data-stu-id="b6f97-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="370a1-105">Información general</span><span class="sxs-lookup"><span data-stu-id="370a1-105">Overview</span></span>
 
-<span data-ttu-id="b6f97-106">Almacene y consulte pares de clave-valor, documentos JSON, gráficos y datos en columnas en una base de datos distribuida globalmente con [Cosmos DB](/azure/cosmos-db/introduction).</span><span class="sxs-lookup"><span data-stu-id="b6f97-106">Store and query key-value, JSON document, graph, and columnar data in a globally distributed database with [Cosmos DB](/azure/cosmos-db/introduction).</span></span>
+<span data-ttu-id="370a1-106">Almacene y consulte pares de clave-valor, documentos JSON, gráficos y datos en columnas en una base de datos distribuida globalmente con [Azure Cosmos DB](/azure/cosmos-db/introduction).</span><span class="sxs-lookup"><span data-stu-id="370a1-106">Store and query key-value, JSON document, graph, and columnar data in a globally distributed database with [Azure Cosmos DB](/azure/cosmos-db/introduction).</span></span>
 
-<span data-ttu-id="b6f97-107">Para empezar a trabajar con Cosmos DB, consulte [Azure Cosmos DB: crear una aplicación de API con Java y Azure Portal](/azure/cosmos-db/create-documentdb-java).</span><span class="sxs-lookup"><span data-stu-id="b6f97-107">To get started with Cosmos DB, see [Azure Cosmos DB: Build an API app with Java and the Azure portal](/azure/cosmos-db/create-documentdb-java).</span></span>
+<span data-ttu-id="370a1-107">Para empezar a trabajar con Azure Cosmos DB, consulte [Azure Cosmos DB: crear una aplicación de API con Java y Azure Portal](/azure/cosmos-db/create-sql-api-java).</span><span class="sxs-lookup"><span data-stu-id="370a1-107">To get started with Azure Cosmos DB, see [Azure Cosmos DB: Build an API app with Java and the Azure portal](/azure/cosmos-db/create-sql-api-java).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="b6f97-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="b6f97-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="370a1-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="370a1-108">Client library</span></span>
 
-<span data-ttu-id="b6f97-109">Conecte con Cosmos DB utilizando la biblioteca de cliente de [DocumentDB](/azure/cosmos-db/documentdb-introduction) para trabajar con datos JSON con la [sintaxis de consulta SQL](/azure/cosmos-db/documentdb-sql-query).</span><span class="sxs-lookup"><span data-stu-id="b6f97-109">Connect to Cosmos DB using the [DocumentDB](/azure/cosmos-db/documentdb-introduction) client library to work with JSON data with [SQL query syntax](/azure/cosmos-db/documentdb-sql-query).</span></span>
+<span data-ttu-id="370a1-109">Conecte con Azure Cosmos DB utilizando la biblioteca de cliente de [SQL API](/azure/cosmos-db/sql-api-introduction) para trabajar con datos JSON con la [sintaxis de consulta SQL](/azure/cosmos-db/sql-api-sql-query).</span><span class="sxs-lookup"><span data-stu-id="370a1-109">Connect to Azure Cosmos DB using the [SQL API](/azure/cosmos-db/sql-api-introduction) client library to work with JSON data with [SQL query syntax](/azure/cosmos-db/sql-api-sql-query).</span></span>
 
-<span data-ttu-id="b6f97-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente de Cosmos DB en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="b6f97-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the Cosmos DB client library in your project.</span></span>
+<span data-ttu-id="370a1-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente de Cosmos DB en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="370a1-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the Cosmos DB client library in your project.</span></span>
 
 ```XML
 <dependency>
@@ -39,9 +39,9 @@ ms.lasthandoff: 11/14/2017
 </dependency>
 ```
 
-### <a name="example"></a><span data-ttu-id="b6f97-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="b6f97-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="370a1-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="370a1-111">Example</span></span>
 
-<span data-ttu-id="b6f97-112">Seleccione documentos JSON coincidentes en Cosmos DB con la sintaxis de consulta SQL.</span><span class="sxs-lookup"><span data-stu-id="b6f97-112">Select matching JSON documents in Cosmos DB using SQL query syntax.</span></span>
+<span data-ttu-id="370a1-112">Seleccione documentos JSON coincidentes en Cosmos DB con la sintaxis de consulta SQL.</span><span class="sxs-lookup"><span data-stu-id="370a1-112">Select matching JSON documents in Cosmos DB using SQL query syntax.</span></span>
 
 ```java
 DocumentClient client = new DocumentClient("https://contoso.documents.azure.com:443",
@@ -58,16 +58,16 @@ List<Document> results = client.queryDocuments("dbs/" + DATABASE_ID + "/colls/" 
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="b6f97-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="b6f97-113">Explore the Client APIs</span></span>](/java/api/overview/azure/cosmosdb/clientlibrary)
+> [<span data-ttu-id="370a1-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="370a1-113">Explore the Client APIs</span></span>](/java/api/overview/azure/cosmosdb/clientlibrary)
 
 
-## <a name="samples"></a><span data-ttu-id="b6f97-114">Muestras</span><span class="sxs-lookup"><span data-stu-id="b6f97-114">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="370a1-114">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="370a1-114">Samples</span></span>
 
-<span data-ttu-id="b6f97-115">[Desarrollo de una aplicación Java con la API de MongoDB de Azure Cosmos DB][2] </span><span class="sxs-lookup"><span data-stu-id="b6f97-115">[Develop a Java app using Azure Cosmos DB MongoDB API][2] </span></span>  
-<span data-ttu-id="b6f97-116">[Desarrollo de una aplicación Java con la API Graph de Azure Cosmos DB][3] </span><span class="sxs-lookup"><span data-stu-id="b6f97-116">[Develop a Java app using Azure Cosmos DB Graph API][3] </span></span>  
-<span data-ttu-id="b6f97-117">[Desarrollo de una aplicación Java con la API de DocumentDB de Azure Cosmos DB][4]</span><span class="sxs-lookup"><span data-stu-id="b6f97-117">[Develop a Java app using Azure Cosmos DB DocumentDB API][4]</span></span>        
+<span data-ttu-id="370a1-115">[Desarrollo de una aplicación Java con la API de MongoDB de Azure Cosmos DB][2] </span><span class="sxs-lookup"><span data-stu-id="370a1-115">[Develop a Java app using Azure Cosmos DB MongoDB API][2] </span></span>  
+<span data-ttu-id="370a1-116">[Desarrollo de una aplicación Java con Graph API de Azure Cosmos DB][3] </span><span class="sxs-lookup"><span data-stu-id="370a1-116">[Develop a Java app using Azure Cosmos DB Graph API][3] </span></span>  
+<span data-ttu-id="370a1-117">[Desarrollo de una aplicación Java con SQL API de Azure Cosmos DB][4]</span><span class="sxs-lookup"><span data-stu-id="370a1-117">[Develop a Java app using Azure Cosmos DB SQL API][4]</span></span>        
 
-<span data-ttu-id="b6f97-118">Vea más [código de Java de ejemplo para Azure Cosmos DB](https://azure.microsoft.com/resources/samples/?platform=java&term=cosmos) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="b6f97-118">Explore more [sample Java code for Azure Cosmos DB](https://azure.microsoft.com/resources/samples/?platform=java&term=cosmos) you can use in your apps.</span></span>
+<span data-ttu-id="370a1-118">Vea más [código de Java de ejemplo para Azure Cosmos DB](https://azure.microsoft.com/resources/samples/?platform=java&term=cosmos) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="370a1-118">Explore more [sample Java code for Azure Cosmos DB](https://azure.microsoft.com/resources/samples/?platform=java&term=cosmos) you can use in your apps.</span></span>
 
 [2]: https://github.com/Azure-Samples/azure-cosmos-db-mongodb-java-getting-started
 [3]: https://github.com/Azure-Samples/azure-cosmos-db-graph-java-getting-started
