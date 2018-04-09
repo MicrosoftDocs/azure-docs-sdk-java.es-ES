@@ -1,7 +1,7 @@
 ---
-title: "Autenticación con las bibliotecas de administración de Azure para Java"
-description: "Autenticación con una entidad de servicio en las bibliotecas de administración de Azure para Java"
-keywords: "Azure, Java, SDK, API, Maven, Gradle, autenticación, active directory, entidad de servicio"
+title: Autenticación con las bibliotecas de administración de Azure para Java
+description: Autenticación con una entidad de servicio en las bibliotecas de administración de Azure para Java
+keywords: Azure, Java, SDK, API, Maven, Gradle, autenticación, active directory, entidad de servicio
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: 10f457e3-578b-4655-8cd1-51339226ee7d
-ms.openlocfilehash: dd1273d5fc79f513e8dae5420eb6a6988d327d58
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: 3808c6d56b04f28c84a89a25219e4ec523f87964
+ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="authenticate-with-the-azure-libraries-for-java"></a>Autenticación con las bibliotecas de Azure para Java 
 
@@ -42,7 +42,7 @@ final String storageConnection = "DefaultEndpointsProtocol=https;"
         + ";EndpointSuffix=core.windows.net";
 ```
 
-Las cadenas de conexión de servicio se usan para autenticarse en otros servicios de Azure como [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-java-application#a-iduseserviceastep-4-using-the-documentdb-service-in-a-java-application), [Redis Cache](https://docs.microsoft.com/azure/redis-cache/cache-java-get-started) y [Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-queues). Puede obtener las cadenas de conexión mediante Azure Portal o la CLI.  También puede usar las bibliotecas de administración de Azure para Java para consultar recursos para generar cadenas de conexión en el código. 
+Las cadenas de conexión de servicio se usan para autenticarse en otros servicios de Azure como [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-java-application#UseService), [Redis Cache](https://docs.microsoft.com/azure/redis-cache/cache-java-get-started) y [Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-java-how-to-use-queues). Puede obtener las cadenas de conexión mediante Azure Portal o la CLI.  También puede usar las bibliotecas de administración de Azure para Java para consultar recursos para generar cadenas de conexión en el código. 
 
 Por ejemplo, este código usa las bibliotecas de administración para crear una cadena de conexión de la cuenta de almacenamiento:
 
