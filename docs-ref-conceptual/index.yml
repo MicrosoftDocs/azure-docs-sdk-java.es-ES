@@ -4,7 +4,7 @@ title: Azure para desarrolladores de Java
 metadata:
   document_id: 1152a217-eb0e-45e9-b01b-bd27080d615e
   title: 'Azure para desarrolladores de Java: tutoriales, referencia de la API'
-  description: "Introducción al desarrollo de aplicaciones para la nube con estos excelentes tutoriales y herramientas para desarrolladores de Java."
+  description: Introducción al desarrollo de aplicaciones para la nube con estos excelentes tutoriales y herramientas para desarrolladores de Java.
   keywords: Azure, Java, SDK, API, Maven, Spring
   author: rloutlaw
   ms.author: routlaw
@@ -15,15 +15,16 @@ metadata:
   ms.technology: azure
   ms.devlang: java
   ms.service: multiple
-  ms.openlocfilehash: 41bed73d4d1315354cd27ee9e531baf8630af68c
-  ms.sourcegitcommit: 8962fd9a028de0197c72fd89c6c9b2a8f38abc66
+  ms.openlocfilehash: c84ab6296031b17542c36f42a6224f40fceb0dad
+  ms.sourcegitcommit: 3a746e8ae9ef0e6e82fccf9aca54eae8c9c1cdca
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 01/06/2018
+  ms.lasthandoff: 04/08/2018
 sections:
 - items:
   - type: markdown
-    text: "Introducción al desarrollo de aplicaciones de Java para la nube con estos tutoriales, herramientas y bibliotecas.\n"
+    text: >
+      Introducción al desarrollo de aplicaciones de Java para la nube con estos tutoriales, herramientas y bibliotecas.
 - items:
   - type: list
     style: cards
@@ -31,15 +32,15 @@ sections:
     columns: 2
     items:
     - href: https://docs.microsoft.com/azure/app-service/app-service-web-deploy-spring-boot-app-with-maven-plugin
-      html: "<p>Implementación de su primera aplicación web en Azure</p>"
+      html: <p>Implementación de su primera aplicación web en Azure</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: "Introducción"
+      title: Introducción
     - href: https://azure.microsoft.com/resources/samples/?platform=java&view=azure-java
-      html: "<p>Ejemplos de código de Azure con Java</p>"
+      html: <p>Ejemplos de código de Azure con Java</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: "Ejemplos de código"
+      title: Ejemplos de código
     - href: java-azure-tools.md
       html: <p>Herramientas &amp; para complementos de IDE</p>
       image:
@@ -50,7 +51,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Bibliotecas de Azure para Java
-- title: "Guías de introducción"
+- title: Guías de introducción
   items:
   - type: paragraph
     text: Aprenda a usar Java con los servicios de Azure.
@@ -61,19 +62,19 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-      title: "Implementación de su primera aplicación web en Azure"
+      title: Implementación de su primera aplicación web en Azure
       href: https://docs.microsoft.com/azure/app-service/app-service-web-deploy-spring-boot-app-with-maven-plugin
     - image:
         src: https://docs.microsoft.com/java/docs-ref-conceptual/media/spring.svg
-      title: "Implementación de una aplicación de Spring Boot con Maven"
+      title: Implementación de una aplicación de Spring Boot con Maven
       href: https://docs.microsoft.com/java/azure/spring-framework/deploy-containerized-spring-boot-java-app-with-maven-plugin
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
-      title: "Creación de una función sin servidor de Java"
+      title: Creación de una función sin servidor de Java
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-first-java-maven
     - image:
         src: https://docs.microsoft.com/javascript/azure/media/k8s_logo.svg
-      title: "Implementación en Kubernetes"
+      title: Implementación en Kubernetes
       href: https://docs.microsoft.com/azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-kubernetes
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
@@ -81,13 +82,14 @@ sections:
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-java-spring-boot
     - image:
         src: https://docs.microsoft.com/java/docs-ref-conceptual/media/jenkins_logo.svg
-      title: "Integración y entrega continuas en App Service con Jenkins®"
+      title: Integración y entrega continuas en App Service con Jenkins®
       href: https://docs.microsoft.com/azure/jenkins/java-deploy-webapp-tutorial
-- title: Muestras
+- title: Ejemplos
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://github.com/Azure-Samples/mysql-spring-boot-todo\">Creación de una aplicación web con Spring Boot y MySQL</a>"
+    - html: <a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Creación de una aplicación web con Spring Boot y MySQL</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Azure Blob Storage con Java</a>
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/\">Conexión a Azure Cosmos DB con la API de MongoDB</a>"
+    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Conexión a Azure Cosmos DB con la API de MongoDB</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/">Microservicios de Java con Service Fabric</a>
