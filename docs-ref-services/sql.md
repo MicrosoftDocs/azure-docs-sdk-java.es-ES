@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Azure SQL Database para Java
-description: "Conecte con Azure SQL Database mediante el controlador JDBC o administre las instancias de Azure SQL Database con la API de administración."
+description: Conecte con Azure SQL Database mediante el controlador JDBC o administre las instancias de Azure SQL Database con la API de administración.
 keywords: Azure, Java, SDK, API, SQL, base de datos, JDBC
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: sql-database
-ms.openlocfilehash: 3ae4015ae57e5eac4dafb30f4a42881986501853
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 37f7d3caf10e6b709cee2452c63a543d49e0ead8
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-sql-database-libraries-for-java"></a>Bibliotecas de Azure SQL Database para Java
 
@@ -69,7 +69,7 @@ Cree y administre los recursos de Azure SQL Database de la suscripción con la A
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/java/api/overview/azure/sql/managementapi)
+> [Explorar las API de administración](/java/api/overview/azure/sql/management)
 
 ### <a name="example"></a>Ejemplo
 
@@ -85,7 +85,7 @@ SqlServer sqlServer = azure.sqlServers().define(sqlDbName)
                     .create();
 ```
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 [!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 

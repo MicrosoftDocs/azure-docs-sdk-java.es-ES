@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Service Bus para Java
-description: "Documentación de referencia del cliente Java y las bibliotecas de administración de Service Bus para Java"
-keywords: "Azure, Java, SDK, API, mensajería, amqp, qpid, JMS, pubsub, pub-sub, agente de mensajes"
+description: Documentación de referencia del cliente Java y las bibliotecas de administración de Service Bus para Java
+keywords: Azure, Java, SDK, API, mensajería, amqp, qpid, JMS, pubsub, pub-sub, agente de mensajes
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: service-bus
-ms.openlocfilehash: 6fccbc76a3600e2bbe43e4332c6146d2be81b6c9
-ms.sourcegitcommit: fcf1189ede712ae30f8c7626bde50c9b8bb561bc
+ms.openlocfilehash: 7468d9b920debc778e7e3d298fbcb913add6afdd
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="service-bus-libraries-for-java"></a>Bibliotecas de Service Bus para Java
 
@@ -116,7 +116,7 @@ public class BasicSendReceiveWithQueueClient {
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de cliente](/java/api/overview/azure/servicebus/clientlibrary)
+> [Explorar las API de cliente](/java/api/overview/azure/servicebus/client)
 
 ## <a name="management-api"></a>API de administración
 
@@ -133,7 +133,7 @@ Cree y administre espacios de nombres, temas, colas y suscripciones con la API d
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/java/api/overview/azure/servicebus/managementapi)
+> [Explorar las API de administración](/java/api/overview/azure/servicebus/management)
 
 
 ## <a name="examples"></a>Ejemplos

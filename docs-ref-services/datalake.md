@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Azure Data Lake Store para Java
-description: "Documentación de referencia de las bibliotecas de Data Lake Store para Java"
+description: Documentación de referencia de las bibliotecas de Data Lake Store para Java
 keywords: Azure, Java, SDK, API, macrodatos, data lake
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: data-lake-store
-ms.openlocfilehash: 66ff566e74203d3b5a8e9bcc170f4c21cf310645
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: bcd1fd17759f7d171006d7b2126019d00d06d1db
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-data-lake-store-libraries-for-java"></a>Bibliotecas de Azure Data Lake Store para Java
 
@@ -63,7 +63,7 @@ out.close();
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de cliente](/java/api/overview/azure/datalakestore/clientlibrary)
+> [Explorar las API de cliente](/java/api/overview/azure/datalakestore/client)
 
 
 ## <a name="management-api"></a>API de administración
@@ -82,9 +82,9 @@ Use la API de administración para administrar cuentas de Data Lake Store, regla
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/java/api/overview/azure/datalakestore/managementapi)
+> [Explorar las API de administración](/java/api/overview/azure/datalakestore/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 [Introducción a Azure Data Lake][1] 
 

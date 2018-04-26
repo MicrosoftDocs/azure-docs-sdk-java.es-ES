@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Azure IoT Hub para Java
-description: "Documentación de referencia de las bibliotecas de Azure IoT Hub para Java"
+description: Documentación de referencia de las bibliotecas de Azure IoT Hub para Java
 keywords: Azure, Java, SDK, API, evento, IoT, secuencias, dispositivos, iot hub
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: iot-hub
-ms.openlocfilehash: c1af3dae0fe37eb4919db02da87beed193c547a7
-ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
+ms.openlocfilehash: 5e6a102b062b2fff6b297c7e3dda423d1448bcb0
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-iot-libraries-for-java"></a>Bibliotecas de Azure IoT para Java
 
@@ -52,7 +52,7 @@ Envíe mensajes a la nube y reciba mensajes en los dispositivos mediante la bibl
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de cliente](/java/api/overview/azure/iot/clientlibrary)   
+> [Explorar las API de cliente](/java/api/overview/azure/iot/client)   
 
 ## <a name="example"></a>Ejemplo
 
@@ -78,7 +78,7 @@ catch (ExecutionException e) {
 ```
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 [Ejemplos de dispositivos IoT](https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples)     
 [Ejemplos de servicios IoT](https://github.com/Azure/azure-iot-sdk-java/tree/master/service/iot-service-samples)

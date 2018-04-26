@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Azure Active Directory para Java
-description: "Documentación de referencia del cliente Java y las bibliotecas de administración de Azure Active Directory para Java"
-keywords: "Azure, Java, SDK, API, SQL, autenticación, AAD, Active Directory, Graph, OAuth 2.0"
+description: Documentación de referencia del cliente Java y las bibliotecas de administración de Azure Active Directory para Java
+keywords: Azure, Java, SDK, API, SQL, autenticación, AAD, Active Directory, Graph, OAuth 2.0
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: active-directory
-ms.openlocfilehash: 081b8455a6cd8f26ce714328d10ce25ea6a07e3b
-ms.sourcegitcommit: 4b63ecd2c92a9115dfae018618e4e4046b061b3e
+ms.openlocfilehash: 28063a1a4299fd78ba76533d0ffdc0346434eea2
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-active-directory-libraries-for-java"></a>Bibliotecas de Azure Active Directory para Java
 
@@ -41,7 +41,7 @@ Configure la autenticación de OAuth2, OpenID Connect o Active Directory Graph y
 
 ### <a name="example"></a>Ejemplo
 
-Recupere un JSON Web Token (JWT) para un usuario del inquilino de Active Directory con la [API Graph](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api) de Azure Active Directory. Este token, a continuación, puede usarse para autenticar al usuario con una aplicación o API.
+Recupere un JSON Web Token (JWT) para un usuario del inquilino de Active Directory con [Graph API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api) de Azure Active Directory. Este token, a continuación, puede usarse para autenticar al usuario con una aplicación o API.
 
 ```java
 ExecutorService service = Executors.newFixedThreadPool(1);
@@ -86,14 +86,14 @@ RoleAssignment roleAssignment2 = authenticated.roleAssignments()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](/java/api/overview/azure/activedirectory/managementapi)
+> [Explorar las API de administración](/java/api/overview/azure/activedirectory/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 [Administración de grupos, usuarios y roles](https://github.com/Azure-Samples/aad-java-browse-graph-and-manage-roles)    
 [Inicio y cierre de sesión de usuarios en una aplicación web de Java](https://github.com/Azure-Samples/active-directory-java-webapp-openidconnect)    
 [Acceso a una API con Azure AD mediante una aplicación de línea de comandos](https://github.com/Azure-Samples/active-directory-java-native-headless)   
-[Llamada a la API Graph de Azure AD desde la aplicación web de Java](https://github.com/Azure-Samples/active-directory-java-graphapi-web/)  
+[Llamada a Graph API de Azure AD desde la aplicación web de Java](https://github.com/Azure-Samples/active-directory-java-graphapi-web/)  
 
 Vea más [código de Java de ejemplo para Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) que puede usar en sus aplicaciones.
