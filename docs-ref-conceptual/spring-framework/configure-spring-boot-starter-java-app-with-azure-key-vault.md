@@ -1,12 +1,12 @@
 ---
-title: "Cómo usar el iniciador de Spring Boot para Azure Key Vault"
-description: "Aprenda a configurar una aplicación de Spring Boot Initializer con el iniciador de Azure Key Vault."
+title: Cómo usar el iniciador de Spring Boot para Azure Key Vault
+description: Aprenda a configurar una aplicación de Spring Boot Initializer con el iniciador de Azure Key Vault.
 services: key-vault
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -14,11 +14,11 @@ ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 52e7dc3f84ea96f22d8e478a597452c76ed8bf22
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 1dda697cac80a6cad3ebbbbf8a5a4f18b515dfd8
+ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
@@ -85,8 +85,9 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
        }
      }
    ]
+   ```
 
-1. Specify the GUID for the account you want to use with Azure; for example:
+1. Especifique el identificador GUID de la cuenta que desea usar con Azure; por ejemplo:
 
    ```azurecli
    az account set -s ssssssss-ssss-ssss-ssss-ssssssssssss
@@ -296,7 +297,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Mensaje en tiempo de ejecución de Spring Boot][build-application-02]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para más información sobre el uso de Azure Key Vault, consulte los siguientes artículos:
 
