@@ -1,16 +1,16 @@
-## <a name="prerequisites"></a><span data-ttu-id="cd70f-101">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="cd70f-101">Prerequisites</span></span>
-<span data-ttu-id="cd70f-102">Para completar los pasos descritos en este artículo, debe instalar el Kit de herramientas de Azure para Eclipse, que requiere los siguientes componentes de software:</span><span class="sxs-lookup"><span data-stu-id="cd70f-102">To complete the steps in his article, you will need to install the Azure Toolkit for Eclipse, which requires the following software components:</span></span>
+## <a name="prerequisites"></a>Requisitos previos
+Para completar los pasos descritos en este artículo, debe instalar el Kit de herramientas de Azure para Eclipse, que requiere los siguientes componentes de software:
 
-* <span data-ttu-id="cd70f-103">IDE de Eclipse para desarrolladores Java EE, Mars o posterior.</span><span class="sxs-lookup"><span data-stu-id="cd70f-103">Eclipse IDE for Java EE Developers, Mars, or later.</span></span> <span data-ttu-id="cd70f-104">Puede descargarlo del [sitio web de Eclipse](http://www.eclipse.org/downloads/).</span><span class="sxs-lookup"><span data-stu-id="cd70f-104">You can download it from the [Eclipse website](http://www.eclipse.org/downloads/).</span></span>
-* <span data-ttu-id="cd70f-105">Kit de desarrolladores de Java (JDK), versiones 1.8 o posteriores.</span><span class="sxs-lookup"><span data-stu-id="cd70f-105">A Java Developer Kit (JDK), version 1.8 or later.</span></span>
-* <span data-ttu-id="cd70f-106">Un sistema operativo.</span><span class="sxs-lookup"><span data-stu-id="cd70f-106">An operating system.</span></span> <span data-ttu-id="cd70f-107">El kit de herramientas de Azure para Eclipse se ha probado en los siguientes sistemas operativos:</span><span class="sxs-lookup"><span data-stu-id="cd70f-107">The Azure Toolkit for Eclipse has been tested on the following operating systems:</span></span>
+* IDE de Eclipse para desarrolladores Java EE, Mars o posterior. Puede descargarlo del [sitio web de Eclipse](http://www.eclipse.org/downloads/).
+* Kit de desarrolladores de Java (JDK), versiones 1.8 o posteriores.
+* Un sistema operativo. El kit de herramientas de Azure para Eclipse se ha probado en los siguientes sistemas operativos:
   
-  * <span data-ttu-id="cd70f-108">Windows 10, Windows 8.1, Windows 8 y Windows 7</span><span class="sxs-lookup"><span data-stu-id="cd70f-108">Windows 10, Windows 8.1, Windows 8, and Windows 7</span></span>
-  * <span data-ttu-id="cd70f-109">Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="cd70f-109">Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008</span></span>
-  * <span data-ttu-id="cd70f-110">[Mac OS X](http://www.apple.com/osx), versiones "Yosemite" y posteriores</span><span class="sxs-lookup"><span data-stu-id="cd70f-110">[Mac OS X](http://www.apple.com/osx) version "Yosemite" and later</span></span>
-  * <span data-ttu-id="cd70f-111">[Ubuntu Linux](http://www.ubuntu.com), versiones 14, 15 y 16</span><span class="sxs-lookup"><span data-stu-id="cd70f-111">[Ubuntu Linux](http://www.ubuntu.com) version 14, 15, and 16</span></span>
+  * Windows 10, Windows 8.1, Windows 8 y Windows 7
+  * Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 y Windows Server 2008
+  * [Mac OS X](http://www.apple.com/osx), versiones "Yosemite" y posteriores
+  * [Ubuntu Linux](http://www.ubuntu.com), versiones 14, 15 y 16
 
-<span data-ttu-id="cd70f-112">Para más información, consulte la página de [Azure Toolkit for Eclipse](http://marketplace.eclipse.org/content/azure-toolkit-eclipse) en Eclipse Marketplace.</span><span class="sxs-lookup"><span data-stu-id="cd70f-112">For more information, see the [Azure Toolkit for Eclipse](http://marketplace.eclipse.org/content/azure-toolkit-eclipse) page at the Eclipse Marketplace.</span></span>
+Para más información, consulte la página de [Azure Toolkit for Eclipse](http://marketplace.eclipse.org/content/azure-toolkit-eclipse) en Eclipse Marketplace.
 
 <!--
 > [!IMPORTANT]

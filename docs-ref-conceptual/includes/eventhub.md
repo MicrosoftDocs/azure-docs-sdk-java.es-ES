@@ -1,7 +1,7 @@
 |  |  |
 |---------|---------|
-| <span data-ttu-id="e1b68-101">[Escritura en Event Hubs mediante JMS y lectura desde Apache Storm][1]</span><span class="sxs-lookup"><span data-stu-id="e1b68-101">[Write to Event Hub via JMS and read from Apache Storm][1]</span></span> | <span data-ttu-id="e1b68-102">Escriba datos en Event Hubs mediante JMS y procese los mediante una topología de Apache Storm.</span><span class="sxs-lookup"><span data-stu-id="e1b68-102">Write data to Event Hub via JMS and process events using an Apache Storm topology.</span></span> 
-| <span data-ttu-id="e1b68-103">[Lectura y escritura desde Event Hubs mediante una topología de .NET y Java Storm híbrida][2]</span><span class="sxs-lookup"><span data-stu-id="e1b68-103">[Read and write from EventHubs using a hybrid .NET/Java Storm topology][2]</span></span> | <span data-ttu-id="e1b68-104">Ejemplo del uso de una topología de Apache Storm híbrida basada en dotnet y Java para trabajar con Azure Event Hubs.</span><span class="sxs-lookup"><span data-stu-id="e1b68-104">An example of using a hybrid dotnet/Java-based Apache Storm topology to work with Azure Event Hubs.</span></span>
+| [Escritura en Event Hubs mediante JMS y lectura desde Apache Storm][1] | Escriba datos en Event Hubs mediante JMS y procese los mediante una topología de Apache Storm. 
+| [Lectura y escritura desde Event Hubs mediante una topología de .NET y Java Storm híbrida][2] | Ejemplo del uso de una topología de Apache Storm híbrida basada en dotnet y Java para trabajar con Azure Event Hubs.
 
 [1]: https://azure.microsoft.com/resources/samples/event-hubs-java-storm-sender-jms-receiver/
 [2]: https://azure.microsoft.com/resources/samples/hdinsight-dotnet-java-storm-eventhub/
