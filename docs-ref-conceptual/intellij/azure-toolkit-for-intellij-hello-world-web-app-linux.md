@@ -1,12 +1,12 @@
 ---
-title: "Implementación de una aplicación web Hola mundo en un contenedor Linux en la nube con el kit de herramientas de Azure para IntelliJ"
-description: "Ejecución de una aplicación web Hola mundo en un contenedor Linux y su implementación en la nube con el kit de herramientas de Azure para IntelliJ."
+title: Implementación de una aplicación web Hola mundo en un contenedor Linux en la nube con el kit de herramientas de Azure para IntelliJ
+description: Ejecución de una aplicación web Hola mundo en un contenedor Linux y su implementación en la nube con el kit de herramientas de Azure para IntelliJ.
 services: app-service\web
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -14,11 +14,11 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: c430581a9a67365430d87c1af925c1f4d27eca2b
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: d281f37b027d4011ea2e3106990c5e45b69ebc88
+ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a>Implementación de una aplicación web Hola mundo en un contenedor Linux en la nube con el kit de herramientas de Azure para IntelliJ
 
@@ -38,9 +38,9 @@ En este artículo se muestran los pasos necesarios para crear una aplicación we
 
 ## <a name="create-a-new-web-app-project"></a>Creación de un proyecto de aplicación web nuevo
 
-1. Inicie IntelliJ e inicie sesión en su cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ].
+1. Inicie IntelliJ e inicie sesión en la cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ](https://docs.microsoft.com/java/azure/intellij/azure-toolkit-for-intellij-sign-in-instructions).
 
-1. Haga clic en el menú **File** (Archivo), en **New** (Nuevo) y en **Project** (Proyecto).
+1. Haga clic en el menú **File** (Archivo), luego en **New** (Nuevo) y, finalmente, en **Project** (Proyecto).
    
    ![Creación de un proyecto][file-new-project]
 
@@ -131,7 +131,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
    ![Cuadro de diálogo Editar configuración][edit-configuration-dialog]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para ver más recursos de Docker, vaya al [sitio web oficial de Docker][cliente de Docker].
 

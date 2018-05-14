@@ -1,11 +1,11 @@
 ---
-title: "Creación de una aplicación web Hello World para Azure mediante Eclipse"
-description: "En este tutorial se muestra cómo utilizar el Kit de herramientas de Azure para Eclipse para crear una aplicación web Hello World para Azure."
+title: Creación de una aplicación web Hello World para Azure mediante Eclipse
+description: En este tutorial se muestra cómo utilizar el Kit de herramientas de Azure para Eclipse para crear una aplicación web Hello World para Azure.
 services: app-service
 documentationcenter: java
 author: selvasingh
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: 20d41e88-9eab-462e-8ee3-89da71e7a33f
 ms.author: robmcm;asirveda
 ms.date: 02/01/2018
@@ -14,11 +14,11 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: bec94e65951330c933e0173fd580c3578e759c18
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 5e025c90c2619ec72ffddf5815fd49c3ac59c00f
+ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-eclipse"></a>Creación de una aplicación web Hello World para Azure mediante Eclipse
 
@@ -98,7 +98,7 @@ Cuando haya completado este tutorial, la aplicación se parecerá a la que se mu
 
    ![Implementar instancia de App Service][deploy-app-service]
 
-1. El kit de herramientas mostrará un mensaje de estado **Published** (Publicado) en el **Registro de actividad de Azure** cuando se haya implementado correctamente la aplicación web, con un hipervínculo a la dirección URL de la aplicación web implementada.
+1. El kit de herramientas mostrará el estado **Publicado** en la pestaña **Registro de actividad de Azure** cuando se haya implementado correctamente la aplicación web, con un hipervínculo a la dirección URL de la aplicación web implementada.
 
    ![Estado de publicación][publish-status]
 
@@ -110,7 +110,7 @@ Cuando haya completado este tutorial, la aplicación se parecerá a la que se mu
 
    ![Administrar la instancia de App Service][manage-app-service]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
