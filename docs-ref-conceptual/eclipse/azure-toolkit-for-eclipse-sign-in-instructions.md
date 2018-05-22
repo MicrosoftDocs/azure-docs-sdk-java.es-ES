@@ -1,12 +1,12 @@
 ---
-title: "Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse"
-description: "Obtenga información sobre cómo iniciar sesión en Microsoft Azure utilizando el Kit de herramientas de Azure para Eclipse."
-services: 
+title: Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse
+description: Obtenga información sobre cómo iniciar sesión en Microsoft Azure utilizando el Kit de herramientas de Azure para Eclipse.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -14,11 +14,11 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 498a22c455e54b8038169cf4e9f6ac7d7287c0bb
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: eb6099ab0c19bf3588cb7fd668f070771e58fe74
+ms.sourcegitcommit: 8230cf6b15ac51a9f8a209e9b76411a0385029aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse
 
@@ -91,7 +91,7 @@ Si cierra la sesión de Azure al utilizar Eclipse, debe volver a configurar el k
 
    ![Cuadro de diálogo Iniciar sesión][A02]
 
-1. Cuando se muestra el cuadro de diálogo **Select Authentication File** (Seleccionar archivo de autenticación), elija un archivo de credenciales que creó anteriormente y, luego, haga clic en **Seleccionar**.
+1. Cuando se muestra el cuadro de diálogo **Select Authentication File** (Seleccionar archivo de autenticación), elija un archivo de credenciales que creó anteriormente y, luego, haga clic en **Open** (Abrir).
 
    ![Cuadro de diálogo Iniciar sesión][A08]
 
@@ -137,7 +137,7 @@ Después de haber configurado los pasos en la sección anterior, se cerrará aut
 
    ![Cuadro de diálogo Cerrar sesión][L02]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
