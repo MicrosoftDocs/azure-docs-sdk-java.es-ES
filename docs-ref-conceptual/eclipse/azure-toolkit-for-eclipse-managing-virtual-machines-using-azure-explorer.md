@@ -1,12 +1,12 @@
 ---
-title: "Administración de máquinas virtuales con Azure Explorer para Eclipse"
-description: "Obtenga información sobre cómo administrar máquinas virtuales de Azure mediante Azure Explorer para Eclipse."
-services: 
+title: Administración de máquinas virtuales con Azure Explorer para Eclipse
+description: Obtenga información sobre cómo administrar máquinas virtuales de Azure mediante Azure Explorer para Eclipse.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -14,11 +14,11 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: a02f8d02f8c5c32091dd106e036b636b1d11cff0
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: ec67ed44ec570da7b826c12a9f8a24a5b0170e99
+ms.sourcegitcommit: 3d3460289ab6b9165c2cf6a3dd56eafd0692501e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a>Administración de máquinas virtuales con Azure Explorer para Eclipse
 
@@ -32,7 +32,7 @@ Azure Explorer, que forma parte del kit de herramientas de Azure para Eclipse, p
 
 Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
-1. Inicie sesión en su cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse].
+1. Inicie sesión en su cuenta de Azure siguiendo los pasos del artículo [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse](https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-sign-in-instructions).
 
 1. En la vista **Azure Explorer**, expanda el nodo **Azure**, haga clic con el botón derecho en **Virtual Machines** y, luego, en **Crear máquina virtual**.
 
@@ -140,7 +140,7 @@ Para eliminar una máquina virtual mediante Azure Explorer en Eclipse, siga esto
 
    ![Ventana de confirmación de eliminación de máquina virtual][DE02]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre los tamaños y los precios de máquinas virtuales de Azure, consulte los siguientes vínculos:
 
