@@ -1,12 +1,12 @@
 ---
-title: "Implementación de una aplicación de Spring Boot en la nube con Maven y Azure"
-description: "Obtenga información acerca de cómo implementar una aplicación de Spring Boot en la nube con el complemento de Maven para Azure Web Apps."
+title: Implementación de una aplicación de Spring Boot en la nube con Maven y Azure
+description: Obtenga información acerca de cómo implementar una aplicación de Spring Boot en la nube con el complemento de Maven para Azure Web Apps.
 services: app-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm;kevinzha
 ms.date: 02/01/2018
 ms.devlang: java
@@ -14,11 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 17c358317d1b96521de87f263a92fa2d7c0ff26c
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 82cb0da3ce49fa77f888808af14455bf226d5cb0
+ms.sourcegitcommit: 024b3127daf396a17bd43d57642e3534ae87f120
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34462755"
 ---
 # <a name="deploy-a-spring-boot-app-to-the-cloud-using-the-maven-plugin-for-azure-web-apps"></a>Implementación de una aplicación de Spring Boot en la nube con el complemento de Maven para Azure Web Apps
 
@@ -120,9 +121,9 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
 
 ## <a name="configure-maven-to-use-your-azure-service-principal"></a>Configuración de Maven para usar la entidad de servicio de Azure
 
-En esta sección, utilice los valores de la entidad de servicio de Azure para configurar la autenticación que va a usar Maven al implementar la aplicación web en Azure.
+En esta sección, va a utilizar los valores de la entidad de servicio de Azure para configurar la autenticación que va a usar Maven al implementar la aplicación web en Azure.
 
-1. Abra el archivo `settings.xml` de Maven en un editor de texto; este archivo puede encontrarse en una ruta de acceso como la de los ejemplos siguientes:
+1. Abra su archivo `settings.xml` de Maven en un editor de texto. Este archivo puede estar en una ruta de acceso similar a los siguientes ejemplos:
    * `/etc/maven/settings.xml`
    * `%ProgramFiles%\apache-maven\3.5.0\conf\settings.xml`
    * `$HOME/.m2/settings.xml`
@@ -195,7 +196,7 @@ Hay varios valores que se pueden modificar en el complemento Maven; puede encont
 
 | Elemento | DESCRIPCIÓN |
 |---|---|
-| `<version>` | Especifica la versión del [complemento Maven de Azure Web Apps]. Debe comprobar la versión que aparece en el [repositorio central de Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para asegurarse de que está utilizando la versión más reciente. |
+| `<version>` | Especifica la versión del [complemento Maven de Azure Web Apps]. Compruebe que la versión que aparece en el [repositorio central de Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para asegurarse de que está utilizando la versión más reciente. |
 | `<authentication>` | Especifica la información de autenticación de Azure que, en este ejemplo, incluye un elemento `<serverId>` que contiene `azure-auth`; Maven utiliza ese valor para buscar los valores de la entidad de servicio de Azure en el archivo *settings.xml* que se definió en una sección anterior de este artículo. |
 | `<resourceGroup>` | Especifica el grupo de recursos de destino, que es `maven-plugin` en este ejemplo. Se creará este grupo de recursos durante la implementación si todavía no existe. |
 | `<appName>` | Especifica el nombre de destino de la aplicación web. En este ejemplo, el nombre de destino es `maven-web-app-${maven.build.timestamp}`, donde el sufijo `${maven.build.timestamp}` se anexa en este ejemplo para evitar conflictos. (La marca de tiempo es opcional; puede especificar cualquier cadena única para el nombre de la aplicación). |
@@ -251,11 +252,11 @@ The embedded Tomcat server in the sample Spring Boot application is configured t
 1. Save and close the *application.yml* file.
 -->
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para más información acerca de las diferentes tecnologías que se tratan en este artículo, consulte los artículos siguientes:
 
-* [complemento Maven de Azure Web Apps]
+* [Complemento Maven de Azure Web Apps]
 
 * [Inicio de sesión en Azure desde la CLI de Azure](/azure/xplat-cli-connect)
 
@@ -279,7 +280,7 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Primeros pasos de Spring Boot]: https://github.com/microsoft/gs-spring-boot
 [Spring Framework]: https://spring.io/
-[complemento Maven de Azure Web Apps]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
+[Complemento Maven de Azure Web Apps]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
 
 <!-- IMG List -->
 
