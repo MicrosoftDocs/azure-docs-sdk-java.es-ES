@@ -1,12 +1,12 @@
 ---
-title: "Administración de máquinas virtuales mediante Azure Explorer para IntelliJ"
-description: "Aprenda a administrar las máquinas virtuales de Azure mediante Azure Explorer para IntelliJ."
-services: 
+title: Administración de máquinas virtuales mediante Azure Explorer para IntelliJ
+description: Aprenda a administrar las máquinas virtuales de Azure mediante Azure Explorer para IntelliJ.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954876"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Administración de máquinas virtuales mediante Azure Explorer para IntelliJ
 

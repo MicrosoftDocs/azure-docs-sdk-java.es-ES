@@ -1,6 +1,6 @@
 ---
-title: "Administración de grupos elásticos de Azure SQL Database con Java | Microsoft Docs"
-description: "Código de ejemplo para crear y configurar bases de datos SQL de Azure mediante el SDK de Azure para Java"
+title: Administración de grupos elásticos de Azure SQL Database con Java | Microsoft Docs
+description: Código de ejemplo para crear y configurar bases de datos SQL de Azure mediante el SDK de Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: 9b461de8-46bc-4650-8e9e-59531f4e2a53
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931121"
 ---
 # <a name="manage-azure-sql-databases-in-elastic-pools-from-your-java-applications"></a>Administración de bases de datos SQL de Azure en grupos elásticos desde las aplicaciones Java
 

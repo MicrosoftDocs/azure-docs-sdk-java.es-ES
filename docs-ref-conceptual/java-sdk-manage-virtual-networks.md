@@ -1,6 +1,6 @@
 ---
-title: "Administración de redes virtuales de Azure con Java | Microsoft Docs"
-description: "Código de ejemplo para administrar redes virtuales de Azure desde el código de Java"
+title: Administración de redes virtuales de Azure con Java | Microsoft Docs
+description: Código de ejemplo para administrar redes virtuales de Azure desde el código de Java
 author: rloutlaw
 manager: douge
 ms.assetid: 92736911-3df6-46e7-b751-25bb36bf89b9
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931091"
 ---
 # <a name="create-and-manage-azure-virtual-networks-from-your-java-apps"></a>Creación y administración de redes virtuales de Azure desde las aplicaciones Java
 

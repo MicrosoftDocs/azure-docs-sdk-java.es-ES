@@ -1,6 +1,6 @@
 ---
-title: "Configurar implementaciones de aplicación web con Java | Microsoft Docs"
-description: "Código de ejemplo de Java para configurar implementaciones Git o FTP de Azure App Service mediante el SDK de Azure para Java"
+title: Configurar implementaciones de aplicación web con Java | Microsoft Docs
+description: Código de ejemplo de Java para configurar implementaciones Git o FTP de Azure App Service mediante el SDK de Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: 833e9c78-1e50-4c23-a611-f73a2f0c2983
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931191"
 ---
 # <a name="configure-azure-app-service-deployment-sources-from-your-java-applications"></a>Configurar orígenes de implementación de Azure App Service desde las aplicaciones Java
 

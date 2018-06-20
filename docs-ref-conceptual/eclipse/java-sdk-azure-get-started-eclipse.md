@@ -1,12 +1,12 @@
 ---
-title: "Introducción a Azure para Java mediante Eclipse"
-description: "Introducción al uso básico de las bibliotecas de Azure para Java con su propia suscripción de Azure."
-keywords: "Azure, Java, SDK, API, autenticación, introducción"
-services: 
+title: Introducción a Azure para Java mediante Eclipse
+description: Introducción al uso básico de las bibliotecas de Azure para Java con su propia suscripción de Azure.
+keywords: Azure, Java, SDK, API, autenticación, introducción
+services: ''
 documentationcenter: java
 author: roygara
 manager: timlt
-editor: 
+editor: ''
 ms.author: v-rogara
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 720c2eaf66532d277015610ec375c71e934d9ee6
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "29065522"
 ---
 # <a name="get-started-with-the-azure-libraries-using-eclipse"></a>Introducción a las bibliotecas de Azure mediante Eclipse
 

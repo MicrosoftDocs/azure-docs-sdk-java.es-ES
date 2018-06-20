@@ -15,6 +15,7 @@ ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30302553"
 ---
 # <a name="azure-libraries-for-java"></a>Bibliotecas de Azure para Java
 

@@ -1,11 +1,11 @@
 ---
 title: Kit de herramientas de Azure para Eclipse
-description: "Obtenga información acerca de cómo el complemento del kit de herramientas de Azure para Eclipse le ayuda a crear e implementar aplicaciones en la nube en Azure."
-services: 
+description: Obtenga información acerca de cómo el complemento del kit de herramientas de Azure para Eclipse le ayuda a crear e implementar aplicaciones en la nube en Azure.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: ef2f3839-2549-4471-9b53-0deb7f4c128b
 ms.author: robmcm;asirveda
 ms.date: 02/01/2018
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954216"
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de herramientas de Azure para Eclipse
 

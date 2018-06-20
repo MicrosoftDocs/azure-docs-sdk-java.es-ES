@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823768"
 ---
 # <a name="azure-application-insights-libraries-for-java"></a>Bibliotecas de Azure Application Insights para Java
 

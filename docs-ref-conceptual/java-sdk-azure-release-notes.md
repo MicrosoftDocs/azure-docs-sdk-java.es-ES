@@ -1,6 +1,6 @@
 ---
-title: "Notas de la versión de las bibliotecas de administración de Azure para Java | Microsoft Docs"
-description: "Vea las novedades y los cambios importantes en las bibliotecas de administración de Azure para Java"
+title: Notas de la versión de las bibliotecas de administración de Azure para Java | Microsoft Docs
+description: Vea las novedades y los cambios importantes en las bibliotecas de administración de Azure para Java
 keywords: Azure, Java, API, referencia, notas, actualizaciones, en desuso
 author: routlaw
 manager: douge
@@ -15,6 +15,7 @@ ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23982167"
 ---
 # <a name="release-notes"></a>Notas de la versión 
 

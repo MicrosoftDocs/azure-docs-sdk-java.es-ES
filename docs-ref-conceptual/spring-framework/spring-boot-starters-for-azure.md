@@ -1,12 +1,12 @@
 ---
 title: Iniciadores de Spring Boot para Azure
-description: "En este artículo se describen los diferentes iniciadores de Spring Boot que hay disponibles para Azure."
-services: 
+description: En este artículo se describen los diferentes iniciadores de Spring Boot que hay disponibles para Azure.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954446"
 ---
 # <a name="spring-boot-starters-for-azure"></a>Iniciadores de Spring Boot para Azure
 

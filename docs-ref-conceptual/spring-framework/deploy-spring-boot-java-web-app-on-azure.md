@@ -1,12 +1,12 @@
 ---
-title: "Implementación de una aplicación de Spring Boot en la nube con Azure App Service"
-description: "Este tutorial guiará a los desarrolladores a través de los pasos necesarios para implementar una aplicación web inicial de Spring Boot en la nube con Azure App Service."
+title: Implementación de una aplicación de Spring Boot en la nube con Azure App Service
+description: Este tutorial guiará a los desarrolladores a través de los pasos necesarios para implementar una aplicación web inicial de Spring Boot en la nube con Azure App Service.
 services: app-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: asirveda;robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954528"
 ---
 # <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implementación de una aplicación de Spring Boot en la nube con Azure App Service
 
