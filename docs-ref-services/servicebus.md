@@ -16,6 +16,7 @@ ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33887765"
 ---
 # <a name="service-bus-libraries-for-java"></a><span data-ttu-id="b0b97-104">Bibliotecas de Service Bus para Java</span><span class="sxs-lookup"><span data-stu-id="b0b97-104">Service Bus libraries for Java</span></span>
 

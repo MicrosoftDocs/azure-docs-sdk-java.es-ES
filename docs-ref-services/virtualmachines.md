@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823758"
 ---
 # <a name="azure-virtual-machine-libraries"></a><span data-ttu-id="66b65-103">Bibliotecas de Azure Virtual Machines</span><span class="sxs-lookup"><span data-stu-id="66b65-103">Azure virtual machine libraries</span></span>
 

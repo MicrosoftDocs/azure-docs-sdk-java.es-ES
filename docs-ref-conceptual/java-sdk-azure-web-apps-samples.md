@@ -1,6 +1,6 @@
 ---
-title: "Ejemplos de aplicaciones web de las bibliotecas de administración de Azure para Java"
-description: "Obtenga código de ejemplo para la creación y actualización de aplicaciones web hospedadas en Azure App Service mediante las bibliotecas de administración de Azure para Java."
+title: Ejemplos de aplicaciones web de las bibliotecas de administración de Azure para Java
+description: Obtenga código de ejemplo para la creación y actualización de aplicaciones web hospedadas en Azure App Service mediante las bibliotecas de administración de Azure para Java.
 keywords: Azure, Java, SDK, API, Maven, Gradle, aplicaciones web, servicio de aplicaciones
 author: rloutlaw
 ms.author: routlaw
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21930901"
 ---
 # <a name="azure-management-libraries-for-java-samples-for-web-apps"></a><span data-ttu-id="6abf2-104">Ejemplos de aplicaciones web para las bibliotecas de administración de Azure para Java</span><span class="sxs-lookup"><span data-stu-id="6abf2-104">Azure management libraries for Java samples for web apps</span></span>
 

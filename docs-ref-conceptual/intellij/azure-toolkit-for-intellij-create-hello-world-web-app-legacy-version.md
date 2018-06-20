@@ -1,12 +1,12 @@
 ---
-title: "Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ"
-description: "En este tutorial se muestra cómo utilizar la versión 3.0.6 (o versiones anteriores) del Kit de herramientas de Azure para IntelliJ para crear una aplicación web Hello World para Azure."
+title: Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ
+description: En este tutorial se muestra cómo utilizar la versión 3.0.6 (o versiones anteriores) del Kit de herramientas de Azure para IntelliJ para crear una aplicación web Hello World para Azure.
 services: app-service
 documentationcenter: java
 author: selvasingh
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm;asirveda
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954786"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a><span data-ttu-id="07130-103">Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="07130-103">Create a Hello World web app for Azure using the legacy toolkit for IntelliJ</span></span>
 
@@ -241,9 +242,12 @@ ms.lasthandoff: 02/03/2018
 <!-- URL List -->
 
 [Kit de herramientas de Azure para IntelliJ]: azure-toolkit-for-intellij.md
+[Azure Toolkit for IntelliJ]: azure-toolkit-for-intellij.md
 [Kit de herramientas de Azure para Eclipse]: ../eclipse/azure-toolkit-for-eclipse.md
+[Azure Toolkit for Eclipse]: ../eclipse/azure-toolkit-for-eclipse.md
 [eclipse-hello-world]: ../eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md
 [Introducción a Web Apps]: /azure/app-service/app-service-web-overview
+[Web Apps Overview]: /azure/app-service/app-service-web-overview
 [Apache Tomcat]: http://tomcat.apache.org/
 [Jetty]: http://www.eclipse.org/jetty/
 [Updated Version]: azure-toolkit-for-intellij-create-hello-world-web-app.md

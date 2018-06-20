@@ -1,11 +1,11 @@
 ---
 title: Novedades del kit de herramientas de Azure para Eclipse
-description: "Obtenga información acerca las características más recientes del kit de herramientas de Azure para Eclipse."
-services: 
+description: Obtenga información acerca las características más recientes del kit de herramientas de Azure para Eclipse.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: 16b066ea-aae7-4c30-9a12-fa0c3711b93e
 ms.author: robmcm;asirveda;martinsawicki
 ms.date: 02/01/2018
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954676"
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a><span data-ttu-id="eb07d-103">Novedades del kit de herramientas de Azure para Eclipse</span><span class="sxs-lookup"><span data-stu-id="eb07d-103">What's new in the Azure Toolkit for Eclipse</span></span>
 
@@ -320,6 +321,7 @@ Azure Plugin for Eclipse - December 2011 CTP has released. New features include:
 <!-- URL List -->
 
 [Kit de herramientas de Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
+[Azure Toolkit for IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
 [Installing the Azure Toolkit for Eclipse]: azure-toolkit-for-eclipse-installation.md
 
 [Azure Sign In Instructions for the Azure Toolkit for Eclipse]: azure-toolkit-for-eclipse-sign-in-instructions.md

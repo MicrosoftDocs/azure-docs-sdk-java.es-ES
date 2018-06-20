@@ -1,6 +1,6 @@
 ---
-title: "Administración de cuentas de Azure Storage con Java | Microsoft Docs"
-description: "Código de ejemplo para administrar cuentas de Azure Storage mediante el SDK de Azure para Java"
+title: Administración de cuentas de Azure Storage con Java | Microsoft Docs
+description: Código de ejemplo para administrar cuentas de Azure Storage mediante el SDK de Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: 49be8b66-3b56-4c10-8f14-9d326d815cb4
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931061"
 ---
 # <a name="manage-azure-storage-accounts-from-your-java-applications"></a><span data-ttu-id="8c920-103">Administración de cuentas de Azure Storage desde las aplicaciones Java</span><span class="sxs-lookup"><span data-stu-id="8c920-103">Manage Azure storage accounts from your Java applications</span></span>
 

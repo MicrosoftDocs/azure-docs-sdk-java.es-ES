@@ -1,12 +1,12 @@
 ---
-title: "Administración de máquinas virtuales mediante Azure Explorer para IntelliJ"
-description: "Aprenda a administrar las máquinas virtuales de Azure mediante Azure Explorer para IntelliJ."
-services: 
+title: Administración de máquinas virtuales mediante Azure Explorer para IntelliJ
+description: Aprenda a administrar las máquinas virtuales de Azure mediante Azure Explorer para IntelliJ.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954876"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a><span data-ttu-id="8a9d4-103">Administración de máquinas virtuales mediante Azure Explorer para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="8a9d4-103">Manage virtual machines by using the Azure Explorer for IntelliJ</span></span>
 
@@ -156,10 +157,15 @@ ms.lasthandoff: 02/03/2018
 <!-- URL List -->
 
 [Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
+[Sign-in instructions for the Azure Toolkit for IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Tamaños de las máquinas virtuales Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
+[Sizes for Windows virtual machines in Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las máquinas virtuales Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
+[Sizes for Linux virtual machines in Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
 [Precios de máquinas virtuales Windows]: /pricing/details/virtual-machines/windows/
+[Windows virtual-machine pricing]: /pricing/details/virtual-machines/windows/
 [Precios de máquinas virtuales Linux]: /pricing/details/virtual-machines/linux/
+[Linux virtual-machine pricing]: /pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 

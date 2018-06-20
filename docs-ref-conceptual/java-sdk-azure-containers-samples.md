@@ -1,7 +1,7 @@
 ---
 title: Ejemplos de Java para Azure Container Service
-description: "Obtenga código de ejemplo para trabajar con Azure Container Service desde aplicaciones Java."
-keywords: "Azure, Java, SDK, API, Kubernetes, contenedores, Docker, ACS, registro, imágenes"
+description: Obtenga código de ejemplo para trabajar con Azure Container Service desde aplicaciones Java.
+keywords: Azure, Java, SDK, API, Kubernetes, contenedores, Docker, ACS, registro, imágenes
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21930831"
 ---
 # <a name="java-samples-for-azure-container-service"></a><span data-ttu-id="43d63-104">Ejemplos de Java para Azure Container Service</span><span class="sxs-lookup"><span data-stu-id="43d63-104">Java samples for Azure Container Service</span></span>
 

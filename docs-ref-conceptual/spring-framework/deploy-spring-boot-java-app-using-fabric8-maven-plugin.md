@@ -1,12 +1,12 @@
 ---
-title: "Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven"
-description: "En este tutorial se le guiará por los pasos necesarios para implementar una aplicación Spring Boot en Microsoft Azure con el complemento Fabric8 para Apache Maven."
+title: Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven
+description: En este tutorial se le guiará por los pasos necesarios para implementar una aplicación Spring Boot en Microsoft Azure con el complemento Fabric8 para Apache Maven.
 services: container-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: yuwzho;robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954896"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a><span data-ttu-id="cfb79-103">Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven</span><span class="sxs-lookup"><span data-stu-id="cfb79-103">Deploy a Spring Boot app using the Fabric8 Maven Plugin</span></span>
 
@@ -524,20 +525,27 @@ ms.lasthandoff: 02/03/2018
 <!-- URL List -->
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
+[Azure Command-Line Interface (CLI)]: /cli/azure/overview
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
 [Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Azure portal]: https://portal.azure.com/
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal
 [Uso de una imagen personalizada de Docker para Web App on Linux de Azure]: /azure/app-service-web/app-service-linux-using-custom-docker-image
+[Using a custom Docker image for Azure Web App on Linux]: /azure/app-service-web/app-service-linux-using-custom-docker-image
 [cliente de Docker]: https://www.docker.com/
+[Docker]: https://www.docker.com/
 [Fabric8]: https://fabric8.io/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
+[free Azure account]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [kit para desarrolladores de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
+[Java Developer Kit (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Kubernetes]: https://kubernetes.io/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[MSDN subscriber benefits]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Boot on Docker Getting Started]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/

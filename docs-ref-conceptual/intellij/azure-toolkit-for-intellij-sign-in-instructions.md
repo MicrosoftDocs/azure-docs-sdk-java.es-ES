@@ -1,12 +1,12 @@
 ---
-title: "Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ"
-description: "Obtenga información sobre cómo iniciar sesión en Microsoft Azure con el kit de herramientas de Azure para IntelliJ."
-services: 
+title: Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ
+description: Obtenga información sobre cómo iniciar sesión en Microsoft Azure con el kit de herramientas de Azure para IntelliJ.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954396"
 ---
 # <a name="sign-in-instructions-for-the-azure-toolkit-for-intellij"></a><span data-ttu-id="16d67-103">Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="16d67-103">Sign-in instructions for the Azure Toolkit for IntelliJ</span></span>
 

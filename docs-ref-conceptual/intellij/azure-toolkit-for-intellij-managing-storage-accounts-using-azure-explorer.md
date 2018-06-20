@@ -1,12 +1,12 @@
 ---
-title: "Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ"
-description: "Obtenga información sobre cómo administrar las cuentas de Azure Storage mediante Azure Explorer para IntelliJ."
-services: 
+title: Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ
+description: Obtenga información sobre cómo administrar las cuentas de Azure Storage mediante Azure Explorer para IntelliJ.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954846"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a><span data-ttu-id="9084e-103">Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="9084e-103">Manage storage accounts by using the Azure Explorer for IntelliJ</span></span>
 
@@ -114,16 +115,26 @@ ms.lasthandoff: 02/03/2018
 <!-- URL List -->
 
 [Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
+[Sign-in instructions for the Azure Toolkit for IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Introducción a Microsoft Azure Storage]: /azure/storage/storage-introduction
+[Introduction to Microsoft Azure Storage]: /azure/storage/storage-introduction
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
+[About Azure storage accounts]: /azure/storage/storage-create-storage-account
 [replicación de Azure Storage]: /azure/storage/storage-redundancy
+[Azure storage replication]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
+[Azure storage scalability and Performance Targets]: /azure/storage/storage-scalability-targets
 [Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
+[Naming and referencing containers, blobs, and metadata]: http://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamaños de las cuentas de almacenamiento de Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
+[Sizes for Windows storage accounts in Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las cuentas de almacenamiento de Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
+[Sizes for Linux storage accounts in Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
 [Precios de cuentas de almacenamiento de Windows]: /pricing/details/virtual-machines/windows/
+[Windows storage-account pricing]: /pricing/details/virtual-machines/windows/
 [Precios de cuentas de almacenamiento de Linux]: /pricing/details/virtual-machines/linux/
+[Linux storage-account pricing]: /pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 

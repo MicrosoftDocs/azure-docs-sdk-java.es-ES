@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823848"
 ---
 # <a name="azure-cosmos-db-libraries-for-java"></a><span data-ttu-id="54f82-104">Bibliotecas de Azure Cosmos DB para Java</span><span class="sxs-lookup"><span data-stu-id="54f82-104">Azure Cosmos DB libraries for Java</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823728"
 ---
 # <a name="azure-data-lake-store-libraries-for-java"></a><span data-ttu-id="c2092-104">Bibliotecas de Azure Data Lake Store para Java</span><span class="sxs-lookup"><span data-stu-id="c2092-104">Azure Data Lake Store libraries for Java</span></span>
 

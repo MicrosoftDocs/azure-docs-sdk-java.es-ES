@@ -1,6 +1,6 @@
 ---
-title: "Administración de conjuntos de escalado de máquinas virtuales con Java | Microsoft Docs"
-description: "Código de ejemplo para administrar conjuntos de escalado de máquinas virtuales de Azure mediante Azure SDK para Java"
+title: Administración de conjuntos de escalado de máquinas virtuales con Java | Microsoft Docs
+description: Código de ejemplo para administrar conjuntos de escalado de máquinas virtuales de Azure mediante Azure SDK para Java
 author: rloutlaw
 manager: douge
 ms.assetid: b55923b7-d60a-460d-b77c-af5fac67f1cc
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931161"
 ---
 # <a name="manage-azure-virtual-machine-scale-sets-from-your-java-applications"></a><span data-ttu-id="fcde7-103">Administración de conjuntos de escalado de máquinas virtuales de Azure desde aplicaciones Java</span><span class="sxs-lookup"><span data-stu-id="fcde7-103">Manage Azure virtual machine scale sets from your Java applications</span></span>
 
