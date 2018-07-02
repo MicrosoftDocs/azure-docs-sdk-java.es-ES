@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 8b831f4545be9162d28f8ba86eb7271ffa4391af
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 896e7eff389bc7d3ac119d315c50aae505a381da
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954746"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090808"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-eclipse"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para Eclipse
 
@@ -117,18 +117,18 @@ Existen varias maneras de implementar una aplicación web de Java en Azure. En e
       
       Puede seleccionar un grupo de recursos existente (si tiene alguno) y pasar al paso g a continuación o usar los siguientes pasos para crear un nuevo grupo de recursos:
       
-      * Haga clic en **Nuevo...**
-      * Se muestra el cuadro de diálogo **Nuevo grupo de recursos** :
+   * Haga clic en **Nuevo...**
+   * Se muestra el cuadro de diálogo **Nuevo grupo de recursos** :
         
-          ![Cuadro de diálogo Nuevo grupo de recursos][08]
-      * En el cuadro de texto **Nombre** , especifique un nombre para el nuevo grupo de recursos.
-      * En el menú desplegable **Región** , seleccione la ubicación adecuada del centro de datos de Azure para su grupo de recursos.
-      * OPCIONAL: De forma predeterminada, Azure implementará una distribución reciente de Java 8 automáticamente en el contenedor de la aplicación web como la máquina virtual de Java. Sin embargo, puede especificar una versión y una distribución diferentes de la máquina virtual de Java si así lo requiere la aplicación web. Para especificar el JDK de la aplicación web, haga clic en la pestaña **JDK** y seleccione una de las siguientes opciones:
-         * **Implementar el JDK predeterminado que ofrece el servicio Azure Web Apps**: esta opción implementará una distribución reciente de Java 8.
-         * **Implementar un JDK de terceros disponible en Azure**: esta opción permite elegir en la lista el JDK que proporciona Microsoft Azure.
-         * **Implementar mi propio JDK desde esta ubicación de descarga**: esta opción permite especificar su propia distribución JDK, que se debe empaquetar como un archivo ZIP y cargarse en una ubicación de descarga disponible públicamente o en una cuenta de Azure Storage a la que tenga acceso.
+       ![Cuadro de diálogo Nuevo grupo de recursos][08]
+   * En el cuadro de texto **Nombre** , especifique un nombre para el nuevo grupo de recursos.
+   * En el menú desplegable **Región** , seleccione la ubicación adecuada del centro de datos de Azure para su grupo de recursos.
+   * OPCIONAL: De forma predeterminada, Azure implementará una distribución reciente de Java 8 automáticamente en el contenedor de la aplicación web como la máquina virtual de Java. Sin embargo, puede especificar una versión y una distribución diferentes de la máquina virtual de Java si así lo requiere la aplicación web. Para especificar el JDK de la aplicación web, haga clic en la pestaña **JDK** y seleccione una de las siguientes opciones:
+     * **Implementar el JDK predeterminado que ofrece el servicio Azure Web Apps**: esta opción implementará una distribución reciente de Java 8.
+     * **Implementar un JDK de terceros disponible en Azure**: esta opción permite elegir en la lista el JDK que proporciona Microsoft Azure.
+     * **Implementar mi propio JDK desde esta ubicación de descarga**: esta opción permite especificar su propia distribución JDK, que se debe empaquetar como un archivo ZIP y cargarse en una ubicación de descarga disponible públicamente o en una cuenta de Azure Storage a la que tenga acceso.
           
-         ![Cuadro de diálogo de implementación en nuevo contenedor de aplicación web][07b]
+       ![Cuadro de diálogo de implementación en nuevo contenedor de aplicación web][07b]
 
    g. Haga clic en **OK**.
 
@@ -202,7 +202,7 @@ Cuando se muestre la vista **Azure Explorer** (Explorador de Azure), siga estos 
    
    ![Detención de una aplicación web existente][13]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
@@ -210,8 +210,8 @@ Para obtener más información sobre cómo crear Azure Web Apps, consulte [Intro
 
 <!-- URL List -->
 
-[Kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse.md
-[Kit de herramientas de Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
+[kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse.md
+[kit de herramientas de Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
 [intellij-hello-world]: ../intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md
 [Introducción a Web Apps]: /azure/app-service/app-service-web-overview
 [Apache Tomcat]: http://tomcat.apache.org/

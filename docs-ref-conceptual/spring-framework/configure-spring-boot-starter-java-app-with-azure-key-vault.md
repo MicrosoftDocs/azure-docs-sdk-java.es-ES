@@ -14,12 +14,12 @@ ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 1dda697cac80a6cad3ebbbbf8a5a4f18b515dfd8
-ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
+ms.openlocfilehash: a2734fc08f2f59f64ba6c6c20ff18d75070b68d5
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883688"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090718"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
@@ -101,6 +101,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az group create --name wingtiptoysresources --location westus
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el grupo de recursos. |
@@ -121,11 +122,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    }
    ```
 
-1. Cree una entidad de servicio de Azure desde el registro de su aplicación; por ejemplo:
+2. Cree una entidad de servicio de Azure desde el registro de su aplicación; por ejemplo:
    ```shell
    az ad sp create-for-rbac --name "wingtiptoysuser"
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre de la entidad de servicio de Azure. |
@@ -142,11 +144,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    }
    ```
 
-1. Cree un nuevo almacén de claves en el grupo de recursos; por ejemplo:
+3. Cree un nuevo almacén de claves en el grupo de recursos; por ejemplo:
    ```azurecli
    az keyvault create --name wingtiptoyskeyvault --resource-group wingtiptoysresources --location westus --enabled-for-deployment true --enabled-for-disk-encryption true --enabled-for-template-deployment true --sku standard --query properties.vaultUri
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el almacén de claves. |
@@ -163,11 +166,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    "https://wingtiptoyskeyvault.vault.azure.net"
    ```
 
-1. Establezca la directiva de acceso de la entidad de servicio de Azure que creó anteriormente; por ejemplo:
+4. Establezca la directiva de acceso de la entidad de servicio de Azure que creó anteriormente; por ejemplo:
    ```azurecli
    az keyvault set-policy --name wingtiptoyskeyvault --secret-permission set get list delete --spn "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii"
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre del almacén de claves anterior. |
@@ -192,11 +196,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    }
    ```
 
-1. Guarde un secreto en su nuevo almacén de claves; por ejemplo:
+5. Guarde un secreto en su nuevo almacén de claves; por ejemplo:
    ```azurecli
    az keyvault secret set --vault-name "wingtiptoyskeyvault" --name "connectionString" --value "jdbc:sqlserver://SERVER.database.windows.net:1433;database=DATABASE;"
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `vault-name` | Especifica el nombre del almacén de claves anterior. |
@@ -230,24 +235,26 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Extraiga los archivos del archivo del proyecto de Spring Boot que descargó anteriormente en un directorio.
 
-1. Vaya a la carpeta *src/main/resources* del proyecto y abra el archivo *application.properties* en un editor de texto.
+2. Vaya a la carpeta *src/main/resources* del proyecto y abra el archivo *application.properties* en un editor de texto.
 
-1. Agregue los valores del almacén de claves que obtuvo en los pasos realizados anteriormente en este tutorial; por ejemplo:
+3. Agregue los valores del almacén de claves que obtuvo en los pasos realizados anteriormente en este tutorial; por ejemplo:
    ```yaml
    azure.keyvault.uri=https://wingtiptoyskeyvault.vault.azure.net/
    azure.keyvault.client-id=iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii
    azure.keyvault.client-key=pppppppp-pppp-pppp-pppp-pppppppppppp
    ```
    Donde:
-   | . | DESCRIPCIÓN |
-   |---|---|
-   | `azure.keyvault.uri` | Especifica el URI obtenido cuando creó el almacén de claves. |
-   | `azure.keyvault.client-id` | Especifica el GUID de *appId* obtenido cuando creó la entidad de servicio. |
+
+   |          .          |                                 DESCRIPCIÓN                                 |
+   |-----------------------------|-----------------------------------------------------------------------------|
+   |    `azure.keyvault.uri`     |           Especifica el URI obtenido cuando creó el almacén de claves.           |
+   | `azure.keyvault.client-id`  |  Especifica el GUID de *appId* obtenido cuando creó la entidad de servicio.   |
    | `azure.keyvault.client-key` | Especifica el GUID de *password* obtenido cuando creó la entidad de servicio. |
 
-1. Vaya al archivo de código fuente principal del proyecto; por ejemplo: */src/main/java/com/wingtiptoys/secrets*.
 
-1. Abra el archivo Java principal de la aplicación en un editor de texto (por ejemplo: *SecretsApplication.java*) y agregue las siguientes líneas al archivo:
+4. Vaya al archivo de código fuente principal del proyecto; por ejemplo: */src/main/java/com/wingtiptoys/secrets*.
+
+5. Abra el archivo Java principal de la aplicación en un editor de texto (por ejemplo: *SecretsApplication.java*) y agregue las siguientes líneas al archivo:
 
    ```java
    package com.wingtiptoys.secrets;
@@ -274,7 +281,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Este código de ejemplo recupera la cadena de conexión del almacén de claves y la muestra en la línea de comandos.
 
-1. Guarde y cierre el archivo Java.
+6. Guarde y cierre el archivo Java.
 
 ## <a name="build-and-test-your-app"></a>Compilación y prueba de la aplicación
 
@@ -312,7 +319,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
 <!-- URL List -->
 
@@ -320,7 +327,7 @@ Para más información sobre el uso de Azure con Java, consulte [Azure para desa
 [Introducción a Azure Key Vault]: /azure/key-vault/key-vault-get-started
 [Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
-[Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
+[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/

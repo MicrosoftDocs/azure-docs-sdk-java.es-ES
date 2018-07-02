@@ -10,12 +10,12 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 924ccf9bdaad4bc635f133adbcfcc8f797d06644
-ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
+ms.openlocfilehash: 0aaa83ceb42192441decb5972baae56fed337fb2
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
-ms.locfileid: "23982167"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090688"
 ---
 # <a name="release-notes"></a>Notas de la versión 
 
@@ -35,11 +35,11 @@ Algunas de las API que estaban todavía en la versión beta en versiones anterio
 - todos los métodos de la red CDN que anteriormente se encontraban en la versión beta
 - todos los métodos y las interfaces de Application Gateway que anteriormente se encontraban en la versión beta
 
- Algunas partes de la biblioteca aún están en versión preliminar. Consulte la tabla siguiente sobre el estado actual de las bibliotecas:
+  Algunas partes de la biblioteca aún están en versión preliminar. Consulte la tabla siguiente sobre el estado actual de las bibliotecas:
 
 Servicio o característica | Disponible de forma general | Disponible como versión preliminar 
 ---------|---------|---------|-
-Proceso  | Máquinas virtuales y extensiones de máquinas virtuales, conjuntos de escalado de máquinas virtuales, discos administrados   | Azure container service, Azure container registry 
+Compute  | Máquinas virtuales y extensiones de máquinas virtuales, conjuntos de escalado de máquinas virtuales, discos administrados   | Azure container service, Azure container registry 
 Storage   |  Cuentas de almacenamiento       |    Cifrado     
 SQL Database  | Bases de datos, firewalls, grupos elásticos              
 Redes    |  Redes virtuales, interfaces de red, direcciones IP, tablas de enrutamiento, grupos de seguridad de red, DNS, administradores de tráfico, puertas de enlace de aplicaciones  |    Equilibradores de carga, emparejamiento de redes, puerta de enlace de red virtual, Network Watcher 
@@ -58,7 +58,7 @@ Aspectos básicos     |   Autenticación: principal, métodos asincrónicos, ide
 </dependency>
 ```
 
-### <a name="get-help-and-give-feedback"></a>Obtener ayuda y proporcionar comentarios
+### <a name="get-help-and-give-feedback"></a>Obtención de ayuda y ofrecimiento de comentarios
 
 Revisar la comunidad de [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-java-sdk) para obtener ayuda con las bibliotecas en su propio código. Si encuentra errores o tiene sugerencias para mejorar estas bibliotecas, puede enviarlas a través de [GitHub](https://github.com/Azure/azure-sdk-for-java/issues).
 

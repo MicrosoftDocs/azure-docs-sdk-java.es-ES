@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: ebe98a604b52dc9a4b5a47cbf65a4c68a5c86fe3
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: efc1dffa248987772827bbe7bc0caa9f10a0b4ef
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954786"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090788"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ
 
@@ -161,14 +161,14 @@ Cuando se ha configurado el módulo, puede publicar la aplicación en Azure medi
 
    h. (Opcional) De manera predeterminada, Azure implementará automáticamente una distribución reciente de Java 8 como máquina virtual de Java en el contenedor de la aplicación. Sin embargo, puede seleccionar una versión y una distribución diferentes de la máquina virtual de Java. Para ello, siga estos pasos:
       
-      * Haga clic en la pestaña **JDK** en el cuadro de diálogo **New Web App Container** (Nuevo contenedor de aplicaciones web).
-      * Puede elegir una de las siguientes opciones:
+   * Haga clic en la pestaña **JDK** en el cuadro de diálogo **New Web App Container** (Nuevo contenedor de aplicaciones web).
+   * Puede elegir una de las siguientes opciones:
         
-         * Implementar el JDK predeterminado que ofrece Azure
-         * Implementar un JDK de terceros de lista desplegable de JDK adicionales que están disponibles en Azure
-         * Implementar un JDK personalizado, que debe estar empaquetado en un archivo ZIP y bien estar disponible públicamente o en su cuenta de Azure Storage
+      * Implementar el JDK predeterminado que ofrece Azure
+      * Implementar un JDK de terceros de lista desplegable de JDK adicionales que están disponibles en Azure
+      * Implementar un JDK personalizado, que debe estar empaquetado en un archivo ZIP y bien estar disponible públicamente o en su cuenta de Azure Storage
         
-      ![Pestaña JDK de nuevo contenedor de aplicaciones][11b]
+     ![Pestaña JDK de nuevo contenedor de aplicaciones][11b]
 
    i. Cuando haya completado todos los pasos anteriores, el cuadro de diálogo Nuevo contenedor de aplicaciones web debe parecerse al de la siguiente ilustración:
       
@@ -233,7 +233,7 @@ Cuando se muestre la vista **Azure Explorer** (Explorador de Azure), siga estos 
    
    ![Detener aplicación web][18]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
@@ -241,8 +241,8 @@ Para obtener más información sobre cómo crear Azure Web Apps, consulte [Intro
 
 <!-- URL List -->
 
-[Kit de herramientas de Azure para IntelliJ]: azure-toolkit-for-intellij.md
-[Kit de herramientas de Azure para Eclipse]: ../eclipse/azure-toolkit-for-eclipse.md
+[kit de herramientas de Azure para IntelliJ]: azure-toolkit-for-intellij.md
+[kit de herramientas de Azure para Eclipse]: ../eclipse/azure-toolkit-for-eclipse.md
 [eclipse-hello-world]: ../eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md
 [Introducción a Web Apps]: /azure/app-service/app-service-web-overview
 [Apache Tomcat]: http://tomcat.apache.org/
