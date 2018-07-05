@@ -14,11 +14,12 @@ ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: e10ecfb7f6d705aa3ccffc49d354d1019f7f1a0b
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.openlocfilehash: 2f9381fce2fee207360287c57443b56eb5128e42
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090698"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Cómo usar el iniciador de Spring Boot para Azure Storage
 
@@ -39,7 +40,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a <https://start.spring.io/>.
 
-1. Especifique que quiere generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación y luego haga clic en el vínculo **Switch to the full version** (Cambiar a la versión completa) de Spring Initializr.
+1. Especifique que desea generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación y luego haga clic en el vínculo **Switch to the full version** (Cambiar a la versión completa) de Spring Initializr.
 
    ![Opciones básicas de Spring Initializr](media/configure-spring-boot-starter-java-app-with-azure-storage/spring-initializr-basic.png)
 
@@ -108,6 +109,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    az group create --name wingtiptoysresources --location westus
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el grupo de recursos. |
@@ -128,11 +130,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    }
    ```
 
-1. Cree una cuenta de almacenamiento de Azure en el grupo de recursos para su aplicación de Spring Boot; por ejemplo:
+2. Cree una cuenta de almacenamiento de Azure en el grupo de recursos para su aplicación de Spring Boot; por ejemplo:
    ```azurecli
    az storage account create --name wingtiptoysstorage --resource-group wingtiptoysresources --location westus --sku Standard_LRS
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para la cuenta de almacenamiento. |
@@ -141,7 +144,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    | `sku` | Especifica uno de los siguientes valores: `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, `Standard_ZRS`. |
 
    Azure devolverá una cadena JSON larga que contiene el estado de aprovisionamiento; por ejemplo: |
-   
+
    ```json
    {
      "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/...",
@@ -157,11 +160,12 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    }
    ```
 
-1. Recupere la cadena de conexión de la cuenta de almacenamiento; por ejemplo:
+3. Recupere la cadena de conexión de la cuenta de almacenamiento; por ejemplo:
    ```azurecli
    az storage account show-connection-string --name wingtiptoysstorage --resource-group wingtiptoysresources
    ```
    Donde:
+
    | . | DESCRIPCIÓN |
    | ---|---|
    | `name` | Especifica el nombre único de la cuenta de almacenamiento que creó en pasos anteriores. |
@@ -270,7 +274,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```shell
    mvn clean package spring-boot:run
    ```
-   
+
    La aplicación creará un contenedor y cargará en él un archivo de texto como un blob, que se mostrará en la lista de la cuenta de almacenamiento, en [Azure Portal](https://portal.azure.com).
 
    ![Lista de blobs en Azure Portal](media/configure-spring-boot-starter-java-app-with-azure-storage/list-blobs-in-portal.png)
