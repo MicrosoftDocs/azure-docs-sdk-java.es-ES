@@ -15,16 +15,16 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: c3a10a0d6029ba31b13f82907311d9182f98acb6
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 49d94d11ad6a4e103ded849e477d99f01955c693
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954756"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090868"
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en Linux en Azure Container Service
 
-En este tutorial se explica cómo usar [cliente de Docker] para desarrollar e implementar una aplicación de [Spring Boot] en un host Linux en [Azure Container Service (AKS)].
+En este tutorial se explica cómo usar [Docker] para desarrollar e implementar una aplicación de [Spring Boot] en un host Linux en [Azure Container Service (AKS)].
 
 ## <a name="prerequisites"></a>requisitos previos
 
@@ -35,7 +35,7 @@ Para realizar los pasos de este tutorial, necesitará tener los siguientes requi
 * Un [kit para desarrolladores de Java (JDK)] actualizado.
 * La herramienta de compilación [Maven] de Apache (versión 3).
 * Un cliente [Git].
-* Un [cliente de Docker].
+* Un [Docker].
 
 > [!NOTE]
 >
@@ -57,7 +57,7 @@ Los siguientes pasos le guiarán por las fases necesarias para crear una aplicac
    cd /users/robert/SpringBoot
    ```
 
-1. Clone el proyecto de ejemplo [inicial de Spring Boot en Docker] en el directorio que ha creado, por ejemplo:
+1. Clone el proyecto de ejemplo [Spring Boot on Docker Getting Started] en el directorio que ha creado, por ejemplo:
    ```
    git clone https://github.com/spring-guides/gs-spring-boot-docker.git
    ```
@@ -98,7 +98,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 1. Vaya a [Azure Portal] e inicie sesión.
 
-   Una vez que haya iniciado sesión en su cuenta en Azure Portal, puede seguir los pasos descritos en el artículo [Creación de un registro de contenedor privado de Docker con la CLI de Azure], que se vuelven a explicar en los pasos siguientes para mayor comodidad.
+   Una vez que haya iniciado sesión en su cuenta en Azure Portal, puede seguir los pasos descritos en el artículo [Creación de un registro de contenedor privado de Docker con Azure Portal], que se vuelven a explicar en los pasos siguientes para mayor comodidad.
 
 1. Haga clic en el icono de menú **+ Nuevo**, en **Contenedores** y en **Azure Container Registry**.
    
@@ -193,11 +193,11 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 1. Vaya a [Azure Portal] e inicie sesión.
 
-1. Haga clic en el icono de menú **+ Nuevo**, en **Web y móvil** y en **Web App on Linux** (Aplicación web en Linux).
+2. Haga clic en el icono de menú **+ Nuevo**, en **Web y móvil** y en **Web App on Linux** (Aplicación web en Linux).
    
    ![Crear una aplicación web en Azure Portal][LX01]
 
-1. Cuando aparezca la página **Aplicación web en Linux**, especifique la información siguiente:
+3. Cuando aparezca la página **Aplicación web en Linux**, especifique la información siguiente:
 
    a. Escriba un nombre único para el **Nombre de la aplicación**, por ejemplo: "*wingtiptoyslinux*".
 
@@ -207,19 +207,19 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
    d. Haga clic en **Configurar contenedor** y especifique la información siguiente:
 
-      * Seleccione **Registro privado**.
+   * Seleccione **Registro privado**.
 
-      * **Imagen y etiqueta opcional**: especifique el nombre del contenedor del ejemplo anterior, por ejemplo: "*wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest*".
+   * **Imagen y etiqueta opcional**: especifique el nombre del contenedor del ejemplo anterior, por ejemplo: "*wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest*".
 
-      * **Dirección URL del servidor**: especifique la dirección URL del Registro del ejemplo anterior, por ejemplo: "*https://wingtiptoysregistry.azurecr.io*".
+   * **URL del servidor**: especifique la dirección URL del Registro del ejemplo anterior; por ejemplo: "*<https://wingtiptoysregistry.azurecr.io>*"
 
-      * **Nombre de usuario de inicio de sesión** y **Contraseña**: especifique las credenciales de inicio de sesión de las **Claves de acceso** que ha usado en los pasos anteriores.
+   * **Nombre de usuario de inicio de sesión** y **Contraseña**: especifique las credenciales de inicio de sesión de las **Claves de acceso** que ha usado en los pasos anteriores.
    
    e. Cuando haya especificado la información anterior, haga clic en **Aceptar**.
 
    ![Configurar aplicaciones web][LX02]
 
-1. Haga clic en **Create**(Crear).
+4. Haga clic en **Create**(Crear).
 
 > [!NOTE]
 >
@@ -261,20 +261,20 @@ The embedded Tomcat server in the sample Spring Boot application is configured t
 1. Save and close the *application.yml* file.
 -->
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 
 * [Implementación de una aplicación de Spring Boot en Azure App Service](deploy-spring-boot-java-web-app-on-azure.md)
 * [Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
-Para obtener más información sobre el proyecto de ejemplo Spring Boot en Docker, vea [inicial de Spring Boot en Docker] (Introducción a Spring Boot en Docker).
+Para obtener más información sobre el proyecto de ejemplo Spring Boot en Docker, vea [Spring Boot on Docker Getting Started] (Introducción a Spring Boot en Docker).
 
 Para obtener ayuda para dar sus primeros pasos con sus propias aplicaciones de Spring Boot, consulte **Spring Initializr** en https://start.spring.io/.
 
-Para obtener más información sobre cómo empezar a crear una sencilla aplicación Spring Boot, vea Spring Initializr en https://start.spring.io/.
+Para más información sobre cómo empezar a crear una sencilla aplicación de Spring Boot, consulte Spring Initializr en https://start.spring.io/.
 
 Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azure, consulte [Uso de una imagen personalizada de Docker para Web App on Linux de Azure].
 
@@ -284,17 +284,17 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
 [Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [Azure Portal]: https://portal.azure.com/
-[Creación de un registro de contenedor privado de Docker con la CLI de Azure]: /azure/container-registry/container-registry-get-started-portal
+[Creación de un registro de contenedor privado de Docker con Azure Portal]: /azure/container-registry/container-registry-get-started-portal
 [Uso de una imagen personalizada de Docker para Web App on Linux de Azure]: /azure/app-service-web/app-service-linux-using-custom-docker-image
-[cliente de Docker]: https://www.docker.com/
+[Docker]: https://www.docker.com/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[kit para desarrolladores de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
-[Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
+[Kit para desarrolladores de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
+[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
-[inicial de Spring Boot en Docker]: https://github.com/spring-guides/gs-spring-boot-docker
+[Spring Boot on Docker Getting Started]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
 
 <!-- IMG List -->
