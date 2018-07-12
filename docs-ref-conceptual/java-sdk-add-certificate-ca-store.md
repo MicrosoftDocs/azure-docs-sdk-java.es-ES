@@ -11,14 +11,14 @@ ms.workload: na
 ms.tgt_pltfrm: na
 ms.devlang: Java
 ms.topic: article
-ms.date: 05/23/2018
+ms.date: 07/02/2018
 ms.author: robmcm
-ms.openlocfilehash: 29b2b598968c9a3a896fffee3ce56f9b0cb4b1ee
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.openlocfilehash: 3f2de63f7eb1422ff1dd6db45d68e02f4af188b8
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090738"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864045"
 ---
 # <a name="adding-a-root-certificate-to-the-java-ca-certificates-store"></a>Incorporación de un certificado raíz al almacén de certificados CA de Java
 
@@ -70,10 +70,10 @@ El certificado Baltimore podría estar ya instalado en el almacén cacerts, por 
 
    |  .   |                              DESCRIPCIÓN                               |
    |--------------|------------------------------------------------------------------------|
-   |  `keystore`  |                    Especifica el almacén de certificados.                    |
-   | `importcert` |            Especifica que va a importar un certificado.             |
-   |   `alias`    |                Especifica un alias para el certificado.                 |
-   |    `file`    | Especifica el nombre de archivo del certificado raíz que va a importar. |
+   | `keystore`   | Especifica el almacén de certificados.                                       |
+   | `importcert` | Especifica que va a importar un certificado.                        |
+   | `alias`      | Especifica un alias para el certificado.                                |
+   | `file`       | Especifica el nombre de archivo del certificado raíz que va a importar. |
 
 
 3. Si se le pide que confíe en el certificado, compruebe que la huella digital es `d4:de:20:d0:5e:66:fc:53:fe:1a:50:88:2c:78:db:28:52:ca:e4:74` y escriba **y** si la huella digital es correcta.
@@ -90,6 +90,6 @@ Después de agregar correctamente el certificado raíz al JDK, puede comprimir e
 
 Para más información acerca de la utilidad keytool, consulte <http://docs.oracle.com/javase/7/docs/technotes/tools/windows/keytool.html>.
 
-Para obtener más información sobre los certificados raíz que usa Azure, consulte [Azure Root Certificate Migration (Migración de certificados raíz de Azure)](http://blogs.msdn.com/b/windowsazure/archive/2013/03/15/windows-azure-root-certificate-migration.aspx).
-
 Para más información sobre Java, consulte [Azure para desarrolladores de Java](/java/azure).
+
+<!-- For more information about the root certificates used by Azure, see [Azure Root Certificate Migration](http://blogs.msdn.com/b/windowsazure/archive/2013/03/15/windows-azure-root-certificate-migration.aspx). -->

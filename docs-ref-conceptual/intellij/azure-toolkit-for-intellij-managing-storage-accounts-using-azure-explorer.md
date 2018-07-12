@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 4edb8c1ceef508dd251db693ccc3b98d77ec452b
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954846"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38075434"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a>Administración de cuentas de almacenamiento mediante Azure Explorer para IntelliJ
 
@@ -49,7 +49,7 @@ Para crear una cuenta de almacenamiento con Azure Explorer, haga lo siguiente:
 
    * **Rendimiento**: especifica la oferta de cuenta de almacenamiento que quiere usar del publicador seleccionado; por ejemplo, "Premium". Para obtener más información, consulte [Objetivos de escalabilidad y rendimiento de Azure Storage]. 
 
-   * **Replicación**: especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Redundancia de zona". Para obtener más información, vea el artículo de [replicación de Azure Storage]. 
+   * **Replicación**: especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Redundancia de zona". Para obtener más información, vea el artículo de [Replicación de almacenamiento de Azure]. 
 
    * **Suscripción**: especifica la suscripción de Azure que quiere usar para la nueva cuenta de almacenamiento.
 
@@ -97,7 +97,7 @@ Para crear una cuenta de almacenamiento con Azure Explorer, haga lo siguiente:
 
    ![Ventana de confirmación Eliminar cuenta de almacenamiento][DS02]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre las cuentas de Azure Storage, tamaños y precios, vea los siguientes recursos:
 
@@ -117,7 +117,7 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 [Instrucciones de inicio de sesión del kit de herramientas de Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Introducción a Microsoft Azure Storage]: /azure/storage/storage-introduction
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
-[replicación de Azure Storage]: /azure/storage/storage-redundancy
+[Replicación de almacenamiento de Azure]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
 [Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
 

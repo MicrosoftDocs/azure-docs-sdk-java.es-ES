@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 310d95436189af09f794154f4c9f0e71c47d88c8
-ms.sourcegitcommit: 3d3460289ab6b9165c2cf6a3dd56eafd0692501e
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34283019"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38075414"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-eclipse"></a>Administración de cuentas de almacenamiento mediante Azure Explorer para Eclipse
 
@@ -57,7 +57,7 @@ Para crear una cuenta de almacenamiento con Azure Explorer, haga lo siguiente:
 
    * **Rendimiento**: especifica la oferta de cuenta de almacenamiento que quiere usar del publicador seleccionado; por ejemplo, "Premium". Para obtener más información, consulte [Objetivos de escalabilidad y rendimiento de Azure Storage].
 
-   * **Replicación**: especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Redundancia de zona". Para más información, consulte el artículo sobre la [replicación de Azure Storage].
+   * **Replicación**: especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Redundancia de zona". Para más información, consulte el artículo sobre la [Replicación de almacenamiento de Azure].
 
 1. Cuando haya especificado todas las opciones anteriores, haga clic en **Crear**.
 
@@ -116,7 +116,7 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 
 [Introducción a Microsoft Azure Storage]: /azure/storage/storage-introduction
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
-[replicación de Azure Storage]: /azure/storage/storage-redundancy
+[Replicación de almacenamiento de Azure]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
 [Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
 
