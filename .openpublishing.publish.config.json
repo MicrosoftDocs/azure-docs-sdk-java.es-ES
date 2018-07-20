@@ -5,9 +5,8 @@
       "docset_name": "AzureJava",
       "build_source_folder": ".",
       "build_output_subfolder": "azure/sdk/java",
-      "locale": "es-ES",
+      "locale": "es-es",
       "monikers": [],
-      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -31,16 +30,14 @@
     }
   ],
   "notification_subscribers": [],
-  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live"
   ],
-  "git_repository_branch_open_to_public_contributors": "master",
   "continue_with_document_error": true,
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "enable_incremental_build": false,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -66,7 +63,7 @@
       "branch": "async-samplesInDocTest",
       "branch_mapping": {}
     },
-    {
+     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/azure/azure-docs-sdk-java",
       "branch": "live",
@@ -74,17 +71,9 @@
         "live": "live",
         "master": "master"
       }
-    },
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.es-ES",
-      "branch": "master",
-      "branch_mapping": {}
-    }
+    }	  
   ],
-  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
-  "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "dependent_packages": [
@@ -102,7 +91,7 @@
       "target_framework": "net45",
       "version": "latest"
     },
-    {
+	{
       "id": "memberpage.plugins",
       "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
       "path_to_root": "_dependentPackages/memberpage.plugins",
@@ -118,7 +107,6 @@
       "ReferenceTOCUrl": "/java/api/azure-java-sdk/toc.json?view=azure-java-stable",
       "ConceptualTOCUrl": "/java/azure/toc.json?view=azure-java-stable",
       "HideEmptyNode": false,
-      "OutputFolder": "docs-ref-autogen/overview/azure",
       "ContainerPageMetadata": {
         "langs": [
           "java"
