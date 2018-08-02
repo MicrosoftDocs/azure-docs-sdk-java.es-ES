@@ -8,18 +8,18 @@ manager: routlaw
 editor: ''
 ms.assetid: ''
 ms.author: robmcm;yungez;kevinzha
-ms.date: 02/01/2018
+ms.date: 07/05/2018
 ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 6cf999f3db397760709476dae1f5c0fd83503725
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.openlocfilehash: 3306f3ef66ec1b53ab004765b8fb7aef04de9077
+ms.sourcegitcommit: 1ff4654193404415841252a130b87a8b53b7c6d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31823808"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39235979"
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de la utilidad Spring Boot Starter con SQL API de Azure Cosmos DB
 
@@ -29,17 +29,17 @@ Azure Cosmos DB es un servicio de base de datos de distribución global que perm
 
 En este artículo se muestra cómo crear una base de datos de Azure Cosmos DB mediante Azure Portal, cómo usar **[Spring Initializr]** para crear una aplicación Java personalizada y, después, cómo agregar la funcionalidad de iniciador de Spring Boot a su aplicación personalizada para almacenar datos en Azure Cosmos DB y recuperarlos mediante SQL API.
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
-* Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
+* Una suscripción de Azure. Si todavía no la tiene, puede activar sus [Ventajas para suscriptores de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * Un [kit de desarrollo de Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/), versión 1.7 o posterior.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
 
 ## <a name="create-an-azure-cosmos-db-by-using-the-azure-portal"></a>Creación de una instancia de Azure Cosmos DB mediante Azure Portal
 
-1. Vaya a Azure Portal en <https://portal.azure.com/> y haga clic en **+Nuevo**.
+1. Vaya a Azure Portal en <https://portal.azure.com/> y haga clic en **+Crear un recurso**.
 
    ![Azure Portal][AZ01]
 
@@ -50,7 +50,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 1. En la página **Azure Cosmos DB**, escriba la información siguiente:
 
    * Escriba un **identificador** único, que usará como el identificador URI para la base de datos. Por ejemplo, *wingtiptoysdata.documents.azure.com*.
-   * Elija **SQL (DocumentDB)** para la API.
+   * Elija **SQL** como API.
    * Elija la **suscripción** que quiere usar para la base de datos.
    * Especifique si quiere crear un nuevo **grupo de recursos** para la base de datos o elija un grupo de recursos diferente.
    * Especifique la **ubicación** de la base de datos.
@@ -71,16 +71,21 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Vaya a <https://start.spring.io/>.
 
-1. Especifique que quiere generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación y luego haga clic en el botón **Generate Project** (Generar proyecto).
+1. Especifique que quiere generar un proyecto de **Maven** con **Java**, escriba los nombres de **Group** (Grupo) y **Artifact** (Artefacto) de su aplicación, especifique su versión de **Spring Boot** y, luego, haga clic en el botón **Generate Project** (Generar proyecto).
 
-   ![Opciones básicas de Basic Spring Initializr][SI01]
+   > [!IMPORTANT]
+   >
+   > Se han producido varios cambios importantes en las API de Spring Boot versión 2.0.n y, como resultado, necesitará una de las versiones de Spring Boot 1.5.n para completar los pasos de este tutorial.
+   >
+
+   ![Opciones básicas de Spring Initializr][SI01]
 
    > [!NOTE]
    >
-   > Spring Initializr usa los nombres de **Group** (Grupo) y **Artifact** (Artefacto) para crear el nombre del paquete, por ejemplo: *com.example.wintiptoys*.
+   > Spring Initializr usa los nombres de **Group** (Grupo) y **Artifact** (Artefacto) para crear el nombre del paquete, por ejemplo: *com.example.wintiptoysdata*.
    >
 
-1. Cuando se le solicite, descargue el proyecto en una ruta del equipo local.
+1. Cuando se le solicite, descargue el proyecto en una ruta de acceso del equipo local.
 
    ![Descarga del proyecto personalizado de Spring Boot][SI02]
 
@@ -92,11 +97,11 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Busque el archivo *pom.xml* en el directorio de la aplicación; por ejemplo:
 
-   `C:\SpringBoot\wingtiptoys\pom.xml`
+   `C:\SpringBoot\wingtiptoysdata\pom.xml`
 
    O bien
 
-   `/users/example/home/wingtiptoys/pom.xml`
+   `/users/example/home/wingtiptoysdata/pom.xml`
 
    ![Guarde el archivo pom.xml.][PM01]
 
@@ -112,17 +117,28 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    ![Edición del archivo pom.xml][PM02]
 
+1. Compruebe que la versión de Spring Boot es una de las versiones 1.5.n; por ejemplo:
+
+   ```xml
+   <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>1.5.14.RELEASE</version>
+      <relativePath/>
+   </parent>
+   ```
+
 1. Guarde y cierre el archivo *pom.xml*.
 
 ## <a name="configure-your-spring-boot-app-to-use-your-azure-cosmos-db"></a>Configuración de la aplicación de Spring Boot para usar Azure Cosmos DB
 
 1. Busque el archivo *application.properties* en el directorio *resources* de su aplicación; por ejemplo:
 
-   `C:\SpringBoot\wingtiptoys\src\main\resources\application.properties`
+   `C:\SpringBoot\wingtiptoysdata\src\main\resources\application.properties`
 
    O bien
 
-   `/users/example/home/wingtiptoys/src/main/resources/application.properties`
+   `/users/example/home/wingtiptoysdata/src/main/resources/application.properties`
 
    ![Búsqueda del archivo application.properties][RE01]
 
@@ -154,13 +170,14 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
 1. Abra el archivo *User.java* en un editor de texto y agréguele las siguientes líneas para definir una clase de usuario genérica que almacene y recupere valores de la base de datos:
 
    ```java
-   package com.example.wingtiptoys;
+   package com.example.wingtiptoysdata;
 
+   // Define a generic User class.
    public class User {
       private String id;
       private String firstName;
       private String lastName;
- 
+   
       public User(String id, String firstName, String lastName) {
          this.id = id;
          this.firstName = firstName;
@@ -170,30 +187,30 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
       public String getId() {
          return this.id;
       }
-
+   
       public void setId(String id) {
          this.id = id;
       }
-
+   
       public String getFirstName() {
          return firstName;
       }
-
+   
       public void setFirstName(String firstName) {
          this.firstName = firstName;
       }
-
+   
       public String getLastName() {
          return lastName;
       }
-
+   
       public void setLastName(String lastName) {
          this.lastName = lastName;
       }
-
+   
       @Override
       public String toString() {
-         return String.format("User: %s %s", firstName, lastName);
+         return String.format("User: %s %s %s", id, firstName, lastName);
       }
    }
    ```
@@ -207,13 +224,13 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
 1. Abra el archivo *UserRepository.java* en un editor de texto y agréguele las siguientes líneas para definir una interfaz de repositorio de usuario que extienda la interfaz predeterminada del repositorio de DocumentDB:
 
    ```java
-   package com.example.wingtiptoys;
-
+   package com.example.wingtiptoysdata;
+   
    import com.microsoft.azure.spring.data.documentdb.repository.DocumentDbRepository;
    import org.springframework.stereotype.Repository;
-
+   
    @Repository
-   public interface UserRepository extends DocumentDbRepository<User, String> {}   
+   public interface UserRepository extends DocumentDbRepository<User, String> { } 
    ```
 
 1. Guarde y cierre el archivo *UserRepository.java*.
@@ -222,42 +239,58 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
 
 1. Busque el archivo de Java de la aplicación principal en el directorio del paquete de la aplicación; por ejemplo:
 
-   `C:\SpringBoot\wingtiptoys\src\main\java\com\example\wingtiptoys\WingtiptoysApplication.java`
+   `C:\SpringBoot\wingtiptoysdata\src\main\java\com\example\wingtiptoysdata\WingtiptoysdataApplication.java`
 
    O bien
 
-   `/users/example/home/wingtiptoys/src/main/java/com/example/wingtiptoys/WingtiptoysApplication.java`
+   `/users/example/home/wingtiptoysdata/src/main/java/com/example/wingtiptoysdata/WingtiptoysdataApplication.java`
 
    ![Búsqueda del archivo de Java de la aplicación][JV01]
 
 1. Abra el archivo de Java de la aplicación principal en un editor de texto y agregue las siguientes líneas al archivo:
 
    ```java
-   package com.example.wingtiptoys;
-
+   package com.example.wingtiptoysdata;
+   
+   // These imports are required for the application.
    import org.springframework.boot.SpringApplication;
    import org.springframework.boot.autoconfigure.SpringBootApplication;
    import org.springframework.beans.factory.annotation.Autowired;
    import org.springframework.boot.CommandLineRunner;
-
+   
+   // These imports are only used to create an ID for this example.
+   import java.util.Date;
+   import java.text.SimpleDateFormat;
+   
    @SpringBootApplication
-   public class WingtiptoysApplication implements CommandLineRunner {
-
+   public class wingtiptoysdataApplication implements CommandLineRunner {
+   
       @Autowired
       private UserRepository repository;
-    
+   
       public static void main(String[] args) {
-         SpringApplication.run(WingtiptoysApplication.class, args);
+         // Execute the command line runner.
+         SpringApplication.run(wingtiptoysdataApplication.class, args);
       }
-
-      public void run(String... var1) throws Exception {
-         final User testUser = new User("testId", "testFirstName", "testLastName");
-
+   
+      public void run(String... args) throws Exception {
+         // Create a simple date/time ID.
+         SimpleDateFormat userId = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+         Date currentDate = new Date();
+   
+         // Create a new User class.
+         final User testUser = new User(userId.format(currentDate), "Gena", "Soto");
+   
+         // For this example, remove all of the existing records.
          repository.deleteAll();
+   
+         // Save the User class to the Azure database.
          repository.save(testUser);
-
+         
+         // Retrieve the database record for the User class you just saved by ID.
          final User result = repository.findOne(testUser.getId());
-
+   
+         // Display the results of the database record retrieval.
          System.out.printf("\n\n%s\n\n",result.toString());
       }
    }
@@ -269,24 +302,24 @@ En esta sección creará dos clases de Java para almacenar datos de usuario y, d
 
 1. Abra un símbolo del sistema y cambie el directorio a la carpeta donde se encuentra el archivo *pom.xml*; por ejemplo:
 
-   `cd C:\SpringBoot\wingtiptoys`
+   `cd C:\SpringBoot\wingtiptoysdata`
 
    O bien
 
-   `cd /users/example/home/wingtiptoys`
+   `cd /users/example/home/wingtiptoysdata`
 
 1. Compile la aplicación de Spring Boot con Maven y ejecútela; por ejemplo:
 
    ```shell
-   mvn package
-   java -jar target/wingtiptoys-0.0.1-SNAPSHOT.jar
+   mvn clean package
+   mvn spring-boot:run
    ```
 
 1. La aplicación mostrará varios mensajes de tiempo de ejecución y verá el mensaje `User: testFirstName testLastName` que indica que los valores se han almacenado y recuperado correctamente de la base de datos.
 
    ![Salida correcta de la aplicación][JV02]
 
-1. OPCIONAL: Puede usar Azure Portal para ver el contenido de Azure Cosmos DB en la página de propiedades de la base de datos; para ello, haga clic en **Explorador de documentos** y luego seleccione un elemento de la lista mostrada para ver el contenido.
+1. OPCIONAL: Puede usar Azure Portal para ver el contenido de Azure Cosmos DB en la página de propiedades de la base de datos; para ello, haga clic en **Explorador de datos** y luego seleccione un elemento de la lista mostrada para ver el contenido.
 
    ![Uso del Explorador de documentos para ver los datos][JV03]
 
@@ -302,13 +335,13 @@ Para más información sobre el uso de Azure Cosmos DB y Java, consulte los sigu
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 
-* [Spring Boot DocumenDB Starter for Azure] (Spring Boot DocumenDB Starter para Azure)
+* [Spring Boot Document DB Starter para Azure]
 
 * [Implementación de una aplicación de Spring Boot en Azure App Service](deploy-spring-boot-java-web-app-on-azure.md)
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
 
 **[Spring Framework]** es una solución de código abierto que ayuda a los desarrolladores de Java a crear aplicaciones de nivel empresarial. Uno de los proyectos más populares que se basa en esa plataforma es [Spring Boot], que proporciona un enfoque simplificado para crear aplicaciones de Java independientes. Para ayudar a los desarrolladores a empezar con Spring Boot, puede encontrar varios paquetes de ejemplo de Spring Boot en <https://github.com/spring-guides/>. Además de elegir de la lista de proyectos básicos de Spring Boot, el **[Spring Initializr]** ayuda a los desarrolladores en los primeros pasos para crear aplicaciones de Spring Boot personalizadas.
 
@@ -318,10 +351,10 @@ Para más información sobre el uso de Azure con Java, consulte [Azure para desa
 [Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [Build a SQL API app with Java]: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-java 
 [Spring Data para SQL API de Azure Cosmos DB]: https://azure.microsoft.com/blog/spring-data-azure-cosmos-db-nosql-data-access-on-azure/
-[Spring Boot DocumenDB Starter for Azure]:https://github.com/Microsoft/azure-spring-boot-starters/tree/master/azure-documentdb-spring-boot-starter-sample (Spring Boot DocumenDB Starter para Azure)
+[Spring Boot Document DB Starter para Azure]:https://github.com/Microsoft/azure-spring-boot-starters/tree/master/azure-documentdb-spring-boot-starter-sample
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
-[Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
-[ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
+[Ventajas para suscriptores de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/
 [Spring Framework]: https://spring.io/
