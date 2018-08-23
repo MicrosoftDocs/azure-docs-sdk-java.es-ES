@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 3610312ed17301131967bd2c047c86656de070e7
-ms.sourcegitcommit: f313c14e92f38c54a3a583270ee85cc928cd39d7
+ms.openlocfilehash: d58cafe3456150069ec8572c101c62d1b2c29c5d
+ms.sourcegitcommit: e1a5d9687e006e8bf12d11747d45cf130a2c82af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689428"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "42703372"
 ---
 # <a name="deploy-a-spring-boot-app-to-the-cloud-using-the-maven-plugin-for-azure-app-service"></a>Implementación de una aplicación de Spring Boot en la nube con el complemento de Maven para Azure App Service
 
@@ -31,7 +31,7 @@ En este artículo se muestra cómo utilizar el complemento Maven de Azure App Se
 
 Antes de usar el complemento Maven, obtenga en Maven Central la última versión disponible del complemento: [![Maven Central](https://img.shields.io/maven-central/v/com.microsoft.azure/azure-webapp-maven-plugin.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.microsoft.azure%22%20AND%20a%3A%22azure-webapp-maven-plugin%22) 
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
@@ -163,9 +163,11 @@ Con esta configuración, el proyecto de Maven ya está listo para su implementac
 La manera más sencilla y fácil de obtener el complemento Maven para implementar la aplicación de Spring Boot es con la [CLI de Azure](https://docs.microsoft.com/cli/azure/). Asegúrese de que la tiene instalada.
 
 1. Inicie sesión en la cuenta de Azure mediante la CLI de Azure:
+   
    ```shell
    az login
    ```
+   
    Siga las instrucciones para completar el proceso de inicio de sesión.
 
 ## <a name="optionally-customize-pomxml-before-deploying"></a>También puede personalizar el archivo pom.xml antes de la implementación.
