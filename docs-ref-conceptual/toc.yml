@@ -1,99 +1,184 @@
+items:
 - name: Azure para desarrolladores de Java
   href: index.yml
   items:
-    - name: Guías de inicio rápido de Java
-      expanded: true
+  - name: Introducción
+    href: java-sdk-azure-get-started.md
+  - name: Guías de inicio rápido
+    items:
+    - name: Implementación de aplicaciones web
       items:
-        - name: Introducción
-          href: java-sdk-azure-get-started.md
-        - name: Service Fabric
-          items:
-            - name: Spring Boot
-              href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot
-            - name: Reliable Services
-              href: /azure/service-fabric/service-fabric-quickstart-java-reliable-services
-        - name: Web Apps
-          href: /azure/app-service-web/app-service-web-get-started-java
-        - name: Base de datos
-          items:
-            - name: SQL Database
-              href: /azure/sql-database/sql-database-connect-query-java
-            - name: MySQL
-              href: /azure/mysql/connect-java
-            - name: PostgreSQL
-              href: /azure/postgresql/connect-java
-        - name: Cosmos DB
-          href: /azure/cosmos-db/create-documentdb-java
-        - name: Almacenamiento de blobs
-          href: /azure/storage/blobs/storage-quickstart-blobs-java
-    - name: Herramientas
-      expanded: true
-      href: java-azure-tools.md
+      - name: Con Windows y Eclipse IDE
+        href: /azure/app-service-web/app-service-web-get-started-java
+        maintainContext: true
+      - name: Con Maven y Linux
+        href: /azure/app-service/containers/quickstart-java
+        maintainContext: true
+    - name: Supervisión de aplicaciones web
+      href: /azure/application-insights/app-insights-java-quick-start
+      maintainContext: true
+    - name: Canalización de DevOps con CI/CD
+      href: /azure/devops-project/azure-devops-project-java
+      maintainContext: true
+    - name: Función sin servidor
+      href: /azure/azure-functions/functions-create-first-java-maven
+      maintainContext: true
+    - name: Bases de datos
       items:
-        - name: Código de VS
-          href: 'https://code.visualstudio.com/docs/java/java-tutorial'
-        - name: IntelliJ
-          href: intellij/azure-toolkit-for-intellij.md
-        - name: Eclipse
-          href: eclipse/azure-toolkit-for-eclipse.md
-        - name: Complementos de Maven
-          href: ~/_mavenref/README.md
-          items:
-            - name: Azure App Service Web Apps
-              href: ~/_mavenref/azure-webapp-maven-plugin/README.md
-            - name: Azure Functions
-              href: ~/_mavenref/azure-functions-maven-plugin/README.md
-    - name: Spring
+      - name: SQL Database
+        href: /azure/sql-database/sql-database-connect-query-java
+        maintainContext: true
+      - name: MySQL
+        href: /azure/mysql/connect-java
+        maintainContext: true
+      - name: PostgreSQL
+        href: /azure/postgresql/connect-java
+        maintainContext: true
+      - name: Cosmos DB
+        items:
+        - name: API DE SQL
+          href: /azure/cosmos-db/create-sql-api-java
+          maintainContext: true
+        - name: Table API
+          href: /azure/cosmos-db/create-table-java
+          maintainContext: true
+        - name: Graph API
+          href: /azure/cosmos-db/create-graph-java
+          maintainContext: true
+        - name: Cassandra API
+          href: /azure/cosmos-db/create-cassandra-java
+          maintainContext: true
+        - name: MongoDB API
+          href: /azure/cosmos-db/create-mongodb-java
+          maintainContext: true
+    - name: Blobs de Storage
+      href: /azure/storage/blobs/storage-quickstart-blobs-java-v10
+      maintainContext: true
+    - name: Redis Cache
+      href: /azure/redis-cache/cache-java-get-started
+      maintainContext: true
+    - name: Service Fabric
+      items:
+      - name: Implementación de Spring Boot
+        href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot
+        maintainContext: true
+      - name: Implementación de Reliable Services
+        href: /azure/service-fabric/service-fabric-quickstart-java-reliable-services
+        maintainContext: true
+    - name: Aplicaciones de mensajería
+      items:
+      - name: Mensajería de Service Bus
+        items:
+        - name: Uso de colas
+          href: /azure/service-bus-messaging/service-bus-java-how-to-use-queues
+          maintainContext: true
+        - name: Uso de temas y suscripciones
+          href: /azure/service-bus-messaging/service-bus-java-how-to-use-topics-subscriptions
+          maintainContext: true
+        - name: JMS y AMQP
+          href: /azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp
+          maintainContext: true
+      - name: Event Hubs
+        items:
+        - name: Envío de eventos
+          href: /azure/event-hubs/event-hubs-java-get-started-send
+          maintainContext: true
+        - name: Recepción de eventos
+          href: /azure/event-hubs/event-hubs-java-get-started-receive-eph
+          maintainContext: true
+    - name: IoT Hub
+      items:
+      - name: Envío de datos de telemetría
+        href: /azure/iot-hub/quickstart-send-telemetry-java
+        maintainContext: true
+      - name: Control de un dispositivo
+        href: /azure/iot-hub/quickstart-control-device-java
+        maintainContext: true
+    - name: Azure Search
+      href: /azure/search/search-get-started-java
+      maintainContext: true
+    - name: Cognitive Services
+      items:
+      - name: Computer Vision
+        href: /azure/cognitive-services/Computer-vision/Quickstarts/java-analyze
+        maintainContext: true
+      - name: Text Analytics
+        href: /azure/cognitive-services/Text-Analytics/quickstarts/java
+        maintainContext: true
+      - name: Bing Web Search
+        href: /azure/cognitive-services/bing-web-search/quickstarts/java
+        maintainContext: true
+      - name: Bing Image Search
+        href: /azure/cognitive-services/bing-image-search/quickstarts/java
+        maintainContext: true
+  - name: Marcos y plataformas
+    items:
+    - name: Spring Framework y Spring Boot
       href: /java/azure/spring-framework/index
-    - name: Tutoriales de Java
+    expanded: true
+  - name: Herramientas para desarrolladores
+    items:
+    - name: Información general
+      href: java-azure-tools.md
+    - name: Visual Studio Code
+      href: https://code.visualstudio.com/docs/languages/java
+    - name: IntelliJ IDEA
+      href: intellij/azure-toolkit-for-intellij.md
+    - name: IDE de Eclipse
+      href: eclipse/azure-toolkit-for-eclipse.md
+    - name: Complementos de Maven
+      href: ~/_mavenref/README.md
       items:
-        - name: Implementación de microservicios en Service Fabric
-          href: /azure/service-fabric/service-fabric-tutorial-create-java-app
-        - name: Spring Boot + MySQL
-          href: /azure/app-service-web/app-service-web-tutorial-java-mysql
-        - name: Integración y entrega continuas de Jenkins en App Service
-          href: /azure/jenkins/java-deploy-webapp-tutorial
-        - name: Implementación en App Service con Maven
-          href: /azure/app-service-web/app-service-web-deploy-spring-boot-app-with-maven-plugin
-        - name: Implementación de contenedores en App Service
-          href: /azure/app-service-web/app-service-web-deploy-containerized-spring-boot-app-with-maven-plugin
-        - name: Implementación en App Service desde Azure Container Registry
-          href: /azure/app-service-web/app-service-web-deploy-spring-boot-app-from-container-registry-using-maven-plugin
-    - name: Artículos de procedimientos
-      items:
-        - name: API de administración
-          items:
-            - name: Autenticación
-              href: java-sdk-azure-authenticate.md
-            - name: Conceptos
-              href: java-sdk-azure-concepts.md
-        - name: Spring Boot
-          items:
-            - name: Implementación en Service Fabric
-              href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot
-            - name: Implementación con Docker y Kubernetes
-              href: /azure/container-service/container-service-deploy-spring-boot-app-on-kubernetes
-              maintainContext: true
-            - name: Implementación en App Service
-              href: /azure/app-service/app-service-deploy-spring-boot-web-app-on-azure
-              maintainContext: true
-        - name: Implementación con Maven
-          href: /azure/app-service-web/app-service-web-deploy-spring-boot-app-with-maven-plugin
-        - name: Adición de un certificado raíz
-          href: java-sdk-add-certificate-ca-store.md
-    - name: Ejemplos de código de Java
-      items:
-        - name: Service Fabric
-          href: 'https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/'
-        - name: Máquinas virtuales
-          href: java-sdk-azure-virtual-machine-samples.md
-        - name: Aplicaciones web
-          href: java-sdk-azure-web-apps-samples.md
-        - name: SQL Database
-          href: java-sdk-azure-sql-database-samples.md
-        - name: Seguridad
-          href: java-sdk-azure-security-samples.md
-        - name: Contenedores
-          href: java-sdk-azure-containers-samples.md
-        - name: Todos los ejemplos de Java
-          href: 'https://azure.microsoft.com/resources/samples/?platform=java'
+      - name: Azure App Service Web Apps
+        href: ~/_mavenref/azure-webapp-maven-plugin/README.md
+      - name: Azure Functions
+        href: ~/_mavenref/azure-functions-maven-plugin/README.md
+    - name: CI/CD con Jenkins
+      href: /azure/jenkins/
+    - name: ALM con Visual Studio Team Services
+      href: /vsts/java/
+    expanded: true
+  - name: Artículos de procedimientos
+    items:
+    - name: Adición de un certificado raíz
+      href: java-sdk-add-certificate-ca-store.md
+    - name: Autenticación con las bibliotecas de Azure para Java
+      href: java-sdk-azure-authenticate.md
+    - name: Patrones y procedimientos recomendados para desarrollar con los SDK de Azure para Java
+      href: java-sdk-azure-concepts.md
+  - name: Tutoriales
+    items:
+    - name: Implementación de microservicios en Service Fabric
+      href: /azure/service-fabric/service-fabric-tutorial-create-java-app
+    - name: Spring Boot en App Service con MySQL
+      href: /azure/app-service-web/app-service-web-tutorial-java-mysql
+    - name: Integración y entrega continuas de Jenkins en App Service
+      href: /azure/jenkins/java-deploy-webapp-tutorial
+    - name: Implementación en App Service con Maven
+      href: spring-framework/deploy-spring-boot-java-app-with-maven-plugin.md
+    - name: Implementación de contenedores en App Service
+      href: spring-framework/deploy-containerized-spring-boot-java-app-with-maven-plugin.md
+    - name: Implementación en App Service desde Azure Container Registry
+      href: spring-framework/deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md
+  - name: Ejemplos de código
+    items:
+    - name: Service Fabric
+      href: https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/
+    - name: Máquinas virtuales
+      href: java-sdk-azure-virtual-machine-samples.md
+    - name: Aplicaciones web
+      href: java-sdk-azure-web-apps-samples.md
+    - name: SQL Database
+      href: java-sdk-azure-sql-database-samples.md
+    - name: Seguridad
+      href: java-sdk-azure-security-samples.md
+    - name: Contenedores
+      href: java-sdk-azure-containers-samples.md
+    - name: Todos los ejemplos de Java
+      href: https://azure.microsoft.com/resources/samples/?platform=java
+ms.openlocfilehash: 3ea1fe0b07c3e19cb9f829353761df1fa2d83604
+ms.sourcegitcommit: c711a19a024b7271f17776bc0bd99ab444fadae1
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42703360"
