@@ -13,12 +13,12 @@ ms.devlang: na
 ms.topic: hero-article
 ms.date: 03/17/2017
 ms.author: routlaw
-ms.openlocfilehash: 1adc0a104ba22bcd353664e68323165890e46c64
-ms.sourcegitcommit: 30d502b3150fa14bcc1251f5f88c7c0dd83e531e
+ms.openlocfilehash: 70b508118c50b75693e2d746dc1e2919c827cb29
+ms.sourcegitcommit: 0f38ef9ad64cffdb7b2e9e966224dfd0af251b0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2017
-ms.locfileid: "22033637"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703548"
 ---
 # <a name="create-and-deploy-a-java-app-to-azure-with-maven"></a>Crear e implementar una aplicación de Java en Azure con Maven
 
@@ -53,11 +53,11 @@ mvn package
 mvn tomcat7:run-war
 ```
 
-Abra el explorador y navegue hasta http://localhost:8080 para previsualizar la aplicación:
+Abra un explorador web y vaya a http://localhost:8080 para mostrar una vista previa de la aplicación:
 
   ![Mensaje Hola mundo de la aplicación de ejemplo de Java](media/maven-quickstart/java-app-hello-world-output.png)
 
-## <a name="log-in-to-azure"></a>Inicie sesión en Azure.
+## <a name="log-in-to-azure"></a>Inicio de sesión en Azure
 
 Inicie sesión en la CLI de Azure con `az login`. Este tutorial rápido usa la CLI para consultar y crear los recursos de Azure necesarios para hospedar la aplicación.
    
@@ -147,7 +147,7 @@ az webapp config set \
 
 ## <a name="configure-maven"></a>Configuración de Maven 
 
-El archivo `pom.xml` de Maven del ejemplo incluye la configuración para enviar el ejemplo por FTP a Azure, pero deberá personalizarlo para implementar su propia aplicación web. Puede recuperar las credenciales de App Service con [az appservice web deployment list-publishing-profiles](/cli/azure/appservice/web/deployment#list-publishing-profiles):
+El archivo `pom.xml` de Maven del ejemplo incluye la configuración para enviar el ejemplo por FTP a Azure, pero deberá personalizarlo para implementar su propia aplicación web. Recupere las credenciales de App Service con [az appservice web deployment list-publishing-profiles](/cli/azure/appservice/web/deployment#list-publishing-profiles):
 
 ```azurecli
 az webapp deployment list-publishing-profiles  \
@@ -236,7 +236,7 @@ Actualice el explorador después de volver a implementar la aplicación para ver
 
 Vaya a Azure Portal para echar un vistazo a la aplicación web que acaba de crear.
 
-Para ello, inicie sesión en [https://portal.azure.com/](https://portal.azure.com).
+Para ello, inicie sesión en [https://portal.azure.com](https://portal.azure.com).
 
 En el menú izquierdo, haga clic en **App Service**, a continuación, haga clic en el nombre de la aplicación web de Azure.
 
