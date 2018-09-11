@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: d58cafe3456150069ec8572c101c62d1b2c29c5d
-ms.sourcegitcommit: e1a5d9687e006e8bf12d11747d45cf130a2c82af
+ms.openlocfilehash: ca788354d26964bd9f1e21a0d3a8005ff65ce4bc
+ms.sourcegitcommit: 280d13b43cef94177d95e03879a5919da234a23c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "42703372"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43324351"
 ---
 # <a name="deploy-a-spring-boot-app-to-the-cloud-using-the-maven-plugin-for-azure-app-service"></a>Implementación de una aplicación de Spring Boot en la nube con el complemento de Maven para Azure App Service
 
@@ -129,6 +129,7 @@ Ahora, abra la clase `Application`, esperemos que después de que el IDE haya se
            return application.sources(Application.class);
        }
    ```
+1. Organice las importaciones para asegurarse de que `SpringApplicationBuilder` y `SpringBootServletInitializer` se importan correctamente.
 
 La aplicación ahora está lista para implementarse en Tomcat y otros sistemas de tiempo de ejecución de servlet (por ejemplo, Jetty).
 
