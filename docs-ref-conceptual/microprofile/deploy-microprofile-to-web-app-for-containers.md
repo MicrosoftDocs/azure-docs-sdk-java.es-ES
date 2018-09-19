@@ -14,12 +14,12 @@ ms.service: container-registry;app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 323ae247c3df8c7d7b180d9d60b9014e4e2d7382
-ms.sourcegitcommit: 77dc6c03a2e6264df688d91a04fc6b40950779ef
+ms.openlocfilehash: 1eb0e7d7a718a1c106adebbf89011f6e3fa1504e
+ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43240965"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44040253"
 ---
 # <a name="deploy-a-java-based-microprofile-service-to-azure-web-app-for-containers"></a>Implementación de un servicio de MicroProfile basado en Java en Azure Web Apps for Containers
 
@@ -137,7 +137,7 @@ Ya hemos tratado todo el código necesario para crear un microservicio con Micro
 Ahora que hemos creado y ejecutado correctamente nuestra aplicación de MicroProfile en la máquina local, el siguiente paso es insertar este contenedor en el registro de contenedor. En este tutorial usamos Azure Container Registry, pero funcionará cualquier registro de contenedor (siempre y cuando se edite el archivo `pom.xml` para que apunte a la ubicación correspondiente).
 
 1. Ejecute `mvn clean package` para limpiar, compilar y crear una imagen de Docker local.
-2. Ejecute `mvn dockerfile:push` para insertar en el repositorio de contenedores de Azure.
+2. Ejecute `mvn dockerfile:push` para insertar el cambio en Azure Container Registry.
 
 En esta fase, ya tiene la imagen de contenedor de Docker cargada en Azure Container Registry, pero no está aún en ejecución porque ahora tenemos que implementarla en una instancia de Azure Web App for Containers. Vamos a hacerlo ahora.
 

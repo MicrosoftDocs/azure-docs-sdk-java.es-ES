@@ -7,19 +7,18 @@ author: rmcmurray
 manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm
 ms.date: 08/20/2018
 ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 0976f4b0c13ce5c577458f2974f5dce123bf7e59
-ms.sourcegitcommit: 77dc6c03a2e6264df688d91a04fc6b40950779ef
+ms.openlocfilehash: 4e0138e3cc474b4c47d3bf492e696ec49ea3ef37
+ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241123"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44040273"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de Spring Data Gremlin Starter con SQL API de Azure Cosmos DB
 
@@ -85,7 +84,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    * Especifique un **Id. de base de datos** único para la base de datos.
    * Especifique un **Id. de grafo** único para el grafo.
    * Puede elegir especificar la **Capacidad de almacenamiento** o puede aceptar el valor predeterminado.
-   * Especifique su **Rendimiento**; para este ejemplo, puede elegir 400 unidades de solicitud (RU).
+   * Especifique el valor de **Rendimiento**; para este ejemplo, puede elegir 400 unidades de solicitud (RU).
    
    Cuando haya especificado estas opciones, haga clic en **Crear** para crear el grafo.
 
