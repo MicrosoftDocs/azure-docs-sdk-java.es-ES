@@ -14,12 +14,12 @@ ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: a2734fc08f2f59f64ba6c6c20ff18d75070b68d5
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.openlocfilehash: 78b7a9a2e26168b19dc8a1d12e47456752b57ffc
+ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090718"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45639778"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
@@ -27,7 +27,7 @@ ms.locfileid: "37090718"
 
 En este artículo se muestra cómo crear una aplicación con **[Spring Initializr]** que usa la funcionalidad Spring Boot Starter para Azure Key Vault para recuperar una cadena de conexión almacenada como un secreto en un almacén de claves.
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -102,7 +102,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el grupo de recursos. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
@@ -128,7 +128,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre de la entidad de servicio de Azure. |
 
@@ -150,14 +150,14 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica un nombre único para el almacén de claves. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
-   | `enabled-for-deployment` | Especifica la [opción de implementación del almacén de claves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `enabled-for-disk-encryption` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `enabled-for-template-deployment` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `sku` | Especifica la [opción de SKU del almacén de claves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
+   | `enabled-for-deployment` | Especifica la [opción de implementación del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-disk-encryption` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-template-deployment` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `sku` | Especifica la [opción de SKU del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
    | `query` | Especifica el valor que se recuperará de la respuesta, que es el URI del almacén de claves que tendrá que completar en este tutorial. |
 
    La CLI de Azure mostrará el URI del almacén de claves, que usará más adelante; por ejemplo:  
@@ -172,10 +172,10 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre del almacén de claves anterior. |
-   | `secret-permission` | Especifica las [directivas de seguridad](https://docs.microsoft.com/en-us/cli/azure/keyvault) para su almacén de claves. |
+   | `secret-permission` | Especifica las [directivas de seguridad](https://docs.microsoft.com/cli/azure/keyvault) para su almacén de claves. |
    | `spn` | Especifica el GUID del registro de la aplicación anterior. |
 
    La CLI de Azure mostrará los resultados de la creación de la directiva de seguridad, por ejemplo:  
@@ -202,7 +202,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `vault-name` | Especifica el nombre del almacén de claves anterior. |
    | `name` | Especifica el nombre del secreto. |
@@ -245,7 +245,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    ```
    Donde:
 
-   |          .          |                                 DESCRIPCIÓN                                 |
+   |          Parámetro          |                                 DESCRIPCIÓN                                 |
    |-----------------------------|-----------------------------------------------------------------------------|
    |    `azure.keyvault.uri`     |           Especifica el URI obtenido cuando creó el almacén de claves.           |
    | `azure.keyvault.client-id`  |  Especifica el GUID de *appId* obtenido cuando creó la entidad de servicio.   |
@@ -319,7 +319,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services].
 
 <!-- URL List -->
 
