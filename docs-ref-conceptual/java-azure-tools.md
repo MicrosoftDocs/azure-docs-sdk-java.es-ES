@@ -10,12 +10,12 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 4/10/2017
 ms.author: routlaw;asirveda
-ms.openlocfilehash: 425d4c3a5a347e4706e9c37ebd7247cf0d8c9846
-ms.sourcegitcommit: f0dadb22efb191182c3b79dcaa97a76cfcdcc324
+ms.openlocfilehash: fad860e19382fb320892dcc5eada95e6d663739e
+ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2017
-ms.locfileid: "26288314"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48047122"
 ---
 # <a name="azure-tools-for-java-developers"></a>Herramientas para desarrolladores de Java de Azure
 
@@ -29,7 +29,7 @@ Administre los recursos de Azure e implemente aplicaciones desde el IDE con los 
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
-VS Code es un editor de código ligero pero eficaz, disponible para MacOS, Windows y Linux. VS Code admite un flujo de trabajo de desarrollo con Java sencillo y moderno, mediante un conjunto de extensiones que proporcionan compatibilidad para proyectos, finalización del código, búsqueda de errores, depuración y navegación.
+[VS Code](https://code.visualstudio.com/) es un editor de código ligero pero eficaz, disponible para MacOS, Windows y Linux. VS Code admite un flujo de trabajo de desarrollo con Java sencillo y moderno, mediante un conjunto de extensiones que proporcionan compatibilidad para proyectos, finalización del código, búsqueda de errores, depuración y navegación.
 
 [Introducción a VS Code y Java](https://code.visualstudio.com/docs/java)
 [Paquete de extensiones de Java para VS Code](https://code.visualstudio.com/docs/java/extensions)  
