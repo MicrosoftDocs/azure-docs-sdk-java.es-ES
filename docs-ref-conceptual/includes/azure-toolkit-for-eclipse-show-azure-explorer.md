@@ -1,12 +1,12 @@
-## <a name="display-the-azure-explorer-view"></a><span data-ttu-id="3ba36-101">Presentación de la vista de Azure Explorer</span><span class="sxs-lookup"><span data-stu-id="3ba36-101">Display the Azure Explorer view</span></span>
+## <a name="display-the-azure-explorer-view"></a><span data-ttu-id="2f6a4-101">Presentación de la vista de Azure Explorer</span><span class="sxs-lookup"><span data-stu-id="2f6a4-101">Display the Azure Explorer view</span></span>
 
-<span data-ttu-id="3ba36-102">Si la vista de **Azure Explorer** no está visible en Eclipse, siga estos pasos para que aparezca:</span><span class="sxs-lookup"><span data-stu-id="3ba36-102">If the **Azure Explorer** view is not visible in Eclipse, display it by doing the following:</span></span>
+<span data-ttu-id="2f6a4-102">Si la vista de **Azure Explorer** no está visible en Eclipse, siga estos pasos para que aparezca:</span><span class="sxs-lookup"><span data-stu-id="2f6a4-102">If the **Azure Explorer** view is not visible in Eclipse, display it by doing the following:</span></span>
 
-1. <span data-ttu-id="3ba36-103">Haga clic en **Window** (Ventana), después en **Show View** (Mostrar vista) y, finalmente, en **Other** (Otro).</span><span class="sxs-lookup"><span data-stu-id="3ba36-103">Click **Window**, click **Show View**, and then click **Other**.</span></span>
+1. <span data-ttu-id="2f6a4-103">Haga clic en **Window** (Ventana), después en **Show View** (Mostrar vista) y, finalmente, en **Other** (Otro).</span><span class="sxs-lookup"><span data-stu-id="2f6a4-103">Click **Window**, click **Show View**, and then click **Other**.</span></span>
 
    ![Comando de Show View (Mostrar vista)](../media/azure-toolkit-for-eclipse-show-azure-explorer/show-az-exp-01.png)
 
-2. <span data-ttu-id="3ba36-105">En el cuadro de diálogo **Show View** (Mostrar vista), seleccione **Azure Explorer** y haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="3ba36-105">In the **Show View** dialog box, select **Azure Explorer**, and then click **OK**.</span></span>
+2. <span data-ttu-id="2f6a4-105">En el cuadro de diálogo **Show View** (Mostrar vista), seleccione **Azure Explorer** y haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="2f6a4-105">In the **Show View** dialog box, select **Azure Explorer**, and then click **OK**.</span></span>
 
    ![Cuadro de diálogo Show View (Mostrar vista)](../media/azure-toolkit-for-eclipse-show-azure-explorer/show-az-exp-02.png)
 

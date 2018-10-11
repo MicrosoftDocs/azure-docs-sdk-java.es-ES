@@ -12,26 +12,26 @@ ms.technology: azure
 ms.devlang: java
 ms.service: data-lake-store
 ms.openlocfilehash: bcd1fd17759f7d171006d7b2126019d00d06d1db
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31823728"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892586"
 ---
-# <a name="azure-data-lake-store-libraries-for-java"></a><span data-ttu-id="c2092-104">Bibliotecas de Azure Data Lake Store para Java</span><span class="sxs-lookup"><span data-stu-id="c2092-104">Azure Data Lake Store libraries for Java</span></span>
+# <a name="azure-data-lake-store-libraries-for-java"></a><span data-ttu-id="7f356-104">Bibliotecas de Azure Data Lake Store para Java</span><span class="sxs-lookup"><span data-stu-id="7f356-104">Azure Data Lake Store libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c2092-105">Información general</span><span class="sxs-lookup"><span data-stu-id="c2092-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="7f356-105">Información general</span><span class="sxs-lookup"><span data-stu-id="7f356-105">Overview</span></span>
 
-<span data-ttu-id="c2092-106">Capture datos de cualquier tamaño, tipo y velocidad de ingesta para análisis con [Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span><span class="sxs-lookup"><span data-stu-id="c2092-106">Capture data of any size, type, and ingestion speed in a single place for analytics with [Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span></span>
+<span data-ttu-id="7f356-106">Capture datos de cualquier tamaño, tipo y velocidad de ingesta para análisis con [Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span><span class="sxs-lookup"><span data-stu-id="7f356-106">Capture data of any size, type, and ingestion speed in a single place for analytics with [Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span></span>
 
-<span data-ttu-id="c2092-107">Para empezar a trabajar con Data Lake Store, consulte la [Introducción a Azure Data Lake Store con Java](/azure/data-lake-store/data-lake-store-get-started-java-sdk).</span><span class="sxs-lookup"><span data-stu-id="c2092-107">To get started with Data Lake Store, see [Get started with Azure Data Lake Store using Java](/azure/data-lake-store/data-lake-store-get-started-java-sdk).</span></span>
+<span data-ttu-id="7f356-107">Para empezar a trabajar con Data Lake Store, consulte la [Introducción a Azure Data Lake Store con Java](/azure/data-lake-store/data-lake-store-get-started-java-sdk).</span><span class="sxs-lookup"><span data-stu-id="7f356-107">To get started with Data Lake Store, see [Get started with Azure Data Lake Store using Java](/azure/data-lake-store/data-lake-store-get-started-java-sdk).</span></span>
 
 
-## <a name="client-library"></a><span data-ttu-id="c2092-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="c2092-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="7f356-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="7f356-108">Client library</span></span>
 
-<span data-ttu-id="c2092-109">Lea y escriba archivos, establezca permisos y metadatos, y administre archivos y directorios en Data Lake Store con la biblioteca de cliente.</span><span class="sxs-lookup"><span data-stu-id="c2092-109">Read and write files, set permissions and metadata, and manage files and directories in Data Lake Store with the client library.</span></span>
+<span data-ttu-id="7f356-109">Lea y escriba archivos, establezca permisos y metadatos, y administre archivos y directorios en Data Lake Store con la biblioteca de cliente.</span><span class="sxs-lookup"><span data-stu-id="7f356-109">Read and write files, set permissions and metadata, and manage files and directories in Data Lake Store with the client library.</span></span>
 
-<span data-ttu-id="c2092-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="c2092-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
+<span data-ttu-id="7f356-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="7f356-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
 
 ```XML
 <dependency>
@@ -41,9 +41,9 @@ ms.locfileid: "31823728"
 </dependency>
 ```   
 
-## <a name="example"></a><span data-ttu-id="c2092-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c2092-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7f356-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7f356-111">Example</span></span>
 
-<span data-ttu-id="c2092-112">Cree un cliente de Data Lake a partir de un nombre de dominio completo y un token de acceso OAuth2 y, a continuación, cree un archivo en Data Lake y escriba en él.</span><span class="sxs-lookup"><span data-stu-id="c2092-112">Create a Data Lake client from a fully qualified domain name and OAuth2 access token, then create a file in Data Lake and write to it.</span></span>
+<span data-ttu-id="7f356-112">Cree un cliente de Data Lake a partir de un nombre de dominio completo y un token de acceso OAuth2 y, a continuación, cree un archivo en Data Lake y escriba en él.</span><span class="sxs-lookup"><span data-stu-id="7f356-112">Create a Data Lake client from a fully qualified domain name and OAuth2 access token, then create a file in Data Lake and write to it.</span></span>
 
 ```java
 // AccessTokenProvider provider = new ClientCredsTokenProvider(authTokenEndpoint, clientId, clientKey);
@@ -64,14 +64,14 @@ out.close();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c2092-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="c2092-113">Explore the Client APIs</span></span>](/java/api/overview/azure/datalakestore/client)
+> [<span data-ttu-id="7f356-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="7f356-113">Explore the Client APIs</span></span>](/java/api/overview/azure/datalakestore/client)
 
 
-## <a name="management-api"></a><span data-ttu-id="c2092-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="c2092-114">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="7f356-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="7f356-114">Management API</span></span>
 
-<span data-ttu-id="c2092-115">Use la API de administración para administrar cuentas de Data Lake Store, reglas de firewall y proveedores de identidad de confianza.</span><span class="sxs-lookup"><span data-stu-id="c2092-115">Use the management API to manage Data Lake Store accounts, firewall rules, and trusted identity providers.</span></span>
+<span data-ttu-id="7f356-115">Use la API de administración para administrar cuentas de Data Lake Store, reglas de firewall y proveedores de identidad de confianza.</span><span class="sxs-lookup"><span data-stu-id="7f356-115">Use the management API to manage Data Lake Store accounts, firewall rules, and trusted identity providers.</span></span>
 
-<span data-ttu-id="c2092-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="c2092-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
+<span data-ttu-id="7f356-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="7f356-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
 
 
 ```XML
@@ -83,12 +83,12 @@ out.close();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c2092-117">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="c2092-117">Explore the Management APIs</span></span>](/java/api/overview/azure/datalakestore/management)
+> [<span data-ttu-id="7f356-117">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="7f356-117">Explore the Management APIs</span></span>](/java/api/overview/azure/datalakestore/management)
 
-## <a name="samples"></a><span data-ttu-id="c2092-118">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="c2092-118">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="7f356-118">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="7f356-118">Samples</span></span>
 
-<span data-ttu-id="c2092-119">[Introducción a Azure Data Lake][1]</span><span class="sxs-lookup"><span data-stu-id="c2092-119">[Azure Data Lake Get Started][1]</span></span> 
+<span data-ttu-id="7f356-119">[Introducción a Azure Data Lake][1]</span><span class="sxs-lookup"><span data-stu-id="7f356-119">[Azure Data Lake Get Started][1]</span></span> 
 
 [1]: https://github.com/Azure-Samples/data-lake-store-java-upload-download-get-started
 
-<span data-ttu-id="c2092-120">Ver más [código de Java de ejemplo para Azure Data Lake Store](https://azure.microsoft.com/resources/samples/?platform=java&term=lake) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="c2092-120">Explore more [sample Java code for Azure Data Lake Store](https://azure.microsoft.com/resources/samples/?platform=java&term=lake) you can use in your apps.</span></span>
+<span data-ttu-id="7f356-120">Ver más [código de Java de ejemplo para Azure Data Lake Store](https://azure.microsoft.com/resources/samples/?platform=java&term=lake) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="7f356-120">Explore more [sample Java code for Azure Data Lake Store](https://azure.microsoft.com/resources/samples/?platform=java&term=lake) you can use in your apps.</span></span>
