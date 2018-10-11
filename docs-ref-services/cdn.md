@@ -1,5 +1,5 @@
 ---
-title: Bibliotecas de la red CDN de Azure para Java
+title: Bibliotecas de Azure CDN para Java
 description: Documentación de referencia de las bibliotecas de administración de la red CDN para Java
 keywords: Azure, Java, SDK, API, contenido, distribución, red, CDN
 author: rloutlaw
@@ -12,19 +12,19 @@ ms.technology: azure
 ms.devlang: java
 ms.service: cdn
 ms.openlocfilehash: 199e9b4b2b2431e23954d24e4adeb4326eb4741c
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31823738"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893076"
 ---
-# <a name="azure-cdn-libraries-for-java"></a>Bibliotecas de la red CDN de Azure para Java
+# <a name="azure-cdn-libraries-for-java"></a>Bibliotecas de Azure CDN para Java
 
 ## <a name="overview"></a>Información general
 
 [Azure Content Delivery Network](/azure/cdn/cdn-overview) (CDN) almacena en caché contenido web estático en ubicaciones colocadas estratégicamente para proporcionar el máximo rendimiento a los usuarios.
 
-Para empezar a trabajar con la red CDN de Azure, consulte [Introducción a la red CDN de Azure](/azure/cdn/cdn-create-new-endpoint).
+Para empezar a trabajar con Azure CDN, consulte [Introducción a Azure CDN](/azure/cdn/cdn-create-new-endpoint).
 
 ## <a name="management-api"></a>API de administración
 
@@ -69,4 +69,4 @@ for (CdnEndpoint endpoint : profile.endpoints().values()) {
 
 [Administración de redes CDN con Java](https://github.com/Azure-Samples/cdn-java-manage-cdn)
 
-Ver más [código de Java de ejemplo para la red CDN de Azure](https://azure.microsoft.com/resources/samples/?platform=java&term=cdn) que puede usar en sus aplicaciones.
+Ver más [código de Java de ejemplo para Azure CDN](https://azure.microsoft.com/resources/samples/?platform=java&term=cdn) que puede usar en sus aplicaciones.

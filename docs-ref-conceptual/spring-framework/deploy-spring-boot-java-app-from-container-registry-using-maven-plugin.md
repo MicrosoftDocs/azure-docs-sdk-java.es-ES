@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: 88eb64c07ad4f480dc2d2c2869e710c0ae910c4d
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090798"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892686"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot de Azure Container Registry en Azure App Service
 
@@ -32,7 +32,7 @@ En este artículo se muestra cómo implementar una aplicación de [Spring Boot] 
 > El complemento Maven de Azure Web Apps está disponible actualmente como versión preliminar. Por ahora, solo se admite la publicación FTP, aunque se van a agregar características adicionales en el futuro.
 > 
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
@@ -116,7 +116,7 @@ En esta sección, va a crear una entidad de servicio de Azure que usa el complem
    ```
    Donde:
 
-   | .  |                    DESCRIPCIÓN                     |
+   | Parámetro  |                    DESCRIPCIÓN                     |
    |------------|----------------------------------------------------|
    | `uuuuuuuu` | Especifica el nombre de usuario para la entidad de servicio. |
    | `pppppppp` | Especifica la contraseña de la entidad de servicio.  |

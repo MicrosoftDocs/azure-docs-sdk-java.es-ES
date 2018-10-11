@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: f05dca50f84b27f157892d63cda02286c6755795
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090818"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48899296"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven
 
@@ -27,7 +27,7 @@ ms.locfileid: "37090818"
 
 En este tutorial se explica cómo usar el complemento Fabric8 para Maven para desarrollar e implementar una aplicación en un host Linux en [Azure Container Service (AKS)].
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Para realizar los pasos de este tutorial, necesitará tener los siguientes requisitos previos:
 
@@ -256,7 +256,7 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
    ```
    Donde:
 
-   | . | DESCRIPCIÓN |
+   | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `wingtiptoys-kubernetes` | Especifica el nombre del grupo de recursos que se mencionó anteriormente en este artículo. |
    | `wingtiptoysregistry` | Especifica un nombre único para el registro privado. |
@@ -513,7 +513,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 * [Implementación de una aplicación de Spring Boot en Linux en Azure Container Service](deploy-spring-boot-java-app-on-linux.md)
 * [Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services].
 
 Para obtener más información sobre el proyecto de ejemplo Spring Boot en Docker, vea [Spring Boot on Docker Getting Started] (Introducción a Spring Boot en Docker).
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: d8ab3de791d1a4893efb77a51418c437f81c86ff
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954216"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893466"
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de herramientas de Azure para Eclipse
 
@@ -33,7 +33,7 @@ El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que p
 ## <a name="get-started-with-the-azure-toolkit-for-eclipse"></a>Introducción al kit de herramientas de Azure para Eclipse
 Los artículos siguientes lo ayudarán a empezar a usar el kit de herramientas de Azure para Eclipse:
 
-* [Instalación del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
+* [Instalación del Kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
 
 * [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-sign-in-instructions.md)
 
@@ -59,7 +59,7 @@ En los artículos siguientes se muestra cómo usar el kit de herramientas de Azu
 
 * [Administración de máquinas virtuales con Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md)
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para más información sobre el Kit de herramientas de Azure para Eclipse, consulte las siguientes páginas:
 

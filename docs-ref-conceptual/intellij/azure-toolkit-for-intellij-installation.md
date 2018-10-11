@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 0f3df5c8cf3c83c1ce9a4ca32c753b5fc39ab1df
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954176"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892886"
 ---
 # <a name="installing-the-azure-toolkit-for-intellij"></a>Instalación del kit de herramientas de Azure para IntelliJ
 
@@ -96,7 +96,7 @@ Hay dos métodos para instalar el Kit de herramientas de Azure para IntelliJ: me
    
    ![Restart IntelliJ IDEA][07]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 

@@ -15,17 +15,17 @@ ms.tgt_pltfrm: cache-redis
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 8bfe7c2ddd238e0e5a259de9078b831a97b1b1a4
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954586"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892916"
 ---
 # <a name="configure-a-spring-boot-initializer-app-to-use-redis-in-the-cloud-with-azure-redis-cache"></a>Configuración de una aplicación de Spring Boot Initializr para usar Redis en la nube con Azure Redis Cache
 
 Este artículo le ayuda a crear una memoria caché en Redis en la nube mediante Azure Portal, después a utilizar **[Spring Initializr]** para crear una aplicación personalizada y, por último, a crear una aplicación web de Java que almacena y recupera datos mediante la memoria caché en Redis.
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
@@ -188,7 +188,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    mvn spring-boot:run
    ```
 
-1. Compruebe la aplicación web. Para ello, vaya a http://localhost:8080 con un explorador web, o bien utilice una sintaxis como la del siguiente ejemplo si tiene cURL disponible:
+1. Pruebe la aplicación web. Para ello, vaya a http://localhost:8080 con un explorador web, o bien utilice una sintaxis como la del siguiente ejemplo si tiene cURL disponible:
 
    ```shell
    curl http://localhost:8080
@@ -196,7 +196,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    Debe ver el mensaje "Hola mundo" del controlador de ejemplo mostrado, que se está recuperando dinámicamente de la memoria caché en Redis.
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 
@@ -204,7 +204,7 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Java Tools for Visual Studio Team Services] (Herramientas de Java para Visual Studio Team Services).
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services].
 
 Para más información sobre la introducción al uso de Redis Cache con Java en Azure, consulte [Uso de Azure Redis Cache con Java][Redis Cache with Java].
 
@@ -214,7 +214,7 @@ Para más información sobre la introducción al uso de Redis Cache con Java en 
 
 [Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
-[Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
+[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/

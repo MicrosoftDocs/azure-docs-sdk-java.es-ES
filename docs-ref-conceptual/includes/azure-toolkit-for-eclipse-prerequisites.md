@@ -1,4 +1,4 @@
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Para completar los pasos descritos en este artículo, debe instalar el Kit de herramientas de Azure para Eclipse, que requiere los siguientes componentes de software:
 
 * IDE de Eclipse para desarrolladores Java EE, Mars o posterior. Puede descargarlo del [sitio web de Eclipse](http://www.eclipse.org/downloads/).

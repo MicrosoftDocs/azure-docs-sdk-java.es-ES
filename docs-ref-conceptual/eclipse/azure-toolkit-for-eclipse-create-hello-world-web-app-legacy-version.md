@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: 896e7eff389bc7d3ac119d315c50aae505a381da
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090808"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892566"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-eclipse"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para Eclipse
 
@@ -210,7 +210,7 @@ Para obtener más información sobre cómo crear Azure Web Apps, consulte [Intro
 
 <!-- URL List -->
 
-[kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse.md
+[Kit de herramientas de Azure para Eclipse]: azure-toolkit-for-eclipse.md
 [kit de herramientas de Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
 [intellij-hello-world]: ../intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md
 [Introducción a Web Apps]: /azure/app-service/app-service-web-overview

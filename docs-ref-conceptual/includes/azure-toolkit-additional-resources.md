@@ -5,7 +5,7 @@ Para más información sobre los kits de herramientas de Azure para los IDE Ecli
   * [Instalación del Kit de herramientas de Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse-installation.md) 
   * [Creación de una aplicación web Hello World para Azure en Eclipse](../eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md) 
   * [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse-sign-in-instructions.md) 
-* [Kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md) 
+* [kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md) 
   * [Notas de la versión](https://github.com/Microsoft/azure-tools-for-java/releases) 
   * [Instalación del kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij-installation.md) 
   * [Creación de una aplicación web Hello World para Azure en IntelliJ](../intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md) 
