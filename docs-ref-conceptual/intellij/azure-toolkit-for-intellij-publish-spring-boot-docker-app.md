@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 4228352efa4354bfe4969c1a5ecd3f3b40483f85
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954736"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893586"
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ
 
@@ -51,7 +51,7 @@ Los siguientes pasos le guían por la clonación del repositorio de Docker de Sp
 
       ![Cuadro de diálogo para especificar un token de GitHub][CL02b]
 
-1. Escriba **https://github.com/spring-guides/gs-spring-boot-docker.git** para la dirección URL de repositorio, especifique la ruta de acceso local y la información de la carpeta y, después, haga clic en **Clonar**.
+1. Escriba **https://github.com/spring-guides/gs-spring-boot-docker.git** para la dirección URL del repositorio, especifique la ruta de acceso local y la información de la carpeta y, después, haga clic en **Clonar**.
 
    ![Cuadro de diálogo Clonar repositorio][CL03]
 
@@ -215,7 +215,7 @@ IntelliJ debe mostrar el artefacto completado para la aplicación Spring Boot en
 
    ![Host de Docker correctamente implementado][PU06]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener información sobre métodos adicionales para crear aplicaciones Spring Boot con IntelliJ, vea [Creating Spring Boot Projects](https://www.jetbrains.com/help/idea/creating-spring-boot-projects.html) (Creación de proyectos Spring Boot) en el sitio web de JetBrains.
 

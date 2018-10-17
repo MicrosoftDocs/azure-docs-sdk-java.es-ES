@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 6f1edcc1411e8ec716dbfe41271d21d2397515c5
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954506"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893200"
 ---
 # <a name="displaying-javadoc-content-in-eclipse-for-the-azure-libraries-package-for-java"></a>Visualización del contenido de Javadoc en Eclipse para el paquete de bibliotecas de Azure para Java
 
@@ -37,7 +37,7 @@ Este procedimiento supone que ya ha agregado la biblioteca de Azure para Java a 
 
 1. Puede especificar una **Javadoc URL** (URL de Javadoc) o un **Javadoc in archive** (Javadoc en archivo).
 
-   * Si decide especificar una **URL de Javadoc**, use las direcciones URL como **http://dl.windowsazure.com/javadoc** o **http://dl.windowsazure.com/storage/javadoc**.
+   * Si opta por especificar una **dirección URL de Javadoc**, use direcciones URL como **http://dl.windowsazure.com/javadoc** o **http://dl.windowsazure.com/storage/javadoc**.
 
    * Si decide usar **Javadoc en archivo**, puede especificar un archivo externo o un archivo de área de trabajo.
 
@@ -53,7 +53,7 @@ Una vez asociado a la biblioteca, el contenido de Javadoc debe mostrarse dentro 
 
 ![Muestre el contenido de Javadoc.][ic553488]
 
-## <a name="next-steps"></a>pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
