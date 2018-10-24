@@ -8,18 +8,18 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 9/20/2018
-ms.openlocfilehash: 5e3887341ddb2fdcab336f0a8a232e6e8bfbe0f2
-ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
+ms.openlocfilehash: 1271f70fff876f4d24c8afa81123c54735f2d522
+ms.sourcegitcommit: 788b49d0b37909c575c9e5176e484cba627e7921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48047162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49120543"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de administración de HDInsight para Java (versión preliminar)
 
 ## <a name="overview"></a>Información general
 
-El SDK de HDInsight para Java proporciona clases y métodos que permiten administrar los clústeres de HDInsight. Incluye operaciones para crear, eliminar, actualizar, enumerar, escalar, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight y mucho más.
+El SDK de HDInsight para Java proporciona clases y métodos que permiten administrar los clústeres de HDInsight. Incluye operaciones para crear, eliminar, actualizar, enumerar, cambiar tamaño, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight, entre otras.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -340,9 +340,9 @@ Puede actualizar las etiquetas de un clúster determinado de este modo:
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", <Map<String,String> of Tags>);
 ```
 
-### <a name="scale-cluster"></a>Escalado de clústeres
+### <a name="resize-cluster"></a>Cambio del tamaño de clúster
 
-Para escalar el número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño:
+Para cambiar el tamaño de un número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño como sigue:
 
 ```java
 client.clusters.resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)
