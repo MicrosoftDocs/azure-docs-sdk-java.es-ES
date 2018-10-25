@@ -8,12 +8,12 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 9/20/2018
-ms.openlocfilehash: 1271f70fff876f4d24c8afa81123c54735f2d522
-ms.sourcegitcommit: 788b49d0b37909c575c9e5176e484cba627e7921
+ms.openlocfilehash: 9fd35d12e0aa864b5d23cf03547f7b76dc74c677
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799901"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de administración de HDInsight para Java (versión preliminar)
 
@@ -42,23 +42,23 @@ El SDK de HDInsight para Java está disponible con Maven [aquí](https://mvnrepo
 También debe agregar las siguientes dependencias al archivo pom.xml:
 
 * [Biblioteca de autenticación de cliente de Azure:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-authentication/1.6.2)
-```
-<dependency>
+  ```
+  <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-client-authentication</artifactId>
     <version>1.6.2</version>
     <scope>test</scope>
-</dependency>
-```
+  </dependency>
+  ```
 
 * [Runtime de cliente de Java de Azure para ARM:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-arm-client-runtime/1.6.2)
-```
-<dependency>
+  ```
+  <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-arm-client-runtime</artifactId>
     <version>1.6.2</version>
-</dependency>
-```
+  </dependency>
+  ```
 
 ## <a name="authentication"></a>Autenticación
 

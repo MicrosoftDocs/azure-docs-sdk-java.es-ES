@@ -14,12 +14,12 @@ ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: 1a219a066f0f89adbf3f541856b36b842520bfbb
-ms.sourcegitcommit: fd67d4088be2cad01c642b9ecf3f9475d9cb4f3c
+ms.openlocfilehash: 4838b6dbd354ad941df12933dddfa7f3e7eef905
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46505923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799971"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Cómo usar el iniciador de Spring Boot para Azure Storage
 
@@ -56,7 +56,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    * Especifique la **Ubicación** de la cuenta de almacenamiento.
    * Elija la **Suscripción** que quiere usar para la cuenta de almacenamiento.
    * Especifique si quiere crear un nuevo **Grupo de recursos** para la cuenta de almacenamiento o elija un grupo de recursos existente.
-   
+
    ![Especificación de las opciones de la cuenta de Azure Storage][IMG02]
 
 1. Cuando haya especificado las opciones enumeradas anteriormente, haga clic en **Crear** para crear la cuenta de almacenamiento.
@@ -207,7 +207,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
    `/users/example/home/storage/src/main/resources/application.properties`
 
-1.  Abra el archivo *application.properties* en un editor de texto, agregue las siguientes líneas y, a continuación, sustituya los valores de ejemplo por las propiedades adecuadas de la cuenta de almacenamiento:
+2. Abra el archivo *application.properties* en un editor de texto, agregue las siguientes líneas y, a continuación, sustituya los valores de ejemplo por las propiedades adecuadas de la cuenta de almacenamiento:
 
    ```yaml
    spring.cloud.azure.credential-file-path=my.azureauth
@@ -216,14 +216,16 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    spring.cloud.azure.storage.account=wingtiptoysstorage
    ```
    Donde:
-   | Campo | DESCRIPCIÓN |
-   | ---|---|
-   | `spring.cloud.azure.credential-file-path` | Especifica el archivo de credenciales de Azure que creó anteriormente en este tutorial. |
-   | `spring.cloud.azure.resource-group` | Especifica el grupo de recursos de Azure que contiene la cuenta de Azure Storage. |
-   | `spring.cloud.azure.region` | Especifica la región geográfica que seleccionó cuando creó la cuenta de Azure Storage. |
-   | `spring.cloud.azure.storage.account` | Especifica la cuenta de Azure Storage que creó anteriormente en este tutorial.
 
-1. Guarde y cierre el archivo *application.properties*.
+   |                   Campo                   |                                            DESCRIPCIÓN                                            |
+   |-------------------------------------------|---------------------------------------------------------------------------------------------------|
+   | `spring.cloud.azure.credential-file-path` |            Especifica el archivo de credenciales de Azure que creó anteriormente en este tutorial.             |
+   |    `spring.cloud.azure.resource-group`    |           Especifica el grupo de recursos de Azure que contiene la cuenta de Azure Storage.            |
+   |        `spring.cloud.azure.region`        | Especifica la región geográfica que seleccionó cuando creó la cuenta de Azure Storage. |
+   |   `spring.cloud.azure.storage.account`    |            Especifica la cuenta de Azure Storage que creó anteriormente en este tutorial.             |
+
+
+3. Guarde y cierre el archivo *application.properties*.
 
 ## <a name="add-sample-code-to-implement-basic-azure-storage-functionality"></a>Adición de código de ejemplo para implementar la funcionalidad básica de Azure Storage
 
@@ -243,10 +245,10 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
    ```java
    package com.wingtiptoys.storage;
-   
+
    import org.springframework.boot.SpringApplication;
    import org.springframework.boot.autoconfigure.SpringBootApplication;
-   
+
    @SpringBootApplication
    public class StorageApplication {
       public static void main(String[] args) {
@@ -271,7 +273,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
    ```java
    package com.wingtiptoys.storage;
-   
+
    import org.springframework.beans.factory.annotation.Value;
    import org.springframework.core.io.Resource;
    import org.springframework.core.io.WritableResource;
@@ -280,14 +282,14 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
    import org.springframework.web.bind.annotation.PostMapping;
    import org.springframework.web.bind.annotation.RequestBody;
    import org.springframework.web.bind.annotation.RestController;
-   
+
    import java.io.IOException;
    import java.io.OutputStream;
    import java.nio.charset.Charset;
-   
+
    @RestController
    public class WebController {
-   
+
       @Value("blob://test/myfile.txt")
       private Resource blobFile;
 
@@ -297,7 +299,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
             this.blobFile.getInputStream(),
             Charset.defaultCharset()) + "\n";
       }
-   
+
       @PostMapping(value = "/")
       public String writeBlobFile(@RequestBody String data) throws IOException {
          try (OutputStream os = ((WritableResource) this.blobFile).getOutputStream()) {
@@ -307,7 +309,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
       }
    }
    ```
-   
+
    Donde la sintaxis `@Value("blob://[container]/[blob]")` define respectivamente los nombres del contenedor y el blob en los que desea almacenar los datos.
 
 1. Guarde y cierre el archivo de Java del controlador web.
