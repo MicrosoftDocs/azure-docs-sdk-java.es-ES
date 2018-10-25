@@ -11,26 +11,26 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: sql-database
-ms.openlocfilehash: 37f7d3caf10e6b709cee2452c63a543d49e0ead8
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 75b31aa0ffd32707deb4b28f9912aa4c9d1e4d7c
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799791"
 ---
-# <a name="azure-sql-database-libraries-for-java"></a><span data-ttu-id="9571b-104">Bibliotecas de Azure SQL Database para Java</span><span class="sxs-lookup"><span data-stu-id="9571b-104">Azure SQL Database libraries for Java</span></span>
+# <a name="azure-sql-database-libraries-for-java"></a><span data-ttu-id="687ff-104">Bibliotecas de Azure SQL Database para Java</span><span class="sxs-lookup"><span data-stu-id="687ff-104">Azure SQL Database libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="9571b-105">Información general</span><span class="sxs-lookup"><span data-stu-id="9571b-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="687ff-105">Información general</span><span class="sxs-lookup"><span data-stu-id="687ff-105">Overview</span></span>
 
-<span data-ttu-id="9571b-106">[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) es un servicio de base de datos relacional basado en el motor Microsoft SQL Server que admite datos de tabla, JSON, espaciales y XML.</span><span class="sxs-lookup"><span data-stu-id="9571b-106">[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) is a relational database service using the Microsoft SQL Server engine that supports table, JSON, spatial, and XML data.</span></span> 
+<span data-ttu-id="687ff-106">[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) es un servicio de base de datos relacional basado en el motor Microsoft SQL Server que admite datos de tabla, JSON, espaciales y XML.</span><span class="sxs-lookup"><span data-stu-id="687ff-106">[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) is a relational database service using the Microsoft SQL Server engine that supports table, JSON, spatial, and XML data.</span></span> 
 
-<span data-ttu-id="9571b-107">Para empezar a trabajar con Azure SQL Database, consulte [Azure SQL Database: uso de Java para conectarse y consultar datos](/azure/sql-database/sql-database-connect-query-java).</span><span class="sxs-lookup"><span data-stu-id="9571b-107">To get started with Azure SQL Database, see [Azure SQL Database: Use Java to connect and query data](/azure/sql-database/sql-database-connect-query-java).</span></span>
+<span data-ttu-id="687ff-107">Para empezar a trabajar con Azure SQL Database, consulte [Azure SQL Database: uso de Java para conectarse y consultar datos](/azure/sql-database/sql-database-connect-query-java).</span><span class="sxs-lookup"><span data-stu-id="687ff-107">To get started with Azure SQL Database, see [Azure SQL Database: Use Java to connect and query data](/azure/sql-database/sql-database-connect-query-java).</span></span>
 
-## <a name="client-jdbc-driver"></a><span data-ttu-id="9571b-108">Controlador JDBC de cliente</span><span class="sxs-lookup"><span data-stu-id="9571b-108">Client JDBC driver</span></span>
+## <a name="client-jdbc-driver"></a><span data-ttu-id="687ff-108">Controlador JDBC de cliente</span><span class="sxs-lookup"><span data-stu-id="687ff-108">Client JDBC driver</span></span>
 
-<span data-ttu-id="9571b-109">Conecte con Azure SQL Database desde las aplicaciones mediante el [controlador JDBC de SQL Database](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server).</span><span class="sxs-lookup"><span data-stu-id="9571b-109">Connect to Azure SQL Database from your applications using the [SQL Database JDBC driver](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server).</span></span> <span data-ttu-id="9571b-110">Puede usar la [API de JDBC para Java](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) para conectarse directamente a la base de datos o utilizar entornos de acceso a datos que interactúan con la base de datos a través de JDBC como [Hibernate](http://hibernate.org/).</span><span class="sxs-lookup"><span data-stu-id="9571b-110">You can use the [Java JDBC API](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) to directly connect with the database or use data access frameworks that interact with the database through JDBC such as [Hibernate](http://hibernate.org/).</span></span>
+<span data-ttu-id="687ff-109">Conecte con Azure SQL Database desde las aplicaciones mediante el [controlador JDBC de SQL Database](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server).</span><span class="sxs-lookup"><span data-stu-id="687ff-109">Connect to Azure SQL Database from your applications using the [SQL Database JDBC driver](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server).</span></span> <span data-ttu-id="687ff-110">Puede usar la [API de JDBC para Java](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) para conectarse directamente a la base de datos o utilizar entornos de acceso a datos que interactúan con la base de datos a través de JDBC como [Hibernate](http://hibernate.org/).</span><span class="sxs-lookup"><span data-stu-id="687ff-110">You can use the [Java JDBC API](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) to directly connect with the database or use data access frameworks that interact with the database through JDBC such as [Hibernate](http://hibernate.org/).</span></span>
 
-<span data-ttu-id="9571b-111">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo de Maven `pom.xml` para utilizar el controlador JDBC de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="9571b-111">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client JDBC driver in your project.</span></span>
+<span data-ttu-id="687ff-111">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo de Maven `pom.xml` para utilizar el controlador JDBC de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="687ff-111">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client JDBC driver in your project.</span></span>
 
 
 ```XML
@@ -41,9 +41,9 @@ ms.locfileid: "48893316"
 </dependency>
 ```   
 
-### <a name="example"></a><span data-ttu-id="9571b-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9571b-112">Example</span></span>
+### <a name="example"></a><span data-ttu-id="687ff-112">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="687ff-112">Example</span></span>
 
-<span data-ttu-id="9571b-113">Conecte con SQL Database y seleccione todos los registros de una tabla con JDBC.</span><span class="sxs-lookup"><span data-stu-id="9571b-113">Connect to SQL database and select all records in a table using JDBC.</span></span>
+<span data-ttu-id="687ff-113">Conecte con SQL Database y seleccione todos los registros de una tabla con JDBC.</span><span class="sxs-lookup"><span data-stu-id="687ff-113">Connect to SQL database and select all records in a table using JDBC.</span></span>
 
 ```java
 String connectionString = "jdbc:sqlserver://fabrikam.database.windows.net:1433;database=fiber;user=raisa;password=testpass;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
@@ -54,11 +54,11 @@ try {
 }  
 ```
 
-## <a name="management-api"></a><span data-ttu-id="9571b-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="9571b-114">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="687ff-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="687ff-114">Management API</span></span>
 
-<span data-ttu-id="9571b-115">Cree y administre los recursos de Azure SQL Database de la suscripción con la API de administración.</span><span class="sxs-lookup"><span data-stu-id="9571b-115">Create and manage Azure SQL Database resources in your subscription with the management API.</span></span>   
+<span data-ttu-id="687ff-115">Cree y administre los recursos de Azure SQL Database de la suscripción con la API de administración.</span><span class="sxs-lookup"><span data-stu-id="687ff-115">Create and manage Azure SQL Database resources in your subscription with the management API.</span></span>   
 
-<span data-ttu-id="9571b-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="9571b-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
+<span data-ttu-id="687ff-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="687ff-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
 
 
 ```XML
@@ -70,11 +70,11 @@ try {
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="9571b-117">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="9571b-117">Explore the Management APIs</span></span>](/java/api/overview/azure/sql/management)
+> [<span data-ttu-id="687ff-117">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="687ff-117">Explore the Management APIs</span></span>](/java/api/overview/azure/sql/management)
 
-### <a name="example"></a><span data-ttu-id="9571b-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9571b-118">Example</span></span>
+### <a name="example"></a><span data-ttu-id="687ff-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="687ff-118">Example</span></span>
 
-<span data-ttu-id="9571b-119">Cree un recurso de SQL Database y restrinja el acceso a un intervalo de direcciones IP mediante una regla de firewall.</span><span class="sxs-lookup"><span data-stu-id="9571b-119">Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
+<span data-ttu-id="687ff-119">Cree un recurso de SQL Database y restrinja el acceso a un intervalo de direcciones IP mediante una regla de firewall.</span><span class="sxs-lookup"><span data-stu-id="687ff-119">Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
 
 ```java
 SqlServer sqlServer = azure.sqlServers().define(sqlDbName)
@@ -86,8 +86,8 @@ SqlServer sqlServer = azure.sqlServers().define(sqlDbName)
                     .create();
 ```
 
-## <a name="samples"></a><span data-ttu-id="9571b-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="9571b-120">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="687ff-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="687ff-120">Samples</span></span>
 
 [!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 
-<span data-ttu-id="9571b-121">Ver más [código de Java de ejemplo para Azure SQL Database](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="9571b-121">Explore more [sample Java code for Azure SQL Database](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL) you can use in your apps.</span></span>
+<span data-ttu-id="687ff-121">Ver más [código de Java de ejemplo para Azure SQL Database](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="687ff-121">Explore more [sample Java code for Azure SQL Database](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL) you can use in your apps.</span></span>

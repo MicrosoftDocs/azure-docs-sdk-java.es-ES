@@ -11,26 +11,26 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: keyvault
-ms.openlocfilehash: b3433d2da2054741015b9fa669753a8edb48cdf3
-ms.sourcegitcommit: 280d13b43cef94177d95e03879a5919da234a23c
+ms.openlocfilehash: 84ea77a19c326409f453f62359cf46c90398daeb
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43324302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799931"
 ---
-# <a name="azure-key-vault-libraries-for-java"></a><span data-ttu-id="833dd-104">Bibliotecas de Azure Key Vault para Java</span><span class="sxs-lookup"><span data-stu-id="833dd-104">Azure Key Vault libraries for Java</span></span>
+# <a name="azure-key-vault-libraries-for-java"></a><span data-ttu-id="0d1ee-104">Bibliotecas de Azure Key Vault para Java</span><span class="sxs-lookup"><span data-stu-id="0d1ee-104">Azure Key Vault libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="833dd-105">Información general</span><span class="sxs-lookup"><span data-stu-id="833dd-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="0d1ee-105">Información general</span><span class="sxs-lookup"><span data-stu-id="0d1ee-105">Overview</span></span>
 
-<span data-ttu-id="833dd-106">[Azure Key Vault](/azure/key-vault/) protege y administra claves y secretos criptográficos usados por aplicaciones y servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="833dd-106">Safeguard and manage cryptographic keys and secrets used by cloud applications and services with [Azure Key Vault](/azure/key-vault/).</span></span>
+<span data-ttu-id="0d1ee-106">[Azure Key Vault](/azure/key-vault/) protege y administra claves y secretos criptográficos usados por aplicaciones y servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-106">Safeguard and manage cryptographic keys and secrets used by cloud applications and services with [Azure Key Vault](/azure/key-vault/).</span></span>
 
-<span data-ttu-id="833dd-107">Para empezar a trabajar con Azure Key Vault, consulte [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started).</span><span class="sxs-lookup"><span data-stu-id="833dd-107">To get started with Azure Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).</span></span>
+<span data-ttu-id="0d1ee-107">Para empezar a trabajar con Azure Key Vault, consulte [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started).</span><span class="sxs-lookup"><span data-stu-id="0d1ee-107">To get started with Azure Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="833dd-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="833dd-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="0d1ee-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="0d1ee-108">Client library</span></span>
 
-<span data-ttu-id="833dd-109">Cree, actualice y elimine claves y secretos en Azure Key Vault con las bibliotecas de cliente.</span><span class="sxs-lookup"><span data-stu-id="833dd-109">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
+<span data-ttu-id="0d1ee-109">Cree, actualice y elimine claves y secretos en Azure Key Vault con las bibliotecas de cliente.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-109">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
 
-<span data-ttu-id="833dd-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="833dd-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>  
+<span data-ttu-id="0d1ee-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>  
 
 ```XML
 <dependency>
@@ -40,9 +40,9 @@ ms.locfileid: "43324302"
 </dependency>
 ```   
 
-## <a name="example"></a><span data-ttu-id="833dd-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="833dd-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0d1ee-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0d1ee-111">Example</span></span>
 
-<span data-ttu-id="833dd-112">Recupere una [clave de web JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) desde un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="833dd-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
+<span data-ttu-id="0d1ee-112">Recupere una [clave de web JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) desde un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
 
 ```java
 KeyVaultClient kvc = new KeyVaultClient(credentials);
@@ -51,14 +51,14 @@ JsonWebKey jsonKey = returnedKeyBundle.key();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="833dd-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="833dd-113">Explore the Client APIs</span></span>](/java/api/overview/azure/keyvault/client)
+> [<span data-ttu-id="0d1ee-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="0d1ee-113">Explore the Client APIs</span></span>](/java/api/overview/azure/keyvault/client)
 
 
-## <a name="management-api"></a><span data-ttu-id="833dd-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="833dd-114">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="0d1ee-114">API de administración</span><span class="sxs-lookup"><span data-stu-id="0d1ee-114">Management API</span></span>
 
-<span data-ttu-id="833dd-115">Uso de las bibliotecas de administración de Azure Key Vault para crear almacenes de claves, autorizar aplicaciones y administrar permisos.</span><span class="sxs-lookup"><span data-stu-id="833dd-115">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
+<span data-ttu-id="0d1ee-115">Uso de las bibliotecas de administración de Azure Key Vault para crear almacenes de claves, autorizar aplicaciones y administrar permisos.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-115">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
 
-<span data-ttu-id="833dd-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="833dd-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>  
+<span data-ttu-id="0d1ee-116">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>  
 
 ```XML
 <dependency>
@@ -68,9 +68,9 @@ JsonWebKey jsonKey = returnedKeyBundle.key();
 </dependency>
 ```
 
-## <a name="example"></a><span data-ttu-id="833dd-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="833dd-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0d1ee-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0d1ee-117">Example</span></span>
 
-<span data-ttu-id="833dd-118">Autorice a una aplicación que se ejecuta con una [entidad de servicio](/azure/azure-resource-manager/resource-group-create-service-principal-portal) `clientId` a enumerar y recuperar los secretos de un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="833dd-118">Authorize and application running with [service principal](/azure/azure-resource-manager/resource-group-create-service-principal-portal) `clientId` to list and retrieve secrets from a key vault.</span></span> 
+<span data-ttu-id="0d1ee-118">Autorice a una aplicación que se ejecuta con una [entidad de servicio](/azure/azure-resource-manager/resource-group-create-service-principal-portal) `clientId` a enumerar y recuperar los secretos de un almacén de claves.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-118">Authorize and application running with [service principal](/azure/azure-resource-manager/resource-group-create-service-principal-portal) `clientId` to list and retrieve secrets from a key vault.</span></span> 
 
 ```java
 vault1 = vault1.update()
@@ -84,9 +84,9 @@ vault1 = vault1.update()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="833dd-119">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="833dd-119">Explore the Management APIs</span></span>](/java/api/overview/azure/keyvault/management)
+> [<span data-ttu-id="0d1ee-119">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="0d1ee-119">Explore the Management APIs</span></span>](/java/api/overview/azure/keyvault/management)
 
 
-## <a name="samples"></a><span data-ttu-id="833dd-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="833dd-120">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="0d1ee-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="0d1ee-120">Samples</span></span>
 
-<span data-ttu-id="833dd-121">Ver más [código de Java de ejemplo para Azure Key Vault](https://azure.microsoft.com/resources/samples/?platform=java&term=key+vault) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="833dd-121">Explore more [sample Java code for Azure Key Vault](https://azure.microsoft.com/resources/samples/?platform=java&term=key+vault) you can use in your apps.</span></span>
+<span data-ttu-id="0d1ee-121">Ver más [código de Java de ejemplo para Azure Key Vault](https://azure.microsoft.com/resources/samples/?platform=java&term=key+vault) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="0d1ee-121">Explore more [sample Java code for Azure Key Vault](https://azure.microsoft.com/resources/samples/?platform=java&term=key+vault) you can use in your apps.</span></span>
