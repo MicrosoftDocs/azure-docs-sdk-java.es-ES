@@ -4,31 +4,31 @@ description: Obtenga información acerca las características más recientes del
 services: ''
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: 46ed791f-df59-416a-809e-f52345ad973c
-ms.author: robmcm;asirveda;martinsawicki
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/13/2018
 ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: dcbd7e8a78470df0ab3bc2d7c87137a97fc4665c
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 6c9e79b7fc39a23c3768d93d60d35aace5cde6d1
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893426"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338829"
 ---
-# <a name="whats-new-in-the-azure-toolkit-for-intellij"></a><span data-ttu-id="6c4f9-103">Novedades del kit de herramientas de Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="6c4f9-103">What's New in the Azure Toolkit for IntelliJ</span></span>
+# <a name="whats-new-in-the-azure-toolkit-for-intellij"></a><span data-ttu-id="a2e28-103">Novedades del kit de herramientas de Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="a2e28-103">What's New in the Azure Toolkit for IntelliJ</span></span>
 
-<span data-ttu-id="6c4f9-104">La siguiente página web contiene información sobre las diversas versiones y actualizaciones más recientes para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-104">The following web page contains information on the various releases and latest updates to the Azure Toolkit for IntelliJ.</span></span>
+<span data-ttu-id="a2e28-104">La siguiente página web contiene información sobre las diversas versiones y actualizaciones más recientes para el kit de herramientas de Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="a2e28-104">The following web page contains information on the various releases and latest updates to the Azure Toolkit for IntelliJ.</span></span>
 
 <https://github.com/Microsoft/azure-tools-for-java/releases>
 
 > [!NOTE] 
-> <span data-ttu-id="6c4f9-105">También hay un kit de herramientas de Azure para el IDE de Eclipse.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-105">There is also an Azure Toolkit for the Eclipse IDE.</span></span> <span data-ttu-id="6c4f9-106">Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="6c4f9-106">For more information, see [Azure Toolkit for Eclipse].</span></span> 
+> <span data-ttu-id="a2e28-105">También hay un kit de herramientas de Azure para el IDE de Eclipse.</span><span class="sxs-lookup"><span data-stu-id="a2e28-105">There is also an Azure Toolkit for the Eclipse IDE.</span></span> <span data-ttu-id="a2e28-106">Para obtener más información, consulte [Kit de herramientas de Azure para Eclipse].</span><span class="sxs-lookup"><span data-stu-id="a2e28-106">For more information, see [Azure Toolkit for Eclipse].</span></span> 
 > 
 
 <!--
@@ -72,7 +72,7 @@ The Azure Toolkit for IntelliJ - April 2016 release includes the following enhan
 
 -->
 
-## <a name="next-steps"></a><span data-ttu-id="6c4f9-107">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="6c4f9-107">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="a2e28-107">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="a2e28-107">Next steps</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
