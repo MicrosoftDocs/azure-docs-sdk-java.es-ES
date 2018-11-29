@@ -4,22 +4,22 @@ description: Aprenda a publicar una aplicación web en Microsoft Azure como un c
 services: ''
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 02/01/2018
+ms.date: 11/13/2018
 ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 4228352efa4354bfe4969c1a5ecd3f3b40483f85
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 4b8527ced4aa8010a26b6d1f99f76943a875e66e
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893586"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338709"
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para IntelliJ
 
@@ -135,7 +135,7 @@ Para publicar la aplicación Spring Boot, debe crear un artefacto preparado para
 
 1. Cree un manifiesto para el artefacto (opcional):
 
-   a. Haga clic en **Create Manifest** (Crear manifiesto).
+    a. Haga clic en **Create Manifest** (Crear manifiesto).
 
       ![Haga clic en el botón Crear manifiesto][ART04a]
 
@@ -183,7 +183,7 @@ IntelliJ debe mostrar el artefacto completado para la aplicación Spring Boot en
 
 1. Cuando aparece el cuadro de diálogo **Deploy Docker Container on Azure** (Implementar un contenedor de Docker en Azure), se muestran todos los hosts de Docker existentes. Si decide implementar en un host existente, puede ir al paso 4. En caso contrario, use los pasos siguientes para crear un host:
 
-   a. Haga clic en el signo más verde (**+**).
+    a. Haga clic en el signo más verde (**+**).
 
       ![Agregar un nuevo host de Docker][PU02]
 
@@ -201,7 +201,7 @@ IntelliJ debe mostrar el artefacto completado para la aplicación Spring Boot en
 
 1. En la última página del cuadro de diálogo **Deploy Docker Container on Azure** (Implementar un contenedor de Docker en Azure), especifique las siguientes opciones:
 
-   a. Puede elegir especificar un nombre personalizado para el contenedor que va a hospedar el contenedor de Docker, o puede aceptar el valor predeterminado.
+    a. Puede elegir especificar un nombre personalizado para el contenedor que va a hospedar el contenedor de Docker, o puede aceptar el valor predeterminado.
 
    b. Escriba los puertos TCP para el host de Docker mediante la sintaxis siguiente: *[puerto externo]*:*[puerto interno]*. Por ejemplo, **80:8080** especifica un puerto externo de 80 y el puerto de Spring Boot interno predeterminado de 8080.
    
