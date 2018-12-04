@@ -3,23 +3,23 @@ title: Creación de una aplicación web Hello World para Azure con el kit de her
 description: En este tutorial se muestra cómo utilizar la versión 3.0.6 (o versiones anteriores) del Kit de herramientas de Azure para IntelliJ para crear una aplicación web Hello World para Azure.
 services: app-service
 documentationcenter: java
-author: selvasingh
-manager: routlaw
+author: rmcmurray
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm;asirveda
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/13/2018
 ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: efc1dffa248987772827bbe7bc0caa9f10a0b4ef
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 4a1d9ee79fdc4284dff65f6b026ec103b3d623ce
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893400"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338979"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para IntelliJ
 
@@ -85,7 +85,7 @@ Antes de publicar la aplicación, primero debe configurar el módulo. Para ello,
 
 2. Cuando se muestre el cuadro de diálogo Project Structure (Estructura de proyecto):
 
-   a. Haga clic en **Artefactos** en la lista de **configuración del proyecto**.
+    a. Haga clic en **Artefactos** en la lista de **configuración del proyecto**.
 
    b. Cambie el nombre del artefacto en el cuadro **Nombre** para que contenga un espacio en blanco o caracteres especiales; esto es necesario porque el nombre se usará en el identificador uniforme de recursos (URI).
 
@@ -115,7 +115,7 @@ Cuando se ha configurado el módulo, puede publicar la aplicación en Azure medi
 
 5. Si no ha creado un contenedor de aplicaciones web de Azure antes, o si quiere publicar la aplicación en un nuevo contenedor, siga estos pasos. De lo contrario, seleccione un contenedor de aplicaciones web existente y vaya al paso 6 que encontrará a continuación.
    
-   a. Haga clic en el signo **+**.
+    a. Haga clic en el signo **+**.
       
       ![Agregar contenedor de aplicaciones][10]
 
@@ -127,7 +127,7 @@ Cuando se ha configurado el módulo, puede publicar la aplicación en Azure medi
 
    d. En el menú desplegable **Web Container** (Contenedor web), seleccione el software adecuado para su aplicación.
       
-      Actualmente, puede elegir entre Tomcat 8, Tomcat 7 o Jetty 9. Azure proporcionará una distribución reciente del software seleccionado y se ejecutará en una distribución reciente de JDK 8 creada por Oracle y proporcionada por Azure.
+      Actualmente, puede elegir entre Tomcat 8, Tomcat 7 o Jetty 9. Azure proporcionará una distribución reciente del software seleccionado y se ejecutará en una distribución reciente del JDK proporcionada por Azure.
 
    e. En el menú desplegable **Suscripción** , seleccione la suscripción que quiere usar para esta implementación.
 

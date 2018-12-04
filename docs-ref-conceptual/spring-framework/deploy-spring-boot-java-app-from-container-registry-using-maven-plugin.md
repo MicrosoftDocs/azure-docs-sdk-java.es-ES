@@ -4,22 +4,22 @@ description: Este tutorial le guiará por los pasos para implementar una aplicac
 services: container-registry
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm;kevinzha
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: e84960ebf79b89b2430924016a429518a935d086
-ms.sourcegitcommit: 9d9e2fa97ebd95a699adcb58e82c3fc0882f0a24
+ms.openlocfilehash: cc345987085e442978b59a45d6fc3e1b52160515
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49315939"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338949"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Uso del complemento Maven de Azure Web Apps para implementar una aplicación de Spring Boot de Azure Container Registry en Azure App Service
 
@@ -38,7 +38,7 @@ Para realizar los pasos de este tutorial, necesitará tener los siguientes requi
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
-* Un [kit de desarrollo de Java (JDK)] actualizado, versión 1.7 o posterior.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * La herramienta de compilación [Maven] de Apache (versión 3).
 * Un cliente [Git].
 * Un [Docker].
@@ -406,13 +406,15 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 [Complemento Docker para Maven]: https://github.com/spotify/docker-maven-plugin
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[Java Developer Kit (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Boot on Docker Getting Started]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
+
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 
 <!-- IMG List -->
 

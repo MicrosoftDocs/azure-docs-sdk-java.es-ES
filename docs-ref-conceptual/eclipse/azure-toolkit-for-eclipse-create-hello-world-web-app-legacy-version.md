@@ -3,23 +3,23 @@ title: ''
 description: En este tutorial se muestra cómo utilizar la versión 3.0.6 (o versiones anteriores) del Kit de herramientas de Azure para Eclipse para crear una aplicación web Hello World para Azure.
 services: app-service
 documentationcenter: java
-author: selvasingh
-manager: routlaw
+author: rmcmurray
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm;asirveda
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/13/2018
 ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 896e7eff389bc7d3ac119d315c50aae505a381da
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: b05dcd52f36524ab17652f83c6ced4006f874365
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892566"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338719"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-eclipse"></a>Creación de una aplicación web Hello World para Azure con el kit de herramientas heredado para Eclipse
 
@@ -97,7 +97,7 @@ Existen varias maneras de implementar una aplicación web de Java en Azure. En e
 
 6. Si no ha creado un contenedor de aplicaciones web de Azure antes, o si quiere publicar la aplicación en un nuevo contenedor, siga estos pasos. De lo contrario, seleccione un contenedor de aplicaciones web existente y vaya al paso 7 a continuación.
    
-   a. Haga clic en **Nuevo...**
+    a. Haga clic en **Nuevo...**
       
       ![Cuadro de diálogo de implementación en contenedor de Azure Web App][15]
 
@@ -109,7 +109,7 @@ Existen varias maneras de implementar una aplicación web de Java en Azure. En e
 
    d. En el menú desplegable **Web Container** (Contenedor web), seleccione el software adecuado para su aplicación.
       
-      Actualmente, puede elegir entre Tomcat 8, Tomcat 7 o Jetty 9. Azure proporcionará una distribución reciente del software seleccionado y se ejecutará en una distribución reciente de JDK 8 creada por Oracle y proporcionada por Azure.
+      Actualmente, puede elegir entre Tomcat 8, Tomcat 7 o Jetty 9. Azure proporcionará una distribución reciente del software seleccionado y se ejecutará en una distribución reciente del JDK proporcionada por Azure.
 
    e. En el menú desplegable **Suscripción** , seleccione la suscripción que quiere usar para esta implementación.
 
@@ -124,7 +124,7 @@ Existen varias maneras de implementar una aplicación web de Java en Azure. En e
    * En el cuadro de texto **Nombre** , especifique un nombre para el nuevo grupo de recursos.
    * En el menú desplegable **Región** , seleccione la ubicación adecuada del centro de datos de Azure para su grupo de recursos.
    * OPCIONAL: De forma predeterminada, Azure implementará una distribución reciente de Java 8 automáticamente en el contenedor de la aplicación web como la máquina virtual de Java. Sin embargo, puede especificar una versión y una distribución diferentes de la máquina virtual de Java si así lo requiere la aplicación web. Para especificar el JDK de la aplicación web, haga clic en la pestaña **JDK** y seleccione una de las siguientes opciones:
-     * **Implementar el JDK predeterminado que ofrece el servicio Azure Web Apps**: esta opción implementará una distribución reciente de Java 8.
+     * **Implementar el JDK predeterminado que ofrece el servicio Azure Web Apps**: esta opción implementará una distribución reciente de Java.
      * **Implementar un JDK de terceros disponible en Azure**: esta opción permite elegir en la lista el JDK que proporciona Microsoft Azure.
      * **Implementar mi propio JDK desde esta ubicación de descarga**: esta opción permite especificar su propia distribución JDK, que se debe empaquetar como un archivo ZIP y cargarse en una ubicación de descarga disponible públicamente o en una cuenta de Azure Storage a la que tenga acceso.
           

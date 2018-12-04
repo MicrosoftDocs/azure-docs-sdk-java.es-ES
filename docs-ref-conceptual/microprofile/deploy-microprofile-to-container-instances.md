@@ -8,18 +8,18 @@ manager: routlaw
 editor: brunoborges
 ms.assetid: ''
 ms.author: brborges
-ms.date: 07/30/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: container-instances
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 336af51bbdf5d2f843c3868ebc2358e128daaeaa
-ms.sourcegitcommit: 280d13b43cef94177d95e03879a5919da234a23c
+ms.openlocfilehash: 22870b7ba32f115e7270c63d1bf42cbfc6531d7e
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43324331"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338789"
 ---
 # <a name="deploy-a-microprofile-application-to-the-cloud-with-docker-and-azure"></a>Implementación de una aplicación de MicroProfile en la nube con Docker y Azure
 
@@ -35,7 +35,7 @@ Para realizar los pasos de este tutorial, necesitará tener los siguientes requi
 
 * Si todavía no tiene una suscripción a Azure, puede registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
-* Un [Kit de desarrollo de Java (JDK)] actualizado, versión 1.8 o posteriores.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * La herramienta de compilación [Maven] de Apache (versión 3 o posteriores).
 * Un cliente [Git].
 
@@ -165,6 +165,7 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [Maven]: http://maven.apache.org/
-[Kit de desarrollo de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 [Azure Container Instances]: https://docs.microsoft.com/azure/container-instances/
 [Azure Container Registry]:  https://docs.microsoft.com/azure/container-registry

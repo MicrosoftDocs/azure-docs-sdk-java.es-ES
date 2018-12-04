@@ -4,23 +4,23 @@ description: Este tutorial le guiará por los pasos necesarios para implementar 
 services: container-service
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: asirveda;robmcm
-ms.date: 07/05/2018
+ms.author: robmcm
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.custom: mvc
-ms.openlocfilehash: 8e8f9088146af504ba2d9d45e2e82118c4081359
-ms.sourcegitcommit: dae7511a9d93ca7f388d5b0e05dc098e22c2f2f6
+ms.openlocfilehash: d5ebfb7fc7279c745f77848dae397509662f0c0d
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49962509"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338729"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Kubernetes Service
 
@@ -32,7 +32,7 @@ Este tutorial le indica cómo combinar estas dos populares tecnologías de códi
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
-* Un [kit para desarrolladores de Java (JDK)] actualizado.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * La herramienta de compilación [Maven] de Apache (versión 3).
 * Un cliente [Git].
 * Un [Docker].
@@ -237,7 +237,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
 1. Cuando se muestra la página **Resource Creation** (Creación de recursos), especifique las opciones siguientes:
 
-   a. Seleccione **CREATE AN APP** (Crear una aplicación).
+    a. Seleccione **CREATE AN APP** (Crear una aplicación).
 
    b. Escriba el nombre de la aplicación Spring Boot en **App name** (Nombre de aplicación); por ejemplo: "*gs-spring-boot-docker*".
 
@@ -344,7 +344,6 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Docker]: https://www.docker.com/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[Kit para desarrolladores de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [Kubernetes]: https://kubernetes.io/
 [Kubernetes Command-Line Interface (kubectl)]: https://kubernetes.io/docs/user-guide/kubectl-overview/
@@ -356,6 +355,9 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Configure Service Accounts for Pods]: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/ (Configurar cuentas de servicio para pods)
 [Espacios de nombres]: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 [Pull an Image from a Private Registry]: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/ (Extraer una imagen de un registro privado)
+
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 
 <!-- Newly added -->
 [Autenticación con Azure Container Registry desde Azure Kubernetes Service]: https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks/

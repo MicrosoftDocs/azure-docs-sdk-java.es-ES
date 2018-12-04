@@ -4,23 +4,23 @@ description: Este tutorial le guiará por los pasos necesarios para implementar 
 services: container-service
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: asirveda;robmcm
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: container-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: 49d94d11ad6a4e103ded849e477d99f01955c693
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 30be16aebb18e3c9e18f9a023ea9b82e5d614e94
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899208"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339149"
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en Linux en Azure Container Service
 
@@ -32,7 +32,7 @@ Para realizar los pasos de este tutorial, necesitará tener los siguientes requi
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * La [Interfaz de la línea de comandos (CLI) de Azure].
-* Un [kit para desarrolladores de Java (JDK)] actualizado.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * La herramienta de compilación [Maven] de Apache (versión 3).
 * Un cliente [Git].
 * Un [Docker].
@@ -199,7 +199,7 @@ Los siguientes pasos le muestran cómo usar Azure Portal para crear una instanci
 
 3. Cuando aparezca la página **Aplicación web en Linux**, especifique la información siguiente:
 
-   a. Escriba un nombre único para el **Nombre de la aplicación**, por ejemplo: "*wingtiptoyslinux*".
+    a. Escriba un nombre único para el **Nombre de la aplicación**, por ejemplo: "*wingtiptoyslinux*".
 
    b. Seleccione su **Suscripción** en la lista desplegable.
 
@@ -289,13 +289,15 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Docker]: https://www.docker.com/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[Kit para desarrolladores de Java (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Boot on Docker Getting Started]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
+
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 
 <!-- IMG List -->
 
