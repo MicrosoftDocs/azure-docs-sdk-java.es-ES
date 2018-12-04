@@ -4,19 +4,19 @@ description: Obtenga información acerca de cómo implementar una aplicación de
 services: app-service
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: brborges
 ms.author: robmcm
-ms.date: 10/18/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: dc3038fed6859203f36e0c4dc9a9b01e81a7c4c5
-ms.sourcegitcommit: dae7511a9d93ca7f388d5b0e05dc098e22c2f2f6
+ms.openlocfilehash: 066ac30697c6adccc0c6a7b9d57205de488bdc53
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49962499"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339009"
 ---
 # <a name="deploy-a-spring-boot-jar-file-web-app-to-azure-app-service-on-linux"></a>Implementación de una aplicación web de archivo JAR de Spring Boot en Azure App Service en Linux
 
@@ -30,7 +30,7 @@ Si no tiene una suscripción a Azure, cree una [cuenta gratuita](https://azure.m
 Para realizar los pasos de este tutorial, necesitará tener instalado y configurado lo siguiente:
 
 * La [CLI de Azure](/cli/azure/), ya sea localmente o con [Azure Cloud Shell](https://shell.azure.com).
-* [Kit de desarrollo de Java (JDK)](https://www.azul.com/downloads/azure-only/zulu/), versión 1.7 o posterior.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Maven](https://maven.apache.org/) de Apache, versión 3.
 * Un cliente [Git](https://git-scm.com/downloads).
 
@@ -125,7 +125,7 @@ En esta sección, configurará el proyecto de Spring Boot `pom.xml` para que Mav
 
 3. Actualice los siguientes marcadores de posición en la configuración del complemento:
 
-| Placeholder | DESCRIPCIÓN |
+| Marcador de posición | DESCRIPCIÓN |
 | ----------- | ----------- |
 | `RESOURCEGROUP_NAME` | Nombre del nuevo grupo de recursos en el que se va a crear la aplicación web. Al colocar todos los recursos de una aplicación en un grupo, puede administrarlos juntos. Por ejemplo, si elimina el grupo de recursos también se eliminarán todos los recursos asociados con la aplicación. Actualice este valor con un nombre único de un nuevo grupo de recursos, por ejemplo, *TestResources*. Este nombre lo utilizará para limpiar todos los recursos de Azure en una sección posterior. |
 | `WEBAPP_NAME` | El nombre de la aplicación forma parte del nombre de host de la aplicación web si se ha implementado en Azure (WEBAPP_NAME.azurewebsites.net). Actualice este valor con un nombre único para la nueva aplicación web de Azure, que hospedará la aplicación Java, por ejemplo *contoso*. |
@@ -180,7 +180,6 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 [Azure Portal]: https://portal.azure.com/
 [free Azure account]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[Java Developer Kit (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
 [MSDN subscriber benefits]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
@@ -188,6 +187,9 @@ Para más información acerca de las diferentes tecnologías que se tratan en es
 [Primeros pasos de Spring Boot]: https://github.com/spring-guides/gs-spring-boot
 [Spring Framework]: https://spring.io/
 [Complemento Maven de Azure Web Apps]: https://docs.microsoft.com/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme
+
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 
 <!-- IMG List -->
 

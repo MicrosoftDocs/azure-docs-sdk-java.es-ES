@@ -7,18 +7,18 @@ author: rmcmurray
 manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.date: 08/20/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 561dba84b0c1662fa6575e1816ff3dd2f0c6093b
-ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
+ms.openlocfilehash: 47251c6bca1186a400020ba38e4b6596c7c5f2f1
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48047172"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339029"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>Uso de Spring Data Gremlin Starter con SQL API de Azure Cosmos DB
 
@@ -33,7 +33,7 @@ En este artículo se muestra cómo crear una base de datos de Azure Cosmos DB me
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
-* Un [kit de desarrollo de Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/), versión 1.7 o posterior.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
 
 > [!IMPORTANT]

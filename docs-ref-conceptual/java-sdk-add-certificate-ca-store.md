@@ -11,14 +11,14 @@ ms.workload: na
 ms.tgt_pltfrm: na
 ms.devlang: Java
 ms.topic: article
-ms.date: 07/02/2018
+ms.date: 11/13/2018
 ms.author: robmcm
-ms.openlocfilehash: 3f2de63f7eb1422ff1dd6db45d68e02f4af188b8
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 477cb9347255928f8583af8fbe4ea90a42ce6c18
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899185"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339049"
 ---
 # <a name="adding-a-root-certificate-to-the-java-ca-certificates-store"></a>Incorporación de un certificado raíz al almacén de certificados CA de Java
 
@@ -93,3 +93,5 @@ Para más información acerca de la utilidad keytool, consulte <http://docs.orac
 Para más información sobre Java, consulte [Azure para desarrolladores de Java](/java/azure).
 
 <!-- For more information about the root certificates used by Azure, see [Azure Root Certificate Migration](http://blogs.msdn.com/b/windowsazure/archive/2013/03/15/windows-azure-root-certificate-migration.aspx). -->
+
+Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.

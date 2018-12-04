@@ -2,7 +2,7 @@
 Para completar los pasos descritos en este artículo, debe instalar el Kit de herramientas de Azure para Eclipse, que requiere los siguientes componentes de software:
 
 * IDE de Eclipse para desarrolladores Java EE, Mars o posterior. Puede descargarlo del [sitio web de Eclipse](http://www.eclipse.org/downloads/).
-* Kit de desarrolladores de Java (JDK), versiones 1.8 o posteriores.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * Un sistema operativo. El kit de herramientas de Azure para Eclipse se ha probado en los siguientes sistemas operativos:
   
   * Windows 10, Windows 8.1, Windows 8 y Windows 7

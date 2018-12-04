@@ -8,18 +8,18 @@ manager: alexklim
 editor: ''
 ms.assetid: ''
 ms.author: dhdoshi
-ms.date: 05/19/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: Azure Monitor
 ms.tgt_pltfrm: application-insights
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: e78987a05527aef739bc1467511381665513a3ab
-ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
+ms.openlocfilehash: eef5afa1bcd8ceb92eca1584df8816b73ac78948
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45639738"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338739"
 ---
 # <a name="configure-a-spring-boot-initializer-app-to-use-application-insights"></a>Configuración de una aplicación de Spring Boot Initializr para que use Application Insights
 
@@ -34,7 +34,7 @@ En este artículo se explica cómo crear una aplicación de Spring Boot mediante
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
-* Un kit de desarrollo de Java (JDK), versión 1.7 y 1.8.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
 
 ## <a name="create-a-custom-application-using-the-spring-initializr"></a>Creación de una aplicación personalizada mediante Spring Initializr

@@ -10,4 +10,5 @@ Para más información acerca del uso de Java con Azure, consulte los siguientes
 
 * [Azure para desarrolladores de Java](https://docs.microsoft.com/java/azure/) 
 * [Herramientas de Java para Visual Studio Team Services](https://java.visualstudio.com/) 
+* [Obtenga descargas del JDK de Java y soporte técnico para desarrollar en Azure](https://aka.ms/azure-jdks)
 <!-- TODO: Add URLs for Java in VSCode here --> 

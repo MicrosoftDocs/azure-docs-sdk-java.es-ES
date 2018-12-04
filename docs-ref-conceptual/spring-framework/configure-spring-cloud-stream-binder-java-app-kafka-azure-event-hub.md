@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 09/10/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: event-hubs
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: ccef834d0ff1c40b061946f8ab1852584da80d7b
-ms.sourcegitcommit: a168dc8c2396b6c4749abef03debb1f69298da38
+ms.openlocfilehash: ab465b56c05c7d480109fc97a4f1c74beaf53856
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50747006"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339119"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-apache-kafka-with-azure-event-hubs"></a>Cómo usar el iniciador de Spring Boot para Apache Kafka con Azure Event Hubs
 
@@ -32,7 +32,7 @@ En este artículo se muestra cómo configurar una aplicación de Spring Cloud St
 Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:
 
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
-* Un [kit de desarrollo de Java (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/), versión 1.7 o posterior.
+* Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
 
 > [!IMPORTANT]
