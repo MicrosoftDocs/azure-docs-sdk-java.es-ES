@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 11/21/2018
+ms.date: 12/19/2018
 ms.devlang: java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: ab3babf358cf4899709a9a9d2d7917cb2c6d220e
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: 72eb49a764bdf15339e6cd17c6a7f997495dcf09
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52338839"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991609"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implementación de una aplicación Spring Boot mediante el complemento Fabric8 para Maven
 
@@ -36,7 +36,7 @@ Para realizar los pasos de este tutorial, necesitará tener los siguientes requi
 * Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * La herramienta de compilación [Maven] de Apache (versión 3).
 * Un cliente [Git].
-* Un [Docker].
+* Un cliente de [Docker].
 
 > [!NOTE]
 >
@@ -362,7 +362,7 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
 
 ## <a name="configure-your-spring-boot-app-to-use-the-fabric8-maven-plugin"></a>Configuración de la aplicación Spring Boot para usar el complemento Fabric8 para Maven
 
-1. Navegue hasta el directorio de proyecto completado de la aplicación Spring Boot (por ejemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete*" o "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete*") y abra el archivo *pom.xml* con un editor de texto.
+1. Vaya al directorio de proyecto completado de la aplicación Spring Boot (por ejemplo: "*C:\SpringBoot\gs-spring-boot-docker\complete*" o "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete*") y abra el archivo *pom.xml* con un editor de texto.
 
 1. Actualice la colección de `<plugins>` en el archivo *pom.xml* para agregar el complemento Fabric8 para Maven:
 
@@ -378,11 +378,11 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
    </plugin>
    ```
 
-1. Navegue al directorio de origen principal de la aplicación Spring Boot (por ejemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete\src\main*" o "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete/src/main*") y cree una carpeta nueva denominada "*fabric8*".
+1. Vaya al directorio de origen principal de la aplicación Spring Boot (por ejemplo: "*C:\SpringBoot\gs-spring-boot-docker\complete\src\main*" o "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete/src/main*") y cree una carpeta nueva denominada "*fabric8*".
 
 1. Cree tres archivos de fragmentos YAML en la carpeta *fabric8* nueva:
 
-    a. Cree un archivo denominado **deployment.yml** con el contenido siguiente:
+   a. Cree un archivo denominado **deployment.yml** con el contenido siguiente:
       ```yaml
       apiVersion: extensions/v1beta1
       kind: Deployment
@@ -507,13 +507,20 @@ Cuando ya no se necesita el clúster de Kubernetes, puede usar el comando `az gr
 
 ## <a name="next-steps"></a>Pasos siguientes
 
+Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.
+
+> [!div class="nextstepaction"]
+> [Spring en Azure](/java/azure/spring-framework)
+
+### <a name="additional-resources"></a>Recursos adicionales
+
 Para obtener más información sobre el uso de aplicaciones de Spring Boot en Azure, consulte los siguientes artículos:
 
 * [Implementación de una aplicación de Spring Boot en Azure App Service](deploy-spring-boot-java-web-app-on-azure.md)
 * [Implementación de una aplicación de Spring Boot en Linux en Azure Container Service](deploy-spring-boot-java-app-on-linux.md)
 * [Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services].
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Working with Azure DevOps and Java] (Trabajo con Azure DevOps y Java).
 
 Para obtener más información sobre el proyecto de ejemplo Spring Boot en Docker, vea [Spring Boot on Docker Getting Started] (Introducción a Spring Boot en Docker).
 
@@ -527,7 +534,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 
 [Interfaz de la línea de comandos (CLI) de Azure]: /cli/azure/overview
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
-[Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
+[Azure para desarrolladores de Java]: /java/azure/
 [Azure portal]: https://portal.azure.com/
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal
 [Uso de una imagen personalizada de Docker para Web App on Linux de Azure]: /azure/app-service-web/app-service-linux-using-custom-docker-image
@@ -535,7 +542,7 @@ Para ver más ejemplos de cómo usar imágenes de Docker personalizadas con Azur
 [Fabric8]: https://fabric8.io/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
-[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
+[Working with Azure DevOps and Java]: /azure/devops/java/ (Trabajo con Azure DevOps y Java)
 [Kubernetes]: https://kubernetes.io/
 [Maven]: http://maven.apache.org/
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/

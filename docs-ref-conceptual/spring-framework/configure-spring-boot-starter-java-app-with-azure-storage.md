@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 11/21/2018
+ms.date: 12/19/2018
 ms.devlang: java
 ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: f94b2981f1e641a6e4b2d9d3028608a56a6590e7
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: cdd157abdb993517f7c880a7edaff10f0e3d1033
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52338879"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991589"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Cómo usar el iniciador de Spring Boot para Azure Storage
 
@@ -331,7 +331,7 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
 1. Una vez que se está ejecutando la aplicación, puede usar *curl* para probar la aplicación, por ejemplo:
 
-    a. Envíe una solicitud POST para actualizar el contenido de un archivo:
+   a. Envíe una solicitud POST para actualizar el contenido de un archivo:
 
       ```shell
       curl -X POST -H "Content-Type: text/plain" -d "Hello World" http://localhost:8080/
@@ -347,11 +347,20 @@ En esta sección, creará las clases de Java necesarias para almacenar un blob e
 
      Debería ver el texto "Hello World" que se envió.
 
+## <a name="summary"></a>Resumen
+
+En este tutorial ha creado una nueva aplicación Java con **[Spring Initializr]**, ha agregado el iniciador de Azure Storage a la aplicación y, finalmente, ha configurado la aplicación para cargar un blob en la cuenta de Azure Storage.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información acerca de otros iniciadores de Spring Boot disponibles para Microsoft Azure, consulte [Iniciadores de Spring Boot para Azure](spring-boot-starters-for-azure.md).
+Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.
 
-Para más información acerca de cómo integrar la funcionalidad de Azure en aplicaciones basadas en Spring, consulte [Spring Framework en Azure](/java/azure/spring-framework/).
+> [!div class="nextstepaction"]
+> [Spring en Azure](/java/azure/spring-framework)
+
+### <a name="additional-resources"></a>Recursos adicionales
+
+Para más información acerca de otros iniciadores de Spring Boot disponibles para Microsoft Azure, consulte [Iniciadores de Spring Boot para Azure](spring-boot-starters-for-azure.md).
 
 Para información detallada acerca de otras API de almacenamiento de Azure que puede llamar desde aplicaciones de Spring Boot, consulte los artículos siguientes:
 * [Uso de Azure Blob Storage en Java](/azure/storage/blobs/storage-java-how-to-use-blob-storage)

@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 310d95436189af09f794154f4c9f0e71c47d88c8
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: dc39298d88f2fb0b2f56d6fbc0071b68b8d27989
+ms.sourcegitcommit: 24f037d133875f86761ec893dfa74e723de040b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899443"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53636661"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-eclipse"></a>Administración de cuentas de almacenamiento mediante Azure Explorer para Eclipse
 
@@ -47,17 +47,17 @@ Para crear una cuenta de almacenamiento con Azure Explorer, haga lo siguiente:
 
    * **Suscripción**: especifica la suscripción de Azure que quiere usar para la nueva cuenta de almacenamiento.
 
-   * **Grupo de recursos**: especifica el grupo de recursos para su máquina virtual. Seleccione una de las siguientes opciones:
+   * **Grupo de recursos**: especifica el grupo de recursos para la máquina virtual. Seleccione una de las siguientes opciones:
       * **Crear nuevo**: especifica que quiere crear un nuevo grupo de recursos.
       * **Usar existente**: especifica que se va a elegir de una lista de grupos de recursos asociados a la cuenta de Azure.
 
    * **Región**: especifica la ubicación donde se creará la cuenta de almacenamiento, por ejemplo, "Oeste de EE. UU.".
 
-   * **Tipo de cuenta**: especifica el tipo de cuenta de almacenamiento que se va a crear, por ejemplo, "Blob Storage". Para más información, consulte [Acerca de las cuentas de almacenamiento de Azure].
+   * **Tipo de cuenta**: especifica el tipo de cuenta de almacenamiento que se va a crear, por ejemplo "Blob Storage". Para más información, consulte [Acerca de las cuentas de almacenamiento de Azure].
 
    * **Rendimiento**: especifica la oferta de cuenta de almacenamiento que quiere usar del publicador seleccionado; por ejemplo, "Premium". Para obtener más información, consulte [Objetivos de escalabilidad y rendimiento de Azure Storage].
 
-   * **Replicación**: especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Redundancia de zona". Para más información, consulte el artículo sobre la [Replicación de almacenamiento de Azure].
+   * **Replication** (Replicación): especifica la replicación para la cuenta de almacenamiento; por ejemplo, en "Con redundancia de zona". Para más información, consulte el artículo sobre la [replicación de Azure Storage].
 
 1. Cuando haya especificado todas las opciones anteriores, haga clic en **Crear**.
 
@@ -116,14 +116,14 @@ Para obtener más información sobre las cuentas de Azure Storage, tamaños y pr
 
 [Introducción a Microsoft Azure Storage]: /azure/storage/storage-introduction
 [Acerca de las cuentas de almacenamiento de Azure]: /azure/storage/storage-create-storage-account
-[Replicación de almacenamiento de Azure]: /azure/storage/storage-redundancy
+[replicación de Azure Storage]: /azure/storage/storage-redundancy
 [Objetivos de escalabilidad y rendimiento de Azure Storage]: /azure/storage/storage-scalability-targets
 [Asignar nombres y hacer referencia a contenedores, blobs y metadatos]: http://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamaños de las cuentas de almacenamiento de Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las cuentas de almacenamiento de Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
-[Precios de cuentas de almacenamiento de Windows]: /pricing/details/virtual-machines/windows/
-[Precios de cuentas de almacenamiento de Linux]: /pricing/details/virtual-machines/linux/
+[Precios de cuentas de almacenamiento de Windows]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Precios de cuentas de almacenamiento de Linux]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 
