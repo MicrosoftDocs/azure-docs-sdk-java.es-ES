@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 11/21/2018
+ms.date: 12/19/2018
 ms.devlang: java
 ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: fcb18de809f4465239f1f360a755624a5095e03a
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: 78dadcf93bfc57ab669271495393fa9ba164c89d
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52339159"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991369"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Cómo usar el iniciador de Spring Boot para Azure Key Vault
 
@@ -154,10 +154,10 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    |---|---|
    | `name` | Especifica un nombre único para el almacén de claves. |
    | `location` | Especifica la [región de Azure](https://azure.microsoft.com/regions/) donde se hospedará el grupo de recursos. |
-   | `enabled-for-deployment` | Especifica la [opción de implementación del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `enabled-for-disk-encryption` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `enabled-for-template-deployment` | Especifica la [opción de cifrado del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `sku` | Especifica la [opción de SKU del almacén de claves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-deployment` | Especifica la [opción de implementación del almacén de claves](/cli/azure/keyvault). |
+   | `enabled-for-disk-encryption` | Especifica la [opción de cifrado del almacén de claves](/cli/azure/keyvault). |
+   | `enabled-for-template-deployment` | Especifica la [opción de cifrado del almacén de claves](/cli/azure/keyvault). |
+   | `sku` | Especifica la [opción de SKU del almacén de claves](/cli/azure/keyvault). |
    | `query` | Especifica el valor que se recuperará de la respuesta, que es el URI del almacén de claves que tendrá que completar en este tutorial. |
 
    La CLI de Azure mostrará el URI del almacén de claves, que usará más adelante; por ejemplo:  
@@ -175,7 +175,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
    | Parámetro | DESCRIPCIÓN |
    |---|---|
    | `name` | Especifica el nombre del almacén de claves anterior. |
-   | `secret-permission` | Especifica las [directivas de seguridad](https://docs.microsoft.com/cli/azure/keyvault) para su almacén de claves. |
+   | `secret-permission` | Especifica las [directivas de seguridad](/cli/azure/keyvault) para su almacén de claves. |
    | `spn` | Especifica el GUID del registro de la aplicación anterior. |
 
    La CLI de Azure mostrará los resultados de la creación de la directiva de seguridad, por ejemplo:  
@@ -254,7 +254,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 4. Vaya al archivo de código fuente principal del proyecto; por ejemplo: */src/main/java/com/wingtiptoys/secrets*.
 
-5. Abra el archivo Java principal de la aplicación en un editor de texto (por ejemplo: *SecretsApplication.java*) y agregue las siguientes líneas al archivo:
+5. Abra el archivo principal de Java de la aplicación en un archivo en un editor de texto, por ejemplo: *SecretsApplication.java* y agregue las siguientes líneas al archivo:
 
    ```java
    package com.wingtiptoys.secrets;
@@ -307,7 +307,16 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="summary"></a>Resumen
 
-En este tutorial, ha creado una nueva aplicación web de Java con **[Spring Initializr]**, ha creado un almacén de claves de Azure para almacenar información confidencial y, a continuación, ha configurado la aplicación para recuperar información del almacén de claves.
+En este tutorial, ha creado una nueva aplicación web de Java con **[Spring Initializr]**, ha creado una instancia de Azure Key Vault para almacenar información confidencial y, a continuación, ha configurado la aplicación para recuperar información del almacén de claves.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.
+
+> [!div class="nextstepaction"]
+> [Spring en Azure](/java/azure/spring-framework)
+
+### <a name="additional-resources"></a>Recursos adicionales
 
 Para más información sobre el uso de Azure Key Vault, consulte los siguientes artículos:
 
@@ -321,22 +330,15 @@ Para obtener más información sobre el uso de aplicaciones de Spring Boot en Az
 
 * [Ejecución de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Container Service](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Herramientas de Java para Visual Studio Team Services].
-
-## <a name="next-steps"></a>Pasos siguientes
-
-Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.
-
-> [!div class="nextstepaction"]
-> [Spring en Azure](/java/azure/spring-framework)
+Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Working with Azure DevOps and Java] (Trabajo con Azure DevOps y Java).
 
 <!-- URL List -->
 
 [Documentación de Key Vault]: /azure/key-vault/
 [Introducción a Azure Key Vault]: /azure/key-vault/key-vault-get-started
-[Azure para desarrolladores de Java]: https://docs.microsoft.com/java/azure/
+[Azure para desarrolladores de Java]: /java/azure/
 [cuenta de Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
-[Herramientas de Java para Visual Studio Team Services]: https://java.visualstudio.com/
+[Working with Azure DevOps and Java]: /azure/devops/ (Trabajo con Azure DevOps y Java)
 [ventajas como suscriptor de MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/

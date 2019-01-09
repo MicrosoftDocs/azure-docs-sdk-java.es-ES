@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 53dfbfb0de2bcb56ebfc4d5ca2c4c19528edcfbf
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: 7f3b4a6adb4234bbf11f0f7cddafbe99fa0ff3df
+ms.sourcegitcommit: 24f037d133875f86761ec893dfa74e723de040b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52338699"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53636701"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a>Administración de máquinas virtuales con Azure Explorer para Eclipse
 
@@ -47,13 +47,13 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
 4. En la ventana **Seleccionar una imagen de máquina virtual**, escriba la siguiente información:
 
-   * **Ubicación**: especifica la ubicación donde se creará la máquina virtual (por ejemplo, *oeste de EE. UU.*).
+   * **Ubicación**: especifica la ubicación donde se creará la máquina virtual (por ejemplo, *oeste de EE. UU.*).
 
    * **Publicador**: especifica el publicador que creó la imagen que se usará para crear la máquina virtual (por ejemplo, *Microsoft*).
 
    * **Oferta**: especifica la oferta de máquina virtual que quiere usar del publicador seleccionado (por ejemplo, *JDK*).
 
-   * **SKU**: especifica la referencia de almacén (SKU) que quiere usar de la oferta seleccionada (por ejemplo, *JDK_8*).
+   * **Sku**: especifica la referencia de almacén (SKU) que quiere usar de la oferta seleccionada; por ejemplo, *JDK_8*.
 
    * **N.º de versión**: especifica la versión que quiere usar de la SKU seleccionada.
 
@@ -63,7 +63,7 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
 6. En la pantalla **Configuración básica de máquina virtual**, escriba la siguiente información:
 
-   * **Nombre de máquina virtual**: especifica el nombre de la nueva máquina virtual, que debe comenzar con una letra y contener solo letras, números y guiones.
+   * **Nombre de la máquina virtual**: especifica el nombre de la nueva máquina virtual, que debe comenzar con una letra y contener solo letras, números y guiones.
 
    * **Tamaño**: especifica el número de núcleos y la memoria que se asignará para la máquina virtual.
 
@@ -77,7 +77,7 @@ Para crear una máquina virtual con Azure Explorer, haga lo siguiente:
 
 8. En la ventana **Crear una nueva cuenta de almacenamiento**, escriba la siguiente información:
 
-   * **Grupo de recursos**: especifica el grupo de recursos para su máquina virtual. Seleccione una de las siguientes opciones:
+   * **Grupo de recursos**: especifica el grupo de recursos para la máquina virtual. Seleccione una de las siguientes opciones:
      * **Crear nuevo**: especifica que quiere crear un nuevo grupo de recursos.
      * **Usar existente**: especifica que desea seleccionar un grupo de recursos que ya está asociado a la cuenta de Azure.
 
@@ -158,8 +158,8 @@ Para obtener más información sobre los tamaños y los precios de máquinas vir
 
 [Tamaños de las máquinas virtuales Windows en Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamaños de las máquinas virtuales Linux en Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
-[Precios de máquinas virtuales Windows]: /pricing/details/virtual-machines/windows/
-[Precios de máquinas virtuales Linux]: /pricing/details/virtual-machines/linux/
+[Precios de máquinas virtuales Windows]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Precios de máquinas virtuales Linux]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 
