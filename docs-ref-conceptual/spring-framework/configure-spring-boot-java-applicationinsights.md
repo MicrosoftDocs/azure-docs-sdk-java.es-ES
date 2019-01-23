@@ -14,12 +14,12 @@ ms.service: Azure Monitor
 ms.tgt_pltfrm: application-insights
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: f69cdcc5b479e83b230f23a8a76f96284a1b785b
-ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
+ms.openlocfilehash: bf4f7e51f3108d684503465050d69461240f17e3
+ms.sourcegitcommit: 9df42bd342ef2d25d56a6045f1ab1baf6f2c250e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53991439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54237296"
 ---
 # <a name="configure-a-spring-boot-initializer-app-to-use-application-insights"></a>Configuración de una aplicación de Spring Boot Initializr para que use Application Insights
 
@@ -32,6 +32,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 * Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].
 * Un kit de desarrollo de Java (JDK) admitido Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.
+* FluxWeb API y Netty API **no se admiten actualmente** con el iniciador Spring Boot de Application Insights.
 
 ## <a name="create-a-custom-application-using-the-spring-initializr"></a>Creación de una aplicación personalizada mediante Spring Initializr
 
