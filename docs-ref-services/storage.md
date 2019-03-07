@@ -11,28 +11,28 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: storage
-ms.openlocfilehash: fba48dfa04f223dce72a0ee54da967565ebd3687
-ms.sourcegitcommit: 67b3542b174e8448f9ca3e7c9506f1216ea6a8fe
+ms.openlocfilehash: ee54e92ee0084cd2fc5e827764cfe094434ea784
+ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51285675"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335378"
 ---
-# <a name="azure-storage-libraries-for-java"></a><span data-ttu-id="09884-103">Bibliotecas de Azure Storage para Java</span><span class="sxs-lookup"><span data-stu-id="09884-103">Azure Storage libraries for Java</span></span>
+# <a name="azure-storage-libraries-for-java"></a><span data-ttu-id="a828f-103">Bibliotecas de Azure Storage para Java</span><span class="sxs-lookup"><span data-stu-id="a828f-103">Azure Storage libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="09884-104">Información general</span><span class="sxs-lookup"><span data-stu-id="09884-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="a828f-104">Información general</span><span class="sxs-lookup"><span data-stu-id="a828f-104">Overview</span></span>
 
-<span data-ttu-id="09884-105">Lea y escriba datos de blobs (objeto), archivos y mensajes desde las aplicaciones Java con [Azure Storage](/azure/storage/storage-introduction).</span><span class="sxs-lookup"><span data-stu-id="09884-105">Read and write blob (object) data, files, and messages from your Java applications with [Azure Storage](/azure/storage/storage-introduction).</span></span>
+<span data-ttu-id="a828f-105">Lea y escriba datos de blobs (objeto), archivos y mensajes desde las aplicaciones Java con [Azure Storage](/azure/storage/storage-introduction).</span><span class="sxs-lookup"><span data-stu-id="a828f-105">Read and write blob (object) data, files, and messages from your Java applications with [Azure Storage](/azure/storage/storage-introduction).</span></span>
 
-<span data-ttu-id="09884-106">Para empezar a trabajar con Azure Storage, consulte [Uso de Blob Storage desde Java](/azure/storage/blobs/storage-quickstart-blobs-java-v10).</span><span class="sxs-lookup"><span data-stu-id="09884-106">To get started with Azure Storage, see [How to use Blob storage from Java](/azure/storage/blobs/storage-quickstart-blobs-java-v10).</span></span>
+<span data-ttu-id="a828f-106">Para empezar a trabajar con Azure Storage, consulte [Uso de Blob Storage desde Java](/azure/storage/blobs/storage-quickstart-blobs-java-v10).</span><span class="sxs-lookup"><span data-stu-id="a828f-106">To get started with Azure Storage, see [How to use Blob storage from Java](/azure/storage/blobs/storage-quickstart-blobs-java-v10).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="09884-107">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="09884-107">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="a828f-107">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="a828f-107">Client library</span></span>
 
-<span data-ttu-id="09884-108">Use una clave compartida, un token de SAS o un token de OAuth de Azure Active Directory para la autorización con los servicios de Azure Storage.</span><span class="sxs-lookup"><span data-stu-id="09884-108">Use a Shared Key, SAS token or an OAuth token from the Azure Active Directory to authorize with Azure Storage services.</span></span> <span data-ttu-id="09884-109">A continuación, use las clases y los métodos de las bibliotecas de cliente para trabajar con el almacenamiento de blobs, archivos o colas.</span><span class="sxs-lookup"><span data-stu-id="09884-109">Then use the client libraries' classes and methods to work with blob, file, or queue storage.</span></span> 
+<span data-ttu-id="a828f-108">Use una clave compartida, un token de SAS o un token de OAuth de Azure Active Directory para la autorización con los servicios de Azure Storage.</span><span class="sxs-lookup"><span data-stu-id="a828f-108">Use a Shared Key, SAS token or an OAuth token from the Azure Active Directory to authorize with Azure Storage services.</span></span> <span data-ttu-id="a828f-109">A continuación, use las clases y los métodos de las bibliotecas de cliente para trabajar con el almacenamiento de blobs, archivos o colas.</span><span class="sxs-lookup"><span data-stu-id="a828f-109">Then use the client libraries' classes and methods to work with blob, file, or queue storage.</span></span> 
 
-<span data-ttu-id="09884-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="09884-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>   
+<span data-ttu-id="a828f-110">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la biblioteca de cliente en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="a828f-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>   
 
-<span data-ttu-id="09884-111">**Dependencia para Blob service**:</span><span class="sxs-lookup"><span data-stu-id="09884-111">**Dependency for Blob service**:</span></span>
+<span data-ttu-id="a828f-111">**Dependencia para Blob service**:</span><span class="sxs-lookup"><span data-stu-id="a828f-111">**Dependency for Blob service**:</span></span>
 ```XML
 <dependency>
     <groupId>com.microsoft.azure</groupId>
@@ -41,7 +41,7 @@ ms.locfileid: "51285675"
 </dependency>
 ```
 
-<span data-ttu-id="09884-112">**Dependencia para Queue service**:</span><span class="sxs-lookup"><span data-stu-id="09884-112">**Dependency for Queue service**:</span></span>
+<span data-ttu-id="a828f-112">**Dependencia para Queue service**:</span><span class="sxs-lookup"><span data-stu-id="a828f-112">**Dependency for Queue service**:</span></span>
 ```XML
 <dependency>
     <groupId>com.microsoft.azure</groupId>
@@ -51,9 +51,9 @@ ms.locfileid: "51285675"
 ```
 
 
-### <a name="example"></a><span data-ttu-id="09884-113">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="09884-113">Example</span></span>
+### <a name="example"></a><span data-ttu-id="a828f-113">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a828f-113">Example</span></span>
 
-<span data-ttu-id="09884-114">Escriba un archivo de imagen del sistema de archivos local en un nuevo blob en un contenedor de blobs de Azure Storage existente.</span><span class="sxs-lookup"><span data-stu-id="09884-114">Write an image file from the local file system into a new blob in an existing Azure Storage blob container.</span></span>
+<span data-ttu-id="a828f-114">Escriba un archivo de imagen del sistema de archivos local en un nuevo blob en un contenedor de blobs de Azure Storage existente.</span><span class="sxs-lookup"><span data-stu-id="a828f-114">Write an image file from the local file system into a new blob in an existing Azure Storage blob container.</span></span>
 
 
 ```java
@@ -75,13 +75,13 @@ TransferManager.uploadFileToBlockBlob(fileChannel, blobURL,0, null).blockingGet(
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="09884-115">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="09884-115">Explore the Client APIs</span></span>](/java/api/overview/azure/storage/client)
+> [<span data-ttu-id="a828f-115">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="a828f-115">Explore the Client APIs</span></span>](/java/api/overview/azure/storage/client)
 
-## <a name="management-api"></a><span data-ttu-id="09884-116">API de administración</span><span class="sxs-lookup"><span data-stu-id="09884-116">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="a828f-116">API de administración</span><span class="sxs-lookup"><span data-stu-id="a828f-116">Management API</span></span>
 
-<span data-ttu-id="09884-117">Cree y administre cuentas de Azure Storage y claves de conexión con la API de administración.</span><span class="sxs-lookup"><span data-stu-id="09884-117">Crete and manage Azure Storage accounts and connection keys with the management API.</span></span>
+<span data-ttu-id="a828f-117">Cree y administre cuentas y claves de conexión de Azure Storage con la API de administración.</span><span class="sxs-lookup"><span data-stu-id="a828f-117">Create and manage Azure Storage accounts and connection keys with the management API.</span></span>
 
-<span data-ttu-id="09884-118">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="09884-118">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>  
+<span data-ttu-id="a828f-118">[Agregue una dependencia](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) al archivo `pom.xml` de Maven para utilizar la API de administración en el proyecto.</span><span class="sxs-lookup"><span data-stu-id="a828f-118">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>  
 
 ```XML
 <dependency>
@@ -91,9 +91,9 @@ TransferManager.uploadFileToBlockBlob(fileChannel, blobURL,0, null).blockingGet(
 </dependency
 ```   
 
-### <a name="example"></a><span data-ttu-id="09884-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="09884-119">Example</span></span>
+### <a name="example"></a><span data-ttu-id="a828f-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a828f-119">Example</span></span>
 
-<span data-ttu-id="09884-120">Cree una nueva cuenta de Azure Storage en la suscripción y recupere sus claves de acceso.</span><span class="sxs-lookup"><span data-stu-id="09884-120">Create a new Azure Storage account in your subscription and retrieve its access keys.</span></span>
+<span data-ttu-id="a828f-120">Cree una nueva cuenta de Azure Storage en la suscripción y recupere sus claves de acceso.</span><span class="sxs-lookup"><span data-stu-id="a828f-120">Create a new Azure Storage account in your subscription and retrieve its access keys.</span></span>
 
 ```java
 StorageAccount storageAccount = azure.storageAccounts().define(storageAccountName)
@@ -109,12 +109,12 @@ for(StorageAccountKey key : storageAccountKeys)    {
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="09884-121">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="09884-121">Explore the Management APIs</span></span>](/java/api/overview/azure/storage/management)
+> [<span data-ttu-id="a828f-121">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="a828f-121">Explore the Management APIs</span></span>](/java/api/overview/azure/storage/management)
 
 
-## <a name="samples"></a><span data-ttu-id="09884-122">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="09884-122">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="a828f-122">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="a828f-122">Samples</span></span>
 
-<span data-ttu-id="09884-123">[SDK de Azure Storage para Java](https://github.com/azure/azure-storage-java)
-[Lectura y escritura en objetos en el almacenamiento de blobs](https://github.com/Azure-Samples/storage-blobs-java-v10-quickstart) </span><span class="sxs-lookup"><span data-stu-id="09884-123">[Azure Storage SDK for Java](https://github.com/azure/azure-storage-java)
+<span data-ttu-id="a828f-123">[SDK de Azure Storage para Java](https://github.com/azure/azure-storage-java)
+[Lectura y escritura en objetos en el almacenamiento de blobs](https://github.com/Azure-Samples/storage-blobs-java-v10-quickstart) </span><span class="sxs-lookup"><span data-stu-id="a828f-123">[Azure Storage SDK for Java](https://github.com/azure/azure-storage-java)
 [Read and write objects to blob storage](https://github.com/Azure-Samples/storage-blobs-java-v10-quickstart) </span></span>  
-[<span data-ttu-id="09884-124">Lectura y escritura de mensajes con colas</span><span class="sxs-lookup"><span data-stu-id="09884-124">Read and write messages with queues</span></span>](https://github.com/Azure-Samples/storage-queue-java-getting-started)   
+[<span data-ttu-id="a828f-124">Lectura y escritura de mensajes con colas</span><span class="sxs-lookup"><span data-stu-id="a828f-124">Read and write messages with queues</span></span>](https://github.com/Azure-Samples/storage-queue-java-getting-started)   
