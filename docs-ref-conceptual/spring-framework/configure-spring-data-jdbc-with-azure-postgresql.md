@@ -13,18 +13,18 @@ ms.devlang: java
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 371a8c686f7ad045443328d02a32a4e65af55981
-ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
+ms.openlocfilehash: 29f3c957dd0ccd754eedef12e3fc01c3484dddf3
+ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53992511"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335398"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-postgresql"></a>Uso de Spring Data JDBC con PostgreSQL de Azure
 
 ## <a name="overview"></a>Información general
 
-En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una base de datos [PostgreSQL]https://www.postgresql.org/ de Azure mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
+En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una base de datos [PostgreSQL](https://www.postgresql.org/) de Azure mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -53,15 +53,15 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 1. Escriba la siguiente información:
 
-   - **Nombre del servidor**: Elija un nombre único para el servidor PostgreSQL; se utilizará para crear un nombre de dominio completo como *wingtiptoyspostgresql.postgres.database.azure.com*.
+   - **Nombre del servidor**: elija un nombre único para el servidor PostgreSQL; se utilizará para crear un nombre de dominio completo como *wingtiptoyspostgresql.postgres.database.azure.com*.
    - **Suscripción**: especifique la suscripción de Azure que se va a usar.
    - **Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.
-   - **Seleccionar origen**: Para este tutorial, seleccione `Blank` para crear una nueva base de datos.
+   - **Seleccionar origen**: para este tutorial, seleccione `Blank` para crear una nueva base de datos.
    - **Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.
    - **Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.
    - **Ubicación**: especifique la región geográfica más cercana a la base de datos.
-   - **Versión**: Especifique la versión de la base de datos más reciente.
-   - **Plan de tarifa**: Para este tutorial, especifique el plan de tarifa menos costoso.
+   - **Versión**: especifique la versión de la base de datos más reciente.
+   - **Plan de tarifa**: para este tutorial, especifique el plan de tarifa menos costoso.
 
    ![Creación de propiedades de la base de datos de PostgreSQL][POSTGRESQL02]
 
