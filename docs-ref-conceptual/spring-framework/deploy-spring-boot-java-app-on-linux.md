@@ -1,7 +1,7 @@
 ---
-title: Implementación de una aplicación web Spring Boot en Linux en Azure Container Service
+title: Implementación de una aplicación web de Spring Boot en Azure App Service for Container
 description: Este tutorial le guiará por los pasos necesarios para implementar una aplicación Spring Boot como una aplicación web de Linux en Microsoft Azure.
-services: container-service
+services: azure app service
 documentationcenter: java
 author: rmcmurray
 manager: mbaldwin
@@ -10,21 +10,21 @@ ms.assetid: ''
 ms.author: robmcm
 ms.date: 12/19/2018
 ms.devlang: java
-ms.service: container-service
+ms.service: azure app service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.custom: mvc
-ms.openlocfilehash: aa8fa6d15d868e55b252483993d001d19746244b
-ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
+ms.openlocfilehash: a9d4bd5a1677078431b5502b276b17cd973cbea0
+ms.sourcegitcommit: a108a82414bd35be896e3c4e7047f5eb7b1518cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53991509"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489663"
 ---
-# <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implementación de una aplicación de Spring Boot en Linux en Azure Container Service
+# <a name="deploy-a-spring-boot-application-on-azure-app-service-for-container"></a>Implementación de una aplicación de Spring Boot en Azure App Service for Container
 
-En este tutorial se explica cómo usar [Docker] para desarrollar e implementar una aplicación de [Spring Boot] en un host Linux en [Azure Container Service (AKS)].
+En este tutorial se explica cómo usar [Docker] para incluir su aplicación de [Spring Boot] en un contenedor e implementar su propia imagen de docker en un host Linux en [Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
