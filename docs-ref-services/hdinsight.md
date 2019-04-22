@@ -7,15 +7,15 @@ ms.reviewer: jasonh
 ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
-ms.date: 11/21/2018
-ms.openlocfilehash: 0ae8d78a0618c4dbcc5e734fce311f7c2e5684bd
-ms.sourcegitcommit: a108a82414bd35be896e3c4e7047f5eb7b1518cb
+ms.date: 04/15/2019
+ms.openlocfilehash: fe87c9214e2a620230cf2f1f52261fd66a2b8857
+ms.sourcegitcommit: f33befab25a66a252b4c91c7aeb1b77cb32821bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489653"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59705123"
 ---
-# <a name="hdinsight-java-management-sdk-preview"></a>SDK de administración de HDInsight para Java (versión preliminar)
+# <a name="hdinsight-sdk-for-java"></a>SDK de Azure HDInsight para Java
 
 ## <a name="overview"></a>Información general
 
@@ -29,7 +29,7 @@ El SDK de HDInsight para Java proporciona clases y métodos que permiten adminis
 
 ## <a name="sdk-installation"></a>Instalación del SDK
 
-El SDK de HDInsight para Java está disponible con Maven [aquí](https://mvnrepository.com/artifact/com.microsoft.azure.hdinsight.v2018_06_01_preview/azure-mgmt-hdinsight). Agregue la siguiente dependencia en pom.xml:
+El SDK de HDInsight para Java está disponible con Maven [aquí](https://search.maven.org/artifact/com.microsoft.azure.hdinsight.v2018_06_01_preview/azure-mgmt-hdinsight). Agregue la siguiente dependencia en pom.xml:
 
 ```
 <dependency>
@@ -41,21 +41,21 @@ El SDK de HDInsight para Java está disponible con Maven [aquí](https://mvnrepo
 
 También debe agregar las siguientes dependencias al archivo pom.xml:
 
-* [Biblioteca de autenticación de cliente de Azure:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-authentication/1.6.2)
+* [Biblioteca de autenticación de cliente de Azure:](https://search.maven.org/artifact/com.microsoft.azure/azure-client-authentication)
   ```
   <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-client-authentication</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.5</version>
   </dependency>
   ```
 
-* [Runtime de cliente de Java de Azure para ARM:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-arm-client-runtime/1.6.2)
+* [Runtime de cliente de Java de Azure para ARM:](https://search.maven.org/artifact/com.microsoft.azure/azure-arm-client-runtime)
   ```
   <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-arm-client-runtime</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.5</version>
   </dependency>
   ```
 
@@ -153,7 +153,6 @@ public class Main {
                 .withSubscriptionId(SUBSCRIPTION_ID);
 ```
 
-
 ## <a name="cluster-management"></a>Administración de clústeres
 
 > [!NOTE]
@@ -162,6 +161,10 @@ public class Main {
 ### <a name="create-a-cluster"></a>Creación de un clúster
 
 Para crear un nuevo clúster, se puede llamar a `client.clusters().create()`.
+
+#### <a name="samples"></a>Ejemplos
+
+Hay disponibles ejemplos de código para crear varios tipos comunes de clústeres de HDInsight: [Ejemplos de HDInsight para Java](https://github.com/Azure-Samples/hdinsight-java-sdk-samples).
 
 #### <a name="example"></a>Ejemplo
 
