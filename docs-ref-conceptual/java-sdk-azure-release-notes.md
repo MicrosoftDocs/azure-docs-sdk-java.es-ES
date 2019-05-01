@@ -10,12 +10,12 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 0aaa83ceb42192441decb5972baae56fed337fb2
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 4681e07993e18344655f91e35148bbe956974e95
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61592600"
 ---
 # <a name="release-notes"></a>Notas de la versión 
 
@@ -39,8 +39,8 @@ Algunas de las API que estaban todavía en la versión beta en versiones anterio
 
 Servicio o característica | Disponible de forma general | Disponible como versión preliminar 
 ---------|---------|---------|-
-Compute  | Máquinas virtuales y extensiones de máquinas virtuales, conjuntos de escalado de máquinas virtuales, discos administrados   | Azure container service, Azure container registry 
-Storage   |  Cuentas de almacenamiento       |    Cifrado     
+Proceso  | Máquinas virtuales y extensiones de máquinas virtuales, conjuntos de escalado de máquinas virtuales, discos administrados   | Azure container service, Azure container registry 
+Almacenamiento   |  Cuentas de almacenamiento       |    Cifrado     
 SQL Database  | Bases de datos, firewalls, grupos elásticos              
 Redes    |  Redes virtuales, interfaces de red, direcciones IP, tablas de enrutamiento, grupos de seguridad de red, DNS, administradores de tráfico, puertas de enlace de aplicaciones  |    Equilibradores de carga, emparejamiento de redes, puerta de enlace de red virtual, Network Watcher 
 Más servicios    |  Resource Manager, Key Vault, Redis, CDN, Batch       |  Web Apps, Function App, Service Bus, Graph RBAC, Cosmos DB, Search  

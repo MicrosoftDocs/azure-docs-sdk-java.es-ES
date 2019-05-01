@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0a9b06932baa51c3cf003a4485a3a25261ffe91d
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61592515"
+---
 Cree un [archivo de autenticación](../java-sdk-azure-authenticate.md#mgmt-file) y exporte una variable de entorno `AZURE_AUTH_LOCATION` en la línea de comandos con la ruta de acceso completa al archivo.
 
 ```bash

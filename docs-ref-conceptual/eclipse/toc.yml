@@ -1,34 +1,27 @@
-items:
 - name: Kit de herramientas de Azure para Eclipse
   href: azure-toolkit-for-eclipse.md
   items:
-  - name: Instalación
-    href: azure-toolkit-for-eclipse-installation.md
-  - name: Introducción
-    href: azure-toolkit-for-eclipse-create-hello-world-web-app.md
-  - name: Tutoriales
-    items:
-    - name: Implementación de contenedores en máquinas virtuales de Azure
-      href: azure-toolkit-for-eclipse-publish-as-docker-container.md
-    - name: Implementación de una aplicación web en Azure App Service
-      href: azure-toolkit-for-eclipse-publish-spring-boot-docker-app.md
-  - name: Procedimiento
-    items:
-    - name: Configuración de la autenticación
-      href: azure-toolkit-for-eclipse-sign-in-instructions.md
-    - name: Administración de recursos de Azure
+    - name: Instalación
+      href: azure-toolkit-for-eclipse-installation.md
+    - name: Introducción
+      href: azure-toolkit-for-eclipse-create-hello-world-web-app.md
+    - name: Tutoriales
       items:
-      - name: Máquinas virtuales
-        href: azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md
-      - name: Cuentas de almacenamiento
-        href: azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md
-      - name: Azure Redis Cache
-        href: azure-toolkit-for-eclipse-managing-redis-caches-using-azure-explorer.md
-  - name: Notas de la versión
-    href: https://github.com/Microsoft/azure-tools-for-java/releases
-ms.openlocfilehash: b55ad0badb7ce2e042b479032c450940d9de0df8
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892506"
+        - name: Implementación de contenedores en máquinas virtuales de Azure
+          href: azure-toolkit-for-eclipse-publish-as-docker-container.md
+        - name: Implementación de una aplicación web en Azure App Service
+          href: azure-toolkit-for-eclipse-publish-spring-boot-docker-app.md
+    - name: Procedimiento
+      items:
+        - name: Configuración de la autenticación
+          href: azure-toolkit-for-eclipse-sign-in-instructions.md
+        - name: Administración de recursos de Azure
+          items:
+            - name: Máquinas virtuales
+              href: azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md
+            - name: Cuentas de almacenamiento
+              href: azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md
+            - name: Azure Redis Cache
+              href: azure-toolkit-for-eclipse-managing-redis-caches-using-azure-explorer.md
+    - name: Notas de la versión
+      href: 'https://github.com/Microsoft/azure-tools-for-java/releases'

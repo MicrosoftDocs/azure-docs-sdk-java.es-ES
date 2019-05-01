@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7b344fcc60c89af1867f65abe8c22e56d00de1d8
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61593399"
+---
 [Configuración de Azure SQL Database con la API de administración][1]   
 [Implementación de WordPress con la tecnología de SQL Database][4]   
 [Escalado de SQL Database en varias regiones de Azure][2]   
