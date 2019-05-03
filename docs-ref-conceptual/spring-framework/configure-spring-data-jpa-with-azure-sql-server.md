@@ -1,6 +1,6 @@
 ---
 title: Uso de Spring Data JPA con Azure SQL Database
-description: Aprenda a usar Spring Data JPA con una instancia de Azure SQL Database.
+description: Aprenda a usar Spring Data JPA con una base de datos de Azure SQL.
 services: sql-database
 documentationcenter: java
 author: rmcmurray
@@ -42,7 +42,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 > [!NOTE]
 > 
-> Puede leer información más detallada sobre la creación de bases de datos SQL de Azure en [Creación de una instancia de Azure SQL Database en Azure Portal](/azure/sql-database/sql-database-get-started-portal).
+> Puede leer información más detallada sobre la creación de bases de datos de Azure SQL en [Creación de una base de datos de Azure SQL en Azure Portal](/azure/sql-database/sql-database-get-started-portal).
 
 1. Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.
 
@@ -173,7 +173,7 @@ Los siguientes requisitos previos son necesarios para seguir los pasos descritos
 
 ## <a name="summary"></a>Resumen
 
-En este tutorial ha creado una aplicación Java de ejemplo que Spring Data para almacenar y recuperar información de una instancia de Azure SQL Database mediante JPA.
+En este tutorial ha creado una aplicación Java de ejemplo que Spring Data para almacenar y recuperar información de una base de datos de Azure SQL mediante JPA.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
