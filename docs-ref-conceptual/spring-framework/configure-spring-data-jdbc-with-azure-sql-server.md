@@ -1,6 +1,6 @@
 ---
 title: Uso de Spring Data JDBC con Azure SQL Database
-description: Aprenda a usar Spring Data JDBC con una instancia de Azure SQL Database.
+description: Aprenda a usar Spring Data JDBC con una base de datos de Azure SQL.
 services: sql-database
 documentationcenter: java
 author: rmcmurray
@@ -20,130 +20,130 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/03/2019
 ms.locfileid: "53992503"
 ---
-# <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a><span data-ttu-id="39514-103">Uso de Spring Data JDBC con Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="39514-103">How to use Spring Data JDBC with Azure SQL Database</span></span>
+# <a name="how-to-use-spring-data-jdbc-with-azure-sql-database"></a><span data-ttu-id="a3884-103">Uso de Spring Data JDBC con Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="a3884-103">How to use Spring Data JDBC with Azure SQL Database</span></span>
 
-## <a name="overview"></a><span data-ttu-id="39514-104">Información general</span><span class="sxs-lookup"><span data-stu-id="39514-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="a3884-104">Información general</span><span class="sxs-lookup"><span data-stu-id="a3884-104">Overview</span></span>
 
-<span data-ttu-id="39514-105">En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una instancia de [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).</span><span class="sxs-lookup"><span data-stu-id="39514-105">This article demonstrates creating a sample application that uses [Spring Data] to store and retrieve information in an [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) using [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).</span></span>
+<span data-ttu-id="a3884-105">En este artículo se explica cómo crear una aplicación de ejemplo que utiliza [Spring Data] para almacenar y recuperar información en una instancia de [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) mediante [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).</span><span class="sxs-lookup"><span data-stu-id="a3884-105">This article demonstrates creating a sample application that uses [Spring Data] to store and retrieve information in an [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) using [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="39514-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="39514-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a3884-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="a3884-106">Prerequisites</span></span>
 
-<span data-ttu-id="39514-107">Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:</span><span class="sxs-lookup"><span data-stu-id="39514-107">The following prerequisites are required in order to complete the steps in this article:</span></span>
+<span data-ttu-id="a3884-107">Los siguientes requisitos previos son necesarios para seguir los pasos descritos en este artículo:</span><span class="sxs-lookup"><span data-stu-id="a3884-107">The following prerequisites are required in order to complete the steps in this article:</span></span>
 
-* <span data-ttu-id="39514-108">Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].</span><span class="sxs-lookup"><span data-stu-id="39514-108">An Azure subscription; if you don't already have an Azure subscription, you can activate your [MSDN subscriber benefits] or sign up for a [free Azure account].</span></span>
-* <span data-ttu-id="39514-109">Un kit de desarrollo de Java (JDK) admitido</span><span class="sxs-lookup"><span data-stu-id="39514-109">A supported Java Development Kit (JDK).</span></span> <span data-ttu-id="39514-110">Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.</span><span class="sxs-lookup"><span data-stu-id="39514-110">For more information about the JDKs available for use when developing on Azure, see <https://aka.ms/azure-jdks>.</span></span>
-* <span data-ttu-id="39514-111">[Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.</span><span class="sxs-lookup"><span data-stu-id="39514-111">[Apache Maven](http://maven.apache.org/), version 3.0 or later.</span></span>
-* <span data-ttu-id="39514-112">[Curl ](https://curl.haxx.se/) o una utilidad HTTP similar para probar la funcionalidad.</span><span class="sxs-lookup"><span data-stu-id="39514-112">[Curl](https://curl.haxx.se/) or similar HTTP utility to test functionality.</span></span>
-* <span data-ttu-id="39514-113">Un cliente [Git](https://git-scm.com/downloads).</span><span class="sxs-lookup"><span data-stu-id="39514-113">A [Git](https://git-scm.com/downloads) client.</span></span>
+* <span data-ttu-id="a3884-108">Una suscripción de Azure. Si todavía no la tiene, puede activar sus [ventajas como suscriptor de MSDN] o registrarse para obtener una [cuenta de Azure gratuita].</span><span class="sxs-lookup"><span data-stu-id="a3884-108">An Azure subscription; if you don't already have an Azure subscription, you can activate your [MSDN subscriber benefits] or sign up for a [free Azure account].</span></span>
+* <span data-ttu-id="a3884-109">Un kit de desarrollo de Java (JDK) admitido</span><span class="sxs-lookup"><span data-stu-id="a3884-109">A supported Java Development Kit (JDK).</span></span> <span data-ttu-id="a3884-110">Para más información sobre los JDK disponibles para desarrollar en Azure, consulte <https://aka.ms/azure-jdks>.</span><span class="sxs-lookup"><span data-stu-id="a3884-110">For more information about the JDKs available for use when developing on Azure, see <https://aka.ms/azure-jdks>.</span></span>
+* <span data-ttu-id="a3884-111">[Apache Maven](http://maven.apache.org/), versión 3.0 o posterior.</span><span class="sxs-lookup"><span data-stu-id="a3884-111">[Apache Maven](http://maven.apache.org/), version 3.0 or later.</span></span>
+* <span data-ttu-id="a3884-112">[Curl ](https://curl.haxx.se/) o una utilidad HTTP similar para probar la funcionalidad.</span><span class="sxs-lookup"><span data-stu-id="a3884-112">[Curl](https://curl.haxx.se/) or similar HTTP utility to test functionality.</span></span>
+* <span data-ttu-id="a3884-113">Un cliente [Git](https://git-scm.com/downloads).</span><span class="sxs-lookup"><span data-stu-id="a3884-113">A [Git](https://git-scm.com/downloads) client.</span></span>
 
-## <a name="create-an-azure-sql-satabase"></a><span data-ttu-id="39514-114">Creación de una instancia de Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="39514-114">Create an Azure SQL Satabase</span></span>
+## <a name="create-an-azure-sql-satabase"></a><span data-ttu-id="a3884-114">Creación de una instancia de Azure SQL Database</span><span class="sxs-lookup"><span data-stu-id="a3884-114">Create an Azure SQL Satabase</span></span>
 
-### <a name="create-a-sql-database-server-using-the-azure-portal"></a><span data-ttu-id="39514-115">Creación de un servidor de SQL Database mediante Azure Portal</span><span class="sxs-lookup"><span data-stu-id="39514-115">Create a SQL database server using the Azure Portal</span></span>
+### <a name="create-a-sql-database-server-using-the-azure-portal"></a><span data-ttu-id="a3884-115">Creación de un servidor de SQL Database mediante Azure Portal</span><span class="sxs-lookup"><span data-stu-id="a3884-115">Create a SQL database server using the Azure Portal</span></span>
 
 > [!NOTE]
 > 
-> <span data-ttu-id="39514-116">Puede leer información más detallada sobre la creación de bases de datos SQL de Azure en [Creación de una instancia de Azure SQL Database en Azure Portal](/azure/sql-database/sql-database-get-started-portal).</span><span class="sxs-lookup"><span data-stu-id="39514-116">You can read more detailed information about creating Azure SQL databases in [Create an Azure SQL database in the Azure portal](/azure/sql-database/sql-database-get-started-portal).</span></span>
+> <span data-ttu-id="a3884-116">Puede leer información más detallada sobre la creación de bases de datos de Azure SQL en [Creación de una base de datos de Azure SQL en Azure Portal](/azure/sql-database/sql-database-get-started-portal).</span><span class="sxs-lookup"><span data-stu-id="a3884-116">You can read more detailed information about creating Azure SQL databases in [Create an Azure SQL database in the Azure portal](/azure/sql-database/sql-database-get-started-portal).</span></span>
 
-1. <span data-ttu-id="39514-117">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="39514-117">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
+1. <span data-ttu-id="a3884-117">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="a3884-117">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
 
-1. <span data-ttu-id="39514-118">Haga clic en **+Crear un recurso**, después en **Bases de datos** y, finalmente, en **SQL Database**.</span><span class="sxs-lookup"><span data-stu-id="39514-118">Click **+Create a resource**, then **Databases**, and then click **SQL Database**.</span></span>
+1. <span data-ttu-id="a3884-118">Haga clic en **+Crear un recurso**, después en **Bases de datos** y, finalmente, en **SQL Database**.</span><span class="sxs-lookup"><span data-stu-id="a3884-118">Click **+Create a resource**, then **Databases**, and then click **SQL Database**.</span></span>
 
    ![Creación de una base de datos SQL][SQL01]
 
-1. <span data-ttu-id="39514-120">Especifique la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="39514-120">Specify the following information:</span></span>
+1. <span data-ttu-id="a3884-120">Especifique la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="a3884-120">Specify the following information:</span></span>
 
-   - <span data-ttu-id="39514-121">**Nombre de la base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.</span><span class="sxs-lookup"><span data-stu-id="39514-121">**Database name**: Choose a unique name for your SQL database; this will be created in the SQL server that you will specify later.</span></span>
-   - <span data-ttu-id="39514-122">**Suscripción**: especifique la suscripción de Azure que se va a usar.</span><span class="sxs-lookup"><span data-stu-id="39514-122">**Subscription**: Specify your Azure subscription to use.</span></span>
-   - <span data-ttu-id="39514-123">**Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.</span><span class="sxs-lookup"><span data-stu-id="39514-123">**Resource group**: Specify whether to create a new resource group, or choose an existing resource group.</span></span>
-   - <span data-ttu-id="39514-124">**Seleccionar origen**: para este tutorial, seleccione `Blank database` para crear una nueva base de datos.</span><span class="sxs-lookup"><span data-stu-id="39514-124">**Select source**: For this tutorial, select `Blank database` to create a new database.</span></span>
+   - <span data-ttu-id="a3884-121">**Nombre de la base de datos**: elija un nombre único para la base de datos SQL; este se creará en el servidor SQL que va a especificar posteriormente.</span><span class="sxs-lookup"><span data-stu-id="a3884-121">**Database name**: Choose a unique name for your SQL database; this will be created in the SQL server that you will specify later.</span></span>
+   - <span data-ttu-id="a3884-122">**Suscripción**: especifique la suscripción de Azure que se va a usar.</span><span class="sxs-lookup"><span data-stu-id="a3884-122">**Subscription**: Specify your Azure subscription to use.</span></span>
+   - <span data-ttu-id="a3884-123">**Grupo de recursos**: especifique si desea crear un nuevo grupo de recursos o elija uno existente.</span><span class="sxs-lookup"><span data-stu-id="a3884-123">**Resource group**: Specify whether to create a new resource group, or choose an existing resource group.</span></span>
+   - <span data-ttu-id="a3884-124">**Seleccionar origen**: para este tutorial, seleccione `Blank database` para crear una nueva base de datos.</span><span class="sxs-lookup"><span data-stu-id="a3884-124">**Select source**: For this tutorial, select `Blank database` to create a new database.</span></span>
 
    ![Especificación de las propiedades de la base de datos SQL][SQL02]
    
-1. <span data-ttu-id="39514-126">Haga clic en **Servidor**, después en **Crear un servidor nuevo** y, después, especifique la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="39514-126">Click **Server**, then **Create a new server**, and then specify the following information:</span></span>
+1. <span data-ttu-id="a3884-126">Haga clic en **Servidor**, después en **Crear un servidor nuevo** y, después, especifique la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="a3884-126">Click **Server**, then **Create a new server**, and then specify the following information:</span></span>
 
-   - <span data-ttu-id="39514-127">**Nombre del servidor**: elija un nombre único para el servidor SQL; se utilizará para crear un nombre de dominio completo como *wingtiptoyssql.database.windows.net*.</span><span class="sxs-lookup"><span data-stu-id="39514-127">**Server name**: Choose a unique name for your SQL server; this will be used to create a fully-qualified domain name like *wingtiptoyssql.database.windows.net*.</span></span>
-   - <span data-ttu-id="39514-128">**Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.</span><span class="sxs-lookup"><span data-stu-id="39514-128">**Server admin login**: Specify the database administrator name.</span></span>
-   - <span data-ttu-id="39514-129">**Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.</span><span class="sxs-lookup"><span data-stu-id="39514-129">**Password** and **Confirm password**: Specify the password for your database administrator.</span></span>
-   - <span data-ttu-id="39514-130">**Ubicación**: especifique la región geográfica más cercana a la base de datos.</span><span class="sxs-lookup"><span data-stu-id="39514-130">**Location**: Specify the closest geographic region for your database.</span></span>
+   - <span data-ttu-id="a3884-127">**Nombre del servidor**: elija un nombre único para el servidor SQL; se utilizará para crear un nombre de dominio completo como *wingtiptoyssql.database.windows.net*.</span><span class="sxs-lookup"><span data-stu-id="a3884-127">**Server name**: Choose a unique name for your SQL server; this will be used to create a fully-qualified domain name like *wingtiptoyssql.database.windows.net*.</span></span>
+   - <span data-ttu-id="a3884-128">**Inicio de sesión del administrador del servidor**: especifique el nombre del administrador de base de datos.</span><span class="sxs-lookup"><span data-stu-id="a3884-128">**Server admin login**: Specify the database administrator name.</span></span>
+   - <span data-ttu-id="a3884-129">**Contraseña** y **Confirmar contraseña**: especifique la contraseña para el administrador de base de datos.</span><span class="sxs-lookup"><span data-stu-id="a3884-129">**Password** and **Confirm password**: Specify the password for your database administrator.</span></span>
+   - <span data-ttu-id="a3884-130">**Ubicación**: especifique la región geográfica más cercana a la base de datos.</span><span class="sxs-lookup"><span data-stu-id="a3884-130">**Location**: Specify the closest geographic region for your database.</span></span>
 
    ![Especificación del servidor SQL Server][SQL03]
 
-1. <span data-ttu-id="39514-132">Cuando haya especificado la información anterior, haga clic en **Seleccionar**.</span><span class="sxs-lookup"><span data-stu-id="39514-132">When you have entered all of the above information, click **Select**.</span></span>
+1. <span data-ttu-id="a3884-132">Cuando haya especificado la información anterior, haga clic en **Seleccionar**.</span><span class="sxs-lookup"><span data-stu-id="a3884-132">When you have entered all of the above information, click **Select**.</span></span>
 
-1. <span data-ttu-id="39514-133">Para este tutorial, especifique el **plan de tarifa** menos costoso y, después, haga clic en **Crear**.</span><span class="sxs-lookup"><span data-stu-id="39514-133">For this tutorial, specify the least-expensive **Pricing tier**, and then click **Create**.</span></span>
+1. <span data-ttu-id="a3884-133">Para este tutorial, especifique el **plan de tarifa** menos costoso y, después, haga clic en **Crear**.</span><span class="sxs-lookup"><span data-stu-id="a3884-133">For this tutorial, specify the least-expensive **Pricing tier**, and then click **Create**.</span></span>
 
    ![Creación de la base de datos SQL][SQL04]
 
-### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a><span data-ttu-id="39514-135">Configuración de una regla de firewall para el servidor SQL Server mediante Azure Portal</span><span class="sxs-lookup"><span data-stu-id="39514-135">Configure a firewall rule for your SQL server using the Azure Portal</span></span>
+### <a name="configure-a-firewall-rule-for-your-sql-server-using-the-azure-portal"></a><span data-ttu-id="a3884-135">Configuración de una regla de firewall para el servidor SQL Server mediante Azure Portal</span><span class="sxs-lookup"><span data-stu-id="a3884-135">Configure a firewall rule for your SQL server using the Azure Portal</span></span>
 
-1. <span data-ttu-id="39514-136">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="39514-136">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
+1. <span data-ttu-id="a3884-136">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="a3884-136">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
 
-1. <span data-ttu-id="39514-137">Haga clic en **Todos los recursos**; después, haga clic en el servidor SQL Server que acaba de crear.</span><span class="sxs-lookup"><span data-stu-id="39514-137">Click **All Resources**, then click the SQL server you just created.</span></span>
+1. <span data-ttu-id="a3884-137">Haga clic en **Todos los recursos**; después, haga clic en el servidor SQL Server que acaba de crear.</span><span class="sxs-lookup"><span data-stu-id="a3884-137">Click **All Resources**, then click the SQL server you just created.</span></span>
 
    ![Selección del servidor SQL Server][SQL05]
 
-1. <span data-ttu-id="39514-139">En la sección **Introducción**, haga clic en **Mostrar configuración del firewall**.</span><span class="sxs-lookup"><span data-stu-id="39514-139">In the **Overview** section, click **Show firewall settings**</span></span>
+1. <span data-ttu-id="a3884-139">En la sección **Introducción**, haga clic en **Mostrar configuración del firewall**.</span><span class="sxs-lookup"><span data-stu-id="a3884-139">In the **Overview** section, click **Show firewall settings**</span></span>
 
    ![Visualización de la configuración del firewall][SQL06]
 
-1. <span data-ttu-id="39514-141">En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="39514-141">In the **Firewalls and virtual networks** section, create a new rule by specifying a unique name for the rule, then enter the range of IP addresses that will need access to your database, and then click **Save**.</span></span>
+1. <span data-ttu-id="a3884-141">En la sección **Firewalls y redes virtuales**, cree una nueva regla mediante la especificación de un nombre único para la regla, escriba el intervalo de direcciones IP que necesitará para acceder a la base de datos y, después, haga clic en **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="a3884-141">In the **Firewalls and virtual networks** section, create a new rule by specifying a unique name for the rule, then enter the range of IP addresses that will need access to your database, and then click **Save**.</span></span>
 
    ![Configuración del firewall][SQL07]
 
-### <a name="retrieve-the-connection-string-for-your-sql-server-using-the-azure-portal"></a><span data-ttu-id="39514-143">Recuperación de la cadena de conexión para el servidor SQL Server con Azure Portal</span><span class="sxs-lookup"><span data-stu-id="39514-143">Retrieve the connection string for your SQL server using the Azure Portal</span></span>
+### <a name="retrieve-the-connection-string-for-your-sql-server-using-the-azure-portal"></a><span data-ttu-id="a3884-143">Recuperación de la cadena de conexión para el servidor SQL Server con Azure Portal</span><span class="sxs-lookup"><span data-stu-id="a3884-143">Retrieve the connection string for your SQL server using the Azure Portal</span></span>
 
-1. <span data-ttu-id="39514-144">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="39514-144">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
+1. <span data-ttu-id="a3884-144">Vaya a Azure Portal en <https://portal.azure.com/> e inicie sesión.</span><span class="sxs-lookup"><span data-stu-id="a3884-144">Browse to the Azure portal at <https://portal.azure.com/> and sign in.</span></span>
 
-1. <span data-ttu-id="39514-145">Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos SQL que acaba de crear.</span><span class="sxs-lookup"><span data-stu-id="39514-145">Click **All Resources**, then click the SQL database you just created.</span></span>
+1. <span data-ttu-id="a3884-145">Haga clic en **Todos los recursos** y, a continuación, haga clic en la base de datos SQL que acaba de crear.</span><span class="sxs-lookup"><span data-stu-id="a3884-145">Click **All Resources**, then click the SQL database you just created.</span></span>
 
    ![Selección de la base de datos SQL][SQL08]
 
-1. <span data-ttu-id="39514-147">Haga clic en **Cadenas de conexión**, después haga clic en **JDBC** y copie el valor en el campo de texto JDBC.</span><span class="sxs-lookup"><span data-stu-id="39514-147">Click **Connection strings**, then click **JDBC**, and copy the value in the JDBC text field.</span></span>
+1. <span data-ttu-id="a3884-147">Haga clic en **Cadenas de conexión**, después haga clic en **JDBC** y copie el valor en el campo de texto JDBC.</span><span class="sxs-lookup"><span data-stu-id="a3884-147">Click **Connection strings**, then click **JDBC**, and copy the value in the JDBC text field.</span></span>
 
    ![Recuperación de la cadena de conexión JDBC][SQL09]
 
-## <a name="configure-the-sample-application"></a><span data-ttu-id="39514-149">Configurar la aplicación de ejemplo</span><span class="sxs-lookup"><span data-stu-id="39514-149">Configure the sample application</span></span>
+## <a name="configure-the-sample-application"></a><span data-ttu-id="a3884-149">Configurar la aplicación de ejemplo</span><span class="sxs-lookup"><span data-stu-id="a3884-149">Configure the sample application</span></span>
 
-1. <span data-ttu-id="39514-150">Abra un shell de comandos y clone el proyecto de ejemplo con un comando git como el siguiente ejemplo:</span><span class="sxs-lookup"><span data-stu-id="39514-150">Open a command shell and clone the sample project using a git command like the following example:</span></span>
+1. <span data-ttu-id="a3884-150">Abra un shell de comandos y clone el proyecto de ejemplo con un comando git como el siguiente ejemplo:</span><span class="sxs-lookup"><span data-stu-id="a3884-150">Open a command shell and clone the sample project using a git command like the following example:</span></span>
 
    ```shell
    git clone https://github.com/Azure-Samples/spring-data-jdbc-on-azure.git
    ```
 
-1. <span data-ttu-id="39514-151">Busque el archivo *application.properties* en el directorio *resources* del proyecto de ejemplo, o cree el archivo si todavía no existe.</span><span class="sxs-lookup"><span data-stu-id="39514-151">Locate the *application.properties* file in the *resources* directory of the sample project, or create the file if it does not already exist.</span></span>
+1. <span data-ttu-id="a3884-151">Busque el archivo *application.properties* en el directorio *resources* del proyecto de ejemplo, o cree el archivo si todavía no existe.</span><span class="sxs-lookup"><span data-stu-id="a3884-151">Locate the *application.properties* file in the *resources* directory of the sample project, or create the file if it does not already exist.</span></span>
 
-1. <span data-ttu-id="39514-152">Abra el archivo *application.properties* en un editor de texto y agréguele o configure las siguientes líneas; luego, sustituya los valores de ejemplo por los valores adecuados que se mencionaron anteriormente:</span><span class="sxs-lookup"><span data-stu-id="39514-152">Open the *application.properties* file in a text editor, and add or configure the following lines in the file, and replace the sample values with the appropriate values from earlier:</span></span>
+1. <span data-ttu-id="a3884-152">Abra el archivo *application.properties* en un editor de texto y agréguele o configure las siguientes líneas; luego, sustituya los valores de ejemplo por los valores adecuados que se mencionaron anteriormente:</span><span class="sxs-lookup"><span data-stu-id="a3884-152">Open the *application.properties* file in a text editor, and add or configure the following lines in the file, and replace the sample values with the appropriate values from earlier:</span></span>
 
    ```yaml
    spring.datasource.url=jdbc:sqlserver://wingtiptoyssql.database.windows.net:1433;database=wingtiptoys;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
    spring.datasource.username=wingtiptoysuser@wingtiptoyssql
    spring.datasource.password=********
     ```
-   <span data-ttu-id="39514-153">Donde:</span><span class="sxs-lookup"><span data-stu-id="39514-153">Where:</span></span>
+   <span data-ttu-id="a3884-153">Donde:</span><span class="sxs-lookup"><span data-stu-id="a3884-153">Where:</span></span>
 
-   | <span data-ttu-id="39514-154">Parámetro</span><span class="sxs-lookup"><span data-stu-id="39514-154">Parameter</span></span> | <span data-ttu-id="39514-155">DESCRIPCIÓN</span><span class="sxs-lookup"><span data-stu-id="39514-155">Description</span></span> |
+   | <span data-ttu-id="a3884-154">Parámetro</span><span class="sxs-lookup"><span data-stu-id="a3884-154">Parameter</span></span> | <span data-ttu-id="a3884-155">DESCRIPCIÓN</span><span class="sxs-lookup"><span data-stu-id="a3884-155">Description</span></span> |
    |---|---|
-   | `spring.datasource.url` | <span data-ttu-id="39514-156">Especifica una versión modificada de la cadena JDBC de SQL que se mencionó anteriormente en este artículo.</span><span class="sxs-lookup"><span data-stu-id="39514-156">Specifies an edited version of your SQL JDBC string from earlier in this article.</span></span> |
-   | `spring.datasource.username` | <span data-ttu-id="39514-157">Especifica el nombre del administrador de SQL que se mencionó anteriormente en este artículo, con el nombre abreviado del servidor anexado.</span><span class="sxs-lookup"><span data-stu-id="39514-157">Specifies your SQL administrator name from earlier in this article, with the shortened server name appended to it.</span></span> |
-   | `spring.datasource.password` | <span data-ttu-id="39514-158">Especifica la contraseña de administrador de SQL que se mencionó anteriormente en este artículo.</span><span class="sxs-lookup"><span data-stu-id="39514-158">Specifies your SQL administrator password from earlier in this article.</span></span> |
+   | `spring.datasource.url` | <span data-ttu-id="a3884-156">Especifica una versión modificada de la cadena JDBC de SQL que se mencionó anteriormente en este artículo.</span><span class="sxs-lookup"><span data-stu-id="a3884-156">Specifies an edited version of your SQL JDBC string from earlier in this article.</span></span> |
+   | `spring.datasource.username` | <span data-ttu-id="a3884-157">Especifica el nombre del administrador de SQL que se mencionó anteriormente en este artículo, con el nombre abreviado del servidor anexado.</span><span class="sxs-lookup"><span data-stu-id="a3884-157">Specifies your SQL administrator name from earlier in this article, with the shortened server name appended to it.</span></span> |
+   | `spring.datasource.password` | <span data-ttu-id="a3884-158">Especifica la contraseña de administrador de SQL que se mencionó anteriormente en este artículo.</span><span class="sxs-lookup"><span data-stu-id="a3884-158">Specifies your SQL administrator password from earlier in this article.</span></span> |
 
-1. <span data-ttu-id="39514-159">Guarde y cierre el archivo *application.properties*.</span><span class="sxs-lookup"><span data-stu-id="39514-159">Save and close the *application.properties* file.</span></span>
+1. <span data-ttu-id="a3884-159">Guarde y cierre el archivo *application.properties*.</span><span class="sxs-lookup"><span data-stu-id="a3884-159">Save and close the *application.properties* file.</span></span>
 
-## <a name="package-and-test-the-sample-application"></a><span data-ttu-id="39514-160">Empaquetado y prueba de la aplicación de ejemplo</span><span class="sxs-lookup"><span data-stu-id="39514-160">Package and test the sample application</span></span> 
+## <a name="package-and-test-the-sample-application"></a><span data-ttu-id="a3884-160">Empaquetado y prueba de la aplicación de ejemplo</span><span class="sxs-lookup"><span data-stu-id="a3884-160">Package and test the sample application</span></span> 
 
-1. <span data-ttu-id="39514-161">Compile la aplicación de ejemplo con Maven; por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="39514-161">Build the sample application with Maven; for example:</span></span>
+1. <span data-ttu-id="a3884-161">Compile la aplicación de ejemplo con Maven; por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="a3884-161">Build the sample application with Maven; for example:</span></span>
 
    ```shell
    mvn clean package -P sql
    ```
 
-1. <span data-ttu-id="39514-162">Inicie la aplicación de ejemplo; por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="39514-162">Start the sample application; for example:</span></span>
+1. <span data-ttu-id="a3884-162">Inicie la aplicación de ejemplo; por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="a3884-162">Start the sample application; for example:</span></span>
 
    ```shell
    java -jar target/spring-data-jdbc-on-azure-0.1.0-SNAPSHOT.jar
    ```
 
-1. <span data-ttu-id="39514-163">Cree nuevos registros con `curl` desde un símbolo del sistema como en los ejemplos siguientes:</span><span class="sxs-lookup"><span data-stu-id="39514-163">Create new records using `curl` from a command prompt like the following examples:</span></span>
+1. <span data-ttu-id="a3884-163">Cree nuevos registros con `curl` desde un símbolo del sistema como en los ejemplos siguientes:</span><span class="sxs-lookup"><span data-stu-id="a3884-163">Create new records using `curl` from a command prompt like the following examples:</span></span>
 
    ```shell
    curl -s -d '{"name":"dog","species":"canine"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
@@ -151,7 +151,7 @@ ms.locfileid: "53992503"
    curl -s -d '{"name":"cat","species":"feline"}' -H "Content-Type: application/json" -X POST http://localhost:8080/pets
    ```
 
-   <span data-ttu-id="39514-164">La aplicación debe devolver valores similares a los siguientes:</span><span class="sxs-lookup"><span data-stu-id="39514-164">Your application should return values like the following:</span></span>
+   <span data-ttu-id="a3884-164">La aplicación debe devolver valores similares a los siguientes:</span><span class="sxs-lookup"><span data-stu-id="a3884-164">Your application should return values like the following:</span></span>
 
    ```shell
    Added Pet(id=1, name=dog, species=canine).
@@ -159,32 +159,32 @@ ms.locfileid: "53992503"
    Added Pet(id=2, name=cat, species=feline).
    ```
 
-1. <span data-ttu-id="39514-165">Recupere todos los registros existentes con `curl` desde un símbolo del sistema como los siguientes ejemplos:</span><span class="sxs-lookup"><span data-stu-id="39514-165">Retrieve all of the existing records using `curl` from a command prompt like the following examples:</span></span>
+1. <span data-ttu-id="a3884-165">Recupere todos los registros existentes con `curl` desde un símbolo del sistema como los siguientes ejemplos:</span><span class="sxs-lookup"><span data-stu-id="a3884-165">Retrieve all of the existing records using `curl` from a command prompt like the following examples:</span></span>
 
    ```shell
    curl -s http://localhost:8080/pets
    ```
     
-   <span data-ttu-id="39514-166">La aplicación debe devolver valores similares a los siguientes:</span><span class="sxs-lookup"><span data-stu-id="39514-166">Your application should return values like the following:</span></span>
+   <span data-ttu-id="a3884-166">La aplicación debe devolver valores similares a los siguientes:</span><span class="sxs-lookup"><span data-stu-id="a3884-166">Your application should return values like the following:</span></span>
 
    ```json
    [{"id":1,"name":"dog","species":"canine"},{"id":2,"name":"cat","species":"feline"}]
    ```
 
-## <a name="summary"></a><span data-ttu-id="39514-167">Resumen</span><span class="sxs-lookup"><span data-stu-id="39514-167">Summary</span></span>
+## <a name="summary"></a><span data-ttu-id="a3884-167">Resumen</span><span class="sxs-lookup"><span data-stu-id="a3884-167">Summary</span></span>
 
-<span data-ttu-id="39514-168">En este tutorial ha creado una aplicación Java de ejemplo que Spring Data para almacenar y recuperar información de una instancia de Azure SQL Database mediante JDBC.</span><span class="sxs-lookup"><span data-stu-id="39514-168">In this tutorial, you created a sample Java application that uses Spring Data to store and retrieve information in an Azure SQL database using JDBC.</span></span>
+<span data-ttu-id="a3884-168">En este tutorial ha creado una aplicación Java de ejemplo que Spring Data para almacenar y recuperar información de una base de datos de Azure SQL mediante JDBC.</span><span class="sxs-lookup"><span data-stu-id="a3884-168">In this tutorial, you created a sample Java application that uses Spring Data to store and retrieve information in an Azure SQL database using JDBC.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="39514-169">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="39514-169">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="a3884-169">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="a3884-169">Next steps</span></span>
 
-<span data-ttu-id="39514-170">Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.</span><span class="sxs-lookup"><span data-stu-id="39514-170">To learn more about Spring and Azure, continue to the Spring on Azure documentation center.</span></span>
+<span data-ttu-id="a3884-170">Para más información acerca de Spring y Azure, vaya al centro de documentación de Azure.</span><span class="sxs-lookup"><span data-stu-id="a3884-170">To learn more about Spring and Azure, continue to the Spring on Azure documentation center.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="39514-171">Spring en Azure</span><span class="sxs-lookup"><span data-stu-id="39514-171">Spring on Azure</span></span>](/java/azure/spring-framework)
+> [<span data-ttu-id="a3884-171">Spring en Azure</span><span class="sxs-lookup"><span data-stu-id="a3884-171">Spring on Azure</span></span>](/java/azure/spring-framework)
 
-### <a name="additional-resources"></a><span data-ttu-id="39514-172">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="39514-172">Additional Resources</span></span>
+### <a name="additional-resources"></a><span data-ttu-id="a3884-172">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="a3884-172">Additional Resources</span></span>
 
-<span data-ttu-id="39514-173">Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Working with Azure DevOps and Java] (Trabajo con Azure DevOps y Java).</span><span class="sxs-lookup"><span data-stu-id="39514-173">For more information about using Azure with Java, see the [Azure for Java Developers] and the [Working with Azure DevOps and Java].</span></span>
+<span data-ttu-id="a3884-173">Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java] y [Working with Azure DevOps and Java] (Trabajo con Azure DevOps y Java).</span><span class="sxs-lookup"><span data-stu-id="a3884-173">For more information about using Azure with Java, see the [Azure for Java Developers] and the [Working with Azure DevOps and Java].</span></span>
 
 <!-- URL List -->
 
