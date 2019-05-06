@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: be76733bffa36160d6e366c383672a15374a9996
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 4eb159bef52b384de32ada18937b0b9a47a93afc
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61590792"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para Eclipse
 
@@ -51,7 +51,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 3. En la ventana **Type an image name, select the artifact's path and check a Docker host to be used** (Escriba un nombre de imagen, seleccione la ruta de acceso del artefacto y elija el host de Docker que se usará), haga lo siguiente:
 
-   a. En el cuadro **Docker image name** (Nombre de imagen de Docker), escriba un nombre único para el host de Docker. (El asistente crea automáticamente un nombre, pero se puede modificar).
+    a. En el cuadro **Docker image name** (Nombre de imagen de Docker), escriba un nombre único para el host de Docker. (El asistente crea automáticamente un nombre, pero se puede modificar).
 
    b. En el área **Hosts**, se muestran todos los hosts de Docker que ya haya creado. Realice cualquiera de las siguientes acciones:
 
@@ -64,19 +64,19 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 4. En la ventana **Configure the new virtual machine** (Configurar la nueva máquina virtual), especifique las siguientes opciones de su host de Docker (el asistente genera automáticamente la mayor parte de las opciones, pero puede modificarla).
 
-   a. **Name** (Nombre): escriba un nombre único para el host de Docker (no es lo mismo que el nombre de imagen de Docker que especificó antes).
+    a. **Nombre**: escriba un nombre único para el host de Docker. (No es lo mismo que el nombre de imagen de Docker que especificó antes).
 
-   b. **Subscription** (Suscripción): escriba la suscripción de Azure que usa para el host.
+   b. **Suscripción**: escriba la suscripción de Azure que usa para el host.
 
-   c. **Region** (Región): escriba la región geográfica donde se encuentra el host.
+   c. **Región**: escriba la región geográfica en que se encuentra el host.
 
    d. En la pestaña **Host OS and Size** (Sistema operativo y tamaño del host): 
-   * **Host OS** (Sistema operativo de host): escriba el sistema operativo de la máquina virtual que contiene el host.
-   * **Size** (Tamaño): escriba el tamaño de la máquina virtual del host.
+   * **Host OS** (Sistema operativo del host): escriba el sistema operativo de la máquina virtual que contiene el host.
+   * **Tamaño**: escriba el tamaño de la máquina virtual del host.
 
    e. En la pestaña **Resource Group** (Grupo de recursos): 
    * **New resource group** (Nuevo grupo de recursos): cree un grupo de recursos para el host.
-   * **Existing resource group** (Grupo de recursos existente): especifique un grupo de recursos existente desde su cuenta de Azure.
+   * **Existing resource group** (Grupo de recursos existente): escriba un grupo de recursos existente desde su cuenta de Azure.
 
    f. En la pestaña**Network** (Red): 
    * **New virtual network** (Nueva red virtual): cree una red virtual para el host.
@@ -86,11 +86,11 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
    * **New storage account** (Nueva cuenta de almacenamiento): cree una cuenta de almacenamiento para el host.
    * **Existing storage account** (Cuenta de almacenamiento existente): especifique una cuenta de almacenamiento existente desde su cuenta de Azure.
 
-5. Haga clic en **Siguiente**.
+5. Haga clic en **Next**.
 
 6. En la ventana **Configure log in credentials and port settings** (Configurar credenciales de inicio de sesión y configuración de puerto), seleccione una de las siguientes opciones:
 
-   * **Import credentials from Azure Key Vault** (Importar credenciales de Azure Key Vault): especifique un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure. 
+   * **Import credentials from Azure Key Vault** (Importar credenciales de Azure Key Vault): especifica un conjunto de credenciales previamente guardadas que están almacenadas en la suscripción de Azure. 
 
    >[!NOTE]
    >Una instancia de Azure Key Vault que se crea con una cuenta o entidad de servicio específica no es accesible automáticamente para otra cuenta o entidad de servicio que comparta la suscripción. Para permitir que otra cuenta o entidad de servicio use la instancia de Key Vault, debe usar Azure Portal para agregar la cuenta o entidad de servicio.
@@ -100,12 +100,12 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
     
      * En la pestaña **VM Credentials** (Credenciales de máquina virtual), elija una de las siguientes opciones para el inicio de sesión de máquina virtual del host de Docker: 
 
-       * **Username** (Nombre de usuario): especifica el nombre de usuario de las credenciales inicio de sesión de la máquina virtual. 
-       * **Password** (Contraseña) y **Confirm** (Confirmar): escriba la contraseña para las credenciales del inicio de sesión de la máquina virtual. 
-       * **SSH**: especifique la configuración de Secure Shell (SSH) para el host de Docker. Puede elegir entre las siguientes opciones: 
-          * **None** (Ninguna): especifica que la máquina virtual no permitirá conexiones SSH. 
+       * **Nombre de usuario**: especifique el nombre de usuario de las credenciales de inicio de sesión de la máquina virtual. 
+       * **Contraseña** y **Confirmar**: especifique la contraseña de las credenciales de inicio de sesión de la máquina virtual. 
+       * **SSH**: especifique la configuración de Secure Shell (SSH) del host de Docker. Puede elegir entre las siguientes opciones: 
+          * **Ninguna**: especifica que la máquina virtual no permitirá conexiones SSH. 
           * **Auto-generate** (Generar automáticamente): crea automáticamente la configuración necesaria para la conexión mediante SSH. 
-          * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de configuraciones de SSH previamente guardadas. El directorio debe contener los dos archivos siguientes: 
+          * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de valores de SSH previamente guardados. El directorio debe contener los dos archivos siguientes: 
              * *id_rsa*: contiene la identificación de RSA de un usuario. 
              * *id_rsa.pub*: contiene la clave pública de RSA que se usa para la autenticación. 
         
@@ -113,11 +113,11 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
      * En la pestaña **Docker Daemon Credentials** (Credenciales demonio de Docker), especifique las siguientes opciones: 
 
-       * **Docker Daemon port** (Puerto de demonio de Docker): especifica el puerto TCP único de su host de Docker. 
-       * **Seguridad de TLS**: especifique la configuración de seguridad de la capa de transporte para el host de Docker. Puede elegir entre las siguientes opciones: 
-          * **None** (Ninguna): especifica que su máquina virtual no permitirá conexiones TLS. 
+       * **Docker Daemon port** (Puerto de demonio de Docker): especifique el puerto TCP único de su host de Docker. 
+       * **TLS Security** (Seguridad de TLS): especifique la configuración de seguridad de la capa de transporte para el host de Docker. Puede elegir entre las siguientes opciones: 
+          * **Ninguna**: especifica que la máquina virtual no permitirá conexiones TLS. 
           * **Auto-generate** (Generar automáticamente): crea automáticamente la configuración necesaria para la conexión mediante TLS. 
-          * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de configuraciones de TLS previamente guardadas. Más concretamente, el directorio debe contener los seis archivos siguientes: 
+          * **Import from directory** (Importar desde directorio): especifica un directorio que contiene un conjunto de valores de TLS previamente guardados. Más concretamente, el directorio debe contener los seis archivos siguientes: 
              * *ca.pem* y *ca-key.pem*: contienen el certificado y la clave pública de la entidad de certificación de TLS. 
              * *cert.pem* y *key.pem*: contienen el certificado de cliente y la clave pública que se usarán para la autenticación TLS. 
              * *server.pem* y *server-key.pem*: contienen el certificado de servidor y la clave pública del host. 
@@ -132,7 +132,7 @@ Los contenedores de Docker son un método muy utilizado para implementar aplicac
 
 9. En la ventana **Configure the Docker container to be created** (Configurar el contenedor de Docker que se va a crear), realice lo siguiente:
 
-   a. En el cuadro **Docker container name** (Nombre del contenedor de Docker), escriba un nombre único para el contenedor de Docker.
+    a. En el cuadro **Docker container name** (Nombre del contenedor de Docker), escriba un nombre único para el contenedor de Docker.
 
    b. Elija una de las siguientes imágenes de Docker: 
 

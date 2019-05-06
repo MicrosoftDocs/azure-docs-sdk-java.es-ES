@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 2d3f2363bd0b41808cd409417327b924cb86d85b
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 00f363e5dacc9c494b01eaa479db7e9e1aff6952
+ms.sourcegitcommit: 4f1acf05e3bbb7eb6bca9b65300c1c5b9772185a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48899560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63456044"
 ---
 # <a name="managing-redis-caches-using-the-azure-explorer-for-eclipse"></a>Managing Redis Caches using the Azure Explorer for Eclipse (Administración de Redis Cache mediante Azure Explorer para Eclipse)
 
@@ -43,19 +43,19 @@ Los siguientes pasos le guían en la creación de instancias de Redis Cache medi
 
    ![Creación del cuadro de diálogo Nueva caché en Redis][CR02]
 
-   a. **Nombre DNS**: Especifica el subdominio DNS para el nuevo Redis Cache, que se antepone a ".redis.cache.windows.net", por ejemplo *wingtiptoys.redis.cache.windows.net*.
+    a. **Nombre DNS**: especifica el subdominio DNS para el nuevo Redis Cache, que se antepone a ".redis.cache.windows.net", por ejemplo *wingtiptoys.redis.cache.windows.net*.
 
-   b. **Suscripción**: especifica la suscripción de Azure que quiere usar para la nueva cuenta Redis Cache.
+   b. **Suscripción**: especifica la suscripción de Azure que desea usar en la nueva instancia de Redis Cache.
 
-   c. **Grupo de recursos**: Especifica el grupo de recursos para la instancia de Redis Cache. Debe elegir una de las siguientes opciones:
+   c. **Grupo de recursos**: especifica el grupo de recursos para la instancia de Redis Cache. Debe elegir una de las siguientes opciones:
       * **Crear nuevo**: especifica que quiere crear un nuevo grupo de recursos.
-      * **Usar existente**: especifica que se va a elegir de una lista de grupos de recursos asociados a la cuenta de Azure.
+      * **Usar existente**: especifica que se va a elegir entre una lista de grupos de recursos asociados a la cuenta de Azure.
 
-   d. **Ubicación**: especifica la ubicación donde se creará la instancia de Redis Cache, por ejemplo, *oeste de EE. UU*.
+   d. **Ubicación**: especifica la ubicación en la que se crea la instancia de Redis Cache, por ejemplo, *Oeste de EE. UU.*
 
-   e. **Plan de tarifa**: especifica qué plan de tarifa usa Redis Cache. Esta configuración determina el número de conexiones del cliente. (Para más información, consulte [Precios de Redis Cache]).
+   e. **Plan de tarifa**: especifica el plan de tarifa que usa Redis Cache. Este valor determina el número de conexiones del cliente. (Para más información, consulte [Precios de Redis Cache]).
 
-   f. **Puerto sin SSL**: especifica si Redis Cache permite las conexiones sin SSL. De forma predeterminada, se permiten solo las conexiones SSL.
+   f. **Puerto no SSL**: especifica si Redis Cache permite conexiones no SSL. De forma predeterminada, se permiten solo las conexiones SSL.
 
 1. Cuando haya especificado toda la configuración de Redis Cache, haga clic en **Aceptar**.
 
