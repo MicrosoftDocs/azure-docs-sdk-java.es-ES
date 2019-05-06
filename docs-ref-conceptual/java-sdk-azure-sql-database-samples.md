@@ -1,6 +1,6 @@
 ---
 title: 'Bibliotecas de administración de Azure para Java: ejemplos de SQL Database'
-description: Obtenga código de ejemplo para la creación y actualización de bases de datos de Azure SQL Database mediante las bibliotecas de administración de Azure para Java.
+description: Obtenga código de ejemplo para la creación y actualización de bases de datos de Azure SQL mediante las bibliotecas de administración de Azure para Java.
 keywords: Azure, Java, SDK, API, Maven, Gradle, base de datos SQL
 author: rloutlaw
 ms.author: routlaw
@@ -19,6 +19,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61592660"
 ---
-# <a name="azure-management-libraries-for-java-samples-for-sql-database"></a><span data-ttu-id="e36eb-104">Bibliotecas de administración de Azure para Java: ejemplos de SQL Database</span><span class="sxs-lookup"><span data-stu-id="e36eb-104">Azure management libraries for Java samples for SQL Database</span></span>
+# <a name="azure-management-libraries-for-java-samples-for-sql-database"></a><span data-ttu-id="279d2-104">Bibliotecas de administración de Azure para Java: ejemplos de SQL Database</span><span class="sxs-lookup"><span data-stu-id="279d2-104">Azure management libraries for Java samples for SQL Database</span></span>
 
 [!INCLUDE [java-sql-samples](includes/java-sql-samples.md)]
