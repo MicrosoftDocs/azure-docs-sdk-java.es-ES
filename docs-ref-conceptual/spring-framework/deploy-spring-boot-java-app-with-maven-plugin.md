@@ -11,12 +11,12 @@ ms.date: 12/19/2018
 ms.devlang: java
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: 950b360eb525b0c6b97daad0798c27ded0582b8b
-ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
+ms.openlocfilehash: 5df4ca6ae9f307d937d7dfa0f2c1765f2efde1a1
+ms.sourcegitcommit: 733115fe0a7b5109b511b4a32490f8264cf91217
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53991349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625703"
 ---
 # <a name="deploy-a-spring-boot-jar-file-web-app-to-azure-app-service-on-linux"></a>Implementación de una aplicación web de archivo JAR de Spring Boot en Azure App Service en Linux
 
@@ -100,7 +100,7 @@ En esta sección, configurará el proyecto de Spring Boot `pom.xml` para que Mav
    <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.4.0</version>
+    <version>1.5.4</version>
     <configuration>
       <deploymentType>jar</deploymentType>
 
