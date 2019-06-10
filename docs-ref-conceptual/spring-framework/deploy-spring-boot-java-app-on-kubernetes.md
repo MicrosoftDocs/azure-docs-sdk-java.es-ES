@@ -15,12 +15,12 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.custom: mvc
-ms.openlocfilehash: 42bb030a916cc5aaf1e20242518a0a400b8baa88
-ms.sourcegitcommit: f33befab25a66a252b4c91c7aeb1b77cb32821bb
+ms.openlocfilehash: 9ab781d27e8968ab867efc65f3ac422ac6253a6a
+ms.sourcegitcommit: 394521c47ac9895d00d9f97535cc9d1e27d08fe9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745163"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270858"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>Implementación de una aplicación de Spring Boot en un clúster de Kubernetes en Azure Kubernetes Service
 
@@ -116,14 +116,14 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
    az acr login
    ```
 
-1. Navegue hasta el directorio de proyecto completado de la aplicación Spring Boot (por ejemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete*"o"*/users/robert/SpringBoot/gs-spring-boot-docker/complete*") y abra el archivo *pom.xml* con un editor de texto.
+1. Navegue hasta el directorio de proyecto completado de la aplicación Spring Boot (por ejemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete*"o" */users/robert/SpringBoot/gs-spring-boot-docker/complete*") y abra el archivo *pom.xml* con un editor de texto.
 
 1. Actualice la colección `<properties>` del archivo *pom.xml* con el nombre de su registro de Azure Container Registry y la última versión de [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
 
    ```xml
    <properties>
       <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
-      <jib-maven-plugin.version>1.0.2</jib-maven-plugin.version>
+      <jib-maven-plugin.version>1.2.0</jib-maven-plugin.version>
       <java.version>1.8</java.version>
    </properties>
    ```
@@ -136,10 +136,10 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
      <groupId>com.google.cloud.tools</groupId>
      <version>${jib-maven-plugin.version}</version>
      <configuration>
-        <from>              
+        <from>
             <image>openjdk:8-jre-alpine</image>
         </from>
-        <to>                
+        <to>
             <image>${docker.image.prefix}/${project.artifactId}</image>
         </to>
      </configuration>
@@ -148,9 +148,14 @@ Los siguientes pasos le guían a través de la creación de una aplicación web 
 
 1. Vaya al directorio de proyecto completado de la aplicación de Spring Boot y ejecute el siguiente comando para crear la imagen e insertarla en el registro:
 
-   ```
+   ```cmd
    mvn compile jib:build
    ```
+
+> [!NOTE]
+>
+> Debido al problema de seguridad de la Cli de Azure y Azure Container Registry, la credencial creada mediante `az acr login` es válida durante una hora; si aparece el error *401 no autorizado*, puede ejecutar de nuevo el comando `az acr login -n <your registry name>` para volver a autenticar.
+>
 
 ## <a name="create-a-kubernetes-cluster-on-aks-using-the-azure-cli"></a>Creación de un clúster de Kubernetes en AKS mediante la CLI de Azure
 
@@ -205,7 +210,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
 1. Abra el símbolo del sistema.
 
-1. Ejecute el contenedor en el clúster de Kubernetes mediante el comando `kubectl run`. Proporcione un nombre de servicio para la aplicación en Kubernetes y el nombre de la imagen completa. Por ejemplo: 
+1. Ejecute el contenedor en el clúster de Kubernetes mediante el comando `kubectl run`. Proporcione un nombre de servicio para la aplicación en Kubernetes y el nombre de la imagen completa. Por ejemplo:
    ```
    kubectl run gs-spring-boot-docker --image=wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest
    ```
@@ -215,7 +220,7 @@ Este tutorial implementa la aplicación mediante `kubectl` y, después, le permi
 
    * El parámetro `--image` especifica la combinación de servidor de inicio de sesión y nombre de imagen como `wingtiptoysregistry.azurecr.io/gs-spring-boot-docker:latest`
 
-1. Exponga externamente el clúster Kubernetes mediante el comando `kubectl expose`. Especifique el nombre del servicio, el puerto TCP de acceso público utilizado para acceder a la aplicación y el puerto de destino interno en que escucha la aplicación. Por ejemplo: 
+1. Exponga externamente el clúster Kubernetes mediante el comando `kubectl expose`. Especifique el nombre del servicio, el puerto TCP de acceso público utilizado para acceder a la aplicación y el puerto de destino interno en que escucha la aplicación. Por ejemplo:
    ```
    kubectl expose deployment gs-spring-boot-docker --type=LoadBalancer --port=80 --target-port=8080
    ```

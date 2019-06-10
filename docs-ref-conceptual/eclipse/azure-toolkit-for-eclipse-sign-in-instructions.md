@@ -14,127 +14,113 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 79f6cfd3b21d68c131a3f0052d86e4bcb3254e55
-ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.openlocfilehash: b4b13de38913ae6e7ae2bb09210ac742efc9d0ad
+ms.sourcegitcommit: d18d9dce22b7f7af178f756bd341433d24e3c3b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61591070"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66575312"
 ---
-# <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse
+# <a name="sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse
 
 El kit de herramientas de Azure para Eclipse proporciona dos métodos para iniciar sesión en su cuenta de Azure:
 
-  * **Automatizado**: al utilizar este método, se creará un archivo de credenciales que contiene los datos de entidades de seguridad de servicio. Después, podrá utilizar el archivo de credenciales para iniciar sesión automáticamente en su cuenta de Azure.
-  * **Interactivo**: al usar este método, deberá especificar sus credenciales de Azure cada vez que inicie sesión en su cuenta de Azure.
+  - [Iniciar sesión en su cuenta de Azure mediante el inicio de sesión de dispositivo](#sign-in-to-your-azure-account-by-device-login)
+  - [Iniciar sesión en su cuenta de Azure mediante entidad de servicio](#sign-in-to-your-azure-account-by-service-principal)
 
-Los pasos descritos en las secciones siguientes explican cómo utilizar cada método.
+También se proporcionan métodos de [**Cierre de sesión**](#sign-out-of-your-azure-account).
 
 [!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
 
-## <a name="signing-into-your-azure-account-automatically-and-creating-a-credentials-file-to-use-in-the-future"></a>Inicio de sesión en su cuenta de Azure de forma automática y creación de un archivo de credenciales para utilizarlo en el futuro
+## <a name="sign-in-to-your-azure-account-by-device-login"></a>Inicio de sesión en su cuenta de Azure mediante el inicio de sesión de dispositivo
 
-Los siguientes pasos lo guiarán por el proceso de creación de un archivo de credenciales que contiene los datos de entidades de seguridad de servicio. Cuando finalice estos pasos, Eclipse usará automáticamente el archivo de credenciales para iniciar sesión automáticamente en Azure cada vez que abra el proyecto.
-
-1. Abra el proyecto con Eclipse.
-
-1. Haga clic en **Herramientas** y, luego, en **Azure**y en **Iniciar sesión**.
-
-   ![Menú de Eclipse para iniciar sesión en Azure][A01]
-
-1. Cuando se muestra el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, seleccione **Automatizado** y, luego, haga clic en **Nuevo**.
-
-   ![Cuadro de diálogo Iniciar sesión][A02]
-
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, escriba sus credenciales de Azure y, luego, haga clic en **Iniciar sesión**.
-
-   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A03]
-
-1. Cuando se muestre el cuadro de diálogo **Create authentication files** (Crear archivos de autenticación), seleccione las suscripciones que desea utilizar, elija el directorio de destino y, luego, haga clic en **Iniciar**.
-
-   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A04]
-
-1. Se mostrará el cuadro de diálogo **Service Principal Creation Status** (Estado de creación de entidades de servicio) y, una vez que se hayan creado correctamente los archivos, haga clic en **Aceptar**.
-
-   ![Cuadro de diálogo Service Principal Creation Status (Estado de creación de entidades de servicio)][A05]
-
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure** , haga clic en **Iniciar sesión**.
-
-   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
-
-1. Cuando se muestre el cuadro de diálogo **Seleccionar suscripciones**, seleccione las suscripciones que desea usar y, luego, haga clic en **Aceptar**.
-
-   ![Cuadro de diálogo Seleccionar suscripciones][A07]
-
-## <a name="signing-out-of-your-azure-account-when-you-signed-in-automatically"></a>Cierre de sesión de la cuenta de Azure al iniciar sesión de forma automática
-
-Después de haber configurado los pasos en la sección anterior, el kit de herramientas de Azure cerrará automáticamente la sesión de su cuenta de Azure cada vez que reinicie Eclipse. Sin embargo, para cerrar la sesión de su cuenta de Azure e impedir que el kit de herramientas de Azure inicie sesión automáticamente, siga estos pasos.
-
-1. En Eclipse, haga clic en **Herramientas** y, luego, en **Azure** y en **Cerrar sesión**.
-
-   ![Menú de Eclipse para cerrar sesión en Azure][L01]
-
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure** , haga clic en **Sí**.
-
-   ![Cuadro de diálogo Cerrar sesión][L03]
-
-## <a name="signing-into-your-azure-account-automatically-using-a-credentials-file-which-you-have-already-created"></a>Inicio de sesión en su cuenta de Azure de forma automática y uso de un archivo de credenciales existente
-
-Si cierra la sesión de Azure al utilizar Eclipse, debe volver a configurar el kit de herramientas de Azure para Eclipse con el fin de usar un archivo de credenciales ya creado antes de poder iniciar sesión automáticamente en su cuenta de Azure. Los siguientes pasos lo guiarán a través del proceso de configuración del kit de herramientas de Azure para usar un archivo de credenciales existente.
+Para iniciar sesión en Azure mediante el inicio de sesión de dispositivo, haga lo siguiente:
 
 1. Abra el proyecto con Eclipse.
 
-1. Haga clic en **Herramientas** y, luego, en **Azure**y en **Iniciar sesión**.
-
-   ![Menú de Eclipse para iniciar sesión en Azure][A01]
-
-1. Cuando se muestra el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, seleccione **Automatizado** y, luego, haga clic en **Examinar**.
-
-   ![Cuadro de diálogo Iniciar sesión][A02]
-
-1. Cuando se muestra el cuadro de diálogo **Select Authentication File** (Seleccionar archivo de autenticación), elija un archivo de credenciales que creó anteriormente y, luego, haga clic en **Open** (Abrir).
-
-   ![Cuadro de diálogo Iniciar sesión][A08]
-
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, haga clic en **Iniciar sesión**.
-
-   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
-
-1. Cuando se muestre el cuadro de diálogo **Seleccionar suscripciones**, seleccione las suscripciones que desea usar y, luego, haga clic en **Aceptar**.
-
-   ![Cuadro de diálogo Seleccionar suscripciones][A07]
-
-## <a name="signing-into-your-azure-account-interactively"></a>Inicio de sesión en la cuenta de Azure de forma interactiva
-
-En los pasos siguientes se explica cómo iniciar sesión en Azure especificando manualmente las credenciales de Azure.
-
-1. Abra el proyecto con Eclipse.
-
-1. Haga clic en **Herramientas** y, luego, en **Azure**y en **Iniciar sesión**.
-
+2. Haga clic en **Herramientas** y, luego, en **Azure**y en **Iniciar sesión**.
    ![Menú de Eclipse para iniciar sesión en Azure][I01]
 
-1. Cuando se muestra el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, seleccione **Interactivo** y, luego, haga clic en **Iniciar sesión**.
+3. En la ventana **Inicio de sesión de Azure**, seleccione **Inicio de sesión de dispositivo** y, luego, haga clic en **Iniciar sesión**.
 
-   ![Cuadro de diálogo Iniciar sesión][I02]
+   ![Ventana Inicio de sesión de Azure con el inicio de sesión de dispositivo seleccionado][I02]
 
-1. Cuando se muestre el cuadro de diálogo **Inicio de sesión en Microsoft Azure**, escriba sus credenciales de Azure y, luego, haga clic en **Iniciar sesión**.
+4. Haga clic en **Copiar y abrir** en el cuadro de diálogo **Inicio de sesión de dispositivo de Azure**.
 
-   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][I03]
+   ![El cuadro de diálogo Inicio de sesión en Microsoft Azure][I03]
 
-1. Cuando se muestre el cuadro de diálogo **Seleccionar suscripciones**, seleccione las suscripciones que desea usar y, luego, haga clic en **Aceptar**.
+> [!NOTE]
+>
+> Si no se abre el explorador, configure Eclipse para utilizar un explorador externo, como Internet Explorer, Firefox o Chrome:
+>
+> 1. En Eclipse, abra Preferencias -> General -> Explorador web -> Usar un explorador web externo
+>
+> 2. Seleccione el explorador que prefiera utilizar
+>
 
-   ![Cuadro de diálogo Seleccionar suscripciones][I04]
+5. En el explorador, pegue el código del dispositivo (que se ha copiado al hacer clic en **Copiar y abrir** en el último paso) y, a continuación, haga clic en **Siguiente**.
 
-## <a name="signing-out-of-your-azure-account-when-you-signed-in-interactively"></a>Cierre de sesión de la cuenta de Azure al iniciar sesión de forma interactiva
+   ![Explorador de inicio de sesión de dispositivo][I04]
 
-Después de haber configurado los pasos en la sección anterior, se cerrará automáticamente la sesión de su cuenta de Azure cada vez que reinicie Eclipse. Sin embargo, si desea cerrar sesión de su cuenta de Azure sin tener que reiniciar Eclipse, siga estos pasos.
+6. Finalmente, en el cuadro de diálogo **Seleccionar suscripciones**, elija las suscripciones que desea usar y, luego, haga clic en **Aceptar**.
+
+   ![Cuadro de diálogo Seleccionar suscripciones][I05]
+
+## <a name="sign-in-to-your-azure-account-by-service-principal"></a>Inicio de sesión en su cuenta de Azure mediante entidad de servicio
+
+Los siguientes pasos lo guiarán por el proceso de creación de un archivo de credenciales que contiene los datos de entidades de servicio. Cuando finalice este proceso, Eclipse usará el archivo de credenciales para iniciar sesión automáticamente en Azure cuando abra el proyecto.
+
+1. Abra el proyecto con Eclipse.
+
+2. Haga clic en **Herramientas** y, luego, en **Azure**y en **Iniciar sesión**.
+   ![Comando de inicio de sesión en Azure de Eclipse][A01]
+
+3. En la ventana **Iniciar sesión de Azure**, seleccione **Entidad de servicio**. Si aún no tiene el archivo de autenticación de la entidad de servicio, haga clic en **Nuevo** para crear uno. En caso contrario, haga clic en **Examinar** para abrirlo y vaya al paso 8.
+
+   ![Ventana de inicio de sesión de Azure con la entidad de servicio seleccionada][A02]
+
+4. Haga clic en **Copiar y abrir** en el cuadro de diálogo **Inicio de sesión de dispositivo de Azure**.
+
+   ![El cuadro de diálogo Inicio de sesión en Microsoft Azure][A08]
+
+> [!NOTE]
+>
+> Si no se abre el explorador, configure Eclipse para utilizar un explorador externo, como Internet Explorer o Chrome:
+>
+> 1. En Eclipse, abra Preferencias -> General -> Explorador web -> Usar un explorador web externo.
+>
+> 2. Seleccione el explorador que prefiera utilizar.
+>
+
+5. En el explorador, pegue el código del dispositivo (que se ha copiado al hacer clic en **Copiar y abrir** en el último paso) y, a continuación, haga clic en **Siguiente**.
+
+   ![Explorador de inicio de sesión de dispositivo][A03]
+
+6. En la ventana **Create authentication files** (Crear archivos de autenticación), seleccione las suscripciones que desea utilizar, elija el directorio de destino y, luego, haga clic en **Iniciar**.
+
+   ![La ventana Create authentication files (Crear archivos de autenticación)][A04]
+
+7. En el cuadro de diálogo **Estado de creación de entidades de servicio**, una vez que se hayan creado correctamente los archivos, haga clic en **Aceptar**.
+
+   ![El cuadro de diálogo Service Principal Creation Status (Estado de creación de entidades de servicio)][A05]
+
+8. La dirección del archivo creado se rellenará automáticamente en la ventana **Inicio de sesión de Azure**. Ahora, haga clic en **Iniciar sesión**.
+
+   ![Cuadro de diálogo Inicio de sesión en Microsoft Azure][A06]
+
+9. Finalmente, en el cuadro de diálogo **Seleccionar suscripciones**, elija las suscripciones que desea usar y, luego, haga clic en **Aceptar**.
+
+   ![Cuadro de diálogo Seleccionar suscripciones][A07]
+
+## <a name="sign-out-of-your-azure-account"></a>Cierre de sesión en la cuenta de Azure
+
+Después de haber configurado la cuenta con los pasos anteriores, iniciará sesión automáticamente cada vez que inicie Eclipse. Sin embargo, si desea cerrar sesión de su cuenta de Azure, siga estos pasos.
 
 1. En Eclipse, haga clic en **Herramientas** y, luego, en **Azure** y en **Cerrar sesión**.
 
    ![Menú de Eclipse para cerrar sesión en Azure][L01]
 
-1. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure** , haga clic en **Sí**.
+2. Cuando se muestre el cuadro de diálogo **Cierre de sesión en Microsoft Azure** , haga clic en **Sí**.
 
    ![Cuadro de diálogo Cerrar sesión][L02]
 
@@ -151,6 +137,7 @@ Después de haber configurado los pasos en la sección anterior, se cerrará aut
 [I02]: media/azure-toolkit-for-eclipse-sign-in-instructions/I02.png
 [I03]: media/azure-toolkit-for-eclipse-sign-in-instructions/I03.png
 [I04]: media/azure-toolkit-for-eclipse-sign-in-instructions/I04.png
+[I05]: media/azure-toolkit-for-eclipse-sign-in-instructions/I05.png
 
 [A01]: media/azure-toolkit-for-eclipse-sign-in-instructions/A01.png
 [A02]: media/azure-toolkit-for-eclipse-sign-in-instructions/A02.png

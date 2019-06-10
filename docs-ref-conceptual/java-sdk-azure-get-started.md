@@ -12,12 +12,12 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
-ms.openlocfilehash: fdf0334a8796d636a1968943cc34d7ae98d6361c
-ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
+ms.openlocfilehash: 22389ce7346a1d97c072dcc82162c9286f21f178
+ms.sourcegitcommit: 04d0d92c46399976b58a9dfa107ba644378bf171
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44040263"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65986196"
 ---
 # <a name="get-started-with-cloud-development-using-java-on-azure"></a>Introducción al desarrollo de soluciones para la nube con Java en Azure
 
@@ -147,23 +147,23 @@ Agregue una entrada `build` bajo el elemento de nivel superior `project` para us
 
 ### <a name="install-the-azure-toolkit-for-intellij"></a>Instalación del kit de herramientas de Azure para IntelliJ
 
-El [kit de herramientas de Azure](intellij/azure-toolkit-for-intellij-installation.md) se necesita si se van a implementar aplicaciones web o API mediante programación, pero no se usa en ningún otro tipo de implementación. El siguiente es el resumen del proceso de instalación. Para obtener los pasos detallados, consulte [Instalación del Kit de herramientas de Azure para IntelliJ](intellij/azure-toolkit-for-intellij-installation.md).
+El [kit de herramientas de Azure](intellij/azure-toolkit-for-intellij-installation.md) se necesita si se van a implementar aplicaciones web o API mediante programación, pero no se usa en ningún otro tipo de implementación. El siguiente es el resumen del proceso de instalación. Para una guía de inicio rápido, visite [Guía de inicio rápido de Azure Toolkit for IntelliJ](intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md).
 
-Seleccione el menú **File** (Archivo) y, luego, seleccione **Settings...** (Configuración...). 
+- Seleccione el menú **File** (Archivo) y, luego, seleccione **Settings...** (Configuración...). 
 
-Seleccione **Browse repositories...** (Examinar repositorios...) y busque "Azure"; instale **Azure toolkit for Intellij** (Kit de herramientas de Azure para Intellij).
+- Seleccione **Browse repositories...** (Examinar repositorios...) y busque "Azure"; instale **Azure toolkit for Intellij** (Kit de herramientas de Azure para Intellij).
 
-Reinicie Intellij.
+- Reinicie Intellij.
 
 ### <a name="install-the-azure-toolkit-for-eclipse"></a>Instalación del kit de herramientas de Azure para Eclipse
 
-El [kit de herramientas de Azure](eclipse/azure-toolkit-for-eclipse.md) se necesita si se van a implementar aplicaciones web o API mediante programación, pero no se usa en ningún otro tipo de implementación. El siguiente es el resumen del proceso de instalación. Para obtener los pasos detallados, consulte [Instalación del kit de herramientas de Azure para Eclipse](eclipse/azure-toolkit-for-eclipse.md).
+El [kit de herramientas de Azure](eclipse/azure-toolkit-for-eclipse.md) se necesita si se van a implementar aplicaciones web o API mediante programación, pero no se usa en ningún otro tipo de implementación. El siguiente es el resumen del proceso de instalación. Para una guía de inicio rápido, visite [Guía de inicio rápido de Azure Toolkit for Eclipse](eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md).
 
-En el menú **Help** (Ayuda), seleccione **Install New Software** (Instalar nuevo software).
+- En el menú **Help** (Ayuda), seleccione **Install New Software** (Instalar nuevo software).
 
-En el campo **Work with:** (Trabajar con:), escriba `http://dl.microsoft.com/eclipse` y presione ENTRAR.
+- En el campo **Work with:** (Trabajar con:), escriba `http://dl.microsoft.com/eclipse` y presione ENTRAR.
 
-Después, active la casilla situada junto a **Azure toolkit for Java** (Kit de herramientas de Azure para Java) y desactive la casilla **Contact all update sites during install to find required software** (Conectar con todos los sitios de actualización durante la instalación para buscar el software necesario). Después, seleccione Next (Siguiente).
+- Después, active la casilla situada junto a **Azure toolkit for Java** (Kit de herramientas de Azure para Java) y desactive la casilla **Contact all update sites during install to find required software** (Conectar con todos los sitios de actualización durante la instalación para buscar el software necesario). Después, seleccione Next (Siguiente).
 
 ## <a name="create-a-linux-virtual-machine"></a>Creación de una máquina virtual con Linux
 

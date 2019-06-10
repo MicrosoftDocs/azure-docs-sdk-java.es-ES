@@ -14,73 +14,52 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 88d92cfd82244d5df2ad34304155d41c5aab0ee9
-ms.sourcegitcommit: 8e530a2ce58ea0e2bf5c136e427a9be863231a1b
+ms.openlocfilehash: 5bec0af1a17b87d24f29bc856691870d4d697888
+ms.sourcegitcommit: 733115fe0a7b5109b511b4a32490f8264cf91217
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53638964"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625749"
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de herramientas de Azure para Eclipse
 
-El kit de herramientas de Azure para Eclipse ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones en la nube en Azure desde el entorno de desarrollo integrado (IDE) Eclipse.
+Azure Toolkit for Eclipse ofrece plantillas y funciones que puede usar para crear, desarrollar, probar e implementar fácilmente aplicaciones en la nube en Azure desde el IDE de Eclipse.
 
 > [!NOTE]
 > 
-> También hay un Kit de herramientas de Azure para el IDE de IntelliJ. Para más información, consulte [Kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md).
+> También hay un Kit de herramientas de Azure para IntelliJ IDEA. Para más información, consulte [Kit de herramientas de Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md).
 > 
 
-## <a name="get-started-with-the-azure-toolkit-for-eclipse"></a>Introducción al kit de herramientas de Azure para Eclipse
-Los artículos siguientes lo ayudarán a empezar a usar el kit de herramientas de Azure para Eclipse:
+## <a name="get-started-in-10-minutes"></a>Empezar a trabajar en 10 minutos
 
-* [Instalación del Kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-installation.md)
+* [Creación de una aplicación web Hello World para Azure App Service](azure-toolkit-for-eclipse-create-hello-world-web-app.md)
 
-* [Instrucciones de inicio de sesión del kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-sign-in-instructions.md)
+## <a name="step-by-step-tutorials"></a>Tutoriales paso a paso
 
-* [Creación de una aplicación web Hello World para Azure en Eclipse](azure-toolkit-for-eclipse-create-hello-world-web-app.md)
+* [Publicación de una aplicación de Spring Boot como un contenedor de Docker](azure-toolkit-for-eclipse-publish-spring-boot-docker-app.md)
 
-## <a name="use-the-azure-toolkit-for-eclipse-with-your-java-projects"></a>Uso del kit de herramientas de Azure para Eclipse con los proyectos de Java
-En los artículos siguientes se muestra cómo usar el Kit de herramientas de Azure para Eclipse para agregar funcionalidad de Azure a sus proyectos de Java:
-
-* [Publicar una aplicación Spring Boot como contenedor de Docker mediante el kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-publish-spring-boot-docker-app.md)
-
-* [Publicación de una aplicación web como contenedor de Docker con el kit de herramientas de Azure para Eclipse](azure-toolkit-for-eclipse-publish-as-docker-container.md)
+* [Publicación de una aplicación web como un contenedor de Docker](azure-toolkit-for-eclipse-publish-as-docker-container.md)
 
 * [Usar el complemento de herramientas de HDInsight para Eclipse con el fin de crear aplicaciones Spark para un clúster de Spark de HDInsight en Linux](/azure/hdinsight/hdinsight-apache-spark-eclipse-tool-plugin)
 
 * [Mostrar el contenido de Javadoc en Eclipse para el paquete para bibliotecas de Azure para Java](azure-toolkit-for-eclipse-displaying-javadoc-content-for-azure-libraries.md)
 
-## <a name="manage-azure-resources-using-the-azure-toolkit-for-eclipse"></a>Administración de los recursos de Azure con el kit de herramientas de Azure para Eclipse
-En los artículos siguientes se muestra cómo usar el kit de herramientas de Azure para Eclipse para administrar sus recursos de Azure:
+## <a name="managing-azure-resources"></a>Administración de recursos de Azure
 
-* [Administración de instancias de Redis Cache mediante Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-redis-caches-using-azure-explorer.md)
+* [Cachés de Redis Cache](azure-toolkit-for-eclipse-managing-redis-caches-using-azure-explorer.md)
 
-* [Administración de cuentas de almacenamiento mediante Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md)
+* [Cuentas de almacenamiento](azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md)
 
-* [Administración de máquinas virtuales con Azure Explorer para Eclipse](azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md)
+* [Máquinas virtuales](azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="whats-more"></a>Novedades
 
-Para más información sobre el Kit de herramientas de Azure para Eclipse, consulte las siguientes páginas:
-
-* [Notas de la versión de Kit de herramientas de Azure](https://github.com/Microsoft/azure-tools-for-java/releases)
-
-* [Kit de herramientas de Azure para Eclipse en Eclipse Marketplace](http://marketplace.eclipse.org/content/azure-toolkit-eclipse)
-
-Para más información sobre el uso de Azure con Java, consulte [Azure para desarrolladores de Java](https://docs.microsoft.com/java/azure/) y [Java Tools for Visual Studio Team Services](/azure/devops/java/) (Herramientas de Java para Visual Studio Team Services).
-
-<!-- [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)] -->
+[!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
 > [!NOTE]
 > 
 > El Kit de herramientas de Azure para Eclipse es un proyecto de código abierto, cuyo código fuente está disponible con la [licencia MIT del sitio del proyecto en GitHub](https://github.com/microsoft/azure-tools-for-java).
 > 
-
-<!-- URL List -->
-
-[Azure for Java Developers]: https://docs.microsoft.com/java/azure
-
-<!-- Temporarily Deprecated URLs -->
 
 <!-- [Deploying large deployments](azure-toolkit-for-eclipse-deploying-large-deployments.md) -->
 <!-- [How to Maintain Session Data with Session Affinity]: http://go.microsoft.com/fwlink/?LinkID=699539 -->
