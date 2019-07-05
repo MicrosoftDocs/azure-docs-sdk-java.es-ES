@@ -7,33 +7,35 @@ ms.author: brendm
 ms.date: 4/9/2019
 ms.devlang: java
 ms.topic: conceptual
-ms.openlocfilehash: b27e0f741f1322b7e8e1df363dbb2f40a3d34d53
-ms.sourcegitcommit: 04cff6e3c6d3a9c15f7d88d5d3c238f0bdc787fd
+ms.openlocfilehash: 64f64f2e5891fccf9d62510f39bd99d73457d590
+ms.sourcegitcommit: f8faa4a14c714e148c513fd46f119524f3897abf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64568568"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67533621"
 ---
-# <a name="using-java-flight-recorder-jfr-and-mission-control"></a>Uso de Java Flight Recorder (JFR) y Mission Control
+# <a name="use-java-flight-recorder-and-mission-control"></a>Uso de Java Flight Recorder y Mission Control
 
-Zulu Mission Control es una compilación completamente probada de JDK Mission Control, liberado como código abierto por Oracle en 2018 y que se administra como un proyecto bajo el paraguas de OpenJDK. Junto con Flight Recorder, Mission Control ofrece supervisión interactiva de baja sobrecarga y funcionalidades de administración para las cargas de trabajo de Java.
+Zulu Mission Control es una compilación completamente probada de JDK Mission Control, publicado como código abierto por Oracle en 2018 y que se administra como un proyecto bajo el ámbito de OpenJDK. Junto con Java Flight Recorder, Mission Control ofrece supervisión interactiva de baja sobrecarga y funcionalidades de administración para las cargas de trabajo de Java.
 
-Zulu Mission Control es compatible con los siguientes JDK y JRE:
+Zulu Mission Control es compatible con los kits de desarrollo de Java (JDK) y los entornos de ejecución de Java (JRE) siguientes:
 
 * Zulu 12.1 y versiones posteriores
 * Zulu 11.0 y versiones posteriores
 * Zulu 8u202 (8.36) y versiones posteriores
-* Oracle OpenJDK 11+15 y versiones posteriores
+* Oracle OpenJDK 11 y 15, y versiones posteriores
 * Oracle Java 11.0 y versiones posteriores
 * Oracle Java 8.0 y versiones posteriores
 
-Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, conectarse a una máquina Virtual Java (JVM) y ganar visibilidad en tiempo real en todos los aspectos de una aplicación en ejecución.
+## <a name="install-zulu-mission-control-and-connect-to-a-jvm"></a>Instalación de Zulu Mission Control y conexión a una máquina virtual Java
 
-1.  [Instale un JDK/JRE compatible con Zulu Mission Control](java-jdk-install.md).
+Para instalar Zulu Mission Control, conectarse a una máquina Virtual Java (JVM) y ganar visibilidad en tiempo real en todos los aspectos de una aplicación en ejecución, haga lo siguiente:
 
-2.  Descargue Zulu Mission Control desde [el sitio de descarga de Azul](https://www.azul.com/products/zulu-mission-control/), elija la versión adecuada para su sistema, guárdelo localmente y cambie a ese directorio.
+1.  [Instale un JDK y JRE compatible con Zulu Mission Control](java-jdk-install.md).
 
-3.  Expanda el archivo descargado.
+1.  [Descargue Zulu Mission Control](https://www.azul.com/products/zulu-mission-control/), elija la versión adecuada para su sistema, guárdelo localmente y cambie a ese directorio.
+
+1.  Expanda el archivo descargado.
 
     **Linux:**
 
@@ -47,19 +49,19 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     unzip -zxvf zmc7.0.0-EA-win_x64.zip 
     ```
 
-    **MacOS:**
+    **macOS:**
 
     ```cli
     tar -xzvf zmc7.0.0-EA-macosx_x64.tar.gz
     ```
 
-4.  Inicie la aplicación de Java mediante uno de los JDK compatibles. Por ejemplo:
+1.  Inicie la aplicación de Java mediante uno de los JDK compatibles. Por ejemplo:
 
     ```cli
     $JAVA_HOME/bin/java -jar MyApplication.jar
     ```
 
-5.  Inicio de Zulu Mission Control
+1.  Inicie Zulu Mission Control.
 
     **Linux:**
 
@@ -73,51 +75,56 @@ Siga los pasos que aparecen a continuación para instalar Zulu Mission Control, 
     zmc7.0.0-EA-win_x64\zmc.exe 
     ```
 
-    **MacOS:**
+    **macOS:**
 
     ```cli
     zmc7.0.0-EA-macosx_x64/Zulu\ Mission\ Control.app/Contents/MacOS/zmc
     ```
 
-6.  Cambio de la instalación de JVM para Mission Control (opcional)
+1.  (Opcional) Cambie la instalación de la máquina virtual Java para Mission Control.
 
-    En Windows, *zmc.exe* usará la instalación de JVM predeterminada configurada en el registro. Zulu Mission Control se debe iniciar desde un JDK completo para poder detectar automáticamente las instancias locales de JVM. Si se trata de una versión de JRE, verá la siguiente advertencia:
+    En dispositivos Windows, *zmc.exe* usará la instalación de la máquina virtual Java predeterminada configurada en el Registro. Zulu Mission Control se debe iniciar desde un JDK completo para poder detectar automáticamente las instancias locales de JVM. Si la instalación es un JRE, no se detectará ninguna máquina virtual Java y recibirá la advertencia siguiente:
 
     > [!div class="mx-imgBorder"]
     ![Advertencia si la instalación JDK es solo JRE](../media/jdk/azul-jfr-1.png)
 
-    Para cambiar la versión de JVM utilizada por Mission Control, siga estos pasos: 
-    1.  Abra el archivo de configuración *zmc.ini*, ubicado en el mismo directorio que el archivo *zmc.exe*
-    2.  Antes de la línea `-vmargs`, agregue dos líneas:
-        * En la primera línea, escriba `–vm`
-        * En la segunda línea, escriba la ruta de acceso a la instalación de JDK. (Por ejemplo, `C:\Program Files\Java\jdk1.8.0_212\bin\javaw.exe`).
+    Para cambiar la máquina virtual Java que utiliza Mission Control, haga lo siguiente: 
 
-7.  Búsqueda de la versión de JVM que ejecuta la aplicación
-    1.  En el panel superior izquierdo de la ventana de Zulu Mission Control, haga clic en la pestaña etiquetada **JVM Browser** (Explorador de JVM).
-    2.  Seleccione y expanda el elemento de la lista de la parte superior izquierda de la instancia de JVM que ejecuta la aplicación.
+    a. Abra el archivo de configuración *zmc.ini*, ubicado en el mismo directorio que el archivo *zmc.exe*.
 
-    > [!div class="mx-imgBorder"]
-    ![Expansión del elemento de la lista de la parte superior izquierda de la instancia de JVM](../media/jdk/azul-jfr-2.png)
+    b. Antes de la línea `-vmargs`, agregue dos líneas:  
+
+       * En la primera línea, escriba `–vm`.  
+       * En la segunda línea, escriba la ruta de acceso a la instalación de JDK (por ejemplo, `C:\Program Files\Java\jdk1.8.0_212\bin\javaw.exe`).
+
+1.  Busque la máquina virtual Java que se está ejecutando la aplicación:
+
+    a. En el panel izquierdo de la ventana de Zulu Mission Control, seleccione la pestaña **JVM Browser** (Explorador de máquinas virtuales Java).
+
+    b. En la lista, seleccione y expanda la instancia de la máquina virtual Java que ejecuta la aplicación.
+
+    ![Instancia de máquina virtual Java expandida en la lista](../media/jdk/azul-jfr-2.png)
 
 
-8.  Inicie una operación Flight Recording, si es necesario
-    1.  Si Flight Recorder muestra "No hay grabaciones", inicie una con un click con el botón derecho en la línea de Flight Recorder en la pestaña del explorador de JVM y seleccione **Start Flight Recording...**
-    2.  Seleccione una grabación de duración fija o una grabación continua y una configuración de generación de perfiles (específica) o una configuración continua (con menor sobrecarga) y, a continuación, haga clic en **Finish** (Finalizar).
+1.  Inicie el registro del vuelo, si es necesario.
 
-    > [!div class="mx-imgBorder"]
-    ![Inicio de una operación Flight Recording](../media/jdk/azul-jfr-3.png)
+    a. En el panel izquierdo, en **Flight Recorder** (Registrador de vuelo), si se muestra un mensaje *No Recordings* (No hay registros), inicie el registro del vuelo; para ello, haga clic con el botón secundario en **Flight Recorder** (Registrador de vuelo) y, a continuación, seleccione **Start Fllight Recording** (Iniciar registro del vuelo).
 
-9.  Volcado de la operación Flight Recording
-    1.  Debería aparecer un elemento Flight Recording debajo de la línea de Flight Recorder en el explorador de JVM. Haga clic con el botón derecho en la línea que representa la operación Flight Recording y seleccione **Dump whole recording** (Volcar la grabación completa).
-    2.  Aparecerá una nueva pestaña en el panel grande del lado derecho de la ventana de Zulu Mission Control. Este panel representa la grabación de Flight Recording recién volcada desde la instancia de JVM que ejecuta la aplicación.
+    b. Seleccione **Time fixed recording** (Registro de duración determinada) o **Continuous recording** (Registro continuo) y una configuración detallada **Profiling** (Generación de perfiles) o una configuración con baja sobrecarga **Continuous** (Continua); por último, seleccione **Finish** (Finalizar).
 
-10. Examen de la grabación de Flight Recording con Zulu Mission Control
-    1.  Si aún no está activada, seleccione la pestaña etiquetada **Outline** (Esquema) en el panel izquierdo de la ventana de Zulu Mission Control. Esta pestaña contiene vistas diferentes de los datos recopilados en la operación Flight Recording.
+    ![Inicio de un registro del vuelo](../media/jdk/azul-jfr-3.png)
+
+    El registro del vuelo debería aparecer debajo de la línea **Flight Recorder**, en el explorador de máquinas virtuales Java.
+
+1. Volcado del registro del vuelo Para hacerlo, haga clic con el botón derecho en la línea que representa el registro del vuelo y seleccione **Dump whole recording** (Volcar el registro completo).
+
+    Aparece una nueva pestaña en el panel grande del lado derecho de la ventana de Zulu Mission Control. Este panel representa el registro del vuelo recién volcado desde la máquina virtual Java donde se ejecuta la aplicación.
+
+1. Examine el registro del vuelo con Zulu Mission Control. Para ello, seleccione la pestaña **Outline** (Esquema) en el panel izquierdo de la ventana de Zulu Mission Control. Esta pestaña contiene vistas diferentes de los datos recopilados en el registro del vuelo.
  
-    > [!div class="mx-imgBorder"]
-    ![Revisión de la grabación de Flight Recording](../media/jdk/azul-jfr-4.png)
+    ![Revisión del registro del vuelo](../media/jdk/azul-jfr-4.png)
 
 ## <a name="resources"></a>Recursos
 
-También hemos preparado un [vídeo de demostración](https://www.azul.com/presentation/azul-webinar-open-source-flight-recorder-and-mission-control-managing-and-measuring-openjdk-8-performance/) con comentarios de Simon Ritter, CTO de Azul Systems. El vídeo le guiará en la instalación y configuración de Flight Recorder y Zulu Mission Control. El análisis de Flight Recorder comienza en el minuto 31:30.
+Para más información, vaya al sitio de Azul Systems y consulte [Azul Webinar: Open Source Flight Recorder and Mission Control - Managing and Measuring OpenJDK 8 Performance](https://www.azul.com/presentation/azul-webinar-open-source-flight-recorder-and-mission-control-managing-and-measuring-openjdk-8-performance/) (Flight Recorder y Mission Control de código abierto: administración y medida del rendimiento de OpenJDK 8). El narrador del vídeo es Simon Ritter, responsable de tecnología de Azul Systems. El análisis de Flight Recorder comienza en el minuto 31:30.
 
